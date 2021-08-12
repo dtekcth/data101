@@ -8,3 +8,4 @@ Föreläsnings ideer i ungefärlig ordning med ev. gästföreläsare
 * Sektmötesmotion
 * Java & IntelliJ
 * Aspning
+* Regex
