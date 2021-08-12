@@ -9,3 +9,4 @@ Föreläsnings ideer i ungefärlig ordning med ev. gästföreläsare
 * Java & IntelliJ
 * Aspning
 * Regex
+* Datorsäkerhet (borde utveckla med några basic exempel)
