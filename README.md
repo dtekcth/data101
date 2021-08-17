@@ -11,3 +11,4 @@ Föreläsnings ideer i ungefärlig ordning med ev. gästföreläsare
 * Regex
 * Datorsäkerhet (borde utveckla med några basic exempel)
 * Studieverktyg (typ timetracking)
+* Latex
