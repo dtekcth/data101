@@ -12,3 +12,4 @@ Föreläsnings ideer i ungefärlig ordning med ev. gästföreläsare
 * Datorsäkerhet (borde utveckla med några basic exempel)
 * Studieverktyg (typ timetracking)
 * Latex
+* Docker
