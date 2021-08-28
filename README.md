@@ -9,7 +9,7 @@ Föreläsnings ideer i ungefärlig ordning med ev. gästföreläsare
 * Java & IntelliJ
 * Aspning
 * Regex
-* Datorsäkerhet (borde utveckla med några basic exempel)
+* Datorsäkerhet (borde utveckla med några basic exempel) (hackerman i 5 min och sen kmr eb med en fläkt)
 * Studieverktyg (typ timetracking)
 * Latex
 * Docker
