@@ -1,3 +1,11 @@
 # Summary
 
-- [Chapter 1](./chapter_1.md)
+[Introduction](./introduction.md)
+
+- [The Editor](./the_editor.md)
+- [Git](./git.md)
+
+---
+
+[Glossary](./glossary.md)
+[Contributing](./contributing.md)
