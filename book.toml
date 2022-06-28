@@ -1,0 +1,6 @@
+[book]
+authors = ["Karl David Hedgren"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Data101"
