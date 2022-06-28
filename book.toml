@@ -5,5 +5,5 @@ multilingual = false
 src = "src"
 title = "Data101"
 
-[output.html]
-default-theme = "light"
+[preprocessor.data101]
+command = "./preprocessor/target/release/preprocessor-data101"

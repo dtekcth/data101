@@ -1,9 +1,23 @@
 # Data101
 
-## Installing
+## Roadmap
 
-To set up the development environment, you first fo all need [mdBook](https://rust-lang.github.io/mdBook/guide/installation.html) installed. You should then open the book by running `mdbook serve --open`, which will open the web page and dynamically update as you edit it.
+### Topics
 
-## Contributing
+- Git
+- Virtual machines
+- WSL
+- Get comfortable with commandline
+- Debugging
+- Editor
+  - Collaborative coding (Live-share)
+- Shaping your education
+  - Checklist
 
-To start editing pages you just have to edit the files in the ´src´ directory. The pages are written in Markdown, if you are unfamiliar with it I recommend reading [this](https://rust-lang.github.io/mdBook/format/markdown.html).
+### Features
+
+- Set your OS so that the book only shows instructions specific for your OS (e.g. switch Ctrl with Command on Mac)
+
+## Installing & Contributing
+
+Please see the book for instructions. (TODO add link)

@@ -5,6 +5,19 @@ window.onunload = function () {};
 
 /* DAT101 specific code */
 (function OperatingSystem() {
+  let os = localStorage.getItem("mdbook-os");
+  const icons = {
+    macos: "fa-apple",
+    linux: "fa-linux",
+    windows: "fa-windows",
+    all: "fa-linux fa-apple fa-windows",
+  };
+
+  const setOS = (newOS) => {
+    os = newOS;
+    localStorage.setItem("mdbook-os", os);
+  };
+
   function textNodesUnder(el) {
     var n,
       a = [],
@@ -19,23 +32,29 @@ window.onunload = function () {};
   };
 
   window.addEventListener("load", () => {
-    let os = localStorage.getItem("mdbook-os");
+    if (os === null) {
+      setOS("all");
+    }
     const osToggleButton = document.getElementById("os-toggle");
     const osList = document.getElementById("os-list");
     const osOptions = Array.from(osList.getElementsByTagName("button", osList));
-    const icons = {
-      macos: "apple",
-      linux: "linux",
-      windows: "windows",
-    };
 
     const applyOsOptions = () => {
-      document.documentElement.style.setProperty("--display-macos", "none");
-      document.documentElement.style.setProperty("--display-linux", "none");
-      document.documentElement.style.setProperty("--display-windows", "none");
-      document.documentElement.style.setProperty(`--display-${os}`, "block");
+      if (os === "all") {
+        document.documentElement.style.setProperty("--display-macos", "block");
+        document.documentElement.style.setProperty("--display-linux", "block");
+        document.documentElement.style.setProperty(
+          "--display-windows",
+          "block"
+        );
+      } else {
+        document.documentElement.style.setProperty("--display-macos", "none");
+        document.documentElement.style.setProperty("--display-linux", "none");
+        document.documentElement.style.setProperty("--display-windows", "none");
+        document.documentElement.style.setProperty(`--display-${os}`, "block");
+      }
 
-      osToggleButton.innerHTML = `<i class="fa fa-${icons[os]}"></i>`;
+      osToggleButton.innerHTML = `<i class="fa ${icons[os]}"></i>`;
 
       const textNodes = textNodesUnder(document.documentElement);
       if (os === "macos") {
@@ -48,28 +67,22 @@ window.onunload = function () {};
         });
       }
 
-      textNodes.forEach((node) => {
-        if (node.nodeValue.startsWith("{{")) {
-          const processorEnd = node.nodeValue.indexOf("}}");
-          const classes = node.nodeValue
-            .slice(2, processorEnd)
-            .trim()
-            .split(" ")
-            .map((s) => s.replace(".", "").trim());
-          console.log(classes);
-          const parent = paragraphParent(node);
-          classes.forEach((c) => parent.classList.add(c));
-          node.nodeValue = node.nodeValue.slice(processorEnd + 2);
-        }
-      });
+      // textNodes.forEach((node) => {
+      //   if (node.nodeValue.startsWith("{{")) {
+      //     const processorEnd = node.nodeValue.indexOf("}}");
+      //     const classes = node.nodeValue
+      //       .slice(2, processorEnd)
+      //       .trim()
+      //       .split(" ")
+      //       .map((s) => s.replace(".", "").trim());
+      //     console.log(classes);
+      //     const parent = paragraphParent(node);
+      //     classes.forEach((c) => parent.classList.add(c));
+      //     node.nodeValue = node.nodeValue.slice(processorEnd + 2);
+      //   }
+      // });
     };
     applyOsOptions();
-
-    const setOS = (newOS) => {
-      os = newOS;
-      localStorage.setItem("mdbook-os", os);
-      applyOsOptions();
-    };
 
     const hideHandler = (event) => {
       // If user clicks inside the element, do nothing
@@ -91,6 +104,8 @@ window.onunload = function () {};
     osOptions.forEach((el) => {
       el.addEventListener("click", () => {
         setOS(el.dataset.option);
+        applyOsOptions();
+
         osList.style.display = "none";
       });
     });
