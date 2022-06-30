@@ -70,14 +70,15 @@ function textNodesUnder(el) {
           n.parentElement.innerHTML.includes("!kbd[")
         ) {
           n.parentElement.innerHTML = n.parentElement.innerHTML
-            .replace(/ !kbd\[(.*?)\]/g, (match, first) => {
-              const shortcut = first.replace(
+            .replace(/(.)?!kbd\[(.*?)\]/g, (match, first, second) => {
+              if (first === "\\") return match;
+              const shortcut = second.replace(
                 /\!ctrl/,
                 "<span data-context-ctrl>ctrl</span>"
               );
-              return ` <code class='kbd-shortcut'>${shortcut}</code>`;
+              return `${first}<code class='kbd-shortcut'>${shortcut}</code>`;
             })
-            .replace(/ !icon\[(.*)\]/g, " <span class='fa fa-$1'></span>");
+            .replace(/( |^)!icon\[(.*)\]/g, "$1<span class='fa fa-$2'></span>");
         }
       });
 
