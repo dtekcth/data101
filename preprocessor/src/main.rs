@@ -95,7 +95,7 @@ fn find_and_replace_os_delimiters(chapter: &mut Chapter) {
     return;
 }
 
-fn replace_context_ctrl(chapter: &mut Chapter) {
+fn replace_shortcut(chapter: &mut Chapter) {
     let kbd_regex = Regex::new("!kbd\\[(.*)\\]").unwrap();
     if let Some(captures) = kbd_regex.captures(&chapter.content.clone()) {
         let ident = &captures[1];
@@ -107,13 +107,13 @@ fn replace_context_ctrl(chapter: &mut Chapter) {
             );
         chapter.content = chapter.content.replace(&captures[0], &subst);
 
-        replace_context_ctrl(chapter);
+        replace_shortcut(chapter);
     }
     return;
 }
 
 fn replace_icons(chapter: &mut Chapter) {
-    let kbd_regex = Regex::new("!icon\\[(.*)\\]").unwrap();
+    let kbd_regex = Regex::new("!icon\\[(.*?)\\]").unwrap();
     if let Some(captures) = kbd_regex.captures(&chapter.content.clone()) {
         let ident = &captures[1];
         let subst = format!("<span class='fa fa-{}'></span>", ident);
@@ -157,7 +157,7 @@ mod nop_lib {
             book.for_each_mut(|section| {
                 if let BookItem::Chapter(c) = section {
                     find_and_replace_os_delimiters(c);
-                    // replace_context_ctrl(c);
+                    // replace_shortcut(c);
                     // replace_icons(c);
 
                     //.replace("{{ start windows }}", "<span class='windows-only'>\n\n");

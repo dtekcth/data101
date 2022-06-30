@@ -70,9 +70,9 @@ window.onunload = function () {};
           n.parentElement.innerHTML.includes("!kbd[")
         ) {
           n.parentElement.innerHTML = n.parentElement.innerHTML
-            .replace(/ !kbd\[(.*)\]/g, (match, first) => {
+            .replace(/ !kbd\[(.*?)\]/g, (match, first) => {
               const shortcut = first.replace(
-                /!ctrl/,
+                /\!ctrl/,
                 "<span data-context-ctrl>ctrl</span>"
               );
               return ` <code class='kbd-shortcut'>${shortcut}</code>`;
