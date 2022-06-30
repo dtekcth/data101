@@ -181,7 +181,7 @@ const showAll = (elList) => {
   let programme = localStorage.getItem("mdbook-programme");
   if (programme === null) programme = "D";
   const colors = {
-    D: "orange",
+    Data: "orange",
     IT: "#008CBA",
     DV: "#188BDE",
   };
