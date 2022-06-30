@@ -7,10 +7,11 @@ Git is something one will have to use during the program. In project courses, th
 
 In this tutorial, we will guide you through setting up the necessary software and accounts for a modern Git experience. We will introduce you to the basic concepts of version control. Finally, we will show a basic workflow for collaboration with Git in the typical programming assignments you will encounter in the program.
 
-We do not assume that you are comfortable in the terminal, and will strongly advise using the GUI-based program GitKraken to handle your git needs. This is an excellent tool, that helps pedagogically visualize the version control concepts. Do note that most users of Git do use the terminal commands. If you are comfortable in the terminal or would prefer to learn that way right away, look no further than this tutorial: [TODO terminalbaserad git tutorial](https://www.google.se)
+We do not assume that you are comfortable in the terminal, and will strongly advise using the GUI-based program GitKraken to handle your git needs. This is an excellent tool, that helps pedagogically visualize the version control concepts. Do note that most users of Git do use the terminal commands. If you are comfortable in the terminal or would prefer to learn that way right away, look no further than this tutorial: [TODO terminal-based git tutorial](https://www.google.se)
 ## Setup
 
 ### Install Git
+{{ begin macos }}
 For macOS users, there are two ways to install Git which we recommend.
 
 1. Use the Git bundled with XCode. Chances are that if you're 
@@ -40,6 +41,8 @@ For macOS users, there are two ways to install Git which we recommend.
     ```shell
     git --version
     ```
+{{ end macos }}
+{{ begin linux }}
 
 The easiest way to install Git on your Linux machine is using your distro's package manager. On Ubuntu and Debian-based distros you will want to run the following in a terminal:
 ```bash
@@ -53,9 +56,10 @@ Then verify your install by running:
 ```bash
 git --version
 ```
-
+{{ end linux }}
+{{ begin windows }}
 On Windows, you want to install Git by downloading the installer from [here](https://gitforwindows.org/) and following the instructions. Alternatively, if you are running WSL (Windows Subsystem for Linux), you will probably want to run Git inside Linux, in which case you can follow the Linux instructions. You can read our tutorial on WSL [here](todo-link)
-
+{{ end windows }}
 ### Create an account on GitHub
 When using Git you will want a place to store your *repositories* (projects), the most popular site for this is called [GitHub](https://github.com), but other alternatives include [GitLab](https://about.gitlab.com/) and [BitBucket](https://bitbucket.org/product/). We recommend using GitHub, at least for now, you can always explore other options later.
 
