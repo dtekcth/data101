@@ -192,9 +192,7 @@ const showAll = (elList) => {
   };
 
   window.addEventListener("load", () => {
-    if (os === null) {
-      setProgramme("all");
-    }
+    const allProgrammes = ["Data", "DV", "IT"];
     const programmeToggleButton = document.getElementById("programme-toggle");
     const programmeList = document.getElementById("programme-list");
     const programmeOptions = Array.from(
@@ -202,6 +200,13 @@ const showAll = (elList) => {
     );
 
     const applyProgrammeOptions = () => {
+      if (programme === "all") {
+        showAll(allProgrammes);
+      } else {
+        hideAll(allProgrammes.filter((s) => s !== programme));
+        showAll([programme]);
+      }
+
       if (programme === "all") {
         document.documentElement.style.setProperty("--display-D", "block");
         document.documentElement.style.setProperty("--display-IT", "block");
