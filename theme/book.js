@@ -128,6 +128,7 @@ function textNodesUnder(el) {
 
 (function Programme() {
   let programme = localStorage.getItem("mdbook-programme");
+  if (programme === null) programme = "D";
   const colors = {
     D: "orange",
     IT: "#008CBA",
