@@ -220,30 +220,6 @@ blockquote {
 
 /* BEGIN DAT101 */
 
-.macos-only {
-  display: var(--display-macos);
-}
-
-.linux-only {
-  display: var(--display-linux);
-}
-
-.windows-only {
-  display: var(--display-windows);
-}
-
-.D-only {
-  display: var(--display-D);
-}
-
-.IT-only {
-  display: var(--display-IT);
-}
-
-.DV-only {
-  display: var(--display-DV);
-}
-
 /* Keybord shortcuts */
 
 .kbd-shortcut {
