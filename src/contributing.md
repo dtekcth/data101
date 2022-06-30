@@ -22,7 +22,7 @@ To better support the flow of the book some modifications have been made. All mo
 
 ### Operating system matching
 
-In order to remove unneccessary information for some readers you can use the {{start <os>}} and {{end <os>}} tags, where <os> is one of `windows`, `linux` or `macos`. This will hide the section from those using other operating systems. This is useful when describing installation processes.
+In order to remove unneccessary information for some readers you can use the {{begin <os>}} and {{end <os>}} tags, where `<os>` is one of `windows`, `linux` or `macos`. This will hide the section from those using other operating systems. This is useful when describing installation processes.
 
 Linux and Windows use `Ctrl` for shortcuts while macOS replaces `Ctrl` with `Command`, (shown as `⌘` on the keyboard). It is possible to dynamically update shortcuts by using the `!ctrl` command, which will show `⌘` on macOS and `ctrl` on all other platforms. This functionality can be found in `theme/book.js`.
 

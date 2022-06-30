@@ -69,7 +69,7 @@ fn handle_supports(pre: &dyn Preprocessor, sub_args: &ArgMatches) -> ! {
 fn find_and_replace_os_delimiters(chapter: &mut Chapter) {
     // This is bad practise, move into lazy_static
     let start_regex =
-        regex::Regex::new("\\{\\{\\s*start\\s+(windows|linux|macos)\\s*\\}\\}").unwrap();
+        regex::Regex::new("\\{\\{\\s*begin\\s+(windows|linux|macos)\\s*\\}\\}").unwrap();
     let end_regex = regex::Regex::new("\\{\\{\\s*end\\s+(windows|linux|macos)\\s*\\}\\}").unwrap();
     if let Some(captures) = start_regex.captures(&chapter.content.clone()) {
         let ident = &captures[1];
