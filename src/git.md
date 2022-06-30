@@ -58,6 +58,7 @@ git --version
 ```
 {{ end linux }}
 {{ begin windows }}
+
 On Windows, you want to install Git by downloading the installer from [here](https://gitforwindows.org/) and following the instructions. Alternatively, if you are running WSL (Windows Subsystem for Linux), you will probably want to run Git inside Linux, in which case you can follow the Linux instructions. You can read our tutorial on WSL [here](todo-link)
 {{ end windows }}
 ### Create an account on GitHub
@@ -72,11 +73,42 @@ GitKraken can be installed from their website here: [GitKraken](https://www.gitk
 
 When asked to sign in, use your newly created GitHub Student account to automatically receive the pro features for free.
 
-Generate SSH-Key, add to GitHub account
+<!-- Generate SSH-Key, and add to GitHub account.
 
 Install GitLens for VSCode
-
+-->
 ## The Basics
+
+Now that you're all set up we can get started!
+When using Git you store your code in *repositories*, directories with a special, hidden directory inside called `.git`. In `.git`, git stores the information needed to keep track of the changes you make in the rest of the directory.
+
+Open up gitKraken and initialize a new repository somewhere! In gitKraken you can use !kbd[!ctrl+T] to switch to a new tab, and !kbd[!ctrl+I] to start initializing a repo. For now, you can ignore `.gitignore` and `license`, just give your repo a name and location. Now you should find a screen with a whole mess of things in it, in the middle, you'll find the tracked changes in your repo. For now, there should only be one called *Initial commit*. 
+
+![An image of the initial commit](Assets/InitialCommit.png)
+
+Use the shortcut !kbd[!ctrl+Shift+E] and you should be able to open the repository in an editor (You may have to set up which editor to use first, in which case GitKraken will guide you). In the editor, you should see one file `README.md` which is a file commonly used to describe the contents of the repo.
+
+Onto your first change! In Git your changes are grouped into a *commit*. While you're working on a program.
+
+
+
+
+
+Anatomy of a git repository:
+```
+.
+├── ARepository                ← Your repository
+│   ├── .git                   ← Keeps track of changes
+│   ├── ASourceFile.hs         ← A tracked file
+│   ├── SomeOtherSourceFile.hs ← Another tracked file
+│   ├── README.md              ← Description of your project
+│   └── .gitignore             ← A list of files for git to ignore
+└── FileOutSideRepository.rs   ← All files outside repository are untracked.
+```
+
+!kbd[!ctrl+I]
+
+testing testing !kbd[!ctrl+B]
 
 Creating a repository,
 
