@@ -66,10 +66,13 @@ fn handle_supports(pre: &dyn Preprocessor, sub_args: &ArgMatches) -> ! {
     }
 }
 
-fn find_and_replace_os_delimiters(chapter: &mut Chapter) {
+fn find_and_replace_case(chapter: &mut Chapter) {
     // This is bad practise, move into lazy_static
-    let start_regex = Regex::new("\\{\\{\\s*begin\\s+(windows|linux|macos)\\s*\\}\\}").unwrap();
-    let end_regex = Regex::new("\\{\\{\\s*end\\s+(windows|linux|macos)\\s*\\}\\}").unwrap();
+    let start_regex =
+        Regex::new("\\{\\{\\s*begin\\s+(windows|linux|macos|D|IT|DV|Chalmers|GU)\\s*\\}\\}")
+            .unwrap();
+    let end_regex =
+        Regex::new("\\{\\{\\s*end\\s+(windows|linux|macos|D|IT|DV|Chalmers|GU)\\s*\\}\\}").unwrap();
     if let Some(captures) = start_regex.captures(&chapter.content.clone()) {
         let ident = &captures[1];
         if ident.chars().all(|c| c.is_alphanumeric()) {
@@ -81,7 +84,7 @@ fn find_and_replace_os_delimiters(chapter: &mut Chapter) {
                     .content
                     .replace(end_match.as_str(), "\n\n</span>\n\n");
             } else {
-                let err = "Preprocessor-Data101: Error parsing OS segment:";
+                let err = "Preprocessor-Data101: Error parsing case segment:";
                 let err2 = format!(
                     "{}\n  Expected closing tag {{{{ end {} }}}} in chapter '{}'",
                     err, ident, chapter.name
@@ -89,7 +92,7 @@ fn find_and_replace_os_delimiters(chapter: &mut Chapter) {
                 panic!("{}", err2);
             }
 
-            find_and_replace_os_delimiters(chapter);
+            find_and_replace_case(chapter);
         }
     }
     return;
@@ -156,7 +159,7 @@ mod nop_lib {
 
             book.for_each_mut(|section| {
                 if let BookItem::Chapter(c) = section {
-                    find_and_replace_os_delimiters(c);
+                    find_and_replace_case(c);
                     // replace_shortcut(c);
                     // replace_icons(c);
 
