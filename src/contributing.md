@@ -24,9 +24,9 @@ To better support the flow of the book some modifications have been made. All mo
 
 In order to remove unneccessary information for some readers you can use the `{{begin <os>}}` and `{{end <os>}}` tags, where `<os>` is one of `windows`, `linux` or `macos`. This will hide the section from those using other operating systems. This is useful when describing installation processes.
 
-To write keyboard shortcuts, use the !kbd command. For example like this `!kbd[!ctrl+B]`. `!ctrl` is a special command that can be used within !kbd, and it gets replaced with `Ctrl` or `⌘` depending on the operating system the user chooses.
+To write keyboard shortcuts, use the !kbd command. For example like this `\!kbd[!ctrl+B]`. `!ctrl` is a special command that can be used within !kbd, and it gets replaced with `Ctrl` or `⌘` depending on the operating system the user chooses.
 
-You can include icons as well, use `!icon[icon]` to display a windows icon. Any icon from [Font Awesome](https://fontawesome.com/search?s=solid%2Cbrands) can be used.
+You can include icons as well, use `\!icon[icon]` to display a windows icon. Any icon from [Font Awesome](https://fontawesome.com/search?s=solid%2Cbrands) can be used.
 
 ## Things to keep in mind
 

@@ -71,14 +71,17 @@ function textNodesUnder(el) {
         ) {
           n.parentElement.innerHTML = n.parentElement.innerHTML
             .replace(/(.)?!kbd\[(.*?)\]/g, (match, first, second) => {
-              if (first === "\\") return match;
+              if (first === "\\") return match.slice(1);
               const shortcut = second.replace(
                 /\!ctrl/,
                 "<span data-context-ctrl>ctrl</span>"
               );
               return `${first}<code class='kbd-shortcut'>${shortcut}</code>`;
             })
-            .replace(/( |^)!icon\[(.*)\]/g, "$1<span class='fa fa-$2'></span>");
+            .replace(/(.)?!icon\[(.*)\]/g, (match, prefix, icon) => {
+              if (prefix === "\\") return match.slice(1);
+              return `<span class='fa fa-${icon}'></span>`;
+            });
         }
       });
 
@@ -92,21 +95,6 @@ function textNodesUnder(el) {
           t.innerText = "Ctrl";
         });
       }
-
-      // textNodes.forEach((node) => {
-      //   if (node.nodeValue.startsWith("{{")) {
-      //     const processorEnd = node.nodeValue.indexOf("}}");
-      //     const classes = node.nodeValue
-      //       .slice(2, processorEnd)
-      //       .trim()
-      //       .split(" ")
-      //       .map((s) => s.replace(".", "").trim());
-      //     console.log(classes);
-      //     const parent = paragraphParent(node);
-      //     classes.forEach((c) => parent.classList.add(c));
-      //     node.nodeValue = node.nodeValue.slice(processorEnd + 2);
-      //   }
-      // });
     };
     applyOsOptions();
 

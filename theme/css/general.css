@@ -232,6 +232,18 @@ blockquote {
   display: var(--display-windows);
 }
 
+.D-only {
+  display: var(--display-D);
+}
+
+.IT-only {
+  display: var(--display-IT);
+}
+
+.DV-only {
+  display: var(--display-DV);
+}
+
 /* Keybord shortcuts */
 
 .kbd-shortcut {
