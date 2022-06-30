@@ -242,4 +242,8 @@ blockquote {
   border-radius: 3px;
 }
 
+.icon-button {
+  font-weight: bold;
+}
+
 /* END DAT101 */

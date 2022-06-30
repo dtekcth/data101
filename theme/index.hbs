@@ -142,6 +142,15 @@
                             <li role="none"><button role="menuitem" class="theme" data-option="macos">MacOS</button></li>
                             <li role="none"><button role="menuitem" class="theme" data-option="all">Show all</button></li>
                         </ul>
+                        <button id="programme-toggle" class="icon-button" type="button" title="Change Programme" aria-label="Change Programme" aria-haspopup="true" aria-expanded="false" aria-controls="programme-list">
+                            <span>All</span>
+                        </button>
+                        <ul id="programme-list" class="theme-popup" aria-label="Programme" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" data-option="D">D</button></li>
+                            <li role="none"><button role="menuitem" class="theme" data-option="IT">IT</button></li>
+                            <li role="none"><button role="menuitem" class="theme" data-option="DV">DV</button></li>
+                            <li role="none"><button role="menuitem" class="theme" data-option="all">Show all</button></li>
+                        </ul>
                         {{#if search_enabled}}
                         <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                             <i class="fa fa-search"></i>

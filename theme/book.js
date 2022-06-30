@@ -3,6 +3,14 @@
 // Fix back button cache problem
 window.onunload = function () {};
 
+function textNodesUnder(el) {
+  var n,
+    a = [],
+    walk = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null, false);
+  while ((n = walk.nextNode())) a.push(n);
+  return a;
+}
+
 /* DAT101 specific code */
 (function OperatingSystem() {
   let os = localStorage.getItem("mdbook-os");
@@ -17,14 +25,6 @@ window.onunload = function () {};
     os = newOS;
     localStorage.setItem("mdbook-os", os);
   };
-
-  function textNodesUnder(el) {
-    var n,
-      a = [],
-      walk = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null, false);
-    while ((n = walk.nextNode())) a.push(n);
-    return a;
-  }
 
   const isCodeBlock = (el) => {
     if (el.tagName === "CODE") return true;
@@ -120,7 +120,7 @@ window.onunload = function () {};
 
     osToggleButton.addEventListener("click", () => {
       osList.style.display = "block";
-      osList.style.left = "100px";
+      osList.style.left = `${osToggleButton.offsetLeft}px`;
       setTimeout(() => {
         document.addEventListener("click", hideHandler);
       }, 300);
@@ -132,6 +132,77 @@ window.onunload = function () {};
         applyOsOptions();
 
         osList.style.display = "none";
+      });
+    });
+  });
+})();
+
+(function Programme() {
+  let programme = localStorage.getItem("mdbook-programme");
+  const colors = {
+    D: "orange",
+    IT: "#008CBA",
+    DV: "#188BDE",
+  };
+
+  const setProgramme = (newProgramme) => {
+    programme = newProgramme;
+    localStorage.setItem("mdbook-programme", programme);
+  };
+
+  window.addEventListener("load", () => {
+    if (os === null) {
+      setProgramme("all");
+    }
+    const programmeToggleButton = document.getElementById("programme-toggle");
+    const programmeList = document.getElementById("programme-list");
+    const programmeOptions = Array.from(
+      programmeList.getElementsByTagName("button", programmeList)
+    );
+
+    const applyProgrammeOptions = () => {
+      if (programme === "all") {
+        document.documentElement.style.setProperty("--display-D", "block");
+        document.documentElement.style.setProperty("--display-IT", "block");
+        document.documentElement.style.setProperty("--display-DV", "block");
+      } else {
+        document.documentElement.style.setProperty("--display-D", "none");
+        document.documentElement.style.setProperty("--display-IT", "none");
+        document.documentElement.style.setProperty("--display-DV", "none");
+        document.documentElement.style.setProperty(
+          `--display-${programme}`,
+          "block"
+        );
+      }
+
+      const programmeText = programme === "all" ? "All programmes" : programme;
+      programmeToggleButton.innerHTML = `<span style='color: ${colors[programme]}'>${programmeText}</span>`;
+    };
+    applyProgrammeOptions();
+
+    const hideHandler = (event) => {
+      // If user clicks inside the element, do nothing
+      if (event.target.closest("#programme-list")) return;
+      if (event.target.closest("#programme-toggle")) return;
+      // If user clicks outside the element, hide it!
+      programmeList.style.display = "none";
+      document.removeEventListener("click", hideHandler);
+    };
+
+    programmeToggleButton.addEventListener("click", () => {
+      programmeList.style.display = "block";
+      programmeList.style.left = `${programmeToggleButton.offsetLeft}px`;
+      setTimeout(() => {
+        document.addEventListener("click", hideHandler);
+      }, 300);
+    });
+
+    programmeOptions.forEach((el) => {
+      el.addEventListener("click", () => {
+        setProgramme(el.dataset.option);
+        applyProgrammeOptions();
+
+        programmeList.style.display = "none";
       });
     });
   });
