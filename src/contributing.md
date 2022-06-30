@@ -28,8 +28,6 @@ To write keyboard shortcuts, use the !kbd command. For example like this `!kbd[!
 
 You can include icons as well, use `!icon[icon]` to display a windows icon. Any icon from [Font Awesome](https://fontawesome.com/search?s=solid%2Cbrands) can be used.
 
-The command functionality can be found in `theme/book.js` while the begin and end tags are implemented in the `preprocessor/src/main.rs`.
-
 ## Things to keep in mind
 
 - If you are adding new pages or writing about new technologies, remember to also add an entry in the glossary and hyperlink to it. Examples of this can bee seen on the introduction page. You should only hyperlink the first instance of the word.
