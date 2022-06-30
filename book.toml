@@ -5,5 +5,5 @@ multilingual = false
 src = "src"
 title = "Data101"
 
-[preprocessor.data101]
-command = "./preprocessor/target/release/preprocessor-data101"
+# [preprocessor.data101]
+# command = "./preprocessor/target/release/preprocessor-data101"

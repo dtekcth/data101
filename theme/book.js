@@ -11,7 +11,64 @@ function textNodesUnder(el) {
   return a;
 }
 
+const hideAll = (elList) => {
+  elList.forEach((other) => {
+    Array.from(document.getElementsByClassName(other)).forEach((el) => {
+      el.style.display = "none";
+    });
+  });
+};
+
+const showAll = (elList) => {
+  elList.forEach((other) => {
+    Array.from(document.getElementsByClassName(other)).forEach((el) => {
+      el.style.display = null;
+    });
+  });
+};
+
 /* DAT101 specific code */
+//
+
+(function ClassPreproccessor() {
+  const matchBlockMacro = (node) => {
+    if (node.parentElement === null) return;
+    const matches = node.nodeValue.match(/^{{\s?((\.[A-Za-z\-0-9]+)+)\s*?}}/);
+    if (matches) {
+      // Add classes to parent
+      matches[1]
+        .split(".")
+        .filter((s) => s !== "")
+        .map((s) => s.trim())
+        .forEach((c) => node.parentElement.classList.add(c.trim()));
+
+      node.nodeValue = node.nodeValue.replace(matches[0], "");
+    }
+  };
+
+  const matchCodeMacro = (node) => {
+    if (node.nextSibling === null || node.parentElement === null) return;
+    const matches = node.nodeValue.match(/{{\s?((\.[A-Za-z\-0-9]+)+)\s*?}}$/);
+    console.log(matches);
+    if (matches) {
+      console.log(matches);
+      // Add classes to parent
+      matches[1]
+        .split(".")
+        .filter((s) => s !== "")
+        .map((s) => s.trim())
+        .forEach((c) => node.nextSibling.classList.add(c.trim()));
+      node.nodeValue = node.nodeValue.replace(matches[0], "");
+    }
+  };
+
+  const textNodes = textNodesUnder(document.documentElement);
+  textNodes.forEach((node) => {
+    matchBlockMacro(node);
+    matchCodeMacro(node);
+  });
+})();
+
 (function OperatingSystem() {
   let os = localStorage.getItem("mdbook-os");
   const icons = {
@@ -36,23 +93,17 @@ function textNodesUnder(el) {
     if (os === null) {
       setOS("all");
     }
+    const allOS = ["macos", "linux", "windows"];
     const osToggleButton = document.getElementById("os-toggle");
     const osList = document.getElementById("os-list");
     const osOptions = Array.from(osList.getElementsByTagName("button", osList));
 
     const applyOsOptions = () => {
       if (os === "all") {
-        document.documentElement.style.setProperty("--display-macos", "block");
-        document.documentElement.style.setProperty("--display-linux", "block");
-        document.documentElement.style.setProperty(
-          "--display-windows",
-          "block"
-        );
+        showAll(allOS);
       } else {
-        document.documentElement.style.setProperty("--display-macos", "none");
-        document.documentElement.style.setProperty("--display-linux", "none");
-        document.documentElement.style.setProperty("--display-windows", "none");
-        document.documentElement.style.setProperty(`--display-${os}`, "block");
+        hideAll(allOS.filter((s) => s !== os));
+        showAll([os]);
       }
 
       osToggleButton.innerHTML = icons[os]
