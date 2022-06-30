@@ -232,4 +232,14 @@ blockquote {
   display: var(--display-windows);
 }
 
+/* Keybord shortcuts */
+
+.kbd-shortcut {
+  background: #f6f7f6;
+  color: #000;
+  display: inline;
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+}
+
 /* END DAT101 */

@@ -22,9 +22,13 @@ To better support the flow of the book some modifications have been made. All mo
 
 ### Operating system matching
 
-In order to remove unneccessary information for some readers you can use the {{begin <os>}} and {{end <os>}} tags, where `<os>` is one of `windows`, `linux` or `macos`. This will hide the section from those using other operating systems. This is useful when describing installation processes.
+In order to remove unneccessary information for some readers you can use the `{{begin <os>}}` and `{{end <os>}}` tags, where `<os>` is one of `windows`, `linux` or `macos`. This will hide the section from those using other operating systems. This is useful when describing installation processes.
 
-Linux and Windows use `Ctrl` for shortcuts while macOS replaces `Ctrl` with `Command`, (shown as `⌘` on the keyboard). It is possible to dynamically update shortcuts by using the `!ctrl` command, which will show `⌘` on macOS and `ctrl` on all other platforms. This functionality can be found in `theme/book.js`.
+To write keyboard shortcuts, use the !kbd command. For example like this `!kbd[!ctrl+B]`. `!ctrl` is a special command that can be used within !kbd, and it gets replaced with `Ctrl` or `⌘` depending on the operating system the user chooses.
+
+You can include icons as well, use `!icon[icon]` to display a windows icon. Any icon from [Font Awesome](https://fontawesome.com/search?s=solid%2Cbrands) can be used.
+
+The command functionality can be found in `theme/book.js` while the begin and end tags are implemented in the `preprocessor/src/main.rs`.
 
 ## Things to keep in mind
 

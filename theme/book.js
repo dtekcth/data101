@@ -26,9 +26,10 @@ window.onunload = function () {};
     return a;
   }
 
-  const paragraphParent = (el) => {
-    if (el.tagname === "P") return el;
-    return el.parentElement;
+  const isCodeBlock = (el) => {
+    if (el.tagName === "CODE") return true;
+    else if (el.parentElement === null) return false;
+    else return isCodeBlock(el.parentElement);
   };
 
   window.addEventListener("load", () => {
@@ -54,16 +55,40 @@ window.onunload = function () {};
         document.documentElement.style.setProperty(`--display-${os}`, "block");
       }
 
-      osToggleButton.innerHTML = `<i class="fa ${icons[os]}"></i>`;
+      osToggleButton.innerHTML = icons[os]
+        .split(" ")
+        .map((icon) => `<i class="fa ${icon}"></i>`)
+        .join("");
 
-      const textNodes = textNodesUnder(document.documentElement);
+      const textNodes = textNodesUnder(
+        document.getElementById("content")
+      ).reverse();
+      textNodes.forEach((n) => {
+        if (
+          n.parentElement &&
+          n.parentElement.innerHTML &&
+          n.parentElement.innerHTML.includes("!kbd[")
+        ) {
+          n.parentElement.innerHTML = n.parentElement.innerHTML
+            .replace(/ !kbd\[(.*)\]/g, (match, first) => {
+              const shortcut = first.replace(
+                /!ctrl/,
+                "<span data-context-ctrl>ctrl</span>"
+              );
+              return ` <code class='kbd-shortcut'>${shortcut}</code>`;
+            })
+            .replace(/ !icon\[(.*)\]/g, " <span class='fa fa-$1'></span>");
+        }
+      });
+
+      const ctrlNodes = document.querySelectorAll("[data-context-ctrl]");
       if (os === "macos") {
-        textNodes.forEach((t) => {
-          t.textContent = t.textContent.replace(/!ctrl/g, "⌘");
+        ctrlNodes.forEach((t) => {
+          t.innerText = "⌘";
         });
       } else {
-        textNodes.forEach((t) => {
-          t.textContent = t.textContent.replace(/!ctrl/g, "Ctrl");
+        ctrlNodes.forEach((t) => {
+          t.innerText = "Ctrl";
         });
       }
 
