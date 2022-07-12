@@ -14,7 +14,8 @@ We do not assume that you are comfortable in the terminal, and will strongly adv
 
 ### Install Git
 
-{{.macos_only }}
+{{begin .macos}}
+
 For macOS users, there are two ways to install Git which we recommend.
 
 1. Use the Git bundled with XCode. Chances are that if you're
@@ -52,7 +53,9 @@ For macOS users, there are two ways to install Git which we recommend.
    git --version
    ```
 
-{{ .linux_only }}
+{{end}}
+
+{{ begin .linux }}
 
 The easiest way to install Git on your Linux machine is using your distro's package manager. On Ubuntu and Debian-based distros you will want to run the following in a terminal:
 
@@ -72,8 +75,9 @@ Then verify your install by running:
 git --version
 ```
 
-{{ .windows_only }}
+{{end}}
 
+{{ .windows }}
 On Windows, you want to install Git by downloading the installer from [here](https://gitforwindows.org/) and following the instructions. Alternatively, if you are running WSL (Windows Subsystem for Linux), you will probably want to run Git inside Linux, in which case you can follow the Linux instructions. You can read our tutorial on WSL [here](todo-link)
 
 ### Create an account on GitHub
