@@ -67,8 +67,8 @@ In the instance where you don't just want to find but also replace text, the com
 #### Other common tasks
 
 - !kbd[!ctrl+c] copies selected text
-- !kbd[ctrl+x] cuts the selected text, both removing the text and copying it
-- !kbd[Ctrl+v] pastes the text that you have copied
+- !kbd[!ctrl+x] cuts the selected text, both removing the text and copying it
+- !kbd[!ctrl+v] pastes the text that you have copied
 
 ### The command palette
 
