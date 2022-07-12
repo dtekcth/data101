@@ -4,9 +4,20 @@
 
 - [Getting started](./getting_started.md)
 
-- [Topics]()
-  - [The Editor](./editor/index.md)
-  - [Git](./git.md)
+# Beginner
+
+- [The Editor](./beginner/editor.md)
+- [Git](./git.md)
+- [CLI](./beginner/cli.md)
+- [Pro-tips](./beginner/protips.md)
+
+# Advanced
+
+- [Editor](./advanced/editor.md)
+
+# Courses
+
+- [TDA555](./courses/TDA555.md)
 
 ---
 
