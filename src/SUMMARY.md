@@ -1,9 +1,12 @@
 # Summary
 
-[Introduction](./introduction.md)
+## [Introduction](./introduction.md)
 
-- [The Editor](./the_editor.md)
-- [Git](./git.md)
+- [Getting started](./getting_started.md)
+
+- [Topics]()
+  - [The Editor](./editor/index.md)
+  - [Git](./git.md)
 
 ---
 
