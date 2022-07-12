@@ -1,4 +1,6 @@
 /* Base styles and content styles */
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Flow+Rounded&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,300;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Flow+Rounded&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 @import "variables.css";
 
@@ -8,7 +10,7 @@
 }
 
 html {
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--font, "Open Sans"), sans-serif;
   color: var(--fg);
   background-color: var(--bg);
   text-size-adjust: none;
@@ -25,6 +27,15 @@ code {
   font-family: "Source Code Pro", Consolas, "Ubuntu Mono", Menlo,
     "DejaVu Sans Mono", monospace, monospace !important;
   font-size: 0.875em; /* please adjust the ace font size accordingly in editor.js */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading, "Open Sans");
 }
 
 /* Don't change font size in headers. */
@@ -220,6 +231,10 @@ blockquote {
 
 /* BEGIN DAT101 */
 
+.font-bold {
+  font-weight: bold;
+}
+
 /* Keybord shortcuts */
 
 .kbd-shortcut {
@@ -232,6 +247,33 @@ blockquote {
 
 .icon-button {
   font-weight: bold;
+}
+
+/* Tasks and Exercises */
+.task {
+  background-color: var(--quote-bg);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.task p {
+  margin: 0;
+}
+
+.task-heading {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+
+.solution .placeholder {
+  color: var(--icons);
+  user-select: none;
+  cursor: pointer;
+}
+
+.task-solution {
+  filter: blur(2px);
 }
 
 /* END DAT101 */

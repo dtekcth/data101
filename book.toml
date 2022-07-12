@@ -5,5 +5,7 @@ multilingual = false
 src = "src"
 title = "Data101"
 
+[output.html]
+default-theme = "tentaportalen"
 # [preprocessor.data101]
 # command = "./preprocessor/target/release/preprocessor-data101"
