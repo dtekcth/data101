@@ -7,7 +7,7 @@
 # Beginner
 
 - [The Editor](./beginner/editor.md)
-- [Git](./git.md)
+- [Git](./beginner/git.md)
 - [CLI](./beginner/cli.md)
 - [Pro-tips](./beginner/protips.md)
 
