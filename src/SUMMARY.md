@@ -6,7 +6,7 @@
 
 - [Topics]()
   - [The Editor](./editor/index.md)
-  - [Git](./git.md)
+  - [Git](./git/index.md)
 
 ---
 
