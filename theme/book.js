@@ -31,10 +31,85 @@ const showAll = (elList) => {
 //
 
 (function ClassPreproccessor() {
+  const getSolutionParent = (node) => {
+    if (node.classList && node.classList.contains("solution")) return node;
+    if (node.parentNode) return getSolutionParent(node.parentNode);
+    return undefined;
+  };
+
+  const createTask = (el) => {
+    const heading = document.createElement("div");
+    heading.classList.add("task-heading");
+    heading.innerText = "Task";
+
+    const container = document.createElement("div");
+    container.classList.add("task");
+    container.appendChild(heading);
+    el.replaceWith(container);
+    container.appendChild(el);
+  };
+
+  const createSolution = (el) => {
+    const heading = document.createElement("div");
+    heading.classList.add("task-heading");
+    heading.innerText = "Solution";
+
+    const placeholder = document.createElement("div");
+    placeholder.classList.add("placeholder");
+    placeholder.innerText = "Click to see answer";
+
+    const container = document.createElement("div");
+    container.classList.add("task");
+    container.classList.add("solution");
+    container.appendChild(heading);
+    container.appendChild(placeholder);
+
+    el.replaceWith(container);
+    el.classList.add("hidden");
+    el.classList.add("spoiler");
+    container.appendChild(el);
+  };
+
+  const setBackground = (el, style) => {
+    el.parentElement.classList.add(`bg-${style}`);
+  };
+
+  // Can't listen on the spoiler directly as
+  // there is something capturing the event on the page
+  document.addEventListener("click", (ev) => {
+    console.log(ev);
+    const solutionEl = getSolutionParent(ev.target);
+    if (solutionEl) {
+      solutionEl.querySelector(".spoiler").classList.remove("hidden");
+      solutionEl.querySelector(".placeholder").classList.add("hidden");
+    }
+  });
+
+  const matchExerciseMacro = (node) => {
+    if (node.parentElement === null) return;
+    const matches = node.nodeValue.match(/^\[\s?([A-Za-z0-9]+)\s*?\]/);
+    if (matches && matches[1]) {
+      node.nodeValue = node.nodeValue.replace(matches[0], "");
+      if (node.parentElement.nodeName === "P") node = node.parentElement;
+
+      const cmd = matches[1];
+      switch (cmd) {
+        case "Task":
+          return createTask(node);
+        case "Solution":
+          return createSolution(node);
+        case "Danger":
+          return node.parentElement.classList.add("danger");
+        case "Warning":
+          return node.parentElement.classList.add("warning");
+      }
+    }
+  };
+
   const matchBlockMacro = (node) => {
     if (node.parentElement === null) return;
     const matches = node.nodeValue.match(/^{{\s?((\.[A-Za-z\-0-9]+)+)\s*?}}/);
-    if (matches) {
+    if (matches && matches[1]) {
       // Add classes to parent
       matches[1]
         .split(".")
@@ -49,8 +124,7 @@ const showAll = (elList) => {
   const matchCodeMacro = (node) => {
     if (node.nextSibling === null || node.parentElement === null) return;
     const matches = node.nodeValue.match(/{{\s?((\.[A-Za-z\-0-9]+)+)\s*?}}$/);
-    console.log(matches);
-    if (matches) {
+    if (matches && matches[1]) {
       console.log(matches);
       // Add classes to parent
       matches[1]
@@ -62,10 +136,43 @@ const showAll = (elList) => {
     }
   };
 
+  const BeginLongBlockRegex = /^{{\s?begin\s+((\.[A-Za-z\-0-9]+)+)\s*?}}/;
+  const EndLongBlockRegex = /^{{\s?end\s*?}}/;
+
+  const applyClasses = (el, classes) => {
+    console.log(el);
+    if (el.innerText) {
+      const matches = el.innerText.match(EndLongBlockRegex);
+      if (matches !== null) {
+        el.remove();
+        return;
+      } else {
+        classes.forEach((c) => el.classList.add(c.trim()));
+      }
+    }
+    if (el.nextSibling) applyClasses(el.nextSibling, classes);
+  };
+  const matchLongBlockMacro = (node) => {
+    if (node.parentElement === null) return;
+    const matches = node.nodeValue.match(BeginLongBlockRegex);
+    if (matches && matches[1]) {
+      const classes = matches[1]
+        .split(".")
+        .filter((s) => s !== "")
+        .map((s) => s.trim());
+
+      node.nodeValue = node.nodeValue.replace(matches[0], "");
+      applyClasses(node.parentElement, classes);
+      document.getElementById("hello");
+    }
+  };
+
   const textNodes = textNodesUnder(document.documentElement);
   textNodes.forEach((node) => {
+    matchLongBlockMacro(node);
     matchBlockMacro(node);
-    matchCodeMacro(node);
+    matchExerciseMacro(node);
+    // matchCodeMacro(node);
   });
 })();
 
@@ -123,10 +230,10 @@ const showAll = (elList) => {
           n.parentElement.innerHTML = n.parentElement.innerHTML
             .replace(/(.)?!kbd\[(.*?)\]/g, (match, first, second) => {
               if (first === "\\") return match.slice(1);
-              const shortcut = second.replace(
-                /\!ctrl/,
-                "<span data-context-ctrl>ctrl</span>"
-              );
+              const shortcut = second
+                .replace(/\!ctrl/, "<span data-context-ctrl>ctrl</span>")
+                .replace(/\!cmd/, "⌘")
+                .replace(/\!win/, "<span class='fa fa-windows'></span>");
               return `${first}<code class='kbd-shortcut'>${shortcut}</code>`;
             })
             .replace(/(.)?!icon\[(.*)\]/g, (match, prefix, icon) => {

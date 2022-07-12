@@ -66,11 +66,11 @@ h6 code {
 
 h2,
 h3 {
-  margin-top: 2.5em;
+  margin-top: 3rem;
 }
 h4,
 h5 {
-  margin-top: 2em;
+  margin-top: 2rem;
 }
 
 .header + .header h3,
@@ -253,6 +253,7 @@ blockquote {
 .task {
   background-color: var(--quote-bg);
   padding: 1rem;
+  border-radius: 2px;
   margin-bottom: 1rem;
 }
 
@@ -274,6 +275,16 @@ blockquote {
 
 .task-solution {
   filter: blur(2px);
+}
+
+.danger {
+  background-color: var(--danger);
+  color: white;
+}
+
+.warning {
+  background-color: var(--warning);
+  color: white;
 }
 
 /* END DAT101 */

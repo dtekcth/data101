@@ -11,7 +11,9 @@
 
 .tentaportalen {
   --primary: hsl(160deg, 22%, 46%);
-  --accent: hsla(357, 46%, 52%, 1);
+  --accent: hsl(357, 46%, 52%);
+  --warning: #f77f00;
+  --danger: hsl(357 46% 52%);
 
   --font: "Nunito";
   --font-heading: "Montserrat";
@@ -21,10 +23,12 @@
   --base-300: hsl(30, 6%, 86%);
 
   --text-hsl: 210deg 6% 15%;
-  --text: hsl(210deg 6% 15%);
+  --text: hsl(var(--text-hsl));
 
   --bg: var(--base-100);
   --fg: var(--text);
+
+  --code-bg: var(--base-200);
 
   --sidebar-bg: var(--base-200);
   --sidebar-fg: var(--text);
@@ -64,6 +68,8 @@
 
 .light {
   --font: "Open Sans";
+  --warning: hsl(32deg, 98%, 61%);
+  --danger: hsl(357 46% 52%);
 
   --bg: hsl(0, 0%, 100%);
   --fg: hsl(0, 0%, 0%);
@@ -106,6 +112,8 @@
 
 .navy {
   --font: "Open Sans";
+  --warning: hsl(32deg, 98%, 61%);
+  --danger: hsl(357 46% 52%);
 
   --bg: hsl(226, 23%, 11%);
   --fg: #bcbdd0;
