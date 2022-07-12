@@ -11,7 +11,7 @@ We do not assume that you are comfortable in the terminal, and will strongly adv
 ## Setup
 
 ### Install Git
-{{ begin macos }}
+{{.macos_only }}
 For macOS users, there are two ways to install Git which we recommend.
 
 1. Use the Git bundled with XCode. Chances are that if you're 
@@ -41,8 +41,8 @@ For macOS users, there are two ways to install Git which we recommend.
     ```shell
     git --version
     ```
-{{ end macos }}
-{{ begin linux }}
+
+{{ .linux_only }}
 
 The easiest way to install Git on your Linux machine is using your distro's package manager. On Ubuntu and Debian-based distros you will want to run the following in a terminal:
 ```bash
@@ -56,11 +56,11 @@ Then verify your install by running:
 ```bash
 git --version
 ```
-{{ end linux }}
-{{ begin windows }}
+
+{{ .windows_only }}
 
 On Windows, you want to install Git by downloading the installer from [here](https://gitforwindows.org/) and following the instructions. Alternatively, if you are running WSL (Windows Subsystem for Linux), you will probably want to run Git inside Linux, in which case you can follow the Linux instructions. You can read our tutorial on WSL [here](todo-link)
-{{ end windows }}
+
 ### Create an account on GitHub
 When using Git you will want a place to store your *repositories* (projects), the most popular site for this is called [GitHub](https://github.com), but other alternatives include [GitLab](https://about.gitlab.com/) and [BitBucket](https://bitbucket.org/product/). We recommend using GitHub, at least for now, you can always explore other options later.
 
@@ -131,7 +131,13 @@ You've now gotten to the point where you can work along quite well on your own. 
 
 This is where *remotes* come in, online locations where you can store your repository. In GitKraken you can add a remote from the left panel. If you've logged in through GitHub you should be able to create a remote repo there. If not, it is probably best to go to Settings → Integrations and log in with your GitHub account.
 
-Now you have a remote repository and a local one.
+You can also create your remote repository on GitHub.com and add this repo as remote in GitKraken.
+
+Now that you have a remote and local repository a problem arises. How do we sync between the two? Git uses a system where you *push* and *pull* changes between your local and remote repositories. Whenever you want to add changes from your local to the remote, you *push* these changes. Similarly, whenever you have some changes in the remote that you wish to have on your local, you *pull* these changes. In GitKraken there are buttons for pushing and pulling in the top panel.
+
+Try adding a commit to your example repository and push this commit to your remote. If you then go to GitHub you should see your new commit there!
+
+As always, when syncing things can go wrong. What happens if you and a buddy have both made commits to the same file, and both try to push? The first push will go through just fine, but the second will be greeted with an error, there are newer commits on the remote, not present on the local! The second person will then have to *pull* before pushing, 
 
 Anatomy of a git repository:
 ```
