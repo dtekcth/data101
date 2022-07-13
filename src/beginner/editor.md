@@ -9,7 +9,7 @@ Short answer: [Visual Studio Code](https://code.visualstudio.com/). (VSCode)
 Long answer: When writing this guide we compared many editors to find out which would be most suitable for those just starting. Editors are one of those tools that people have strong opinions about so we decided on VSCode on the following grounds:
 
 - Available on all platforms (Windows, macOS, Linux)
-- Not specific for a certain programming language or environment (e.g Pycharm which only works for Python)
+- Not specific to a certain programming language or environment (e.g Pycharm which only works for Python)
 - Good plugin support, including other "devops" features.
 - Does not require any computer knowledge to get started[^emacs_evangelists]
 
@@ -67,11 +67,17 @@ In the instance where you don't just want to find but also replace text, the com
 #### Other common tasks
 
 - !kbd[!ctrl+c] copies selected text
-- !kbd[!ctrl+x] cuts the selected text, both removing the text and copying it
+- !kbd[!ctrl+x] cuts the selected text, both removing the text and copying it.
 - !kbd[!ctrl+v] pastes the text that you have copied
 - !kbd[!ctrl+s] saves the current file
 - !kbd[!ctrl+w] closes the current file
 - !kbd[!ctrl+q] exits VSCode
+
+[Task]
+What happens if you press !kbd[!ctrl+x] without selecting any text?
+
+[Solution]
+The entire line gets cut.
 
 ## The command palette
 

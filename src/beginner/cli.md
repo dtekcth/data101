@@ -130,6 +130,12 @@ Most shells allow you to autocomplete commands and arguments. If you press !kbd[
 
 > Some shells require you to double-tap !kbd[Tab] to see all available alternatives.
 
+> TODO Globbing
+
+## Appendix
+
+> TODO add a bunch of useful commands
+
 ## Further reading
 
 You can find more information on using the terminal in the chapter on Git in the terminal, as well as in the chapter on TDA555 Introduction to functional programming.

@@ -3,7 +3,7 @@
 _A must-have tool for every computer engineer, developer, or really anyone who
 writes text documents regularly._
 
-Git is a set of tools that help you get track of the changes you make to your
+Git is a set of tools that help you track the changes you make to your
 text files. Git helps you collaborate with others by keeping track of who did
 what, as well as guiding you in merging your different versions of files. Git
 lets you be fearless when changing your code, safe in the knowledge that
@@ -14,7 +14,7 @@ the bachelor's and master's theses it is almost always a requirement. And in
 nearly every course you will have assignments where collaboration will be far
 easier if you and your lab partner know and use Git. In addition to this, Git is
 one of the most used tools in the industry. A true industry standard, you will
-not find a job after the D-program which doesn't require it!
+not find a job after your education that does not require it!
 
 In this tutorial, we will guide you through setting up the necessary software
 and accounts for a modern Git experience. We will introduce you to the basic
@@ -23,11 +23,11 @@ collaboration with Git in the typical programming assignments you will encounter
 in the program.
 
 We do not assume that you are comfortable in the terminal, and will strongly
-advise using the GUI-based program GitKraken to handle your git needs. This is
+advise using the graphical program GitKraken to handle your git needs. This is
 an excellent tool, that helps pedagogically visualize the version control
 concepts. Do note that most users of Git do use the terminal commands. If you
 are comfortable in the terminal or would prefer to learn that way right away,
-look no further than this 
+look no further than this
 [tutorial](https://www.freecodecamp.org/news/what-is-git-and-how-to-use-it-c341b049ae61/)
 
 ## Setup
@@ -109,12 +109,9 @@ git --version
 
 {{end}}
 
-{{ .windows }} 
+{{ .windows }}
 On Windows, you want to install Git by downloading the installer
 from [here](https://gitforwindows.org/) and following the instructions.
-Alternatively, if you are running WSL (Windows Subsystem for Linux), you will
-probably want to run Git inside Linux, in which case you can follow the Linux
-instructions.
 
 ### Create an account on GitHub
 
@@ -159,7 +156,7 @@ changes you make in the rest of the directory.
 
 Open up gitKraken and initialize a new repository somewhere! In gitKraken you
 can use !kbd[!ctrl+T] to switch to a new tab, and !kbd[!ctrl+I] to start
-initializing a repo. For now, you can ignore `.gitignore` and `license`, just
+initializing a repo. For now, you can ignore `.gitignore` and `LICENSE`, just
 give your repo a name and location. Now you should find a screen with a whole
 mess of things in it, in the middle, you'll find the tracked changes in your
 repo. For now, there should only be one called _Initial commit_.
@@ -260,7 +257,7 @@ Try adding a commit to your example repository and push this commit to your
 remote. If you then go to GitHub you should see your new commit there!
 
 Now a big reason for having a remote repository is to be able to share your code
-with a collaborator. Our recommended way is for all collaborators to _clone_ the
+with a collaborator, or lab partner. Our recommended way is for all collaborators to _clone_ the
 remote repo. To do this, simply copy the URL of the GitHub repo and use
 !kbd[!ctrl+N] in GitKraken. When you cone a repo, it is automatically set up to
 have the proper remote.
@@ -359,7 +356,7 @@ first merge conflict.
 >
 > 1. The sensible thing is to pull, solve eventual merge conflicts and then
 >    push.
-> 2. Or, you can do a force-push. Never, I repeat, never, take this option.
+> 2. Or, you can do a force-push. **_Never_**, I repeat, **_never_**, take this option.
 >    Force push overwrites your buddies work with your own. It does not attempt
 >    to merge your different commits, but rather just overwrites the remote with
 >    your local version. This will inevitably cause headache for your buddy the
@@ -380,7 +377,7 @@ example that we often want to compile `Main.hs` into the executable `main`. You
 probably don't want to have the executable in your git history, since you
 wouldn't know how to solve merge conflicts. You can then add `main` to the
 `.gitignore`. In addition to regular files, you can specify entire directories
-which should be excluded. As well as glob-patterns, for example, you could ignore
+which should be excluded. As well as _glob-patterns_, for example, you could ignore
 all pdfs by adding `*.pdf`.
 
 "Well okay, great now I know _how_ to ignore, but which files _should_ I ignore?"
@@ -416,12 +413,12 @@ Now that we've gotten this far you know enough to start working on regular lab
 assignments! Here's a basic workflow that works well as long as you're just
 2-3 people.
 
-1. One of you, create a repository, either on Github.com or in GitKraken using !kbd[!ctrl+I] 
+1. One of you, create a repository, either on Github.com or in GitKraken using !kbd[!ctrl+I]
 2. Add the starter files from the assignment, as well as a `.gitignore`. Github
    has wonderful templates for pretty much every language out there. Use one of
    them!
 3. Clone your repo to your computer(s)
-3. Start editing your files, remember to commit often, and remember to push your
+4. Start editing your files, remember to commit often, and remember to push your
    commits! Solve merge conflicts as they arise and enjoy Git!
 
 It is that simple! As long as you follow these steps, you'll be collaborating
@@ -430,4 +427,6 @@ backed up.
 
 This is all you need to know when using Git for your regular lab assignments,
 there are a whole bunch of features that we haven't covered yet. These can be
-read [here](todo). 
+read [here](todo).
+
+> TODO Add link above
