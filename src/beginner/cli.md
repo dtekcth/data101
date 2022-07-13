@@ -7,13 +7,13 @@ You may be wondering why text-based interfaces are still so common. There are se
 ## Installation
 
 {{.windows}}
-To get started you have to install WSL, if you have followed the instructions from [Getting started](../getting_started.md) then you should already have it.
+To get started on Windows you have to install WSL, if you have followed the instructions from [Getting started](../getting_started.md) then you should already have it.
 
 {{.macos}}
-Mac users do not have to install anything
+Mac users do not have to install anything.
 
 {{.linux}}
-Linux users do not have to install anything
+Linux users do not have to install anything.
 
 ## Getting started
 
@@ -33,6 +33,8 @@ Before we begin to write any commands you should know that your terminal remembe
 > A lot of people naturally get stressed and think that it is easy to write some command that will cause harm to the computer. Please be assured by that it is in fact incredibly difficult to destroy anything using the terminal.
 
 With your terminal open let's try writing a command. Enter `ls` and it will display all files in your _working directory_, the directory you are currently inside. `ls`
+
+> TODO pwd
 
 Let's create a new directory by using `mkdir`, short for _make directory_. Run `mkdir test_directory` and then `ls` again and you will see your new directory. All words separated by a space after the command are collectively referred to as _arguments_. In this case. `mkdir` is the command, while `test_directory` is the _first argument_.
 
@@ -113,6 +115,14 @@ All variables can be used inside your shell. For example, your home directory is
 This variable contains all directories where you store binary files (files that can be executed). Normally the command has to specify the path of the file to be executed. Without the PATH variable, we would have to write `/usr/bin/ls` but since `/usr/bin` is in our PATH variable, our shell will try and automatically find the file.
 
 To clarify, it is possible to execute files that are not in our path. Let's say we have a file called `do_cool_stuff` in our current directory, then we could write `./do_cool_stuff` to execute it, even if it isn't in our PATH.
+
+At some point, you will probably try to run a command and find an error message
+like:
+```bash
+command not found: <command you just wrote>
+```
+This is almost always because you don't have the directory that your command is
+at, added to `$PATH`.
 
 ## Autocompletion
 
