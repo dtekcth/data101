@@ -9,6 +9,7 @@
 - [The Editor](./beginner/editor.md)
 - [Git](./beginner/git.md)
 - [CLI](./beginner/cli.md)
+  - [SSH](./beginner/ssh.md)
 - [Pro-tips](./beginner/protips.md)
 
 # Advanced
