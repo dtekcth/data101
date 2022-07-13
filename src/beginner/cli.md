@@ -78,7 +78,7 @@ If you try and remove the directory by running `rm test_directory` it will refus
 
 ### The help flag
 
-Almost all command-line programs include a special flag which will print help information. This is almost always `--help`.
+Almost all command-line programs include a special flag that will print help information. This is almost always `--help`.
 
 [Task]
 _Try and get the help information for ls, what does `ls --all` do?_
@@ -95,3 +95,35 @@ _Using the help flag, what is the short-hand flag for `--recursive` in `rm`?_
 
 [Solution]
 It is `-r`.
+
+## Reading and editing files
+
+To print a text file you can use `cat <path>`. On the other hand, if you want to edit a file in your terminal you can usually use `nano` or `vi`. These editors are not trivial to use and rely heavily on keyboard shortcuts.
+
+IF you are interested in trying them, feel free to experiment as they are useful tools to know of. You can exit `vi` by typing `:q` and pressing !kbd[Enter].[^exit_vim]
+
+## The environment
+
+Whenever we start a shell, some variables are assigned to the session. These are called _environment variables_ and are refreshed every time you restart the terminal. You can see all your variables using `printenv`.
+
+All variables can be used inside your shell. For example, your home directory is stored in a variable called HOME. Accessing a variable is done by prefixing the variable with `$`. To change the _working directory_ to your home you could then write `cd $HOME`, which in my case would be translated to `cd /home/dave`.
+
+### $PATH
+
+This variable contains all directories where you store binary files (files that can be executed). Normally the command has to specify the path of the file to be executed. Without the PATH variable, we would have to write `/usr/bin/ls` but since `/usr/bin` is in our PATH variable, our shell will try and automatically find the file.
+
+To clarify, it is possible to execute files that are not in our path. Let's say we have a file called `do_cool_stuff` in our current directory, then we could write `./do_cool_stuff` to execute it, even if it isn't in our PATH.
+
+## Autocompletion
+
+Most shells allow you to autocomplete commands and arguments. If you press !kbd[Tab] the shell will try to autocomplete the command, or if there are multiple alternatives, print them. For example, writing `r` and then pressing !kbd[Tab] will give you all commands starting with `r`. When autocompleting arguments it will try to autocomplete to available files and folders.
+
+> Some shells require you to double-tap !kbd[Tab] to see all available alternatives.
+
+## Further reading
+
+You can find more information on using the terminal in the chapter on Git in the terminal, as well as in the chapter on TDA555 Introduction to functional programming.
+
+> TODO link documents
+
+[^exit_vim]`vi` is infamously known for being difficult to exit.
