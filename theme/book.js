@@ -30,6 +30,18 @@ const showAll = (elList) => {
 /* DAT101 specific code */
 //
 
+(function ReadingTime() {
+  const wordCount = (el) => {
+    return el.innerText.match(regex).length;
+  };
+
+  const readingTime = (el) => {
+    const WORDS_PER_MINUTE = 200;
+    result.readingTime = Math.ceil(wordCount(el) / WORDS_PER_MINUTE);
+    return result;
+  };
+})();
+
 (function ClassPreproccessor() {
   const getSolutionParent = (node) => {
     if (node.classList && node.classList.contains("solution")) return node;
@@ -177,7 +189,26 @@ const showAll = (elList) => {
 })();
 
 (function OperatingSystem() {
+  const promptForValues = () => {
+    if (
+      !localStorage.getItem("mdbook-programme") ||
+      !localStorage.getItem("mdbook-os")
+    ) {
+      document.getElementById("alert-selection").classList.remove("hidden");
+      // document.getElementById("os-toggle").style.border = "solid 2px yellow";
+      // document.getElementById("programme-toggle").style.border =
+      ("solid 2px red");
+    } else {
+      document.getElementById("alert-selection").classList.add("hidden");
+      // document.getElementById("os-toggle").style.border = null;
+      // document.getElementById("programme-toggle").style.border = null;
+    }
+  };
+
   let os = localStorage.getItem("mdbook-os");
+  if (os === null) {
+    os = "all";
+  }
   const icons = {
     macos: "fa-apple",
     linux: "fa-linux",
@@ -188,6 +219,7 @@ const showAll = (elList) => {
   const setOS = (newOS) => {
     os = newOS;
     localStorage.setItem("mdbook-os", os);
+    promptForValues();
   };
 
   const isCodeBlock = (el) => {
@@ -197,9 +229,6 @@ const showAll = (elList) => {
   };
 
   window.addEventListener("load", () => {
-    if (os === null) {
-      setOS("all");
-    }
     const allOS = ["macos", "linux", "windows"];
     const osToggleButton = document.getElementById("os-toggle");
     const osList = document.getElementById("os-list");
@@ -282,11 +311,9 @@ const showAll = (elList) => {
       });
     });
   });
-})();
 
-(function Programme() {
   let programme = localStorage.getItem("mdbook-programme");
-  if (programme === null) programme = "D";
+  if (programme === null) programme = "all";
   const colors = {
     Data: "orange",
     IT: "#008CBA",
@@ -296,6 +323,7 @@ const showAll = (elList) => {
   const setProgramme = (newProgramme) => {
     programme = newProgramme;
     localStorage.setItem("mdbook-programme", programme);
+    promptForValues();
   };
 
   window.addEventListener("load", () => {
@@ -359,6 +387,8 @@ const showAll = (elList) => {
       });
     });
   });
+
+  promptForValues();
 })();
 
 /* END DAT101 */

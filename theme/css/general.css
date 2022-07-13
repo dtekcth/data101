@@ -238,7 +238,7 @@ blockquote {
 /* Keybord shortcuts */
 
 .kbd-shortcut {
-  background: #f6f7f6;
+  background: var(--base-200, #f6f7f6);
   color: #000;
   display: inline;
   padding: 0.1em 0.3em;
