@@ -1,14 +1,34 @@
 # Git - Version Control
 
-_A must-have tool for every computer engineer, developer, or really anyone who writes text documents regularly._
+_A must-have tool for every computer engineer, developer, or really anyone who
+writes text documents regularly._
 
-Git is a set of tools that help you get track of the changes you make to your text files. Git helps you collaborate with others by keeping track of who did what, as well as guiding you in merging your different versions of files. Git lets you be fearless when changing your code, safe in the knowledge that previous versions of your code are easy to access.
+Git is a set of tools that help you get track of the changes you make to your
+text files. Git helps you collaborate with others by keeping track of who did
+what, as well as guiding you in merging your different versions of files. Git
+lets you be fearless when changing your code, safe in the knowledge that
+previous versions of your code are easy to access.
 
-Git is something one will have to use during the program. In project courses, the bachelor's and master's theses it is almost always a requirement. And in nearly every course you will have assignments where collaboration will be far easier if you and your lab partner know and use Git. In addition to this, Git is one of the most used tools in the industry. A true industry standard, you will not find a job after the D-program which doesn't require it!
+Git is something one will have to use during the program. In project courses,
+the bachelor's and master's theses it is almost always a requirement. And in
+nearly every course you will have assignments where collaboration will be far
+easier if you and your lab partner know and use Git. In addition to this, Git is
+one of the most used tools in the industry. A true industry standard, you will
+not find a job after the D-program which doesn't require it!
 
-In this tutorial, we will guide you through setting up the necessary software and accounts for a modern Git experience. We will introduce you to the basic concepts of version control. Finally, we will show a basic workflow for collaboration with Git in the typical programming assignments you will encounter in the program.
+In this tutorial, we will guide you through setting up the necessary software
+and accounts for a modern Git experience. We will introduce you to the basic
+concepts of version control. Finally, we will show a basic workflow for
+collaboration with Git in the typical programming assignments you will encounter
+in the program.
 
-We do not assume that you are comfortable in the terminal, and will strongly advise using the GUI-based program GitKraken to handle your git needs. This is an excellent tool, that helps pedagogically visualize the version control concepts. Do note that most users of Git do use the terminal commands. If you are comfortable in the terminal or would prefer to learn that way right away, look no further than this tutorial: [TODO terminal-based git tutorial](https://www.google.se)
+We do not assume that you are comfortable in the terminal, and will strongly
+advise using the GUI-based program GitKraken to handle your git needs. This is
+an excellent tool, that helps pedagogically visualize the version control
+concepts. Do note that most users of Git do use the terminal commands. If you
+are comfortable in the terminal or would prefer to learn that way right away,
+look no further than this 
+[tutorial](https://www.freecodecamp.org/news/what-is-git-and-how-to-use-it-c341b049ae61/)
 
 ## Setup
 
@@ -18,37 +38,47 @@ We do not assume that you are comfortable in the terminal, and will strongly adv
 
 For macOS users, there are two ways to install Git which we recommend.
 
-1. Use the Git bundled with XCode. Chances are that if you're
-   going to program on a Mac, then you are going to have to install XCode's command-line tools at some point. Git comes bundled with XCode's command-line tools, check if you have it installed by opening a terminal and typing:
+1. Use the Git bundled with XCode. Chances are that if you're going to program
+   on a Mac, then you are going to have to install XCode's command-line tools at
+   some point. Git comes bundled with XCode's command-line tools, check if you
+   have it installed by opening a terminal and typing:
 
    ```bash
    git --version
    ```
 
-   If you see something like the following you've already got git installed and can move on to the next step.
+   If you see something like the following you've already got git installed and
+   can move on to the next step.
 
    ```bash
    git version 2.33.0
    ```
 
-   To install XCode's command-line tools (and its bundled Git) open a terminal and run the command:
+   To install XCode's command-line tools (and its bundled Git) open a terminal
+   and run the command:
 
    ```bash
    xcode-select --install
    ```
 
-   Let this install, restart your terminal and type the following again. It should now display a version. Move on to the next step.
+   Let this install, restart your terminal and type the following again. It
+   should now display a version. Move on to the next step.
 
    ```bash
    git --version
    ```
 
-2. Or you can install Git using Homebrew. Homebrew is a package manager for macOS, basically a command-line tool for helping you install various software. It is very useful for developers in various situations and can be installed by following the instructions [here](https://brew.sh/).
-   After you've installed homebrew you should be able to type the following into a terminal:
+2. Or you can install Git using Homebrew. Homebrew is a package manager for
+   macOS, basically a command-line tool for helping you install various
+   software. It is very useful for developers in various situations and can be
+   installed by following the instructions [here](https://brew.sh/). After
+   you've installed homebrew you should be able to type the following into a
+   terminal:
    ```shell
    brew install git
    ```
-   To confirm that Git has been installed correctly run the following. Then move on to the next step.
+   To confirm that Git has been installed correctly run the following. Then move
+   on to the next step.
    ```shell
    git --version
    ```
@@ -57,7 +87,9 @@ For macOS users, there are two ways to install Git which we recommend.
 
 {{ begin .linux }}
 
-The easiest way to install Git on your Linux machine is using your distro's package manager. On Ubuntu and Debian-based distros you will want to run the following in a terminal:
+The easiest way to install Git on your Linux machine is using your distro's
+package manager. On Ubuntu and Debian-based distros you will want to run the
+following in a terminal:
 
 ```bash
 sudo apt-get install git
@@ -77,22 +109,39 @@ git --version
 
 {{end}}
 
-{{ .windows }}
-On Windows, you want to install Git by downloading the installer from [here](https://gitforwindows.org/) and following the instructions. Alternatively, if you are running WSL (Windows Subsystem for Linux), you will probably want to run Git inside Linux, in which case you can follow the Linux instructions. You can read our tutorial on WSL [here](todo-link)
+{{ .windows }} 
+On Windows, you want to install Git by downloading the installer
+from [here](https://gitforwindows.org/) and following the instructions.
+Alternatively, if you are running WSL (Windows Subsystem for Linux), you will
+probably want to run Git inside Linux, in which case you can follow the Linux
+instructions.
 
 ### Create an account on GitHub
 
-When using Git you will want a place to store your _repositories_ (projects), the most popular site for this is called [GitHub](https://github.com), but other alternatives include [GitLab](https://about.gitlab.com/) and [BitBucket](https://bitbucket.org/product/). We recommend using GitHub, at least for now, you can always explore other options later.
+When using Git you will want a place to store your _repositories_ (projects),
+the most popular site for this is called [GitHub](https://github.com), but other
+alternatives include [GitLab](https://about.gitlab.com/) and
+[BitBucket](https://bitbucket.org/product/). We recommend using GitHub, at least
+for now, you can always explore other options later.
 
-Sign up for an account [here](https://github.com), and while you're at it sign up for the GitHub Student Developer Pack using your Chalmers email (_cid_@student.chalmers.se) [here](https://education.github.com/pack). The GitHub Student Developer Pack gives some good benefits, among them unlimited Private Repositories, and a free subscription GitKraken Pro, which we recommend using.
+Sign up for an account [here](https://github.com), and while you're at it sign
+up for the GitHub Student Developer Pack using your Chalmers email
+(_cid_@student.chalmers.se) [here](https://education.github.com/pack). The
+GitHub Student Developer Pack gives some good benefits, among them unlimited
+Private Repositories, and a free subscription GitKraken Pro, which we recommend
+using.
 
 ### Install GitKraken
 
-With a GitHub account in hand, and Git installed I am sure you're eager to get started. And if you're comfortable in the terminal you absolutely can, but we recommend also downloading a GUI for managing Git called GitKraken.
+With a GitHub account in hand, and Git installed I am sure you're eager to get
+started. And if you're comfortable in the terminal you absolutely can, but we
+recommend also downloading a GUI for managing Git called GitKraken.
 
-GitKraken can be installed from their website here: [GitKraken](https://www.gitkraken.com/)
+GitKraken can be installed from their website here:
+[GitKraken](https://www.gitkraken.com/)
 
-When asked to sign in, use your newly created GitHub Student account to automatically receive the pro features for free.
+When asked to sign in, use your newly created GitHub Student account to
+automatically receive the pro features for free.
 
 <!-- Generate SSH-Key, and add to GitHub account.
 
@@ -101,25 +150,41 @@ Install GitLens for VSCode
 
 ## The Basics
 
-Now that you're all set up we can get started!
-When using Git you store your code in _repositories_, directories with a special, hidden directory inside called `.git`. In `.git`, git stores the information needed to keep track of the changes you make in the rest of the directory.
+Now that you're all set up we can get started! When using Git you store your
+code in _repositories_, directories with a special, hidden directory inside
+called `.git`. In `.git`, git stores the information needed to keep track of the
+changes you make in the rest of the directory.
 
 ### Creating your first repository
 
-Open up gitKraken and initialize a new repository somewhere! In gitKraken you can use !kbd[!ctrl+T] to switch to a new tab, and !kbd[!ctrl+I] to start initializing a repo. For now, you can ignore `.gitignore` and `license`, just give your repo a name and location. Now you should find a screen with a whole mess of things in it, in the middle, you'll find the tracked changes in your repo. For now, there should only be one called _Initial commit_.
+Open up gitKraken and initialize a new repository somewhere! In gitKraken you
+can use !kbd[!ctrl+T] to switch to a new tab, and !kbd[!ctrl+I] to start
+initializing a repo. For now, you can ignore `.gitignore` and `license`, just
+give your repo a name and location. Now you should find a screen with a whole
+mess of things in it, in the middle, you'll find the tracked changes in your
+repo. For now, there should only be one called _Initial commit_.
 
 ![An image of the initial commit](../Assets/InitialCommit.png)
 
-Use the shortcut !kbd[!ctrl+Shift+E] and you should be able to open the repository in an editor (You may have to set up which editor to use first, in which case GitKraken will guide you). In the editor, you should see one file `README.md` which is a file commonly used to describe the contents of the repo.
+Use the shortcut !kbd[!ctrl+Shift+E] and you should be able to open the
+repository in an editor (You may have to set up which editor to use first, in
+which case GitKraken will guide you). In the editor, you should see one file
+`README.md` which is a file commonly used to describe the contents of the repo.
 
 ### Your first commit
 
-Onto your first change! In Git your changes are grouped into a _commit_. While you're working on your files the basic idea is that you commit each time you want to save a state you might want to come back to in the future.
-In the beginning, while you're still learning, this might be each time you and your lab partner feel done for the day. Over time, as you get more used to version control, you'll probably find yourself committing more often, each time you make a meaningful change. A good rule of thumb is to commit your changes each time you start something new. In a typical lab assignment, it could be a good idea to commit each time you've finished a task of that assignment.
+Onto your first change! In Git your changes are grouped into a _commit_. While
+you're working on your files the basic idea is that you commit each time you
+want to save a state you might want to come back to in the future. In the
+beginning, while you're still learning, this might be each time you and your lab
+partner feel done for the day. Over time, as you get more used to version
+control, you'll probably find yourself committing more often, each time you make
+a meaningful change. A good rule of thumb is to commit your changes each time
+you start something new. In a typical lab assignment, it could be a good idea to
+commit each time you've finished a task of that assignment.
 
-With your repository open in your editor, create a new file and add some content!
-For example, you could add a file `Main.hs`
-and add:
+With your repository open in your editor, create a new file and add some
+content! For example, you could add a file `Main.hs` and add:
 
 ```haskell
 main = putStrLn "Hello, Git!"
@@ -128,17 +193,27 @@ main = putStrLn "Hello, Git!"
 If you then open GitKraken it should have detected your change!
 ![A message showing a detected change](../Assets/ChangeInWorkingDirectory.png)
 
-View the change and you'll see a panel where you can build your next commit. To add the code to your next commit, stage that file. You can then continue writing code if you want, and stage these changes as well. When you feel happy with your staged changes you can add a commit message describing what you've done and commit. You've now saved the change and created a snapshot which you can jump back to at any time!
+View the change and you'll see a panel where you can build your next commit. To
+add the code to your next commit, stage that file. You can then continue writing
+code if you want, and stage these changes as well. When you feel happy with your
+staged changes you can add a commit message describing what you've done and
+commit. You've now saved the change and created a snapshot which you can jump
+back to at any time!
 
-It is important to note, that only the changes you stage get added to the commit. The basic idea is that a file change can be in one of three places:
+It is important to note, that only the changes you stage get added to the
+commit. The basic idea is that a file change can be in one of three places:
 
 1. On your system only, in Git speak these changes lie in your _Working Directory_.
-2. Staged to be added to the next commit, these are local changes visible to only you. They haven't been committed yet, but are marked to be committed soon. These changes lie in what Git calls the _Index_.
-3. Committed, these changes have been saved in your history. The state containing all the changes up to the latest commit is called _HEAD_.
+2. Staged to be added to the next commit, these are local changes visible to
+   only you. They haven't been committed yet, but are marked to be committed
+   soon. These changes lie in what Git calls the _Index_.
+3. Committed, these changes have been saved in your history. The state
+   containing all the changes up to the latest commit is called _HEAD_.
 
 The life of a file is basically: _Working directory_ → _Index_ → _Head_.
 
-That's all there is to a commit! Test yourself! Can you add the following to `Main.hs` and commit the change as _Add type signature to main_?
+That's all there is to a commit! Test yourself! Can you add the following to
+`Main.hs` and commit the change as _Add type signature to main_?
 
 ```haskell
 main :: IO ()
@@ -147,15 +222,28 @@ main = putStrLn "Hello, Git!"
 
 > **A note on commit messages**
 >
-> At times you might feel the urge to write commit messages like: _"did some stuff"_ or _"did the assignment"_. While these are fine for the time being, your message should summarize what you did. A good commit message describes in a few words what was done in that commit. Some examples of good commit messages are _"first draft of section 5 in report"_ or _"add function getContent to Main.hs"_
+> At times you might feel the urge to write commit messages like: _"did some
+> stuff"_ or _"did the assignment"_. While these are fine for the time being,
+> your message should summarize what you did. A good commit message describes in
+> a few words what was done in that commit. Some examples of good commit
+> messages are _"first draft of section 5 in report"_ or _"add function
+> getContent to Main.hs"_
 >
-> If you can't sum up your commit in one sentence, you've probably created a too large commit!
+> If you can't sum up your commit in one sentence, you've probably created a too
+> large commit!
 
 ### Putting your repo on GitHub
 
-You've now gotten to the point where you can work along quite well on your own. Writing changes, staging them and committing from time to time. But what good is working all on your own? And wouldn't it be nice having a backup of your repository just in case?
+You've now gotten to the point where you can work along quite well on your own.
+Writing changes, staging them and committing from time to time. But what good is
+working all on your own? And wouldn't it be nice having a backup of your
+repository just in case?
 
-This is where _remotes_ come in, online locations where you can store your repository. In GitKraken you can add a remote from the left panel. If you've logged in through GitHub you should be able to create a remote repo there. If not, it is probably best to go to Settings → Integrations and log in with your GitHub account.
+This is where _remotes_ come in, online locations where you can store your
+repository. In GitKraken you can add a remote from the left panel. If you've
+logged in through GitHub you should be able to create a remote repo there. If
+not, it is probably best to go to Settings → Integrations and log in with your
+GitHub account.
 
 You can also create your remote repository on GitHub.com and add this repo as
 remote in GitKraken.
@@ -317,31 +405,29 @@ Great question! Here are a few basic rules, and a short justification:
    opening your repository in Finder, ignore this folder.
 4. Files relevant to your project management tools, using stack when programming
    in Haskell? Ignore `.stack-work`. Using npm? Ignore `node_modules`. These
-   often contain large amounts of libraries, downloaded for your project, which
-   are not part of your project.
+   often contain large amounts of libraries, the histories of which are kept in
+   their own repos.
 
 ## A Workflow for regular Lab Assignments
 
 _Sometimes it is easier just to commit to the main branch._
 
-## Branching and merging
+Now that we've gotten this far you know enough to start working on regular lab
+assignments! Here's a basic workflow that works well as long as you're just
+2-3 people.
 
-_For when you want to go your own way a little while._
+1. One of you, create a repository, either on Github.com or in GitKraken using !kbd[!ctrl+I] 
+2. Add the starter files from the assignment, as well as a `.gitignore`. Github
+   has wonderful templates for pretty much every language out there. Use one of
+   them!
+3. Clone your repo to your computer(s)
+3. Start editing your files, remember to commit often, and remember to push your
+   commits! Solve merge conflicts as they arise and enjoy Git!
 
-The Main (formerly known as the master) branch.
+It is that simple! As long as you follow these steps, you'll be collaborating
+easily, safe in the knowledge that your history is preserved and your project is
+backed up.
 
-Creating a new branch
-
-Jumping between branches
-
-Merging with another branch
-
-Rebasing, for when you wish you would have branched out later
-
-Solving conflicts
-
-## A workflow for group projects
-
-_As more people join your project, the value of branches grows exponentially._
-
-Feature branches
+This is all you need to know when using Git for your regular lab assignments,
+there are a whole bunch of features that we haven't covered yet. These can be
+read [here](todo). 
