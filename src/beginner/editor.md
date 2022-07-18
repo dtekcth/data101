@@ -26,8 +26,6 @@ To get started, begin by downloading VSCode from their [webpage](https://code.vi
 
 After installing VSCode, start it. You can now begin programming by creating a new file and start typing. We will now go through some tips on how to use the program but it is okay if you don't remember all of it, you can always come back here later when you have become more used to programming.
 
-**Before reading on we recommend that you download a project using git as some commands will have examples for you to test which will not work if your current folder is empty**
-
 ## Using shortcuts
 
 To give you a taste of what's to come, with VSCode focused, press !kbd[!ctrl+O] and select the folder that you have cloned using Git.
@@ -36,9 +34,13 @@ Programming is all about using the keyboard, while the mouse is useful most of t
 
 You may be tempted to click on the screen to move the caret (the vertical line where text appears), save your file or create a new file, and while this works, it is horribly inefficient compared to using shortcuts. In the beginning, you may not notice this but as you go through the semester it will become second nature to you. Below are some common tasks and how to perform them using the keyboard.
 
-> #### !kbd[Ctrl] or !kbd[⌘]
+> #### !kbd[Ctrl] or !kbd[⌘]?
 >
 > On Macs the !kbd[!win] key is replaced by !kbd[⌘] and is usually used instead of the !kbd[Ctrl] key. This guide tries to match the shortcuts to the OS you have selected but may not alway be 100% accurate.
+
+### Creating a file
+
+Let's start with creating a file. This is done using !kbd[!ctrl+N]. You can then save the file using !kbd[!ctrl+S].
 
 ### Moving the caret
 
@@ -50,38 +52,35 @@ You may be used to selecting text by either holding in left-click and dragging o
 
 ### Find and replace
 
-Another common task is to either find a string in a file or replace it. Let's say you have a file with some code you are not so proud of, perhaps all variables are badly named such as "myFunction" and you have decided that it is time to improve this. Fire up the search tool by pressing !kbd[!ctrl+f] and simply type what you are searching for. You can jump to the next occurrence by pressing !kbd[Enter] or the previous by pressing !kbd[Shift+Enter].
+Another common task is to either find a string in a file or replace it. Let's say you have a file with some code you are not so proud of, perhaps all variables are badly named such as "myFunction" and you have decided that it is time to improve this. Fire up the search tool by pressing !kbd[!ctrl+F] and simply type what you are searching for. You can jump to the next occurrence by pressing !kbd[Enter] or the previous by pressing !kbd[Shift+Enter].
 
-> **Effective browsing**
->
-> This command also works in your browser and can be used to find text on wbesites.
+> This command also works in your browser and can be used to find text on websites.
 
-If you want to find all occurrences in your whole project, the command is instead !kbd[!ctrl+Shift+f].
+If you want to find all occurrences in your whole project, the command is instead !kbd[!ctrl+Shift+F].
 
-In the instance where you don't just want to find but also replace text, the command is instead !kbd[!ctrl+h].
+In the instance where you don't just want to find but also replace text, the command is instead !kbd[!ctrl+H].
 
-> **Advanced find and replace**
->
-> It is also possible to perform more complex searches and replacements see [this](https://docs.microsoft.com/en-us/visualstudio/ide/finding-and-replacing-text?view=vs-2022) reference for more information.
+> It is also possible to perform more complex searches and replacements see [the reference](https://docs.microsoft.com/en-us/visualstudio/ide/finding-and-replacing-text?view=vs-2022) for more information.
 
 #### Other common tasks
 
-- !kbd[!ctrl+c] copies selected text
-- !kbd[!ctrl+x] cuts the selected text, both removing the text and copying it.
-- !kbd[!ctrl+v] pastes the text that you have copied
-- !kbd[!ctrl+s] saves the current file
-- !kbd[!ctrl+w] closes the current file
-- !kbd[!ctrl+q] exits VSCode
+- !kbd[!ctrl+C] copies selected text
+- !kbd[!ctrl+X] cuts the selected text, both removing the text and copying it.
+- !kbd[!ctrl+V] pastes the text that you have copied
+- !kbd[!ctrl+S] saves the current file
+- !kbd[!ctrl+W] closes the current file
+- !kbd[!ctrl+Q] exits VSCode
+- !kbd[!ctrl+N] Opens a new file
 
 [Task]
-What happens if you press !kbd[!ctrl+x] without selecting any text?
+What happens if you press !kbd[!ctrl+X] without selecting any text?
 
 [Solution]
 The entire line gets cut.
 
 ## The command palette
 
-Aside from the kind of shortcuts you may be used to when using other applications, VSCode also includes a powerful tool called the `Command palette`. It can be opened by pressing !kbd[!ctrl+p]. This tool can be used to efficiently navigate your project by first opening the palette and then writing a command.
+Aside from the kind of shortcuts you may be used to when using other applications, VSCode also includes a powerful tool called the `Command palette`. It can be opened by pressing !kbd[!ctrl+P]. This tool can be used to efficiently navigate your project by first opening the palette and then writing a command.
 
 ### Change file
 
@@ -89,21 +88,21 @@ You can navigate to other files by opening the palette and writing the name of t
 
 ### Goto line
 
-You can also go to a specific line number by first prefixing the command with `:`. For example to go to line 12 you type `:12` and then press Enter. This mode can be directly entered by pressing !kbd[!ctrl+g]
+You can also go to a specific line number by first prefixing the command with `:`. For example to go to line 12 you type `:12` and then press Enter. This mode can be directly entered by pressing !kbd[!ctrl+G]
 
 ### Find symbol
 
-Lastly, you can also go to what is called a "Symbol". This is a more advanced language concept but you can think of it as a way to go directly to function names, variables or other parts of your code that you have named. This can be done by prefixing the command with `@`. To go to the function named `isPositive` you write `@ispositive`. This mode can be directly entered by pressing !kbd[!ctrl+Shift+g]
+Lastly, you can also go to what is called a "Symbol". This is a more advanced language concept but you can think of it as a way to go directly to function names, variables or other parts of your code that you have named. This can be done by prefixing the command with `@`. To go to the function named `isPositive` you write `@ispositive`. This mode can be directly entered by pressing !kbd[!ctrl+Shift+G]
 
 None of the commands care about casing so `@isPositive` is the same as `@IsPositivE`.
 
 ### Command mode
 
-The command palette is so powerful that you can do anything with the palette that you can do elsewhere in the interface. To get started with this prefix the command with `>`. It is also possible to start the palette in this mode by default by instead pressing !kbd[!ctrl+Shift+p].
+The command palette is so powerful that you can do anything with the palette that you can do elsewhere in the interface. To get started with this prefix the command with `>`. It is also possible to start the palette in this mode by default by instead pressing !kbd[!ctrl+Shift+G].
 
 This will expose you to everything from `Open file` to `Close editor` to `Change font size`. I recommend that instead of looking at the top bar you instead try and search here instead.
 
-This is all for now, you can find more advanced usage of your editor in later chapters and in the `Advanced` section.
+This is all for now, you can find more advanced usage of your editor in later chapters as well as in the `Advanced` section.
 
 ## Further reading
 
