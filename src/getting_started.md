@@ -2,15 +2,15 @@
 
 To begin with, you need to install a couple of applications, these will be useful throughout your education. This section will only quickly describe how to install the software, in the later chapters we will tell you more about why and how we use them.
 
-## VSCode
+## Editor: VSCode
 
 VSCode is our recommended editor, this is the application you write code with. [Download it here.](https://code.visualstudio.com/)
 
-## Zoom
+## Online meetings: Zoom
 
 Sometimes you will have lectures online, the university uses Zoom for this. It is also possible to set up your own room and talk to your group partners remotely. [Download it here.](https://chalmers.zoom.us/)
 
-## Git
+{{ begin .windows }}
 
 ## Windows Subsystem for Linux
 
@@ -22,23 +22,27 @@ A new window will open where you can run commands. After typing your command you
 
 You can now start WSL by searching for `ubuntu` from the Windows Start Menu. Follow the instructions on screen and you are good to go!
 
+{{ end }}
+
 ## IT-services at Chalmers
 
 ### Chalmers ID (CID)
 
-Your CID is used to access al Chalmers services. You will get instructions on how to get one during your first days at Chalmers.
+Your CID is used to access all Chalmers services. You will get instructions on how to get one during your first days at Chalmers.
 
-> #### Notice
->
 > You will need your CID to use all the services in this section. Feel free to come back once you have it.
 
 ### IT-support
 
 Using Chalmers IT-services is never easy but there is some help to be had at the [IT-portal](https://chalmers.topdesk.net/tas/public/ssp/), though it does not cover everything.
 
-### Eduroam (Wi-fi)
+### Wi-fi: Eduroam
 
 Chalmers uses the global university network "Eduroam" for wi-fi connectivity (there is wi-fi everywhere on campus). Search for "Eduroam" on the IT-portal to find out how to connect your devices.
+
+### Online storage
+
+Chalmers provides [OneDrive storage](https://chalmers.topdesk.net/tas/public/ssp/content/detail/knowledgeitem?unid=c8fe18c158004038beccd0a8d57ef1f5) to all students where you can store and share files online.
 
 ### Graphical Remote Desktop
 
