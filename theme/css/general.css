@@ -239,7 +239,7 @@ blockquote {
 
 .kbd-shortcut {
   background: var(--base-200, #f6f7f6);
-  color: #000;
+  color: var(--inline-code-color);
   display: inline;
   padding: 0.1em 0.3em;
   border-radius: 3px;
@@ -249,12 +249,18 @@ blockquote {
   font-weight: bold;
 }
 
+blockquote .kbd-shortcut,
+blockquote .hljs {
+  background: var(--base-300, #f6f7f6);
+}
+
 /* Tasks and Exercises */
-.task {
-  background-color: var(--quote-bg);
-  padding: 1rem;
+blockquote {
   border-radius: 2px;
-  margin-bottom: 1rem;
+}
+
+blockquote.task {
+  padding: 1rem;
 }
 
 .task p {

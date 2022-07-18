@@ -9,6 +9,8 @@ You may be wondering why text-based interfaces are still so common. There are se
 {{.windows}}
 To get started on Windows you have to install WSL, if you have followed the instructions from [Getting started](../getting_started.md) then you should already have it.
 
+WSL is a way to run Linux on your Windows PC. You can read more about Linux [here](./linux.md).
+
 {{.macos}}
 Mac users do not have to install anything.
 
@@ -23,18 +25,18 @@ Linux users do not have to install anything.
 Start WSL by searching for `Ubuntu` in the window start menu.
 
 {{.macos}}
-To open a terminal, press !kbd[!cmd+space] and then enter `terminal`.
+To open a terminal, press !kbd[!cmd+Space] and then enter `terminal`.
 
 {{.linux}}
-Start a terminal, how to open one depends on your distro. Commonly !kbd[ctrl+alt+t], !kbd[!win+t] or !kbd[!win+Enter] usually opens one. Otherwise, search for `how to open terminal <insert your distro here>`.
+Start a terminal, how to open one depends on your distro. Commonly !kbd[Ctrl+Alt+T], !kbd[!win+T] or !kbd[!win+Enter] usually opens one. Otherwise, search for `how to open terminal <insert your distro here>`.
 
 Before we begin to write any commands you should know that your terminal remembers _where_ on your filesystem it is. When it is started it is usually in your home folder and as you begin running commands it might change location.
 
 > A lot of people naturally get stressed and think that it is easy to write some command that will cause harm to the computer. Please be assured by that it is in fact incredibly difficult to destroy anything using the terminal.
 
-With your terminal open let's try writing a command. Enter `ls` and it will display all files in your _working directory_, the directory you are currently inside. `ls`
+With your terminal open let's try writing a command. Enter `ls` and it will display all files in your _working directory_, the directory you are currently inside. `ls` stands for _list_.
 
-> TODO pwd
+To find out which our current _working_directory_ is we can run `pwd`, _print working directory_.
 
 Let's create a new directory by using `mkdir`, short for _make directory_. Run `mkdir test_directory` and then `ls` again and you will see your new directory. All words separated by a space after the command are collectively referred to as _arguments_. In this case. `mkdir` is the command, while `test_directory` is the _first argument_.
 
@@ -43,7 +45,7 @@ When we present new commands we might write them like this `mkdir <path>` the ar
 We can enter a different directory by using the command `cd <path>`. `cd` is short for _change directory_. This is synonymous with changing our _working directory_
 
 [Task]
-_Enter the new directory that you just created._
+_What command should you run to enter the new directory that you just created?_
 
 [Solution]
 Run `cd test_directory`.
@@ -118,9 +120,11 @@ To clarify, it is possible to execute files that are not in our path. Let's say 
 
 At some point, you will probably try to run a command and find an error message
 like:
+
 ```bash
 command not found: <command you just wrote>
 ```
+
 This is almost always because you don't have the directory that your command is
 at, added to `$PATH`.
 
@@ -130,11 +134,44 @@ Most shells allow you to autocomplete commands and arguments. If you press !kbd[
 
 > Some shells require you to double-tap !kbd[Tab] to see all available alternatives.
 
-> TODO Globbing
+## Globbing
 
-## Appendix
+While our examples for `rm` only have one argument, it is possible to supply as many files as we want. It would however get very tedious to write out all files one by one so there is a tool we can use to select multiple files. This is called globbing and allows us to select all files that match a certain pattern. As an example `rm *.txt` deletes all `.txt` files in the current directory. The `*` is a placeholder that means _anything goes_. You can use this symbol wherever in a path.
 
-> TODO add a bunch of useful commands
+Here are a few more examples.
+
+_Print all files starting with k_
+
+```bash
+cat k*
+```
+
+_Print all files start with `h` and end with `s.txt`_
+
+```bash
+cat h*s.txt
+```
+
+_deletes all files in the `Downlaods` directory, ignoring any directories_
+
+```bash
+rm Downloads/*
+```
+
+## Cheatsheet
+
+Here is a list of commonly used commands that should be available on all computers with a terminal. `...` means that you can supply as many arguments as you want.
+
+- `cat <file> ...` prints files
+- `ls <dir>` prints all files in the directory, except hidden files (starts with a `.`).
+- `ls -a <dir>` prints all files in the directory.
+- `ls -l <dir>` prints files in the directory, and displays extra information about them.
+- `mkdir <dir>` creates a directory
+- `rm <path>` removes a file
+- `rm -r <path>` removes a file or directory and all files within
+- `pwd` prints the current _working directory_
+- `cd` changes _working directory_
+- `printenv` prints all environment variables
 
 ## Further reading
 
