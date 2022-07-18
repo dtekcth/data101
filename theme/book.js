@@ -54,7 +54,7 @@ const showAll = (elList) => {
     heading.classList.add("task-heading");
     heading.innerText = "Task";
 
-    const container = document.createElement("div");
+    const container = document.createElement("blockquote");
     container.classList.add("task");
     container.appendChild(heading);
     el.replaceWith(container);
@@ -70,7 +70,7 @@ const showAll = (elList) => {
     placeholder.classList.add("placeholder");
     placeholder.innerText = "Click to see answer";
 
-    const container = document.createElement("div");
+    const container = document.createElement("blockquote");
     container.classList.add("task");
     container.classList.add("solution");
     container.appendChild(heading);

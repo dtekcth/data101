@@ -22,13 +22,14 @@
   --base-200: hsl(30, 6%, 90%);
   --base-300: hsl(30, 6%, 86%);
 
-  --text-hsl: 210deg 6% 15%;
+  --text-hsl: 210deg 6% 20%;
   --text: hsl(var(--text-hsl));
 
   --bg: var(--base-100);
   --fg: var(--text);
 
   --code-bg: var(--base-200);
+  --code-text: var(--text);
 
   --sidebar-bg: var(--base-200);
   --sidebar-fg: var(--text);
@@ -41,9 +42,9 @@
   --icons: #747474;
   --icons-hover: #000000;
 
-  --links: var(--primary);
+  --links: var(--accent);
 
-  --inline-code-color: #301900;
+  --inline-code-color: var(--text);
 
   --theme-popup-bg: #fafafa;
   --theme-popup-border: #cccccc;
