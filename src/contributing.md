@@ -2,6 +2,14 @@
 
 Nice, you have decided that something is missing or should be expanded upon, or perhaps just want to fix a typo. The instructions are written with the expectation that you are at least somewhat familiar with setting up a development environment. If you do not feel up to the task you should try and contact the study board at your division as they should know how to get in touch with the authors.
 
+## Request changes
+
+If you have feedback you can file an [issue](https://github.com/toasterbag/data101/issues) on GitHub. If you have a GitHub account this is an easy process!
+
+To do it you will select **New issue** on [this page](https://github.com/toasterbag/data101/issues) and then press **Get started** on _"Feature request"_. You can then fill out the template, remember to put a descriptive title of what you want and describe why you want it. Here is an example request.
+
+![Issue example](./Assets/file_issue.png)
+
 ## Installation
 
 To set up the development environment, you first of all need [mdBook](https://rust-lang.github.io/mdBook/guide/installation.html) installed.
