@@ -9,6 +9,8 @@ You may be wondering why text-based interfaces are still so common. There are se
 {{.windows}}
 To get started on Windows you have to install WSL, if you have followed the instructions from [Getting started](../getting_started.md) then you should already have it.
 
+> Windows also provides the native `PowerShell` and `cmd.exe` utilities. These work very differently from most other shells and are not as commonly used in industry. Therefore we have decided not to focus on them in this book.
+
 WSL is a way to run Linux on your Windows PC. You can read more about Linux [here](./linux.md).
 
 {{.macos}}
