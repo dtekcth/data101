@@ -1,0 +1,25 @@
+name: deploy
+on: [push]
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup mdBook
+        uses: peaceiris/actions-mdbook@v1
+        with:
+          mdbook-version: '0.4.18'
+
+      - run: mdbook build
+
+      - name: Copy folder content recursively to remote
+        if: ${{ github.ref == 'refs/heads/main' }}
+        uses: garygrossgarten/github-action-scp@release
+        with:
+          local: dist
+          remote: ${{ secrets.DEPLOY_PATH }}
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USERNAME }}
+          privateKey: ${{ secrets.DEPLOY_KEY }}
+
