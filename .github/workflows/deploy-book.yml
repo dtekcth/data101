@@ -17,7 +17,7 @@ jobs:
         if: ${{ github.ref == 'refs/heads/main' }}
         uses: garygrossgarten/github-action-scp@release
         with:
-          local: dist
+          local: ./book
           remote: ${{ secrets.DEPLOY_PATH }}
           host: ${{ secrets.DEPLOY_HOST }}
           username: ${{ secrets.DEPLOY_USERNAME }}
