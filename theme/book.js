@@ -89,7 +89,6 @@ const showAll = (elList) => {
   // Can't listen on the spoiler directly as
   // there is something capturing the event on the page
   document.addEventListener("click", (ev) => {
-    console.log(ev);
     const solutionEl = getSolutionParent(ev.target);
     if (solutionEl) {
       solutionEl.querySelector(".spoiler").classList.remove("hidden");
@@ -189,22 +188,6 @@ const showAll = (elList) => {
 })();
 
 (function OperatingSystem() {
-  const promptForValues = () => {
-    if (
-      !localStorage.getItem("mdbook-programme") ||
-      !localStorage.getItem("mdbook-os")
-    ) {
-      document.getElementById("alert-selection").classList.remove("hidden");
-      // document.getElementById("os-toggle").style.border = "solid 2px yellow";
-      // document.getElementById("programme-toggle").style.border =
-      ("solid 2px red");
-    } else {
-      document.getElementById("alert-selection").classList.add("hidden");
-      // document.getElementById("os-toggle").style.border = null;
-      // document.getElementById("programme-toggle").style.border = null;
-    }
-  };
-
   let os = localStorage.getItem("mdbook-os");
   if (os === null) {
     os = "all";
@@ -220,6 +203,53 @@ const showAll = (elList) => {
     os = newOS;
     localStorage.setItem("mdbook-os", os);
     promptForValues();
+  };
+
+  let programme = localStorage.getItem("mdbook-programme");
+  if (programme === null) programme = "all";
+  const colors = {
+    Data: "orange",
+    IT: "#008CBA",
+    DV: "#188BDE",
+  };
+
+  const setProgramme = (newProgramme) => {
+    programme = newProgramme;
+    localStorage.setItem("mdbook-programme", programme);
+    promptForValues();
+  };
+
+  const promptForValues = () => {
+    if (
+      !localStorage.getItem("mdbook-programme") ||
+      !localStorage.getItem("mdbook-os")
+    ) {
+      const promptEl = document.getElementById("meta-prompt");
+      promptEl.classList.remove("hidden");
+      promptEl.addEventListener("click", (ev) => {
+        console.log(ev);
+        if (ev.target.dataset["os"]) {
+          promptEl
+            .querySelectorAll(".selected[data-os]")
+            .forEach((el) => el.classList.remove("selected"));
+
+          ev.target.classList.add("selected");
+          setOS(ev.target.dataset["os"]);
+        }
+
+        if (ev.target.dataset["programme"]) {
+          promptEl
+            .querySelectorAll(".selected[data-programme]")
+            .forEach((el) => el.classList.remove("selected"));
+          ev.target.classList.add("selected");
+          setProgramme(ev.target.dataset["programme"]);
+        }
+
+        promptForValues();
+      });
+    } else {
+      document.getElementById("meta-prompt").classList.add("hidden");
+    }
   };
 
   const isCodeBlock = (el) => {
@@ -311,20 +341,6 @@ const showAll = (elList) => {
       });
     });
   });
-
-  let programme = localStorage.getItem("mdbook-programme");
-  if (programme === null) programme = "all";
-  const colors = {
-    Data: "orange",
-    IT: "#008CBA",
-    DV: "#188BDE",
-  };
-
-  const setProgramme = (newProgramme) => {
-    programme = newProgramme;
-    localStorage.setItem("mdbook-programme", programme);
-    promptForValues();
-  };
 
   window.addEventListener("load", () => {
     const allProgrammes = ["Data", "DV", "IT"];

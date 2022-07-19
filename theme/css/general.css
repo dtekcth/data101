@@ -293,4 +293,103 @@ blockquote.task {
   color: white;
 }
 
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.relative {
+  position: relative;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.prompt {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10000;
+}
+
+.prompt .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.prompt .modal {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--bg);
+  min-width: 500px;
+  padding: 2rem;
+}
+
+.prompt h3 {
+  margin-top: 0rem;
+}
+
+.prompt .cols {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.prompt .cols-select {
+  padding: 2rem 0;
+  height: 8rem;
+  font-size: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.prompt .cols-select .icon {
+  width: 5rem;
+  height: 5rem;
+  font-size: 3rem;
+}
+
+.prompt .cols-select .icon * {
+  pointer-events: none;
+}
+
+.prompt .cols-select > *:hover {
+  border-radius: 4px;
+  outline: rgba(0, 0, 0, 0.3) solid 2px;
+  cursor: pointer;
+}
+
+.prompt .cols-select > .selected {
+  border-radius: 4px;
+  outline: var(--primary) solid 2px;
+}
+
+.prompt .title {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: var(--font-heading);
+}
+
+.text-data {
+  color: orange;
+}
+
+.text-it {
+  color: #008cba;
+}
+
+.text-dv {
+  color: #1472b6;
+}
+
 /* END DAT101 */
