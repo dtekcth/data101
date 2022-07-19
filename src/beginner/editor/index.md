@@ -9,8 +9,8 @@ Short answer: [Visual Studio Code](https://code.visualstudio.com/). (VSCode)
 Long answer: When writing this guide we compared many editors to find out which would be most suitable for those just starting. Editors are one of those tools that people have strong opinions about so we decided on VSCode on the following grounds:
 
 - Available on all platforms (Windows, macOS, Linux)
-- Not specific to a certain programming language or environment (e.g Pycharm which only works for Python)
-- Good plugin support, including other "devops" features.
+- Not specific to a certain programming language or environment (e.g. PyCharm which only works for Python)
+- Good plugin support, including other _[DevOps](https://en.wikipedia.org/wiki/DevOps)_ features.
 - Does not require any computer knowledge to get started[^emacs_evangelists]
 
 The only editor which truly fits all of these is Visual Studio Code.
