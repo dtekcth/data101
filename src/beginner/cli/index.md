@@ -58,9 +58,9 @@ makes a copy of the file instead of moving it.
 
 ## Reading and editing files
 
-To print a text file you can use `cat <path>`. On the other hand, if you want to edit a file in your terminal you can usually use `nano` or `vi`. These editors are not trivial to use and rely heavily on keyboard shortcuts.
+To print a text file you can use `cat <path>`. On the other hand, if you want to edit a file in your terminal you can usually use `nano` or `vim`. These editors are not trivial to use and rely heavily on keyboard shortcuts.
 
-IF you are interested in trying them, feel free to experiment as they are useful tools to know of. You can exit `vi` by typing `:q` and pressing !kbd[Enter].[^exit_vim]
+IF you are interested in trying them, feel free to experiment as they are useful tools to know of. You can exit `vim` by typing `:q` and pressing !kbd[Enter].[^exit_vim]
 
 ## Cheatsheet
 
@@ -85,4 +85,4 @@ You can find more information on using the terminal in the chapter on Git in the
 
 > TODO link documents
 
-[^exit_vim]`vi` is infamously known for being difficult to exit.
+[^exit_vim]`vim` is infamously known for being difficult to exit.
