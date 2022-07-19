@@ -62,58 +62,6 @@ To print a text file you can use `cat <path>`. On the other hand, if you want to
 
 IF you are interested in trying them, feel free to experiment as they are useful tools to know of. You can exit `vi` by typing `:q` and pressing !kbd[Enter].[^exit_vim]
 
-## The environment
-
-Whenever we start a shell, some variables are assigned to the session. These are called _environment variables_ and are refreshed every time you restart the terminal. You can see all your variables using `printenv`.
-
-All variables can be used inside your shell. For example, your home directory is stored in a variable called HOME. Accessing a variable is done by prefixing the variable with `$`. To change the _working directory_ to your home you could then write `cd $HOME`, which in my case would be translated to `cd /home/dave`.
-
-### $PATH
-
-This variable contains all directories where you store binary files (files that can be executed). Normally the command has to specify the path of the file to be executed. Without the PATH variable, we would have to write `/usr/bin/ls` but since `/usr/bin` is in our PATH variable, our shell will try and automatically find the file.
-
-To clarify, it is possible to execute files that are not in our path. Let's say we have a file called `do_cool_stuff` in our current directory, then we could write `./do_cool_stuff` to execute it, even if it isn't in our PATH.
-
-At some point, you will probably try to run a command and find an error message
-like:
-
-```bash
-command not found: <command you just wrote>
-```
-
-This is almost always because you don't have the directory that your command is
-at, added to `$PATH`.
-
-## Autocompletion
-
-Most shells allow you to autocomplete commands and arguments. If you press !kbd[Tab] the shell will try to autocomplete the command, or if there are multiple alternatives, print them. For example, writing `r` and then pressing !kbd[Tab] will give you all commands starting with `r`. When autocompleting arguments it will try to autocomplete to available files and folders.
-
-> Some shells require you to double-tap !kbd[Tab] to see all available alternatives.
-
-## Globbing
-
-While our examples for `rm` only have one argument, it is possible to supply as many files as we want. It would however get very tedious to write out all files one by one so there is a tool we can use to select multiple files. This is called globbing and allows us to select all files that match a certain pattern. As an example `rm *.txt` deletes all `.txt` files in the current directory. The `*` is a placeholder that means _anything goes_. You can use this symbol wherever in a path.
-
-Here are a few more examples.
-
-_Print all files starting with k_
-
-```bash
-cat k*
-```
-
-_Print all files start with `h` and end with `s.txt`_
-
-```bash
-cat h*s.txt
-```
-
-_deletes all files in the `Downlaods` directory, ignoring any directories_
-
-```bash
-rm Downloads/*
-```
-
 ## Cheatsheet
 
 Here is a list of commonly used commands that should be available on all computers with a terminal. `...` means that you can supply as many arguments as you want.
@@ -126,7 +74,9 @@ Here is a list of commonly used commands that should be available on all compute
 - `rm <path>` removes a file
 - `rm -r <path>` removes a file or directory and all files within
 - `pwd` prints the current _working directory_
-- `cd` changes _working directory_
+- `cd <path>` changes _working directory_
+- `cp <from> <to>` copies a file
+- `cp -r <from> <to>` copies a file or directory _recursively_
 - `printenv` prints all environment variables
 
 ## Further reading
