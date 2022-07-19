@@ -17,6 +17,8 @@
   - [Using .gitignore](./beginner/git/gitignore.md)
   - [A Git workflow for regular lab assignments](./beginner/git/workflow.md)
 - [CLI](./beginner/cli/index.md)
+  - [Paths](./beginner/cli/paths.md)
+  - [Flags](./beginner/cli/flags.md)
   - [SSH](./beginner/ssh.md)
   - [Useful tools](./beginner/cli_tools/index.md)
 - [Linux](./beginner/linux.md)
