@@ -20,6 +20,7 @@ jobs:
           local: ./book
           remote: ${{ secrets.DEPLOY_PATH }}
           host: ${{ secrets.DEPLOY_HOST }}
+          port: ${{ secrets.DEPLOY_PORT }}
           username: ${{ secrets.DEPLOY_USERNAME }}
           privateKey: ${{ secrets.DEPLOY_KEY }}
 
