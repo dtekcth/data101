@@ -52,6 +52,10 @@ _What command should you run to enter the new directory that you just created?_
 [Solution]
 Run `cd test_directory`.
 
+We can move files with `mv <path> <new path>`. `mv` is also commonly used to
+rename files. Similarly to move, there's copy `cp <path> <other path>`, which
+makes a copy of the file instead of moving it.
+
 ## Reading and editing files
 
 To print a text file you can use `cat <path>`. On the other hand, if you want to edit a file in your terminal you can usually use `nano` or `vi`. These editors are not trivial to use and rely heavily on keyboard shortcuts.
