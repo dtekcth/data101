@@ -226,42 +226,6 @@
                         </p>
                     </blockquote>
                     {{{ content }}}
-                    <div id="meta-prompt" class="prompt hidden">
-                        <div class="overlay"></div>
-                        <div class="modal">
-                            {{!-- <h3>Select programme and Operating system</h3> --}}
-                            <div class="cols">
-                                <div>
-                                    <div class="title">Operating system</div>
-                                    <div class="cols-select">
-                                        <div class="relative icon" data-os="linux">
-                                            <div class="fa fa-linux center"></div>
-                                        </div>
-                                        <div class="relative icon" data-os="macos">
-                                            <div class="fa fa-apple center"></div>
-                                        </div>
-                                        <div class="relative icon" data-os="windows">
-                                            <div class="fa fa-windows center"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="title">Student division</div>
-                                    <div class="cols-select">
-                                        <div class="relative text-center text-data" data-programme="Data">
-                                            Data
-                                        </div>
-                                        <div class="relative text-center text-it" data-programme="IT">
-                                            IT
-                                        </div>
-                                        <div class="relative text-center text-dv" data-programme="DV">
-                                            DV
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </main>
 
                 <nav class="nav-wrapper" aria-label="Page navigation">
@@ -301,6 +265,43 @@
             {{/next}}
         </nav>
 
+    </div>
+
+    <div id="meta-prompt" class="prompt hidden">
+        <div class="overlay"></div>
+        <div class="modal">
+            {{!-- <h3>Select programme and Operating system</h3> --}}
+            <div class="cols">
+                <div>
+                    <div class="title">Operating system</div>
+                    <div class="cols-select">
+                        <div class="relative icon" data-os="linux">
+                            <div class="fa fa-linux center"></div>
+                        </div>
+                        <div class="relative icon" data-os="macos">
+                            <div class="fa fa-apple center"></div>
+                        </div>
+                        <div class="relative icon" data-os="windows">
+                            <div class="fa fa-windows center"></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="title">Student division</div>
+                    <div class="cols-select">
+                        <div class="relative text-center text-data" data-programme="Data">
+                            Data
+                        </div>
+                        <div class="relative text-center text-it" data-programme="IT">
+                            IT
+                        </div>
+                        <div class="relative text-center text-dv" data-programme="DV">
+                            DV
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     {{#if live_reload_endpoint}}
