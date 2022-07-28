@@ -16,7 +16,7 @@ _Print all files start with `h` and end with `s.txt`_
 cat h*s.txt
 ```
 
-_deletes all files in the `Downlaods` directory, ignoring any directories_
+_deletes all files in the `Downloads` directory, ignoring any directories_
 
 ```bash
 rm Downloads/*

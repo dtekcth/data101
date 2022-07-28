@@ -8,6 +8,7 @@ While you are enrolled in a specific programme with certain mandatory courses an
 > - Which courses are recommended
 > - MTS
 > - MHU (for IT)
+> - Natural sciences (for IT)
 > - That you can choose a few courses of **_whatever you want_**
 
 > TODO Master programme

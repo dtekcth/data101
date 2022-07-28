@@ -28,13 +28,12 @@ pacman -S virtualbox virtualbox-host-modules-arch
 
 {{ begin .macos }}
 
-> TODO how do we install virtualbox on M1 macs?
+> [Danger]
+> The new M1 mac use a different system architecture than most other systems. This means that it is for now extremely difficult to set up x64 virtulization on these systems. If you need to use a virtual machine we recommend that you instead use the computers at school.
 
-First, you have to find out which processor architecture your Mac has. This can be done by looking in _About this mac_. IF you have an M1 model, it means that you have the Arm ISC, otherwise you have an x64 chipset.
+First, you have to find out which processor architecture your Mac has. This can be done by looking in _About this mac_. If you have an M1 model, it means that you have the Arm ISC, otherwise you have an x64 chipset.
 
 If you have an x64 machine then download and install VirtualBox from their [webpage](https://www.virtualbox.org/wiki/Downloads). Select `OS X hosts`, which is the old name for MacOS.
-
-If you have an M1 Mac then I am sorry to say that things will be difficult. Most software you will need a VM for will be based on x64 and it is currently not possible to virtualize x64 systems without heavy performance losses. It is also not possible to use VirtualBox on M1 macs.
 
 {{ end }}
 

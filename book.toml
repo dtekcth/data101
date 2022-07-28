@@ -6,6 +6,6 @@ src = "src"
 title = "Data101"
 
 [output.html]
-default-theme = "tentaportalen"
+default-theme = "Tentaportalen"
 # [preprocessor.data101]
 # command = "./preprocessor/target/release/preprocessor-data101"

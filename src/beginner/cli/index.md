@@ -2,14 +2,14 @@
 
 You may be used to using graphical interfaces when using your computer, but initially, interfaces were mostly text-based. This still holds true for a lot of developer tools.
 
-You may be wondering why text-based interfaces are still so common. There are several reasons but it mostly comes down to that they are very easy to create and very simple to use. This may feel clunky at first but as soon as you have used a few you will realize that they all follow very similar patterns, just like you know how a button looks on a web page.
+There are several reasons as to why but it mostly comes down to that they are very easy to create and very simple to use. They may feel clunky at first but as soon as you have used a few you will realize that they all follow very similar patterns.
 
 ## Installation
 
 {{.windows}}
-To get started on Windows you have to install WSL, if you have followed the instructions from [Getting started](../getting_started.md) then you should already have it.
+To get started on Windows you have to install WSL, if you have followed the instructions from [Getting started](../getting_started.md) then you should already have it. Otherwise, go back and install it now.
 
-> Windows also provides the native `PowerShell` and `cmd.exe` utilities. These work very differently from most other shells and are not as commonly used in industry. Therefore we have decided not to focus on them in this book.
+> Windows also provides the native `PowerShell` and `cmd.exe` utilities. These work very differently from most other shells and are not used as often in the industry. Therefore we have decided not to focus on them in this book.
 
 WSL is a way to run Linux on your Windows PC. You can read more about Linux [here](./linux.md).
 
@@ -60,7 +60,7 @@ makes a copy of the file instead of moving it.
 
 To print a text file you can use `cat <path>`. On the other hand, if you want to edit a file in your terminal you can usually use `nano` or `vim`. These editors are not trivial to use and rely heavily on keyboard shortcuts.
 
-IF you are interested in trying them, feel free to experiment as they are useful tools to know of. You can exit `vim` by typing `:q` and pressing !kbd[Enter].[^exit_vim]
+If you are interested in trying them, feel free to experiment as they are useful tools to know of. You can exit `vim` by pressing !kbd[Escape] and then typing `:q` followed by !kbd[Enter].[^exit_vim]
 
 ## Cheatsheet
 
@@ -84,5 +84,7 @@ Here is a list of commonly used commands that should be available on all compute
 You can find more information on using the terminal in the chapter on Git in the terminal, as well as in the chapter on TDA555 Introduction to functional programming.
 
 > TODO link documents
+
+> TODO Ctrl+c etc.
 
 [^exit_vim]`vim` is infamously known for being difficult to exit.

@@ -14,11 +14,11 @@ Before we begin, keep in mind that you will get much better results if you searc
 
 First, we have to decide what we want to know. As an example, we would like to know how to reverse a list in python. Good searches are usually in the form `<what you want> <language or program you want to use>`. So for our example, we might search for `How to reverse a list in python`, but this is more verbose than it has to be, `reverse list python` works just as well.
 
-If possible, search directly on sites that know have good results. For example, [Stackoverflow](https://stackoverflow.com) is a place where developers can ask questions and everybody can answer, think of it as Wikipedia but for questions related to programming. The answers are not always 100% correct but it is usually just as good or better than picking a generic site from your search results.
+If possible, search directly on sites that know have good results. For example, [Stackoverflow](https://stackoverflow.com) is a place where developers can ask questions and everybody can answer, think of it as Wikipedia but for questions related to programming. Be skeptical and understand that most programming answers are _good enough_ rather than strictly correct and you will most likely have to adapt the solution to your specific problem.
 
 ### Finding good search results
 
-There are countless sites offering programming advice. Avoid sites that look like news articles or have short sentences, these are usually either computer-generated or written to rate high up on search results. If possible try and find the official documentation. Remember that you can use !kbd[!ctrl+f] to find content on the page.
+There are countless sites offering programming advice. Avoid sites that look like news articles or have short sentences, these are usually either computer-generated or written to rate high up on search results. If possible try and find the official documentation. Remember that you can use !kbd[!ctrl+F] to find content on the page.
 
 ### Official or high-quality sources
 

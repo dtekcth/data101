@@ -8,7 +8,7 @@ Linux comes in many variants called _distributions_ or _distros_ for short. They
 
 If you are interested in getting started you can either choose a more user-friendly distro such as Ubuntu or jump in knee-deep and start with something like Arch. People will tell you that one is superior to another, but the true charm of Linux lies in that it can be whatever you want. It is easy to change distro and most people try at least two or three before finding one that fits them the best.
 
-Many students at Chalmers use Linux as their day-to-day operating system. This is extremely educational but it is not necessary. It is possible to have both Linux and Windows/MacOS on one system and there are also other options which you will discover in the next chapter.
+Many computer science students use Linux as their day-to-day operating system. This is extremely educational but it is not necessary. It is possible to have both Linux and Windows/MacOS on one system and there are also other options which you will discover in the next chapter.
 
 If you are eager to get started look at the website of one of the linked distros or try grabbing an older student and asking them for advice.
 

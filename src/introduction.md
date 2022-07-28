@@ -12,6 +12,12 @@ If your only experience comes from a course or two during _Gymnasiet_ then you s
 
 > If you think that something there is a topic that needs improvement or have ideas for new topics please look [here](./contributing.md#request-changes)!
 
+## Structure
+
+Begin by reading the beginner chapters sequentially. These will prepare you for your real courses and can be deemed essential. We will go through each topic from the bottom up and each sub-chapter is meant to be self-contained, meaning you can take 10 minutes and read a small bit every day. To receive the greatest benefits, these should preferably be completed before study period 1 begins. Once you have read all the beginner chapters you can progress to whichever chapters you are interested in.
+
+Under _studies_ you will find course-specific information, these chapters provide tips & tricks from older students and should generally be looked at just before beginning the course and can be used as a reference during the course.
+
 ## The student division
 
 {{ .Data }}

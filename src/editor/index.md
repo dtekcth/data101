@@ -50,15 +50,15 @@ You may be used to selecting text by either holding in left-click and dragging o
 
 #### Find and replace
 
-Another common task is to either find a string in a file or replace it. Let's say you have a file with some code you are not so proud of, perhaps all variables are badly named such as "myFunction" and you have decided that it is time to improve this. Fire up the search tool by pressing !kbd[!ctrl+f] and simply type what you are searching for. You can jump to the next occurrence by pressing !kbd[Enter] or the previous by pressing !kbd[Shift+Enter].
+Another common task is to either find a string in a file or replace it. Let's say you have a file with some code you are not so proud of, perhaps all variables are badly named such as "myFunction" and you have decided that it is time to improve this. Fire up the search tool by pressing !kbd[!ctrlF] and simply type what you are searching for. You can jump to the next occurrence by pressing !kbd[Enter] or the previous by pressing !kbd[Shift+Enter].
 
 > **Effective browsing**
 >
 > This command also works in your browser and can be used to find text on wbesites.
 
-If you want to find all occurrences in your whole project, the command is instead !kbd[!ctrl+Shift+f].
+If you want to find all occurrences in your whole project, the command is instead !kbd[!ctrl+Shift+F].
 
-In the instance where you don't just want to find but also replace text, the command is instead !kbd[!ctrl+h].
+In the instance where you don't just want to find but also replace text, the command is instead !kbd[!ctrl+H].
 
 > **Advanced find and replace**
 >
@@ -66,13 +66,13 @@ In the instance where you don't just want to find but also replace text, the com
 
 #### Other common tasks
 
-- !kbd[!ctrl+c] copies selected text
-- !kbd[!ctrl+x] cuts the selected text, both removing the text and copying it
-- !kbd[!ctrl+v] pastes the text that you have copied
+- !kbd[!ctrl+C] copies selected text
+- !kbd[!ctrl+X] cuts the selected text, both removing the text and copying it
+- !kbd[!ctrl+V] pastes the text that you have copied
 
 ### The command palette
 
-Aside from the kind of shortcuts you may be used to when using other applications, VSCode also includes a powerful tool called the `Command palette`. It can be opened by pressing !kbd[!ctrl+p]. This tool can be used to efficiently navigate your project by first opening the palette and then writing a command.
+Aside from the kind of shortcuts you may be used to when using other applications, VSCode also includes a powerful tool called the `Command palette`. It can be opened by pressing !kbd[!ctrl+P]. This tool can be used to efficiently navigate your project by first opening the palette and then writing a command.
 
 #### Change file
 
@@ -80,17 +80,17 @@ You can navigate to other files by opening the palette and writing the name of t
 
 #### Goto line
 
-You can also go to a specific line number by first prefixing the command with `:`. For example to go to line 12 you type `:12` and then press Enter. This mode can be directly entered by pressing !kbd[!ctrl+g]
+You can also go to a specific line number by first prefixing the command with `:`. For example to go to line 12 you type `:12` and then press Enter. This mode can be directly entered by pressing !kbd[!ctrl+G]
 
 #### Find symbol
 
-Lastly, you can also go to what is called a "Symbol". This is a more advanced language concept but you can think of it as a way to go directly to function names, variables or other parts of your code that you have named. This can be done by prefixing the command with `@`. To go to the function named `isPositive` you write `@ispositive`. This mode can be directly entered by pressing !kbd[!ctrl+Shift+g]
+Lastly, you can also go to what is called a "Symbol". This is a more advanced language concept but you can think of it as a way to go directly to function names, variables or other parts of your code that you have named. This can be done by prefixing the command with `@`. To go to the function named `isPositive` you write `@ispositive`. This mode can be directly entered by pressing !kbd[!ctrl+Shift+G]
 
 None of the commands care about casing so `@isPositive` is the same as `@IsPositivE`.
 
 #### Command mode
 
-The command palette is so powerful that you can do anything with the palette that you can do elsewhere in the interface. To get started with this prefix the command with `>`. It is also possible to start the palette in this mode by default by instead pressing !kbd[!ctrl+Shift+p].
+The command palette is so powerful that you can do anything with the palette that you can do elsewhere in the interface. To get started with this prefix the command with `>`. It is also possible to start the palette in this mode by default by instead pressing !kbd[!ctrl+Shift+P].
 
 This will expose you to everything from `Open file` to `Close editor` to `Change font size`. I recommend that instead of looking at the top bar you instead try and search here instead.
 
