@@ -2,13 +2,13 @@
 
 Congratulations, You are about to take your first steps toward becoming not only a programmer but a computer scientist or engineer! This book aims to provide you with the tools and context that you will need during your university years. Especially related to programming and computing.
 
-This will also try to create a common ground so that assumptions can be made in courses. For example, we will teach you how to correctly set up Virtual Machines, a tool for running other [operating systems](/glossary.html#operating-system) (OS) isolated on your machine without having to reinstall your day-to-day OS, so that courses that you take in the future may assume you have access to other operating systems such as [Windows](/glossary.html#microsoft-windows) or [Linux](/glossary.html#linux).
+This material will also try to create a common ground so that assumptions can be made in later courses. For example, we will teach you how to correctly set up Virtual Machines, a tool for running other [operating systems](/glossary.html#operating-system) (OS) isolated on your machine without having to reinstall your day-to-day OS, so that courses that you take in the future may assume you have access to other operating systems such as [Windows](/glossary.html#microsoft-windows) or [Linux](/glossary.html#linux).
 
 ## Who is this for?
 
 This book mainly targets those who have just started a programme relating to Computer science and have no, or very little, previous knowledge. This means that we will write using as much easy language as possible.
 
-If your only experience comes from a course or two during _Gymnasiet_ then you should still find much useful information here but may find the steps to be a bit too granular, hopefully you can look past this!
+If your only experience comes from a course or two during _Gymnasiet_ then you should still find much useful information here but may find the steps to be a bit too granular, hopefully, you can look past this!
 
 > If you think that something there is a topic that needs improvement or have ideas for new topics please look [here](./contributing.md#request-changes)!
 
