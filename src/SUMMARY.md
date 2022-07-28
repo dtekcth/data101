@@ -39,8 +39,8 @@
 - [Personalizing your education](./studies/index.md)
 
 # Courses
-
-- [TDA555](./courses/TDA555.md)
+- [Effective study tips and tricks](./courses/index.md)
+  - [TDA555](./courses/TDA555.md)
 
 ---
 
