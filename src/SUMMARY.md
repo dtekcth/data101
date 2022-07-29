@@ -38,7 +38,9 @@
 # Studies
 
 - [Your education](./studies/index.md)
-  - [Courses](./studies/courses.md)
+  - [Basics](./studies/basics.md)
+  - [Exams](./studies/exams.md)
+  <!-- - [Courses](./studies/courses.md) -->
 
 # Courses
 
