@@ -99,7 +99,8 @@ const showAll = (elList) => {
   const removeTodoInProduction = () => {
     if (window.location.hostname === "data101.dtek.se") {
       document.querySelectorAll("blockquote").forEach((e) => {
-        if (e.innerText.trim().startsWith("TODO")) {
+        console.log(e.innerText);
+        if (e.innerText.match(/TODO/i) !== null) {
           e.remove();
         }
       });
@@ -146,7 +147,6 @@ const showAll = (elList) => {
     if (node.nextSibling === null || node.parentElement === null) return;
     const matches = node.nodeValue.match(/{{\s?((\.[A-Za-z\-0-9]+)+)\s*?}}$/);
     if (matches && matches[1]) {
-      console.log(matches);
       // Add classes to parent
       matches[1]
         .split(".")
@@ -161,7 +161,6 @@ const showAll = (elList) => {
   const EndLongBlockRegex = /^{{\s?end\s*?}}/;
 
   const applyClasses = (el, classes) => {
-    console.log(el);
     if (el.innerText) {
       const matches = el.innerText.match(EndLongBlockRegex);
       if (matches !== null) {
@@ -238,7 +237,6 @@ const showAll = (elList) => {
       const promptEl = document.getElementById("meta-prompt");
       promptEl.classList.remove("hidden");
       promptEl.addEventListener("click", (ev) => {
-        console.log(ev);
         if (ev.target.dataset["os"]) {
           promptEl
             .querySelectorAll(".selected[data-os]")
