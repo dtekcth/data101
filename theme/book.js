@@ -96,6 +96,16 @@ const showAll = (elList) => {
     }
   });
 
+  const removeTodoInProduction = () => {
+    if (window.location.hostname === "data101.dtek.se") {
+      document.querySelectorAll("blockquote").forEach((e) => {
+        if (e.innerText.trim().startsWith("TODO")) {
+          e.remove();
+        }
+      });
+    }
+  };
+
   const matchExerciseMacro = (node) => {
     if (node.parentElement === null) return;
     const matches = node.nodeValue.match(/^\[\s?([A-Za-z0-9]+)\s*?\]/);
@@ -185,6 +195,7 @@ const showAll = (elList) => {
     matchExerciseMacro(node);
     // matchCodeMacro(node);
   });
+  removeTodoInProduction();
 })();
 
 (function OperatingSystem() {
