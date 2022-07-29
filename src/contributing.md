@@ -24,6 +24,18 @@ To start editing pages you just have to edit the files in the ´src´ directory.
 
 When you are done, you should open a pull request on the Data101 GitHub page and describe what you have changed. You may then receive feedback on your edit if there is something that has to be changed, it will then be merged with the project and reflected in the actual book!
 
+## Editing & Proofreading
+
+Here are some tips for those who are helping test this book. Remember to fill in [this]() google form **as you go**. It is totally OK to skip chapters.
+
+- Try all different operating systems
+- Try all different education programs (you do **not** have to test combinations of OS and programs)
+- Measure how long time it took to complete a chapter.
+- We are mostly interested in what _content_ should be changed. Proofreading will come at a later stage.
+- As you go, write down things that were especially good/bad or immediately caught your attention.
+
+When you are done, submit the form
+
 ## Modifications to mdBook
 
 To better support the flow of the book some modifications have been made. All modifications in the `theme` directory can be found by searching for `BEGIN DAT101`.
