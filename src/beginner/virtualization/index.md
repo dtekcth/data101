@@ -59,15 +59,3 @@ With virtualbox open, select **New** in the menu to the right. There are several
 ![Recommended machine settings](/Assets/virtualization/vm_settings.png)
 
 You will be prompted to select Disk settings as well. The default options should work fine, so just press **Create**.
-
-## Running the VM
-
-To run the VM you select your VM in the list to the left and press **Start** in the menu to the right.
-
-A new window will open asking you for the Ubuntu Desktop image. Select the file we downloaded earlier and continue.
-
-Another window will open which will show you the graphical output of the VM. As the VM is just booting up it will just be a terminal for now but will soon boot into an actual desktop where you will be prompted to install Ubuntu.
-
-> These steps wil be exactly the same should you wish to install Ubuntu to your own desktop.
-
-Most of the installation steps will be self-explanatory and the defaults should suffice in most cases.
