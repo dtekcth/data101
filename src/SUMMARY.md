@@ -26,7 +26,7 @@
   - [Useful tools](./beginner/cli_tools/index.md)
 - [Linux](./beginner/linux.md)
 - [Virtualization](./beginner/virtualization/index.md)
-  - [Guest OS](./beginner/virtualization/installation.md)
+  - [Guest OS](./beginner/virtualization/guest.md)
 - [Pro-tips](./beginner/protips.md)
 
 # Advanced
@@ -43,6 +43,7 @@
   <!-- - [Courses](./studies/courses.md) -->
 
 # Courses
+
 - [Effective study tips and tricks](./courses/index.md)
   - [TDA555](./courses/TDA555.md)
 
