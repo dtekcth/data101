@@ -29,4 +29,4 @@ Synonym to folder
 **Secure Shell (SSH)**
 Provides a shell on any remote computer with an SSH server installed. Similar to a remote desktop but a command-line instead.
 
-## TODO Engelsk-svensk ordlista
+> TODO Swedish-english dictionary

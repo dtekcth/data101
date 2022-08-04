@@ -2,7 +2,7 @@
 
 Congratulations, You are about to take your first steps toward becoming not only a programmer but a computer scientist or engineer! This book aims to provide you with the tools and context that you will need during your university years. Especially related to programming and computing.
 
-This material will also try to create a common ground so that assumptions can be made in later courses. For example, we will teach you how to correctly set up Virtual Machines, a tool for running other [operating systems](/glossary.html#operating-system) (OS) isolated on your machine without having to reinstall your day-to-day OS, so that courses that you take in the future may assume you have access to other operating systems such as [Windows](/glossary.html#microsoft-windows) or [Linux](/glossary.html#linux).
+This material will also try to create a common ground so that assumptions can be made in later courses. For example, we will teach you how to correctly set up Virtual Machines, a tool for running other operating systems (OS) isolated on your machine without having to reinstall your day-to-day OS, so that courses that you take in the future may assume you have access to other operating systems such as Windows or Linux.
 
 > This book will use the official programme codes: TKDAT (Datateknik 300hp), TKITE (Informationsteknik 300hp) and N1COS (Datavetenskap 180hp) instead of the full names.
 

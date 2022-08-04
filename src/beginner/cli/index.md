@@ -21,7 +21,7 @@ Linux users do not have to install anything.
 
 ## Getting started
 
-> This chapter introduces a lot of terminology, you can find most terms in [the glossary](../glossary.md#command-line-terms).
+<!-- > This chapter introduces a lot of terminology, you can find most terms in [the glossary](../glossary.md#command-line-terms). -->
 
 {{.windows}}
 Start WSL by searching for `Ubuntu` in the window start menu.
@@ -81,7 +81,7 @@ Here is a list of commonly used commands that should be available on all compute
 
 ## Special shortcuts
 
-There are a couple of shortcuts which might be helpful.
+There are a couple of shortcuts that might be helpful.
 
 - !kbd[!ctrl+C] terminates the current program (does not force a program to exit if it is busy)
 - !kbd[!ctrl+Z] sends the program to the background, can be sent back to the foreground by running `fg`.
