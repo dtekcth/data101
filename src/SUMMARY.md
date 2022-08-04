@@ -29,7 +29,7 @@
   - [Guest OS](./beginner/virtualization/guest.md)
 - [Pro-tips](./beginner/protips.md)
 
-# Advanced
+# Next steps
 
 - [Editor](./advanced/editor.md)
 
