@@ -26,12 +26,13 @@ When you are done, you should open a pull request on the Data101 GitHub page and
 
 ## Editing & Proofreading
 
-Here are some tips for those who are helping test this book. Remember to fill in [this]() google form **as you go**. It is totally OK to skip chapters.
+Here are some tips for those who are helping test this book. Remember to fill in [this](https://docs.google.com/forms/d/e/1FAIpQLScIiI5gQYQZJ4nJBWWXJJSsqq_MzX65jWbnkSx7R_QXB63z3A/viewform?usp=sf_link) google form **as you go**. It is totally OK to skip chapters.
 
 - Try all different operating systems
 - Try all different education programs (you do **not** have to test combinations of OS and programs)
 - Measure how long time it took to complete a chapter.
-- We are mostly interested in what _content_ should be changed. Proofreading will come at a later stage.
+- Test links to see if they go to where you expect them to.
+- We are mostly interested in what _content_ should be changed, if everyone focuses on spelling mistakes then we would be wasting your time.
 - As you go, write down things that were especially good/bad or immediately caught your attention.
 
 When you are done, submit the form
@@ -61,7 +62,7 @@ You can include icons as well, use `\!icon[icon]` to display a windows icon. Any
 ## Things to keep in mind
 
 - To remain consistent, use British English.
-- If you are adding new pages or writing about new technologies, remember to also add an entry in the glossary and hyperlink to it. Examples of this can be seen on the introduction page. You should only hyperlink the first instance of the word.
+<!-- - If you are adding new pages or writing about new technologies, remember to also add an entry in the glossary and hyperlink to it. Examples of this can be seen on the introduction page. You should only hyperlink the first instance of the word. -->
 
 ## Deploying
 
