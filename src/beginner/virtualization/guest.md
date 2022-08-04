@@ -14,7 +14,7 @@ Use the detect keyboard feature to correctly set the keyboard layout. There are 
 
 When prompted to select installation type, simply choose _Erase disk and install ubuntu_. This will only wipe the virtual drive we created and not your real drive.
 
-When creating your user it is still good practice to use a secure password.
+When creating your user it is still good practice to use a secure password even though it is just a virtual system.
 
 > [Warning]
 > If you forget your password you will not be able to use your VM anymore and will have to reinstall it!
