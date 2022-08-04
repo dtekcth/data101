@@ -10,15 +10,7 @@ You may be tempted to click on the screen to move the caret (the vertical line w
 >
 > On Macs the !kbd[!win] key is replaced by !kbd[⌘] and is usually used instead of the !kbd[Ctrl] key. This guide tries to match the shortcuts to the OS you have selected but may not alway be 100% accurate.
 
-## Common shortcuts
-
-- !kbd[!ctrl+C] copies selected text
-- !kbd[!ctrl+X] cuts the selected text, both removing the text and copying it.
-- !kbd[!ctrl+V] pastes the text that you have copied
-- !kbd[!ctrl+S] saves the current file
-- !kbd[!ctrl+W] closes the current file
-- !kbd[!ctrl+Q] exits VSCode
-- !kbd[!ctrl+N] Opens a new file
+You can find most of the common shortcuts in our [cheatsheet](../../Assets/cli_editor_cheatsheet.pdf), printing one for yourself and bringing it along in your backpack is a good way remind yourself of what you can do with the editor.
 
 [Task]
 What happens if you press !kbd[!ctrl+X] without selecting any text?

@@ -8,7 +8,7 @@ First of you should know that it is possible to edit the shortcuts by opening `>
 
 ### Compose keys
 
-Some shortcuts require multiple keypresses. You can enter compose mode by pressing !kbd[!ctrl+k] and then your desired shortcut. For example, opening the menu to edit shortcuts can be opened by first pressing !kbd[!ctrl+k] followed by !kbd[!ctrl+s].
+Some shortcuts require multiple keypresses. You can enter compose mode by pressing !kbd[!ctrl+K] and then your desired shortcut. For example, opening the menu to edit shortcuts can be opened by first pressing !kbd[!ctrl+K] followed by !kbd[!ctrl+S].
 
 ### Next error
 

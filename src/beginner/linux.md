@@ -22,8 +22,9 @@ Secondly, the programs they can run are specific to each OS. A program for Windo
 
 Hardware support is also different between operating systems as they require different drivers.
 
+<!--
 ## Benefits of Linux
 
 ## Disadvantages of Linux
 
-- You cannot run Windows or macOS programs out of the box.
+- You cannot run Windows or macOS programs out of the box. -->

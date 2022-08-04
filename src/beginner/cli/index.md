@@ -21,7 +21,7 @@ Linux users do not have to install anything.
 
 ## Getting started
 
-> This chapter introduces a lot of terminology, you can find most terms in [the glossary](../glossary.md#command-line-terms).
+<!-- > This chapter introduces a lot of terminology, you can find most terms in [the glossary](../glossary.md#command-line-terms). -->
 
 {{.windows}}
 Start WSL by searching for `Ubuntu` in the window start menu.
@@ -79,12 +79,12 @@ Here is a list of commonly used commands that should be available on all compute
 - `cp -r <from> <to>` copies a file or directory _recursively_
 - `printenv` prints all environment variables
 
-## Further reading
+## Special shortcuts
 
-You can find more information on using the terminal in the chapter on Git in the terminal, as well as in the chapter on TDA555 Introduction to functional programming.
+There are a couple of shortcuts that might be helpful.
 
-> TODO link documents
-
-> TODO Ctrl+c etc.
+- !kbd[!ctrl+C] terminates the current program (does not force a program to exit if it is busy)
+- !kbd[!ctrl+Z] sends the program to the background, can be sent back to the foreground by running `fg`.
+- !kbd[!ctrl+D] sends an _End of Line_ (_EOL_) to the terminal. This usually exits the current program if it is interactive.
 
 [^exit_vim]`vim` is infamously known for being difficult to exit.

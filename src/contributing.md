@@ -24,6 +24,19 @@ To start editing pages you just have to edit the files in the ´src´ directory.
 
 When you are done, you should open a pull request on the Data101 GitHub page and describe what you have changed. You may then receive feedback on your edit if there is something that has to be changed, it will then be merged with the project and reflected in the actual book!
 
+## Editing & Proofreading
+
+Here are some tips for those who are helping test this book. Remember to fill in [this](https://docs.google.com/forms/d/e/1FAIpQLScIiI5gQYQZJ4nJBWWXJJSsqq_MzX65jWbnkSx7R_QXB63z3A/viewform?usp=sf_link) google form **as you go**. It is totally OK to skip chapters.
+
+- Try all different operating systems
+- Try all different education programs (you do **not** have to test combinations of OS and programs)
+- Measure how long time it took to complete a chapter.
+- Test links to see if they go to where you expect them to.
+- We are mostly interested in what _content_ should be changed, if everyone focuses on spelling mistakes then we would be wasting your time.
+- As you go, write down things that were especially good/bad or immediately caught your attention.
+
+When you are done, submit the form
+
 ## Modifications to mdBook
 
 To better support the flow of the book some modifications have been made. All modifications in the `theme` directory can be found by searching for `BEGIN DAT101`.
@@ -36,7 +49,7 @@ You can also use `{{begin .<os>}}`
 
 ### Programme specific content
 
-You can also use the same syntax as above to hide content from other programmes. The possible identifiers are `Data`, `ÌT` and `DV`.
+You can also use the same syntax as above to hide content from other programmes. The possible identifiers are `Data`, `IT` and `DV`.
 
 ### Keyboard shortcuts
 
@@ -49,7 +62,7 @@ You can include icons as well, use `\!icon[icon]` to display a windows icon. Any
 ## Things to keep in mind
 
 - To remain consistent, use British English.
-- If you are adding new pages or writing about new technologies, remember to also add an entry in the glossary and hyperlink to it. Examples of this can be seen on the introduction page. You should only hyperlink the first instance of the word.
+<!-- - If you are adding new pages or writing about new technologies, remember to also add an entry in the glossary and hyperlink to it. Examples of this can be seen on the introduction page. You should only hyperlink the first instance of the word. -->
 
 ## Deploying
 

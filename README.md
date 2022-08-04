@@ -1,7 +1,7 @@
 # Data101
 
-A book targeting students that are starting an educational programme related to computer science at higher level (university), specifically those at Chalmers University of Technology.
+A book targeting students that are starting a university programme related to computer science, specifically those at Chalmers University of Technology.
 
 ## Contributing
 
-Please see the book for instructions on how to build and contribute to the project. (TODO add link)
+Please see [the book](https://data101.dtek.se/contributing.html) for instructions on how to build and contribute to the project.

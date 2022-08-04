@@ -96,6 +96,17 @@ const showAll = (elList) => {
     }
   });
 
+  const removeTodoInProduction = () => {
+    if (window.location.hostname === "data101.dtek.se") {
+      document.querySelectorAll("blockquote").forEach((e) => {
+        console.log(e.innerText);
+        if (e.innerText.match(/TODO/i) !== null) {
+          e.remove();
+        }
+      });
+    }
+  };
+
   const matchExerciseMacro = (node) => {
     if (node.parentElement === null) return;
     const matches = node.nodeValue.match(/^\[\s?([A-Za-z0-9]+)\s*?\]/);
@@ -136,7 +147,6 @@ const showAll = (elList) => {
     if (node.nextSibling === null || node.parentElement === null) return;
     const matches = node.nodeValue.match(/{{\s?((\.[A-Za-z\-0-9]+)+)\s*?}}$/);
     if (matches && matches[1]) {
-      console.log(matches);
       // Add classes to parent
       matches[1]
         .split(".")
@@ -151,7 +161,6 @@ const showAll = (elList) => {
   const EndLongBlockRegex = /^{{\s?end\s*?}}/;
 
   const applyClasses = (el, classes) => {
-    console.log(el);
     if (el.innerText) {
       const matches = el.innerText.match(EndLongBlockRegex);
       if (matches !== null) {
@@ -185,6 +194,7 @@ const showAll = (elList) => {
     matchExerciseMacro(node);
     // matchCodeMacro(node);
   });
+  removeTodoInProduction();
 })();
 
 (function OperatingSystem() {
@@ -220,35 +230,38 @@ const showAll = (elList) => {
   };
 
   const promptForValues = () => {
+    // document.getElementById("meta-prompt").classList.add("hidden");
     if (
       !localStorage.getItem("mdbook-programme") ||
       !localStorage.getItem("mdbook-os")
     ) {
-      const promptEl = document.getElementById("meta-prompt");
-      promptEl.classList.remove("hidden");
-      promptEl.addEventListener("click", (ev) => {
-        console.log(ev);
-        if (ev.target.dataset["os"]) {
-          promptEl
-            .querySelectorAll(".selected[data-os]")
-            .forEach((el) => el.classList.remove("selected"));
+      document.getElementById("alert-selection").classList.remove("hidden");
 
-          ev.target.classList.add("selected");
-          setOS(ev.target.dataset["os"]);
-        }
+      // const promptEl = document.getElementById("meta-prompt");
+      // promptEl.classList.remove("hidden");
+      // promptEl.addEventListener("click", (ev) => {
+      //   if (ev.target.dataset["os"]) {
+      //     promptEl
+      //       .querySelectorAll(".selected[data-os]")
+      //       .forEach((el) => el.classList.remove("selected"));
 
-        if (ev.target.dataset["programme"]) {
-          promptEl
-            .querySelectorAll(".selected[data-programme]")
-            .forEach((el) => el.classList.remove("selected"));
-          ev.target.classList.add("selected");
-          setProgramme(ev.target.dataset["programme"]);
-        }
+      //     ev.target.classList.add("selected");
+      //     setOS(ev.target.dataset["os"]);
+      //   }
 
-        promptForValues();
-      });
+      //   if (ev.target.dataset["programme"]) {
+      //     promptEl
+      //       .querySelectorAll(".selected[data-programme]")
+      //       .forEach((el) => el.classList.remove("selected"));
+      //     ev.target.classList.add("selected");
+      //     setProgramme(ev.target.dataset["programme"]);
+      //   }
+
+      //   promptForValues();
+      // });
     } else {
-      document.getElementById("meta-prompt").classList.add("hidden");
+      // document.getElementById("meta-prompt").classList.add("hidden");
+      document.getElementById("alert-selection").classList.add("hidden");
     }
   };
 

@@ -23,13 +23,13 @@
   - [Autocompletion](./beginner/cli/autocompletion.md)
   - [Globbing](./beginner/cli/globbing.md)
   - [SSH](./beginner/ssh.md)
-  - [Useful tools](./beginner/cli_tools/index.md)
+  <!-- - [Useful tools](./beginner/cli_tools/index.md) -->
 - [Linux](./beginner/linux.md)
 - [Virtualization](./beginner/virtualization/index.md)
-  - [Guest OS](./beginner/virtualization/installation.md)
+  - [Guest OS](./beginner/virtualization/guest.md)
 - [Pro-tips](./beginner/protips.md)
 
-# Advanced
+# Further reading
 
 - [Editor](./advanced/editor.md)
 
@@ -38,13 +38,14 @@
 # Studies
 
 - [Your education](./studies/index.md)
-  - [Courses](./studies/courses.md)
+  - [Exams](./studies/exams.md)
+  <!-- - [Courses](./studies/courses.md) -->
 
 # Courses
+
 - [Effective study tips and tricks](./courses/index.md)
   - [TDA555](./courses/TDA555.md)
 
 ---
 
-[Glossary](./glossary.md)
 [Contributing](./contributing.md)

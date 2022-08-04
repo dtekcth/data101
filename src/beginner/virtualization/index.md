@@ -29,7 +29,7 @@ pacman -S virtualbox virtualbox-host-modules-arch
 {{ begin .macos }}
 
 > [Danger]
-> The new M1 mac use a different system architecture than most other systems. This means that it is for now extremely difficult to set up x64 virtulization on these systems. If you need to use a virtual machine we recommend that you instead use the computers at school.
+> The new M1 mac use a different system architecture than most other systems. It is therefore very difficult to set up x64 emulation on these systems. If you need to use a virtual machine we recommend that you instead use the computers at school.
 
 First, you have to find out which processor architecture your Mac has. This can be done by looking in _About this mac_. If you have an M1 model, it means that you have the Arm ISC, otherwise you have an x64 chipset.
 
@@ -59,15 +59,3 @@ With virtualbox open, select **New** in the menu to the right. There are several
 ![Recommended machine settings](/Assets/virtualization/vm_settings.png)
 
 You will be prompted to select Disk settings as well. The default options should work fine, so just press **Create**.
-
-## Running the VM
-
-To run the VM you select your VM in the list to the left and press **Start** in the menu to the right.
-
-A new window will open asking you for the Ubuntu Desktop image. Select the file we downloaded earlier and continue.
-
-Another window will open which will show you the graphical output of the VM. As the VM is just booting up it will just be a terminal for now but will soon boot into an actual desktop where you will be prompted to install Ubuntu.
-
-> These steps wil be exactly the same should you wish to install Ubuntu to your own desktop.
-
-Most of the installation steps will be self-explanatory and the defaults should suffice in most cases.
