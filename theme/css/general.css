@@ -329,7 +329,8 @@ blockquote.task {
   left: 50%;
   transform: translateX(-50%);
   background-color: var(--bg);
-  min-width: 500px;
+  min-width: 320px;
+  max-width: 80vw;
   padding: 2rem;
 }
 
@@ -390,6 +391,67 @@ blockquote.task {
 
 .text-dv {
   color: #1472b6;
+}
+
+/* Loading */
+
+/* Fade in the content to give us some extra time since most of our extensions
+/* are done on the client side there would be ugly transformations otherwise
+*/
+#content {
+  opacity: 0;
+  animation: appear 100ms ease-out;
+  animation-delay: 100ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.spinner {
+  position: absolute;
+  animation: spinner 1s infinite;
+  animation-timing-function: cubic-bezier(0.5856, 0.0703, 0.4143, 0.9297);
+
+  top: 50%;
+  left: 50%;
+  right: 2rem;
+  width: 2em;
+  height: 2em;
+  margin: -1em;
+
+  transition: ease 0.2s;
+  opacity: 0;
+}
+
+.spinner::after {
+  border-radius: 50%;
+  border: 0.4rem solid currentColor;
+  border-left-color: transparent;
+
+  content: " ";
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  box-sizing: border-box;
+  transform-origin: 0 0;
+  transform: translateZ(0) scale(0.5);
+  backface-visibility: hidden;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* END DAT101 */

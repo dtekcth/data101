@@ -230,34 +230,38 @@ const showAll = (elList) => {
   };
 
   const promptForValues = () => {
+    // document.getElementById("meta-prompt").classList.add("hidden");
     if (
       !localStorage.getItem("mdbook-programme") ||
       !localStorage.getItem("mdbook-os")
     ) {
-      const promptEl = document.getElementById("meta-prompt");
-      promptEl.classList.remove("hidden");
-      promptEl.addEventListener("click", (ev) => {
-        if (ev.target.dataset["os"]) {
-          promptEl
-            .querySelectorAll(".selected[data-os]")
-            .forEach((el) => el.classList.remove("selected"));
+      document.getElementById("alert-selection").classList.remove("hidden");
 
-          ev.target.classList.add("selected");
-          setOS(ev.target.dataset["os"]);
-        }
+      // const promptEl = document.getElementById("meta-prompt");
+      // promptEl.classList.remove("hidden");
+      // promptEl.addEventListener("click", (ev) => {
+      //   if (ev.target.dataset["os"]) {
+      //     promptEl
+      //       .querySelectorAll(".selected[data-os]")
+      //       .forEach((el) => el.classList.remove("selected"));
 
-        if (ev.target.dataset["programme"]) {
-          promptEl
-            .querySelectorAll(".selected[data-programme]")
-            .forEach((el) => el.classList.remove("selected"));
-          ev.target.classList.add("selected");
-          setProgramme(ev.target.dataset["programme"]);
-        }
+      //     ev.target.classList.add("selected");
+      //     setOS(ev.target.dataset["os"]);
+      //   }
 
-        promptForValues();
-      });
+      //   if (ev.target.dataset["programme"]) {
+      //     promptEl
+      //       .querySelectorAll(".selected[data-programme]")
+      //       .forEach((el) => el.classList.remove("selected"));
+      //     ev.target.classList.add("selected");
+      //     setProgramme(ev.target.dataset["programme"]);
+      //   }
+
+      //   promptForValues();
+      // });
     } else {
-      document.getElementById("meta-prompt").classList.add("hidden");
+      // document.getElementById("meta-prompt").classList.add("hidden");
+      document.getElementById("alert-selection").classList.add("hidden");
     }
   };
 
