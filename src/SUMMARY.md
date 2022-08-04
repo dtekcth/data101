@@ -23,7 +23,7 @@
   - [Autocompletion](./beginner/cli/autocompletion.md)
   - [Globbing](./beginner/cli/globbing.md)
   - [SSH](./beginner/ssh.md)
-  - [Useful tools](./beginner/cli_tools/index.md)
+  <!-- - [Useful tools](./beginner/cli_tools/index.md) -->
 - [Linux](./beginner/linux.md)
 - [Virtualization](./beginner/virtualization/index.md)
   - [Guest OS](./beginner/virtualization/guest.md)
@@ -38,7 +38,6 @@
 # Studies
 
 - [Your education](./studies/index.md)
-  - [Basics](./studies/basics.md)
   - [Exams](./studies/exams.md)
   <!-- - [Courses](./studies/courses.md) -->
 

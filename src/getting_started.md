@@ -38,7 +38,7 @@ Using Chalmers IT-services is never easy but there is some help to be had at the
 
 ### Wi-fi: Eduroam
 
-Chalmers and GU uses the global university network "Eduroam" for wi-fi connectivity (there is wi-fi everywhere on campus). Search for "Eduroam" on the IT-portal to find out how to connect your devices.
+Chalmers and GU uses the global university network "Eduroam" for wi-fi connectivity (there is wi-fi everywhere on campus). [Search for "Eduroam" on the IT-portal](https://chalmers.topdesk.net/tas/public/ssp/content/search?q=eduroam) (requires a CID) to find out how to connect your devices.
 
 ### Online storage
 
