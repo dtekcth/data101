@@ -70,9 +70,9 @@ Here's a recipe for causing your first merge conflict!
 Now that you have a merge conflict, let's solve it! You'll find that GitKraken
 has found a list of the conflicting files in the panel to the right, click one
 of them!
-![GitKraken has found conflicting files](../Assets/mergeConflictDetected.png)
+![GitKraken has found conflicting files](../../Assets/mergeConflictDetected.png)
 Clicking the file will allow you to pick which version of each row to keep!
-![Diff view for merge conflict](../Assets/diffViewMergeConflict.png)
+![Diff view for merge conflict](../../Assets/diffViewMergeConflict.png)
 But before choosing which row(s) to keep, it is worth looking at what your file
 looks like now. Open your file and you'll find that it looks something like
 this:

@@ -14,7 +14,7 @@ give your repo a name and location. Now you should find a screen with a whole
 mess of things in it, in the middle, you'll find the tracked changes in your
 repo. For now, there should only be one called _Initial commit_.
 
-![An image of the initial commit](../Assets/InitialCommit.png)
+![An image of the initial commit](../../Assets/InitialCommit.png)
 
 Use the shortcut !kbd[!ctrl+Shift+E] and you should be able to open the
 repository in an editor (You may have to set up which editor to use first, in
