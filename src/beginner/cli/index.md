@@ -56,6 +56,8 @@ We can move files with `mv <path> <new path>`. `mv` is also commonly used to
 rename files. Similarly to move, there's copy `cp <path> <other path>`, which
 makes a copy of the file instead of moving it.
 
+> You can access your command history using the up and down arrow keys.
+
 ## Reading and editing files
 
 To print a text file you can use `cat <path>`. On the other hand, if you want to edit a file in your terminal you can usually use `nano` or `vim`. These editors are not trivial to use and rely heavily on keyboard shortcuts.
@@ -64,20 +66,7 @@ If you are interested in trying them, feel free to experiment as they are useful
 
 ## Cheatsheet
 
-Here is a list of commonly used commands that should be available on all computers with a terminal. `...` means that you can supply as many arguments as you want.
-
-- `cat <file> ...` prints files
-- `ls <dir>` prints all files in the directory, except hidden files (starts with a `.`).
-- `ls -a <dir>` prints all files in the directory.
-- `ls -l <dir>` prints files in the directory, and displays extra information about them.
-- `mkdir <dir>` creates a directory
-- `rm <path>` removes a file
-- `rm -r <path>` removes a file or directory and all files within
-- `pwd` prints the current _working directory_
-- `cd <path>` changes _working directory_
-- `cp <from> <to>` copies a file
-- `cp -r <from> <to>` copies a file or directory _recursively_
-- `printenv` prints all environment variables
+Take a look at the [cheatsheet](../../Assets/cli_editor_cheatsheet.pdf) from the previous chapter to find some commond tasks. We will go through most of them during this chapter.
 
 ## Special shortcuts
 
@@ -86,5 +75,6 @@ There are a couple of shortcuts that might be helpful.
 - !kbd[!ctrl+C] terminates the current program (does not force a program to exit if it is busy)
 - !kbd[!ctrl+Z] sends the program to the background, can be sent back to the foreground by running `fg`.
 - !kbd[!ctrl+D] sends an _End of Line_ (_EOL_) to the terminal. This usually exits the current program if it is interactive.
+- !kbd[!ctrl+L] clears the whole terminal.
 
 [^exit_vim]`vim` is infamously known for being difficult to exit.
