@@ -8,8 +8,7 @@
 
 - [The Editor](./beginner/editor/index.md)
   - [Shortcuts](./beginner/editor/shortcuts.md)
-  - [Basic usage](./beginner/editor/common.md)
-  - [Command palette](./beginner/editor/command_palette.md)
+  - [Navigation](./beginner/editor/navigation.md)
 - [Git - Introduction](./beginner/git/intro.md)
   - [Setup](./beginner/git/setup.md)
   - [Repositories, changes and commits](./beginner/git/basics.md)

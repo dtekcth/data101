@@ -10,7 +10,7 @@ Long answer: When writing this guide we compared many editors to find out which 
 
 - Available on all platforms (Windows, macOS, Linux)
 - Not specific to a certain programming language or environment (e.g. PyCharm which only works for Python)
-- Good plugin support, including other _[DevOps](https://en.wikipedia.org/wiki/DevOps)_ features.
+- Extensive plugin support for all environments used in courses given by our department.
 - Does not require any computer knowledge to get started[^emacs_evangelists]
 
 The only editor which truly fits all of these is Visual Studio Code.
