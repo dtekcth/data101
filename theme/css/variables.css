@@ -119,6 +119,10 @@
   --bg: hsl(226, 23%, 11%);
   --fg: #bcbdd0;
 
+  --base-100: hsl(226, 23%, 11%);
+  --base-200: hsl(226, 23%, 16%);
+  --base-300: hsl(226, 23%, 21%);
+
   --sidebar-bg: #282d3f;
   --sidebar-fg: #c8c9db;
   --sidebar-non-existant: #505274;
@@ -132,7 +136,8 @@
 
   --links: #2b79a2;
 
-  --inline-code-color: #c5c8c6;
+  /* --inline-code-color: hsl(226, 23%, 17%); */
+  --inline-code-color: var(--fg);
 
   --theme-popup-bg: #161923;
   --theme-popup-border: #737480;
