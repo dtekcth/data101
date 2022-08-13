@@ -86,8 +86,14 @@ from [here](https://gitforwindows.org/) and following the instructions.
 When using Git you will want a place to store your _repositories_ (projects),
 the most popular site for this is called [GitHub](https://github.com), but other
 alternatives include [GitLab](https://about.gitlab.com/) and
-[BitBucket](https://bitbucket.org/product/). We recommend using GitHub, at least
-for now, you can always explore other options later.
+[BitBucket](https://bitbucket.org/product/).
+
+Chalmers also supplies its own [GitLab](https://git.chalmers.se/) instance where
+you log in with your CID. Which we recommend for school projects as it is without,
+any extra setup, and has unlimited private repositories.
+
+We recommend setting up a GitHub account, as this account comes with some
+excellent student benefits. 
 
 Sign up for an account [here](https://github.com), and while you're at it sign
 up for the GitHub Student Developer Pack using your Chalmers email
@@ -107,3 +113,6 @@ GitKraken can be installed from their website here:
 
 When asked to sign in, use your newly created GitHub Student account to
 automatically receive the pro features for free.
+
+You will probably also want to enable the GitLab integration in GitKrakens
+preferences as well.
