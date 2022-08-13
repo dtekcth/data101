@@ -1,4 +1,4 @@
-### Putting your repo on GitHub
+### Putting your repo on GitHub/GitLab
 
 You've now gotten to the point where you can work along quite well on your own.
 Writing changes, staging them and committing from time to time. But what good is
@@ -11,7 +11,7 @@ logged in through GitHub you should be able to create a remote repo there. If
 not, it is probably best to go to Settings → Integrations and log in with your
 GitHub account.
 
-You can also create your remote repository on GitHub.com and add this repo as
+You can also create your remote repository on GitHub/Lab, and add this repo as
 remote in GitKraken.
 
 Now that you have a remote and local repository a problem arises. How do we sync
@@ -23,9 +23,17 @@ changes. In GitKraken there are buttons for pushing and pulling in the top
 panel.
 
 Try adding a commit to your example repository and push this commit to your
-remote. If you then go to GitHub you should see your new commit there!
+remote. If you then go to your remote repo, you should see your new commit there!
 
-Now a big reason for having a remote repository is to be able to share your code with a collaborator, or lab partner. Our recommended way is for all collaborators to _clone_ the remote repo. To do this, simply copy the URL of the GitHub repo and use !kbd[!ctrl+N] in GitKraken. When you clone a repo, it is automatically set up to have the proper remote.
+Now a big reason for having a remote repository is to be able to share your code
+with a collaborator, or lab partner. Our recommended way is for all
+collaborators to _clone_ the remote repo. To do this, simply copy the URL of the
+GitHub repo and use !kbd[!ctrl+N] in GitKraken. When you clone a repo, it is
+automatically set up to have the proper remote.
+
+> **An important note on public vs private repositories**
+> Make sure that repos you use for Lab assignments and projects are private.
+> Having solutions for these publicly available is considered cheating.
 
 ### Causing, and resolving merge conflicts
 
