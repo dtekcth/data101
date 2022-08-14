@@ -41,7 +41,7 @@ main = putStrLn "Hello, Git!"
 ```
 
 If you then open GitKraken it should have detected your change!
-![A message showing a detected change](../Assets/ChangeInWorkingDirectory.png)
+![A message showing a detected change](../../Assets/ChangeInWorkingDirectory.png)
 
 View the change and you'll see a panel where you can build your next commit. To
 add the code to your next commit, stage that file. You can then continue writing
