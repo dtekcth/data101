@@ -72,9 +72,9 @@ Take a look at the [cheatsheet](../../Assets/cli_editor_cheatsheet.pdf) from the
 
 There are a couple of shortcuts that might be helpful.
 
-- !kbd[!ctrl+C] terminates the current program (does not force a program to exit if it is busy)
-- !kbd[!ctrl+Z] sends the program to the background, can be sent back to the foreground by running `fg`.
-- !kbd[!ctrl+D] sends an _End of Line_ (_EOL_) to the terminal. This usually exits the current program if it is interactive.
-- !kbd[!ctrl+L] clears the whole terminal.
+- !kbd[Ctrl+C] terminates the current program (does not force a program to exit if it is busy).
+- !kbd[Ctrl+Z] sends the program to the background, can be sent back to the foreground by running `fg`.
+- !kbd[Ctrl+D] sends an _End of Line_ (_EOL_) to the terminal. This usually exits the current program if it is interactive.
+- !kbd[Ctrl+L] clears the whole terminal.
 
 [^exit_vim]`vim` is infamously known for being difficult to exit.
