@@ -12,6 +12,8 @@ The caret is the blinking line from where text appears, you probably know all ab
 
 VSCode also includes a powerful tool called the `Command palette`. This may be the most important method of navigation. It can be used to efficiently navigate your project by first opening the palette and then writing a command. You can open it with !kbd[!ctrl+P].
 
+![The command palette](/Assets/editor/palette.png)
+
 There are four main modes of operation. The first and simplest one is to search for files in your project. Try creating a new file in your project, open the command palette and then type the beginning of the name and press !kbd[Enter]. This is a fast method of moving between files in your project.
 
 It also has another function which is to run various tasks, such as opening preferences, building your project or opening a new terminal. This mode is accessed by prefixing the search with `>` or entered directly by pressing !kbd[!ctrl+Shift+P]. Anything that you can do by using your mouse can be done here. Try opening a file using the command palette!
