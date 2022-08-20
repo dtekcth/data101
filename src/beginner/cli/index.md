@@ -66,7 +66,7 @@ If you are interested in trying them, feel free to experiment as they are useful
 
 ## Cheatsheet
 
-Take a look at the [cheatsheet](../../Assets/cli_editor_cheatsheet.pdf) from the previous chapter to find some commond tasks. We will go through most of them during this chapter.
+Take a look at the [cheatsheet](../../Assets/cli_editor_cheatsheet.pdf) from the previous chapter to find some common tasks. We will go through most of them during this chapter.
 
 ## Special shortcuts
 
