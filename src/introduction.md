@@ -18,6 +18,8 @@ If your only experience comes from a course or two during _Gymnasiet_ then you s
 
 Begin by reading the beginner chapters sequentially. These will prepare you for your real courses and can be deemed essential. We will go through each topic from the bottom up and each sub-chapter is meant to be self-contained, meaning you can take 10 minutes and read a small bit every day. To receive the greatest benefits, these should preferably be read during the reception. Once you have read all the beginner chapters you can progress to whichever chapters you are interested in.
 
+**We cannot stress enough how important it is that you actually try what you are reading.** Just like any other craft, it is impossible to master computer tools without hands-on experience.
+
 Under _studies_ you will find course-specific information, these chapters provide tips & tricks from older students and should generally be looked at just before beginning the course and can be used as a reference during the course. You will also find guidance on how your studies are structured and what choices you should make. These become more relevant later in your education but we still recommend that you become familiar with the [basics](./studies/basics.md) and [exams](./studies/exams.md).
 
 > Boxes like these are used to give interesting information or context that is not necessary to understand the guide but can provide further reading or useful tips for those interested.

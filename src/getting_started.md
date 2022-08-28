@@ -8,15 +8,15 @@ VSCode is our recommended editor, this is the application you write code with. [
 
 ## Online meetings: Zoom
 
-Sometimes you will have lectures online, the university uses Zoom for this. It is also possible to set up your own room and talk to your group partners remotely. [Download it here.](https://chalmers.zoom.us/)
+Sometimes you will have lectures online, the university uses Zoom for this. It is also possible to set up your own room and talk to your group partners remotely. [Download it here.](https://zoom.us/download#client_4meeting)
 
 {{ begin .windows }}
 
 ## Windows Subsystem for Linux
 
-**This is only necessary if you use Microsoft Windows.** WSL allows you to run Linux programs. Linux is another operating system that will get to know more about during your studies. The official instructions can be found [here](https://docs.microsoft.com/en-us/windows/wsl/install) but they can be a bit complicated. So we have included our own instructions below as well.
+**This is only necessary if you use Microsoft Windows.** WSL allows you to run Linux programs while running Windows as your primary OS. Linux is another operating system that you will get to know more about during your studies. The official instructions can be found [here](https://docs.microsoft.com/en-us/windows/wsl/install) but they can be a bit complicated. So we have included our own instructions below as well.
 
-Start by running `cmd` or `powershell`. This can be done by pressing !kbd[!win] and searching for `powershell` and then right-clicking on `Windows Powershell` and selecting `Run as administrator`, note that if you have Windows set to Swedish it will be translated.
+Start by running `cmd` or `powershell`. This can be done by pressing !kbd[!win] and searching for `powershell` and then right-clicking on `Windows Powershell` and selecting `Run as administrator`, note that if you have Windows set to another language than English it will be translated to that language.
 
 A new window will open where you can run commands. After typing your command you can run it by pressing `Enter`. Run `wsl --install` and then reboot your computer.
 
@@ -54,6 +54,6 @@ You can find both programme and course schedules on [TimeEdit](https://cloud.tim
 
 ## Ladok
 
-Ladok is the national service for managing your courses, exams, etc. This is where you will do your final registration for courses, exams and re-exams. Make sure to keep an eye out for when you have to register. The window for courses is usually from two weeks before the course starts, until the end of the first week of the course. Exam registration is usually open during the second half of the study period. **If you do not register in time, then there is no way register manually by talking to the administration, instead you wil have to wait until next time**.
+Ladok is the national service for managing your courses, exams, etc. This is where you will do your final registration for courses, exams and re-exams. Make sure to keep an eye out for when you have to register. The window for course registration is usually from two weeks before the course starts, until the end of the first week of the course. Exam registration is usually open during the second half of the study period. **If you do not register in time, then you won't be able to take the course or exam.** There are no exceptions to this rule and the administration services can't register you manually.
 
 You can log in at [student.ladok.se](https://student.ladok.se).
