@@ -8,6 +8,23 @@ Love | David
 
 # Vad är Data101?
 
+[comment]: # "!!! data-auto-animate"
+
+# Vad är Data101?
+
+- Grundkunskaper
+
+[comment]: # "!!! data-auto-animate"
+
+# Vad är Data101?
+
+- Grundkunskaper
+- Viktiga verktyg
+
+[comment]: # "!!! data-auto-animate"
+
+# Vad är Data101?
+
 - Grundkunskaper
 - Viktiga verktyg
 - Studieguide
