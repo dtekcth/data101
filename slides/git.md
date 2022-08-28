@@ -12,7 +12,15 @@ Love | David
 - Viktiga verktyg
 - Studieguide
 
-[comment]: # "!!!"
+[comment]: # "!!! data-auto-animate"
+
+# Levande dokument
+
+- Skriv till oss
+- Prata med DNS
+- Läs "Contributing" på sidan
+
+[comment]: # "!!! data-auto-animate"
 
 # Git
 
@@ -40,7 +48,8 @@ Love | David
 - Samarbeta enklare
 - Gå tillbaka i historien
 - Backup på alla versioner, inte bara nyaste!
-  [comment]: # (!!! data-auto-animate)
+
+[comment]: # "!!! data-auto-animate"
 
 # Industristandard
 
