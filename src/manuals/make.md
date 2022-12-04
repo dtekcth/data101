@@ -82,10 +82,15 @@ will always run when called, even if there is a file called `clean`.
 
 ## Flags
 
-As usual with unix tools, `--help` is your friend, though here are some flags that are good to know exist.
+As usual with unix tools, `--help` is your friend, though here are some flags
+that are good to know exist.
 
-* `-s` Silent mode. This will stop make from printing anything. It will not stop any programs called in recipes from printing anything.
+* `-s` Silent mode. This will stop make from printing anything. It will not
+	stop any programs called in recipes from printing anything.
 
-* `-jN` Jobs. Where `N` is a positive integer. This will make make run multithreaded per job. Make sure your rules all declare their dependencies properly to avoid races.
+* `-jN` Jobs. Where `N` is a positive integer. This will make make run
+	multithreaded per job. Make sure your rules all declare their dependencies
+	properly to avoid races.
 
-* `-f FILENAME` File. Runs `FILENAME` instead of the default `makefile`. In case you have a different file you need to run.
+* `-f FILENAME` File. Runs `FILENAME` instead of the default `makefile`. In
+	case you have a different file you need to run.
