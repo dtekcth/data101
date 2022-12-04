@@ -45,6 +45,9 @@
 - [Effective study tips and tricks](./courses/index.md)
   - [TDA555](./courses/TDA555.md)
 
+# Manuals
+- [GNU Make](./manuals/make.md)
+
 ---
 
 [Contributing](./contributing.md)
