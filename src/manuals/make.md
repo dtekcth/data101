@@ -42,7 +42,7 @@ Which sits in the following directory structure:
 └── makefile
 ```
 
-We can see a number of variables and rules being defined. It's start about
+We can see a number of variables and rules being defined. Let's start about
 halfway down at `foo.o`. `foo.o` is both the name of the rule and the file it
 produces. These two names matching is important because it's how make knows
 which rule to call when it realises it needs to rebuild a file. After this we
