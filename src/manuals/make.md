@@ -11,6 +11,31 @@ parallelise the work and only recompile the bare minimum on change. Let's look
 at a basic `makefile`:
 
 ```make
+my_program: source.c
+	gcc source.c -o my_program
+```
+With the following directory structure:
+```
+.
+├── source.c
+└── makefile
+```
+
+Here we have one rule called `my_program` that creates a file also called
+`my_program`. These two names matching is important because it's how `make`
+knows which rule to call when it realises it needs to rebuild a file. After
+this we see another name, `source.c`. This is a space separated list of
+dependencies. On the next line we find the recipe. This is a list of commands
+that are supposed to create the file. These commands are indented by one tab.
+This cannot be done with four (or any other number of) spaces.
+
+When the rule is run `make` checks if the file already exists, and if it does,
+if any of the dependencies have been modified since the file was last changed.
+If they have changed the rule will be run.
+
+Let's look at a more advanced example:
+
+```make
 CC := gcc
 CFLAGS := \
 	-Wall -Wextra -Wconversion \
@@ -24,13 +49,6 @@ foo.o: foo.c baz.h
 
 dir/bar.o: dir/bar.c baz.h
 	$(CC) $(CFLAGS) dir/bar.c -c
-
-clean:
-	-rm foo.o
-	-rm dir/bar.o
-	-rm my_program
-
-.PHONY: clean
 ```
 Which sits in the following directory structure:
 ```
@@ -42,31 +60,32 @@ Which sits in the following directory structure:
 └── makefile
 ```
 
-We can see a number of variables and rules being defined. Let's start about
-halfway down at `foo.o`. `foo.o` is both the name of the rule and the file it
-produces. These two names matching is important because it's how `make` knows
-which rule to call when it realises it needs to rebuild a file. After this we
-see another name, `foo.c`. This is a space separated list of dependencies. On
-the next line we find the recipe. This is a list of commands that are supposed
-to create the file. These commands are indented by one tab. This cannot be done
-with four (or any other number of) spaces.
+Here we have a few more rules with a few more dependencies and two variables
+declared at the top. We can also see that the usage of `gcc` in the recipes has
+been replaced by `$(CC)`.
 
-When the rule is run `make` checks if the file already exists, and if it does, if
-any of the dependencies have been modified since the file was last changed. If
-they have changed the rule will be run.
+`$(CC)` will be expanded to `gcc`. This is for configuration, for instance if
+we want to change our compiler from `gcc` to `clang`. The `CFLAGS` variable is
+split over several lines. The indentation on these lines doesn't matter. The
+only thing that matters is that all lines except the last end with a backslash
+(`\`).
 
-At the top of the file we see two variables being defined: `CC` and `CFLAGS`.
-These are used in commands in rules. `$(CC)` will be expanded to `gcc`. This is
-configuration, for instance if we want to change our compiler from `gcc` to
-`clang`. The `CFLAGS` variable is split over several lines. The indentation on
-these lines doesn't matter. The only thing that matters is that all lines
-except the last end with a backslash (`\`).
+Variables can be defined with `=` or `:=`. This controls whether variables used
+in other variables are evaluated at variable definition time, or at rule
+execution time.
 
-Variables can be defined with `=` or `:=`. This controls whether variables in
-variables are evaluated at variable definition time, or at rule execution time.
+> If you want to have the rule use environment variables you need double dollar
+> signs, `$$`. This can be useful for including libraries that live in
+> different places on different operating systems.
 
-If you want to have the rule use environment variables you need double dollar
-signs, `$$`.
+```make
+clean:
+	-rm foo.o
+	-rm dir/bar.o
+	-rm my_program
+
+.PHONY: clean
+```
 
 Next we have a rule called clean. It has no dependencies and doesn't create a
 file called clean so it will always be run provided that you don't create a
@@ -94,3 +113,5 @@ that are good to know exist.
 
 * `-f FILENAME` File. Runs `FILENAME` instead of the default `makefile`. In
 	case you have a different file you need to run.
+
+* `-h` Help. A list of more helpful flags to use.
