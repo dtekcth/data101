@@ -18,7 +18,7 @@ It is rare to actually receive a failing grade on a project, usually _failing_ a
 
 Try not to worry about your grade too much, extremely few relevant companies hire based on grades. While studying at university there are two reasons to care about your grades, aside from the obvious fact that a higher grade means that you have learned more, which are either if you wish to do exchange studies or if you want to compete for a doctors degree. Both require greater than passing grades but we will go into more detail about that later.
 
-> Students at Chalmers who pass all their courses during their first year (including re-exams) are eligible for [_Adlerbertska stiftelsens stipendie_](https://student.portal.chalmers.se/sv/studentliv/stipendier/Sidor/Adlerbertska-stiftelserna.aspx).
+> Students at Chalmers who pass all their courses during their first year (including re-exams) are eligible for [_Adlerbertska stiftelsens stipendie_](https://www.chalmers.se/en/education/study-at-chalmers/student-life/scholarships-for-enrolled-students/adlerbert-foreign-student-hospitality-foundation/).
 
 ## Centrala studiestödsnämnden (CSN)
 
@@ -28,6 +28,6 @@ You most likely already know that CSN provides financial support to students. Ho
 
 ## Studying with functional disabilities
 
-Students with functional disabilities have the right to get help in the form of _FUNKA support_. This may mean extended hours or quiet rooms during exams but also include many other kinds of help. Most students do not know that they have the right to receive support even if they only consider their variations to be _mild_, so don't hesitate to contact Chalmers if you feel that it would help you in your studies! Please go to the [FUNKA page on the study portal](https://student.portal.chalmers.se/sv/chalmersstudier/funktionsvariation-funktionsnedsattning/Sidor/funktionsvariation-funktionsnedsattning.aspx) to find out more.
+Students with functional disabilities have the right to get help. This may mean extended hours or quiet rooms during exams but also include many other kinds of help. Most students do not know that they have the right to receive support even if they only consider their variations to be _mild_, so don't hesitate to contact Chalmers if you feel that it would help you in your studies! Please go to [this page](https://www.chalmers.se/en/education/student-support/studying-with-disabilities/) to find out more.
 
-It is also possible to get paid for providing lecture notes. Find out more about that [here](https://student.portal.chalmers.se/en/chalmersstudies/disabilities/notetakingsupport/Pages/Note-Support-Questions-and-Answers.aspx).
+It is also possible to get paid for providing lecture notes. Find out more about that [here](https://www.chalmers.se/en/education/student-support/studying-with-disabilities/note-taking-support/).

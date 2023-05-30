@@ -20,7 +20,7 @@ Begin by reading the beginner chapters sequentially. These will prepare you for 
 
 **We cannot stress enough how important it is that you actually try what you are reading.** Just like any other craft, it is impossible to master computer tools without hands-on experience.
 
-Under _studies_ you will find course-specific information, these chapters provide tips & tricks from older students and should generally be looked at just before beginning the course and can be used as a reference during the course. You will also find guidance on how your studies are structured and what choices you should make. These become more relevant later in your education but we still recommend that you become familiar with the [basics](./studies/basics.md) and [exams](./studies/exams.md).
+Under _studies_ you will find course-specific information, these chapters provide tips & tricks from older students and should generally be looked at just before beginning the course and can be used as a reference during the course. You will also find guidance on how your studies are structured and what choices you should make. These become more relevant later in your education but we still recommend that you become familiar with the [basics](./studies/index.md) and [exams](./studies/exams.md).
 
 > Boxes like these are used to give interesting information or context that is not necessary to understand the guide but can provide further reading or useful tips for those interested.
 

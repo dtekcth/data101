@@ -7,8 +7,8 @@ Exams are held thrice a year for each course. First in the exam period following
 Aside from reviewing the material from class you might also be interested in looking at old exams. Old exams and solutions can be found through several channels.
 
 - The examiner should provide some example exams on the canvas page
-- You can [search in the database](https://tenta.chs.se) organized by students.
 - You can email the student expedition and ask for old exams and solutions. Every department has their own expedition but most exams relating to computer science can be requested from [student_office.cse@chalmers.se](mailto://student_office.cse@chalmers.se). Please keep in mind that their response time might be over a week.
+- You can  find exam statics on [this page](https://tenta.chs.se), which is organised by students.
 
 ## During the exam
 
@@ -32,4 +32,4 @@ If you feel that some of your rights have been violated or that something else h
 - TKITE: snit@chalmers.it
 - N1COS: styrelsen@dvet.se
 
-The rules are defined in the [regulations](https://student.portal.chalmers.se/sv/chalmersstudier/styrdokument/Documents/Foreskrifter_%20planering_kurs_genomforande_av_examination.PDF).
+The rules are defined in the [regulations](https://www.chalmers.se/api/media/?url=https://webbpublicering360.portal.chalmers.se/Extern/Home/Download?recordnor=826840%262021_09%261009928_2_1.PDF%26ex).
