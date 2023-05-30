@@ -4,7 +4,7 @@
 
 Linux is a free and _open-source_ operating system. This means that anyone can view the code that drives a Linux system, unlike Windows or macOS which are _closed-source_.
 
-Linux comes in many variants called _distributions_ or _distros_ for short. They vary only slightly, it is mostly a spectrum of ease-of-use vs freedom of configuration. Some of the easiest distros to install and use include [Ubuntu]() and [Fedora](), while some of the more customizable include [Arch Linux](), [Gentoo](), and [nixos]().
+Linux comes in many variants called _distributions_ or _distros_ for short. They vary only slightly, it is mostly a spectrum of ease-of-use vs freedom of configuration. Some of the easiest distros to install and use include [Ubuntu](https://ubuntu.com/download/desktop) and [Fedora](https://www.fedoraproject.org/workstation/download/), while some of the more customizable include [Arch Linux](https://archlinux.org/download/), [Gentoo](https://www.gentoo.org/downloads/), and [nixos](https://nixos.org/download.html).
 
 If you are interested in getting started you can either choose a more user-friendly distro such as Ubuntu or jump in knee-deep and start with something like Arch. People will tell you that one is superior to another, but the true charm of Linux lies in that it can be whatever you want. It is easy to change distro and most people try at least two or three before finding one that fits them the best.
 

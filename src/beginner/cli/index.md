@@ -7,11 +7,11 @@ There are several reasons as to why but it mostly comes down to that they are ve
 ## Installation
 
 {{.windows}}
-To get started on Windows you have to install WSL, if you have followed the instructions from [Getting started](../getting_started.md) then you should already have it. Otherwise, go back and install it now.
+To get started on Windows you have to install WSL, if you have followed the instructions from [Getting started](../../getting_started.md) then you should already have it. Otherwise, go back and install it now.
 
 > Windows also provides the native `PowerShell` and `cmd.exe` utilities. These work very differently from most other shells and are not used as often in the industry. Therefore we have decided not to focus on them in this book.
 
-WSL is a way to run Linux on your Windows PC. You can read more about Linux [here](./linux.md).
+WSL is a way to run Linux on your Windows PC. You can read more about Linux [here](../linux.md).
 
 {{.macos}}
 Mac users do not have to install anything.

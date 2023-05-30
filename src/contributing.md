@@ -4,9 +4,9 @@ Nice, you have decided that something is missing or should be expanded upon, or 
 
 ## Request changes
 
-If you have feedback you can file an [issue](https://github.com/toasterbag/data101/issues) on GitHub. If you have a GitHub account this is an easy process!
+If you have feedback you can file an [issue](https://github.com/dtekcth/data101/issues) on GitHub. If you have a GitHub account this is an easy process!
 
-To do it you will select **New issue** on [this page](https://github.com/toasterbag/data101/issues) and then press **Get started** on _"Feature request"_. You can then fill out the template, remember to put a descriptive title of what you want and describe why you want it. Here is an example request.
+To do it you will select **New issue** on [this page](https://github.com/dtekcth/data101/issues) and then press **Get started** on _"Feature request"_. You can then fill out the template, remember to put a descriptive title of what you want and describe why you want it. Here is an example request.
 
 ![Issue example](./Assets/file_issue.png)
 
