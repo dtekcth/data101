@@ -38,6 +38,8 @@
 
 - [Your education](./studies/index.md)
   - [Exams](./studies/exams.md)
+  - [Courses](./studies/courses.md)
+- [FAQ](./studies/FAQ.md)
   <!-- - [Courses](./studies/courses.md) -->
 
 # Courses
