@@ -26,6 +26,11 @@ Similar to MTS courses, you need at least 7.5hp if enrolled at TKDAT or TKITE.
 
 ## Laborations
 
+Laborations usually takes place during a course's 9 week.
+These will have an amount of the _hp_ of the entire course.
+It will have to be handed in and sometimes even presented to pass.
+It is usually hard to redo these labs during the year if you fail, so it is recommend to complete them.
+
 ## Schedule
 The schedule for your courses can be found on [TimeEdit](https://cloud.timeedit.net/chalmers/web/public/).
 There you can search for the schedule for individual courses, or entire years for the programmes.

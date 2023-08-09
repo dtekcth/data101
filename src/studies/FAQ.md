@@ -1,7 +1,39 @@
 # FAQ
 
+- **My exam hasn't been reported**
+
+The examiner has 15 working days on them to report the exam to Ladok, but sometimes there can be a delay between student office and Ladok.
+
+- **Where can I find important dates**
+
+Chalmers provides this [site](https://www.chalmers.se/en/education/your-studies/plan-and-conduct-your-studies/the-academic-year/) which has the current years academic plan.
+
+- **I forgot to apply for a course/exam**
+
+If you forgot to apply for a course, you might be able to fix it if you contact your Studienämnd, but there is no guarantee.
+However, if you forgot to apply for an exam, you will have to apply for the next reexam and take that one.
+
+- **I failed an exam or laboration**
+
+The only thing that can be done is to retake them at the next opportunity.
+Exams that are in a programme plan have to offer 3 exams during a year.
+A laboration will usually have to be redone next year.
+
+- **What should I bring to an exam**
+
+What is required to do an exam is a pen (with ink), pencil and rubber.
+If the exam allows for a calculator, one can bring one of the allowed ones.[^calculator]
+It is recommended to bring some form of water bottle or drink, and something small to eat during the exam to have energy to complete it.[^food]
+
+
 ## If you have further questions
 If something still feels off or you need someone to mediate for you, then you can contact your Studienämnd
 
 They can be reached at
 `{{ .Data }} dns@dtek.se` `{{ .IT }} snit@chalmers.it` `{{ .DV }} studienamnd@dvet.se`
+
+---
+
+[^calculator] [Allowed calculators](https://www.chalmers.se/api/media/?url=https://webbpublicering360.portal.chalmers.se/Extern/Home/Download?recordnor=833204%262021_10%261016950_1_1.PDF%26ex) are mentioned under section 2.8.2
+
+[^food] Remember to follow rules around things such as nuts

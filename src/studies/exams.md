@@ -30,6 +30,6 @@ If you feel that some of your rights have been violated or that something else h
 
 - TKDAT: dns@dtek.se
 - TKITE: snit@chalmers.it
-- N1COS: styrelsen@dvet.se
+- N1COS: studienamnd@dvet.se
 
 The rules are defined in the [regulations](https://www.chalmers.se/api/media/?url=https://webbpublicering360.portal.chalmers.se/Extern/Home/Download?recordnor=826840%262021_09%261009928_2_1.PDF%26ex).
