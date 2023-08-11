@@ -11,7 +11,7 @@ Chalmers provides this [site](https://www.chalmers.se/en/education/your-studies/
 - **I forgot to apply for a course/exam**
 
 If you forgot to apply for a course, you might be able to fix it if you contact your Studienämnd, but there is no guarantee.
-However, if you forgot to apply for an exam, you will have to apply for the next reexam and take that one.
+However, if you forgot to apply for an exam, you will have to apply for the next re-exam and take that one.
 
 - **I failed an exam or laboration**
 
@@ -25,6 +25,15 @@ What is required to do an exam is a pen (with ink), pencil and rubber.
 If the exam allows for a calculator, one can bring one of the allowed ones.[^calculator]
 It is recommended to bring some form of water bottle or drink, and something small to eat during the exam to have energy to complete it.[^food]
 
+- **Do you feel treated badly by a teacher, teacher assistant or another student**
+
+There is a service known as [safe at chalmers](https://www.chalmers.se/en/about-chalmers/organisation-and-governance/safe-at-chalmers/) where you can report incidents.
+
+- **My lab group is having issues, what should I do?**
+
+The short answer is to act in some way.
+Speak about it with the group to try to solve it.
+You could talk with a teacher assistant that you feel comfortable with if you think that would help.
 
 ## If you have further questions
 If something still feels off or you need someone to mediate for you, then you can contact your Studienämnd
