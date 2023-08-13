@@ -2,7 +2,9 @@
 
 - **My exam hasn't been reported**
 
-The examiner has 15 working days on them to report the exam to Ladok, but sometimes there can be a delay between student office and Ladok.
+The examiner has 15 working days on them to report the exam to Ladok, but sometimes there can be a delay between student office and Ladok. 
+If the exam still isn't showing up after a couple of days, please contact the examiner and politely ask about it. 
+You may also want to contact your Studienämnd in that case.
 
 - **Where can I find important dates**
 
