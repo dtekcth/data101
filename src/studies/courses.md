@@ -10,8 +10,7 @@ These are the courses you have no say over and are deemed essential for your deg
 
 Sometimes you have elective slots in your programme plan, which means that you can select any course marked as _elective_ within your programme plan.[^elective_caveat] For master students it may be interesting to know that you can read one or two courses (around 15hp) outside of your programme plan and still get your masters degree. This can vary between programmes so ask your student counsellor before deciding.
 
-> TODO
-> Where can you find my programme plan?
+You can find your on [Studieportalen](https://www.student.chalmers.se/sp/program_list) by searching for your programme.
 
 ### Compulsory elective
 
@@ -24,5 +23,18 @@ These courses as their name implies, do not strictly have to be about your core 
 ## Miljö och hållbar utveckling (MHU)
 
 Similar to MTS courses, you need at least 7.5hp if enrolled at TKDAT or TKITE.
+
+## Laborations
+
+Laborations usually takes place during the course, including the exam week for that course.
+Laborations have an associated amount of the _hp_ of the entire course. 
+This means that the exam rarely represents the entire 7.5hp of a course, as it is split between labs and exam.
+It will have to be handed in and sometimes even presented in class in order to pass.
+It is usually hard to redo these labs during the year if you fail, so it is recommend to complete them when the course is given.
+
+## Schedule
+The schedule for your courses can be found on [TimeEdit](https://cloud.timeedit.net/chalmers/web/public/).
+There you can search for the schedule for individual courses, or entire years for the programmes.
+Once you have searched and gotten the schedule for what you were looking for, you can subscribe to said schedule and add it to your own calendar applications, such as Google Calendar.
 
 [^elective_caveat] There may still be prerequisite requirements.
