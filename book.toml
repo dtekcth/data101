@@ -1,5 +1,5 @@
 [book]
-authors = ["Karl David Hedgren", "Love Lyckaro"]
+authors = ["David Hedgren", "Love Lyckaro"]
 language = "en"
 multilingual = false
 src = "src"

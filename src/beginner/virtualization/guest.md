@@ -8,7 +8,7 @@ Another window will open which will show you the graphical output of the VM. As 
 
 Most of the installation steps will be self-explanatory and the defaults should suffice in most cases. Remember to keep the language set to English.
 
-> These steps wil be exactly the same should you wish to install Ubuntu to your own desktop.
+> These steps will be exactly the same should you wish to install Ubuntu to your own desktop.
 
 Use the detect keyboard feature to correctly set the keyboard layout. There are many variants of each language layout and it can be easy to select one which has _almost_ the same layout and it will be difficult to notice.
 
@@ -17,6 +17,6 @@ When prompted to select installation type, simply choose _Erase disk and install
 When creating your user it is still good practice to use a secure password even though it is just a virtual system.
 
 > [Warning]
-> If you forget your password you will not be able to use your VM anymore and will have to reinstall it!
+> If you forget your password you will not be able to use your VM anymore and will have to reinstall it! It is good practise to use a _password manager_ to store your passwords. Speak to an older student to help you become more secure!
 
 After waiting for the installation to finish, restart the VM. The VM is now ready to use!

@@ -1,10 +1,10 @@
-# Advanced usage
+# Advanced usage of your editor
 
-This section lists features that are useful for everyone but have more complex uses. It is recommended that you have at least started to write some code (even if it's just the intro course), otherwise, it may be difficult to understand what they do or why to use them.
+This section lists features that are useful for everyone but have more complex uses. It is recommended that you have at least started to write some code (even if it's just in the intro course). Otherwise, it may be difficult to understand what these techniques do or why to use them.
 
 ## Shortcuts
 
-First of you should know that it is possible to edit the shortcuts by opening `>Preferences: Open Keyboard Shortcuts`, you can also search for shortcuts here. The default shortcuts are primarily designed for users with American keyboard layouts and as such, some of them will be very unwieldy to use. Make your editor yours by changing as many shortcuts as you'd like!
+First you should know that it is possible to edit the editor shortcuts by opening `>Preferences: Open Keyboard Shortcuts`. You can also search for shortcuts here. The default shortcuts are primarily designed for users with American keyboard layouts and as such, some of them will be very unwieldy to use. Make your editor yours by changing as many shortcuts as you'd like!
 
 ### Compose keys
 
@@ -16,6 +16,6 @@ If your code has errors you can easily go to the next error by pressing !kbd[!ct
 
 ### Format your code
 
-It is easy to write messy code in the beginning, this makes it difficult for TAs and your friends to help you. It is recommended to enable the `Editor: format on save` option in the preferences so that your code will automatically be formatted when you save. It is also possible to manually format using !kbd[!ctrl+Shift+I].
+It is easy to write messy code in the beginning. This makes it difficult for TAs and your friends to help you. It is recommended to enable the `Editor: format on save` option in the preferences so that your code will automatically be formatted when you save. It is also possible to manually format using !kbd[!ctrl+Shift+I].
 
 > Formatting does not work when you have syntax errors so if the command doesn't do anything you might have to fix your code first!

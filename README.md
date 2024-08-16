@@ -1,6 +1,6 @@
 # Data101
 
-A book targeting students that are starting a university programme related to computer science, specifically those at Chalmers University of Technology.
+A book targeting students that are starting a university program related to computer science, specifically those at Chalmers University of Technology.
 
 ## Contributing
 

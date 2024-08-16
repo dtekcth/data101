@@ -10,14 +10,14 @@ Long answer: When writing this guide we compared many editors to find out which 
 
 - Available on all platforms (Windows, macOS, Linux)
 - Not specific to a certain programming language or environment (e.g. PyCharm which only works for Python)
-- Extensive plugin support for all environments used in courses given by our department.
+- Extensive plugin support for all environments used in courses at Chalmers.
 - Does not require any computer knowledge to get started[^emacs_evangelists]
 
 The only editor which truly fits all of these is Visual Studio Code.
 
 ## Setup
 
-To get started, begin by downloading VSCode from their [webpage](https://code.visualstudio.com/).
+To get started, begin by downloading VSCode from the [webpage](https://code.visualstudio.com/).
 
 > **Did you know that you can open links in a new tab by either**
 >

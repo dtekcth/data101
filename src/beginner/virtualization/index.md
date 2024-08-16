@@ -43,7 +43,7 @@ Download and install VirtualBox from their [webpage](https://www.virtualbox.org/
 
 {{ end }}
 
-The next step is to [download an Ubuntu install image](https://ubuntu.com/download/desktop). Ubuntu is a user-friendly distribution of Linux, if you use Windows you may remember this from the WSL setup.
+The next step is to [download an Ubuntu install image](https://ubuntu.com/download/desktop). Ubuntu is a user-friendly distribution of Linux. If you use Windows you may remember this from the WSL setup described in [_Getting started_](/getting_started.md).
 
 You are now ready to get started!
 
@@ -58,4 +58,4 @@ With virtualbox open, select **New** in the menu to the right. There are several
 
 ![Recommended machine settings](/Assets/virtualization/vm_settings.png)
 
-You will be prompted to select Disk settings as well. The default options should work fine, so just press **Create**.
+You will be prompted to select Disk settings as well. The default options work fine, so just press **Create**.

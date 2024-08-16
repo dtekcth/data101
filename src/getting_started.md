@@ -1,14 +1,14 @@
 # Getting started
 
-To begin with, you need to install a couple of applications, these will be useful throughout your education. This section will only quickly describe how to install the software, in the later chapters we will tell you more about why and how we use them.
+To begin with, you need to install a couple of applications. These will be useful throughout your education. This section will only briefly describe how to install the software, while in the later chapters we will tell you more about why and how we use them.
 
 ## Editor: VSCode
 
-VSCode is our recommended editor, this is the application you write code with. [Download it here.](https://code.visualstudio.com/)
+VSCode is our recommended editor. This is the application you write code with. [Download it here.](https://code.visualstudio.com/)
 
 ## Online meetings: Zoom
 
-Sometimes you will have lectures online, the university uses Zoom for this. It is also possible to set up your own room and talk to your group partners remotely. [Download it here.](https://zoom.us/download#client_4meeting)
+Sometimes you will have lectures online, where the university uses Zoom. It is also possible to set up your own room and talk to your group partners remotely. [Download it here.](https://zoom.us/download#client_4meeting)
 
 {{ begin .windows }}
 
@@ -16,7 +16,7 @@ Sometimes you will have lectures online, the university uses Zoom for this. It i
 
 **This is only necessary if you use Microsoft Windows.** WSL allows you to run Linux programs while running Windows as your primary OS. Linux is another operating system that you will get to know more about during your studies. The official instructions can be found [here](https://docs.microsoft.com/en-us/windows/wsl/install) but they can be a bit complicated. So we have included our own instructions below as well.
 
-Start by running `cmd` or `powershell`. This can be done by pressing !kbd[!win] and searching for `powershell` and then right-clicking on `Windows Powershell` and selecting `Run as administrator`, note that if you have Windows set to another language than English it will be translated to that language.
+Start by running `cmd` or `powershell`. This can be done by pressing !kbd[!win] and searching for `powershell`. Then right-click on `Windows Powershell` and select `Run as administrator`. Note that if you have Windows set to another language than English it will be translated to that language.
 
 A new window will open where you can run commands. After typing your command you can run it by pressing `Enter`. Run `wsl --install` and then reboot your computer.
 
@@ -25,6 +25,8 @@ You can now start WSL by searching for `ubuntu` from the Windows Start Menu. Fol
 {{ end }}
 
 ## IT-services at Chalmers
+
+During your time at Chalmers you will have to use a wide variety of tools. Most can be found through [this link](https://www.chalmers.se/en/education/your-studies/services-and-tools/).
 
 ### Chalmers ID (CID)
 
@@ -50,7 +52,11 @@ Sometimes you need special software or more computer power for a lab. It is almo
 
 ### Schedule: TimeEdit
 
-You can find both programme and course schedules on [TimeEdit](https://cloud.timeedit.net/chalmers/web/public/). It is also possible to export the calendar to other calendar programs such as Google Calendar.
+You can find both program and course schedules on [TimeEdit](https://cloud.timeedit.net/chalmers/web/public/). It is also possible to export the calendar to other calendar programs such as Google Calendar.
+
+### Canvas
+
+[Canvas](https://canla.portal.chalmers.se/canvaslogin/discovery.html?v=1) is the _learning management system_ at Chalmers. In simpler terms, it is where you will find course information, submit labs and so on.
 
 ## Ladok
 

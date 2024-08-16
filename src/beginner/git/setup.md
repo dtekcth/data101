@@ -8,7 +8,7 @@ For macOS users, there are two ways to install Git which we recommend.
 
 1. Use the Git bundled with XCode. Chances are that if you're going to program
    on a Mac, then you are going to have to install XCode's command-line tools at
-   some point. Git comes bundled with XCode's command-line tools, check if you
+   some point. Git comes bundled with XCode's command-line tools. Check if you
    have it installed by opening a terminal and typing:
 
    ```bash
@@ -36,7 +36,7 @@ For macOS users, there are two ways to install Git which we recommend.
    git --version
    ```
 
-2. Or you can install Git using Homebrew. Homebrew is a package manager for
+2. You can install Git using Homebrew. Homebrew is a package manager for
    macOS, basically a command-line tool for helping you install various
    software. It is very useful for developers in various situations and can be
    installed by following the instructions [here](https://brew.sh/). After
@@ -93,7 +93,7 @@ you log in with your CID. Which we recommend for school projects as it is withou
 any extra setup, and has unlimited private repositories.
 
 We recommend setting up a GitHub account, as this account comes with some
-excellent student benefits. 
+excellent student benefits.
 
 Sign up for an account [here](https://github.com), and while you're at it sign
 up for the GitHub Student Developer Pack using your Chalmers email

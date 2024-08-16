@@ -47,9 +47,9 @@ To remove unnecessary information for some readers you can apply CSS classes to 
 
 You can also use `{{begin .<os>}}`
 
-### Programme specific content
+### program specific content
 
-You can also use the same syntax as above to hide content from other programmes. The possible identifiers are `Data`, `IT` and `DV`.
+You can also use the same syntax as above to hide content from other programs. The possible identifiers are `Data`, `IT` and `DV`.
 
 ### Keyboard shortcuts
 
