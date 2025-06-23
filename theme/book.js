@@ -277,6 +277,31 @@ const showAll = (elList) => {
     const osList = document.getElementById("os-list");
     const osOptions = Array.from(osList.getElementsByTagName("button", osList));
 
+    // Replace all !kbd and !icon commands with their HTML equivalents.
+    textNodesUnder(
+      document.getElementById("content")
+    ).forEach((n) => {
+      if (!n.parentElement || !n.parentElement.innerHTML) return;
+
+      n.parentElement.innerHTML = n.parentElement.innerHTML
+        .replace(/(.)?!kbd\[(.*?)\]/g, (match, first, second) => {
+          // Ignore if preceded by a backslash
+          if (first === "\\") return match.slice(1);
+
+          const shortcut = second
+            .replace(/!ctrl/, "<span data-context-ctrl>ctrl</span>")
+            .replace(/!cmd/, "⌘")
+            .replace(/!win/, "<span class='fa fa-windows'></span>");
+          return `${first}<code class='kbd-shortcut'>${shortcut}</code>`;
+        })
+        .replace(/(.)?!icon\[(.*)\]/g, (match, prefix, icon) => {
+          // Ignore if preceded by a backslash
+          if (prefix === "\\") return match.slice(1);
+
+          return `<span class='fa fa-${icon}'></span>`;
+        });
+    });
+
     const applyOsOptions = () => {
       if (os === "all") {
         showAll(allOS);
@@ -285,46 +310,18 @@ const showAll = (elList) => {
         showAll([os]);
       }
 
+      // Set icons
       osToggleButton.innerHTML = icons[os]
         .split(" ")
         .map((icon) => `<i class="fa ${icon}"></i>`)
         .join("");
 
-      const textNodes = textNodesUnder(
-        document.getElementById("content")
-      ).reverse();
-      textNodes.forEach((n) => {
-        if (
-          n.parentElement &&
-          n.parentElement.innerHTML &&
-          n.parentElement.innerHTML.includes("!kbd[")
-        ) {
-          n.parentElement.innerHTML = n.parentElement.innerHTML
-            .replace(/(.)?!kbd\[(.*?)\]/g, (match, first, second) => {
-              if (first === "\\") return match.slice(1);
-              const shortcut = second
-                .replace(/\!ctrl/, "<span data-context-ctrl>ctrl</span>")
-                .replace(/\!cmd/, "⌘")
-                .replace(/\!win/, "<span class='fa fa-windows'></span>");
-              return `${first}<code class='kbd-shortcut'>${shortcut}</code>`;
-            })
-            .replace(/(.)?!icon\[(.*)\]/g, (match, prefix, icon) => {
-              if (prefix === "\\") return match.slice(1);
-              return `<span class='fa fa-${icon}'></span>`;
-            });
-        }
-      });
-
+      // Update OS specific shortcut keys.
       const ctrlNodes = document.querySelectorAll("[data-context-ctrl]");
-      if (os === "macos") {
-        ctrlNodes.forEach((t) => {
-          t.innerText = "⌘";
-        });
-      } else {
-        ctrlNodes.forEach((t) => {
-          t.innerText = "Ctrl";
-        });
-      }
+      const ctrlKey = os === "macos" ? "⌘" : "Ctrl";
+      ctrlNodes.forEach((t) => {
+        t.innerText = ctrlKey;
+      });
     };
     applyOsOptions();
 
