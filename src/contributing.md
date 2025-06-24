@@ -43,7 +43,7 @@ To better support the flow of the book some modifications have been made. All mo
 
 ### Operating system specific content
 
-To remove unnecessary information for some readers you can apply CSS classes to hide content for readers not using the specified os. The syntax is `{{ .macos }}`. See this in action on the Git page. You can use `windows`, `linux` or `macos`. This will hide the section from those using other operating systems. This is useful when describing installation processes.
+To remove unnecessary information for some readers you can apply CSS classes to hide content for readers not using the specified os. The syntax is `\{{ .macos }}`. See this in action on the Git page. You can use `windows`, `linux` or `macos`. This will hide the section from those using other operating systems. This is useful when describing installation processes.
 
 You can also use `{{begin .<os>}}`
 

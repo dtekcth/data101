@@ -109,43 +109,51 @@ const showAll = (elList) => {
 
   const matchExerciseMacro = (node) => {
     if (node.parentElement === null) return;
-    const matches = node.nodeValue.match(/^\[\s?([A-Za-z0-9]+)\s*?\]/);
-    if (matches && matches[1]) {
-      node.nodeValue = node.nodeValue.replace(matches[0], "");
-      if (node.parentElement.nodeName === "P") node = node.parentElement;
 
-      const cmd = matches[1];
-      switch (cmd) {
-        case "Task":
-          return createTask(node);
-        case "Solution":
-          return createSolution(node);
-        case "Danger":
-          return node.parentElement.classList.add("danger");
-        case "Warning":
-          return node.parentElement.classList.add("warning");
-      }
-    }
+    node.nodeValue = node.nodeValue
+      .replace(/^(.)?(\[\s*([A-Za-z0-9]+)\s*\])/, (matches, first, second, third) => {
+          // Ignore if preceded by a backslash
+          if (first === "\\") return second;
+
+          if (node.parentElement.nodeName === "P") node = node.parentElement;
+
+          const cmd = third;
+          switch (cmd) {
+            case "Task":
+              return createTask(node);
+            case "Solution":
+              return createSolution(node);
+            case "Danger":
+              return node.parentElement.classList.add("danger");
+            case "Warning":
+              return node.parentElement.classList.add("warning");
+          }
+
+          return first ? first : "";
+      });
   };
 
   const matchBlockMacro = (node) => {
     if (node.parentElement === null) return;
-    const matches = node.nodeValue.match(/^{{\s?((\.[A-Za-z\-0-9]+)+)\s*?}}/);
-    if (matches && matches[1]) {
-      // Add classes to parent
-      matches[1]
-        .split(".")
-        .filter((s) => s !== "")
-        .map((s) => s.trim())
-        .forEach((c) => node.parentElement.classList.add(c.trim()));
 
-      node.nodeValue = node.nodeValue.replace(matches[0], "");
-    }
+    node.nodeValue = node.nodeValue
+      .replace(/(.)?({{\s*((\.[A-Za-z\-0-9]+)+)\s*}})/, (matches, first, second, third) => {
+        // Ignore if preceded by a backslash
+        if (first === "\\") return second;
+
+        third
+          .split(".")
+          .filter((s) => s !== "")
+          .map((s) => s.trim())
+          .forEach((c) => node.parentElement.classList.add(c));
+
+        return first ? first : "";
+      });
   };
 
   const matchCodeMacro = (node) => {
     if (node.nextSibling === null || node.parentElement === null) return;
-    const matches = node.nodeValue.match(/{{\s?((\.[A-Za-z\-0-9]+)+)\s*?}}$/);
+    const matches = node.nodeValue.match(/{{\s*((\.[A-Za-z\-0-9]+)+)\s*}}$/);
     if (matches && matches[1]) {
       // Add classes to parent
       matches[1]
@@ -157,8 +165,8 @@ const showAll = (elList) => {
     }
   };
 
-  const BeginLongBlockRegex = /^{{\s?begin\s+((\.[A-Za-z\-0-9]+)+)\s*?}}/;
-  const EndLongBlockRegex = /^{{\s?end\s*?}}/;
+  const BeginLongBlockRegex = /^{{\s*begin\s+((\.[A-Za-z\-0-9]+)+)\s*}}/;
+  const EndLongBlockRegex = /^{{\s*end\s*}}/;
 
   const applyClasses = (el, classes) => {
     if (el.innerText) {
@@ -183,7 +191,6 @@ const showAll = (elList) => {
 
       node.nodeValue = node.nodeValue.replace(matches[0], "");
       applyClasses(node.parentElement, classes);
-      document.getElementById("hello");
     }
   };
 
