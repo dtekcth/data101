@@ -39,15 +39,17 @@ When you are done, submit the form
 
 ## Modifications to mdBook
 
-To better support the flow of the book some modifications have been made. All modifications in the `theme` directory can be found by searching for `BEGIN DAT101`.
+To better support the flow of the book some modifications have been made. All modifications in the `theme` directory can be found by searching for `BEGIN DAT101`. These additions are custom commands which modify the content in some way. Some of the custom commands can be escape by prepending them with a backslash like this `\\{{ .windows }}`.
+
+### Special sections
+
+You can add warning boxes and tasks with `[ <section> ]`. This can be either `Task`, `Solution`, `Danger` or `Warning`. The effect applies to the following paragraph.
 
 ### Operating system specific content
 
-To remove unnecessary information for some readers you can apply CSS classes to hide content for readers not using the specified os. The syntax is `\{{ .macos }}`. See this in action on the Git page. You can use `windows`, `linux` or `macos`. This will hide the section from those using other operating systems. This is useful when describing installation processes.
+To remove unnecessary information for some readers you can apply CSS classes to hide content for readers not using the specified OS. You can use `{{ .<os> }}` to hide the same paragraph and `{{ begin .<os> }}` and `{{ end }}` to hide a larger block of text. See this in action on the Git page. You can use `windows`, `linux` or `macos`. This is useful when describing installation processes.
 
-You can also use `{{begin .<os>}}`
-
-### program specific content
+### Program specific content
 
 You can also use the same syntax as above to hide content from other programs. The possible identifiers are `Data`, `IT` and `DV`.
 
