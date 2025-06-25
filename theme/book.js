@@ -110,27 +110,35 @@ const showAll = (elList) => {
   const matchExerciseMacro = (node) => {
     if (node.parentElement === null) return;
 
-    node.nodeValue = node.nodeValue
-      .replace(/^(.)?(\[\s*([A-Za-z0-9]+)\s*\])/, (matches, first, second, third) => {
-          // Ignore if preceded by a backslash
-          if (first === "\\") return second;
+    const matches = node.nodeValue.match(/^(.)?(\[\s*([A-Za-z0-9]+)\s*\])/);
 
-          if (node.parentElement.nodeName === "P") node = node.parentElement;
+    // Skip if there are no matches.
+    if (!matches || !matches[2]) {
+      return;
+    }
 
-          const cmd = third;
-          switch (cmd) {
-            case "Task":
-              return createTask(node);
-            case "Solution":
-              return createSolution(node);
-            case "Danger":
-              return node.parentElement.classList.add("danger");
-            case "Warning":
-              return node.parentElement.classList.add("warning");
-          }
+    if (matches[1] === "\\") {
+        // Remove the escape.
+        node.nodeValue = node.nodeValue.replace(matches[1], "");
+    } else {
+        // Remove the command.
+        node.nodeValue = node.nodeValue.replace(matches[2], "");
 
-          return first ? first : "";
-      });
+        if (node.parentElement.nodeName === "P") node = node.parentElement;
+
+        // Run command.
+        const cmd = matches[3];
+        switch (cmd) {
+          case "Task":
+            return createTask(node);
+          case "Solution":
+            return createSolution(node);
+          case "Danger":
+            return node.parentElement.classList.add("danger");
+          case "Warning":
+            return node.parentElement.classList.add("warning");
+        }
+    }
   };
 
   const matchBlockMacro = (node) => {
