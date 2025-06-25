@@ -9,12 +9,6 @@
 - [The Editor](./beginner/editor/index.md)
   - [Shortcuts](./beginner/editor/shortcuts.md)
   - [Navigation](./beginner/editor/navigation.md)
-- [Git - Introduction](./beginner/git/intro.md)
-  - [Setup](./beginner/git/setup.md)
-  - [Repositories, changes and commits](./beginner/git/basics.md)
-  - [Remote repositories and merge conflicts](./beginner/git/remote.md)
-  - [Using .gitignore](./beginner/git/gitignore.md)
-  - [A Git workflow for regular lab assignments](./beginner/git/workflow.md)
 - [CLI](./beginner/cli/index.md)
   - [Paths](./beginner/cli/paths.md)
   - [Flags](./beginner/cli/flags.md)
@@ -22,7 +16,12 @@
   - [Autocompletion](./beginner/cli/autocompletion.md)
   - [Globbing](./beginner/cli/globbing.md)
   - [SSH](./beginner/ssh.md)
-  <!-- - [Useful tools](./beginner/cli_tools/index.md) -->
+- [Git - Introduction](./beginner/git/intro.md)
+  - [Setup](./beginner/git/setup.md)
+  - [Repositories, changes and commits](./beginner/git/basics.md)
+  - [Remote repositories and merge conflicts](./beginner/git/remote.md)
+  - [Using .gitignore](./beginner/git/gitignore.md)
+  - [A Git workflow for regular lab assignments](./beginner/git/workflow.md)
 - [Linux](./beginner/linux.md)
 - [Virtualization](./beginner/virtualization/index.md)
   - [Guest OS](./beginner/virtualization/guest.md)
@@ -40,7 +39,6 @@
   - [Exams](./studies/exams.md)
   - [Courses](./studies/courses.md)
 - [FAQ](./studies/FAQ.md)
-  <!-- - [Courses](./studies/courses.md) -->
 
 # Courses
 

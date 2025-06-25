@@ -28,7 +28,7 @@ Under _studies_ you will find course-specific information. These chapters provid
 
 ## If you get stuck
 
-While we have tried to be as thorough as possible, there might still be cases we haven't thought about, feel free to email the authors any questions you might have. You can reach the authors at [dns@dtek.se](mailto://dns@dtek.se).
+While we have tried to be as thorough as possible, there might still be cases we haven't thought about, feel free to email the authors any questions you might have. You can reach the authors at [dns@dtek.se](mailto:dns@dtek.se).
 
 {{ begin .Data }}
 
@@ -38,9 +38,7 @@ For Data students we have a Discord [here](https://discord.gg/nu3SWDUwHH) where 
 
 ## Lectures
 
-There will be two lectures where we go through some of the early chapters. The first will be on the 4th of September 12:00 in HA1, where we will go through how to use Git. The authors will also be available during the _PISS-kväll_ in the afternoon to help you.
-
-The second lectures will be at 12:00 on the 11th of September (HA1) where we will go through the CLI and the Editor.
+There will be two lectures where we go through some of the early chapters. The first lecture we will go through how to use Git. The authors will also be available during the _PISS-kväll_ in the afternoon to help you. The second lecture will cover the CLI and the Editor.
 
 The authors will also be attending the _hackkväll_ at 18:00 in NC (Idéläran) and will be assisting you with any problem you might be having!
 

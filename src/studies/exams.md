@@ -11,7 +11,7 @@ Some general advice not found on Chalmers website can be found below.
 Aside from reviewing the material from class you might also be interested in looking at old exams. Old exams and solutions can be found through several channels.
 
 - The examiner should provide some example exams on the canvas page.
-- You can email the student expedition and ask for old exams and solutions. Every department has their own expedition but most exams relating to computer science can be requested from [student_office.cse@chalmers.se](mailto://student_office.cse@chalmers.se). Please keep in mind that their response time might be over a week.
+- You can email the student expedition and ask for old exams and solutions. Every department has their own expedition but most exams relating to computer science can be requested from [student_office.cse@chalmers.se](mailto:student_office.cse@chalmers.se). Please keep in mind that their response time might be over a week.
 <!-- - You can find exam statics on [this page](https://tenta.chs.se), which is organised by students. -->
 
 ## During the exam
@@ -28,6 +28,6 @@ The examiner **must** post solutions to the exam by the next working day and the
 
 If you feel that some of your rights have been violated or that something else has gone wrong, please contact your student board. They will know how to fix any problem related to your exams.
 
-- TKDAT: dns@dtek.se
-- TKITE: snit@chalmers.it
-- N1COS: studienamnd@dvet.se
+- TKDAT: [dns@dtek.se](mailto:dns@dtek.se)
+- TKITE: [snit@chalmers.it](mailto:snit@chalmers.it)
+- N1COS: [studienamnd@dvet.se](mailto:studienamnd@dvet.se)
