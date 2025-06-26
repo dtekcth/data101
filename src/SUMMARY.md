@@ -7,6 +7,7 @@
 # Beginner
 
 - [The Editor](./beginner/editor/index.md)
+  - [Basics](./beginner/editor/basics.md)
   - [Shortcuts](./beginner/editor/shortcuts.md)
   - [Navigation](./beginner/editor/navigation.md)
 - [CLI](./beginner/cli/index.md)
