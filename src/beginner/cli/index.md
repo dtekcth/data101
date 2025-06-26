@@ -77,4 +77,4 @@ There are a couple of shortcuts that might be helpful.
 - !kbd[Ctrl+D] sends an _End of Line_ (_EOL_) to the terminal. This usually exits the current program if it is interactive.
 - !kbd[Ctrl+L] clears the whole terminal.
 
-[^exit_vim]`vim` is infamously known for being difficult to exit.
+[^exit_vim]: `vim` is infamously known for being difficult to exit.

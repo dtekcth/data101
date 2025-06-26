@@ -49,4 +49,4 @@ It is also important to read your student email as teachers or lab partners may 
 
 It is your responsibility to stay up to date with published information in a timely manner.
 
-[^elective_caveat] There may still be prerequisite requirements.
+[^elective_caveat]: There may still be prerequisite requirements.
