@@ -2,8 +2,6 @@
 
 <!-- > Before starting you might want to download a project from the introductory course. -->
 
-To give you a taste of what's to come, with VSCode focused, press !kbd[!ctrl+O] (note that it is the letter O not zero) and select a folder containing a project on your computer. If you do not have one, either create an empty folder or download one from the introduction course.
-
 Programing is all about using the keyboard. While the mouse is useful most of the time when using a computer, this is not one of them. Every action that can be done using your mouse can also be done without lifting your fingers from the keyboard.
 
 You may be tempted to click on the screen to move the caret (the vertical line where text appears), save your file or create a new file, and while this works, it is horribly inefficient compared to using shortcuts. In the beginning, you may not notice this but as you go through the semester it will become second nature to you.
