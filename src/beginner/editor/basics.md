@@ -1,4 +1,4 @@
-# The start screen
+# The Start Screen
 The first time you start up VSCode you will be presented with a short introduction, which can help you set up Copilot, choose a theme, and that can give you resources like video tutorials for getting started. 
 
 However to not get stuck in customizing and watching videos we will give a quick overview for the very basic functionality of your new editor. In the top left corner you will see an arrow titled "Welcome", this will take you back to the *Welcome* page which greets you every time you start VSCode from here on out.
@@ -7,7 +7,7 @@ However to not get stuck in customizing and watching videos we will give a quick
 > Do not use spaces in your file or folder names. At best it will be an annoyance 
 > for writing code and at worst it will break things!
 
-# Welcome!
+# Welcome
 
 Now you'll be presented with a screen that gives you a few options
 ![The welcome page](/Assets/editor/welcome.png)
@@ -17,7 +17,7 @@ The one we're going to start with is `Open...` or `Open Folder...`. Alternativel
 
 {{ .windows }}On Windows you will most likely be placed in your user folder. To create a new folder, right click and hover over `New`, here select `Folder`. Title it something like data101 and then press `Select Folder`. 
 
-# Files! 
+# Files 
 Now on the left side of your screen you will see the `Explorer`. Here you can see the name of the folder you just entered as well as all the files in the folder. However, currently there are none! 
 
 To create a file we can click on the `New File...` button in the middle of the screen. You'll notice your "search bar" gets a little dropdown menu (This is called the command palette and we will return to it in a minute). As it says you can now write in a file name, as an example write in "testing.txt" and press Enter! You will get a little pop up from your operating system asking if you want to create a file in this directory. Press `Create File`. Alternatively you can press !kbd[!ctrl+N] which immediately creates an untitled text file. 
