@@ -10,6 +10,7 @@
   - [Basics](./beginner/editor/basics.md)
   - [Navigation](./beginner/editor/navigation.md)
   - [Shortcuts](./beginner/editor/shortcuts.md)
+  - [Extensions](./beginner/editor/extensions.md)
 - [CLI](./beginner/cli/index.md)
   - [Paths](./beginner/cli/paths.md)
   - [Flags](./beginner/cli/flags.md)
