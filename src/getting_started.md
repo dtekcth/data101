@@ -1,6 +1,12 @@
 # Getting started
 
-To begin with, you need to install a couple of applications. These will be useful throughout your education. This section will only briefly describe how to install the software, while in the later chapters we will tell you more about why and how we use them.
+To begin with, you need to install a couple of applications. These will be useful throughout your education. This section will only briefly describe how to install the software, while in the later chapters we will tell you more about why and how we use them. 
+
+Before you get further into the book we also suggest picking your preferred
+operating system in the top bar on the page. By doing this you will not see
+unnecessary information meant for other operating systems. Here you can also
+choose a theme and your programme if you want to skip information that is not
+relevant to you.
 
 ## Editor: VSCode
 
