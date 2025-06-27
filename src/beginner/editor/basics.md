@@ -25,6 +25,9 @@ Now on the left side of your screen you will see the `Explorer`. Here you can se
 
 To create a file we can click on the `New File...` button in the middle of the screen. You'll notice your "search bar" gets a little dropdown menu (this is called the command palette and we will return to it in a minute). As it says you can now write in a file name, as an example write in "testing.txt" and press enter! You will get a little pop up from your operating system asking if you want to create a file in this directory. Press `Create File`. Alternatively you can press !kbd[!ctrl+N] which immediately creates an untitled text file. 
 
+> Left of the `Explorer` you can see the so called `Activity Bar`, by right
+> clicking this you can change its contents or position on the screen.  
+
 ## The menu bar
 The problem you may have noticed is that now the Welcome page is gone. To do
 something like open a folder, create a file or to save now we have to instead
