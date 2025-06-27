@@ -247,8 +247,8 @@ const showAll = (elList) => {
   const promptForValues = () => {
     // document.getElementById("meta-prompt").classList.add("hidden");
     if (
-      !localStorage.getItem("mdbook-programme") ||
-      !localStorage.getItem("mdbook-os")
+      !localStorage.getItem("mdbook-programme") || localStorage.getItem("mdbook-programme") === "all" ||
+      !localStorage.getItem("mdbook-os") || localStorage.getItem("mdbook-os") === "all"
     ) {
       document.getElementById("alert-selection").classList.remove("hidden");
 
