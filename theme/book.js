@@ -145,7 +145,7 @@ const showAll = (elList) => {
     if (node.parentElement === null) return;
 
     node.nodeValue = node.nodeValue
-      .replace(/(.)?({{\s*((\.[A-Za-z\-0-9]+)+)\s*}})/, (matches, first, second, third) => {
+      .replace(/(.)?({{\s*((\.[A-Za-z\-0-9]+\s*)+)}})/, (matches, first, second, third) => {
         // Ignore if preceded by a backslash
         if (first === "\\") return second;
 
@@ -161,7 +161,7 @@ const showAll = (elList) => {
 
   const matchCodeMacro = (node) => {
     if (node.nextSibling === null || node.parentElement === null) return;
-    const matches = node.nodeValue.match(/{{\s*((\.[A-Za-z\-0-9]+)+)\s*}}$/);
+    const matches = node.nodeValue.match(/{{\s*((\.[A-Za-z\-0-9]+\s*)+)}}$/);
     if (matches && matches[1]) {
       // Add classes to parent
       matches[1]
@@ -173,7 +173,7 @@ const showAll = (elList) => {
     }
   };
 
-  const BeginLongBlockRegex = /^{{\s*begin\s+((\.[A-Za-z\-0-9]+)+)\s*}}/;
+  const BeginLongBlockRegex = /^{{\s*begin\s+((\.[A-Za-z\-0-9]+\s*)+)}}/;
   const EndLongBlockRegex = /^{{\s*end\s*}}/;
 
   const applyClasses = (el, classes) => {
