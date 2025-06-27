@@ -47,7 +47,7 @@ You can add warning boxes and tasks with `[ <section> ]`. This can be either `Ta
 
 ### Operating system specific content
 
-To remove unnecessary information for some readers you can apply CSS classes to hide content for readers not using the specified OS. You can use `{{ .<os> }}` to hide the same paragraph and `{{ begin .<os> }}` and `{{ end }}` to hide a larger block of text. See this in action on the Git page. You can use `windows`, `linux` or `macos`. This is useful when describing installation processes.
+To remove unnecessary information for some readers you can apply CSS classes to hide content for readers not using the specified OS. You can use `{{ .<os> }}` to hide the same paragraph and `{{ begin .<os> }}` and `{{ end }}` to hide a larger block of text. See this in action on the Git page. You can also specify multiple OS:es by separating them with a `.`. You can use `windows`, `linux` or `macos` in place of `<os>`. This is, for example, useful when describing installation processes.
 
 ### Program specific content
 
