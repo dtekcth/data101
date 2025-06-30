@@ -14,6 +14,7 @@
 - [CLI](./beginner/cli/index.md)
   - [Paths](./beginner/cli/paths.md)
   - [Flags](./beginner/cli/flags.md)
+  - [Common commands](./beginner/cli/commands.md)
   - [Environment variables](./beginner/cli/environment_variables.md)
   - [Autocompletion](./beginner/cli/autocompletion.md)
   - [SSH](./beginner/ssh.md)
