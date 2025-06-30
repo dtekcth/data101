@@ -24,6 +24,10 @@ _If you run `ls ../` inside `test_directory` what do you expect you will see?_
 [Solution]
 You will see the files in your home directory as `test_directory` is a child of your home folder and `ls ../` lists the content of the parent directory.
 
+## Hidden files
+
+Files and directories that have a `.` as the first character of their names are called hidden files. They usually don't show up when using `ls`, we instead have to use `ls --all`. Most of the time you won't interact with them, which is why they are hidden.
+
 ## Globbing
 
 For commands that take multiple arguments, you sometimes want to specify multiple paths that follow similar patterns. For this we can use something called globbing, which is done by inserting one or multiple `*`s into the path. It is a placeholder that means _anything goes_. So `ls *.txt` would list all files in the current directory that end in `.txt`.

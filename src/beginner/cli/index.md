@@ -68,6 +68,9 @@ Up until now we have only run commands from our home directory, but it would be 
 <!-- previous directory isn't entirely correct, but I don't know any better words -->
 You can also move to the previous directory using `cd ..`. The argument we are giving to `cd` is more generally known as a _path_, which we will cover in more depth in the next subchapter.
 
+<!-- Maybe we should mention escaping spaces as that is the default used when tab completing names -->
+If you have a directory with a space in its name, you might wonder how you can refer to it in the terminal as we use spaces for separating arguments. In these cases, we can surround the path in quotation marks like this `cd "My directory"`. This applies to any arguments that contain spaces, not just directory names.
+
 > You can access your command history using the up and down arrow keys.
 
 It is common to alternate between `cd` and `ls` when navigating in the terminal, but this can quickly clutter up the screen. You can clear it by either running the command `cls` (**cl**ear **s**creen), or by pressing !kbd[Ctrl+L].
