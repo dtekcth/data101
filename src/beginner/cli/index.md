@@ -47,31 +47,30 @@ With a terminal open, what are we looking at? At the start of that line you will
 
 We can print the exact location of our working directory by running the command `pwd` **p**rint **w**orking **d**irectory. This should print `/home/` followed by your username. You can also list the contents of your working directory with the command `ls` (**l**i**s**t).
 
-We can create directories with the command `mkdir <name>` (**m**a**k**e **dir**ectory). What is this `<name>` that is after the command? This is a common way to show that a command needs some extra data to run properly. This extra data is called an argument and you are supposed to replace them (including the `<>`) with what you want before running the command. For commands that require multiple arguments, you separate them with spaces. In the case of `mkdir`, we replace it with the name of the directory we want to create. Try running `mkdir test_directory` and look at the changes with `ls`.
+## Creating and deleting files and directories
 
-With a new directory, we may want to change into it to continue working. This can be done with `cd <path>` (**c**hange **d**irectory). Here we replace `<path>` with the name of the directory we want to move into.
+We can create directories with the command `mkdir <name>` (**m**a**k**e **dir**ectory). The text inside angle brackets is a placeholder which shows that a command needs some extra data to run properly. This extra data is called an argument and you are supposed to replace them (including the `<>`) with what you want before running the command. For commands that require multiple arguments, you separate them with spaces. In the case of `mkdir`, we replace it with the name of the directory we want to create. Try running `mkdir test_directory` and look at the changes with `ls`.
 
-[Task]
-What command should you run to enter the new directory that you just created?
-
-[Solution]
-`cd test_directory`. Try running it, and then run `pwd` to see that it changed your working directory.
-
-<!-- previous directory isn't entirely correct, but I don't know any better words -->
-Now that you are in `test_directory`, how do we move back? There are two special names you can use as directories: `.` refers to the current directory, and `..` to the previous directory. So we can use `cd ..` to move up one directory. This is more generally referred to as a _path_, which we will discuss more in the next chapter.
-
-Move back to `test_directoy` again, we are going to create some files. We can do this using `touch <path>`. Here we replace `<path>` with the name of the file we want to create. Run `touch file1` and `touch file2`. If you run `ls` now you should see the two files. We can also create multiple files at once by giving multiple names as arguments. Try this with `touch file3 file4`.
-
-> You can access your command history using the up and down arrow keys.
+To create files, you can use `touch <path>`. Here we replace `<path>` with the name of the file we want to create. Run `touch file1` and `touch file2`. If you run `ls` now you should see the two files. We can create multiple files at once by giving multiple names as arguments. Try this with `touch file3 file4`.
 
 To remove files, use `rm <path>`, where `<path>` is the name of the file we want to remove. Here we can also list multiple files we want to delete.
 
+<!-- Maybe we should hint at git here to help you not lose your progress -->
 > [Warning]
-> Be careful with using `rm` as the files will not be moved to the trash can like they would if you deleted them form user interface. If you use `rm`, the files are gone and you cannot recover them. You won't be able to remove system critical files without extra authentication, but you should still be careful.
+> Be careful with using `rm` as the files will not be moved to the trashcan like they would if you deleted them from a user interface. If you use `rm`, the files are gone and you cannot recover them. You won't be able to remove system critical files without extra authentication, but you should still be careful.
 
-If you want to open up VSCode to start editing some of the files, you can run `code` to open up the working directory in the editor. You can also use `code <path>` to open a specific file or directory.
+If you want to open up VSCode to start editing some of the files, you can run `code` to open up the working directory in the editor. You can also use `code <path>` to open a specific file or directory. If you are using a different editor, there is probably a command to start it from the terminal too.
 
-Our screen is starting to get cluttered now as we have run quite a few commands. You can clear it by either running the command `cls` (**cl**ear **s**creen), or by pressing !kbd[Ctrl+L].
+## Navigation
+
+Up until now we have only run commands from our home directory, but it would be cumbersome to do everything from here. We can change our working directory with `cd <path>` (**c**hange **d**irectory). Here we replace `<path>` with the name of the directory we want to move into. Try running `cd test_directory`. You can verify that you have change the working directory by running `pwd` again.
+
+<!-- previous directory isn't entirely correct, but I don't know any better words -->
+You can also move to the previous directory using `cd ..`. The argument we are giving to `cd` is more generally known as a _path_, which we will cover in more depth in the next subchapter.
+
+> You can access your command history using the up and down arrow keys.
+
+It is common to alternate between `cd` and `ls` when navigating in the terminal, but this can quickly clutter up the screen. You can clear it by either running the command `cls` (**cl**ear **s**creen), or by pressing !kbd[Ctrl+L].
 
 ## Special shortcuts
 
