@@ -16,7 +16,6 @@
   - [Flags](./beginner/cli/flags.md)
   - [Environment variables](./beginner/cli/environment_variables.md)
   - [Autocompletion](./beginner/cli/autocompletion.md)
-  - [Globbing](./beginner/cli/globbing.md)
   - [SSH](./beginner/ssh.md)
 - [Git - Introduction](./beginner/git/intro.md)
   - [Setup](./beginner/git/setup.md)
