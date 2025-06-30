@@ -5,28 +5,27 @@ through how to install extensions as well as some of the most useful extensions 
 
 <!-- > In VSCode they're called extensions and not plugins, the reason for this is largely semantic. The reason we call them plugins is because we are nerds who like semantics. -->
 
-> When we say environment we are talking about a collection of programs and settings that you have available. Sometimes we make change to a local environment that only affects a certain folder or project, but most of the time we make changes that affect you entire computers environment.
+> When we say environment we are talking about a collection of programs and settings that you have available. Sometimes we make changes to a local environment that only affects a certain folder or project, but most of the time we make changes that affect your entire computers environment.
 
 ## Installation 
-In the activity bar, which by default is the bar furthest to the left in a VSCode window, you have a few icons. The one on the bottom is the extensions marketplace. 
+In the activity bar, which by default is furthest to the left in a VSCode window, you have a few icons. The one on the bottom is the extensions marketplace. 
 
 Pressing this you'll get a big menu where you can now install extensions. By default they're displayed in order of popularity but you can also search for specific extensions using the search bar at the top of this menu.
 
 ![Marketplace](/Assets/editor/marketplace.png)
 
-To install an extension simply press the install button! The arrow next to the install button typically allows you to install a "Pre-release" version. This is usually not worth doing unless you have a very specific reason for getting that version.
+To install an extension simply press the install button! The arrow next to the install button typically allows you to install a "Pre-release" version. This is usually not worth doing unless you have a very specific reason for doing so.
 Your installed extensions will be visible under the `Installed` dropdown.
 
 > If you want to make this entire extensions menu bigger or smaller you can
-> drag the edge of the pane. This is true for most panes in VSCode
-> if you want to make them bigger or smaller.
+> drag the edge of the pane. This is also true for most panes in VSCode.
 
 ## Language support
 The two most popular extensions in VSCode as seen in the image above are two
 python extensions. The top one is needed to load other python extensions, it is
 a *dependency*, other extensions depend on it. It also offers certain nice
 features like *syntax highlighting*. A syntax highlighter mainly change the
-color of different elements in code to make different things stick out. 
+color of different elements in code to make it more readable. 
 
 Installing this plugin also installs the next most popular one, `Pylance`. This
 is a so called *language server*. Language servers offer assistance when
@@ -42,7 +41,7 @@ mean.
 > Sometimes they will make code harder to understand in an attempt to make it
 > better. For these reasons we suggest **avoiding** language server extensions for a
 > start until you're a bit more comfortable with a language, a sentiment you
-> might hear echoed by professors and older students.
+> might hear echoed by professors and other students.
 
 These syntax highlighting and language server extensions exist for nearly every
 programming language you can think of and can be very useful. If you want to
@@ -59,7 +58,7 @@ your courses in LP3 if you are studying at computer engineering.
 ## Customization 
 There are also extensions that allow you to change how your editor looks if
 you'd like! This can include things like changing icons and the way windows and
-panes look. Another popular customization option are themes. These change the
+panes look. Another popular customization option is themes. These change the
 colors of your editor. Some popular ones are `Gruvbox` and `Monokai`. [This
 website](https://vscodethemes.com/) allows you to see and compare different
 ones easily.
