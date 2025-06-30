@@ -13,11 +13,11 @@ Now you'll be presented with a screen that gives you a few options
 ![The welcome page](/Assets/editor/welcome.png)
 The one we're going to start with is `Open...` or `Open Folder...`. Alternatively using your keyboard press !kbd[!ctrl+O](note that it is the letter O, not zero). This will bring up your operating systems graphical file explorer, here you can choose to open an existing folder, or to create a new folder.
 
-{{ .macos }}On MacOS you will most likely be placed in your users home folder. My suggestion is to create a new folder here, titled something like `data101` and then pressing `Add`.
+{{ .macos }}On MacOS you will most likely be placed in your users home folder. My suggestion is to create a new folder here, named something like `data101` and then pressing `Add`.
 
-{{ .linux }}On linux you will most likely be placed in your users home folder. My suggestion is to create a new folder here. How you do this depends on your distribution and primarily what file manager you have. The standard one in gnome has the create folder button under the blue `Select` button. Title it something like `data101` and then press said `Select` button. 
+{{ .linux }}On linux you will most likely be placed in your users home folder. My suggestion is to create a new folder here. How you do this depends on your distribution and primarily what file manager you have. The standard one in gnome has the create folder button under the blue `Select` button. Name it something like `data101` and then press said `Select` button.
 
-{{ .windows }}On Windows you will most likely be placed in your user folder. To create a new folder, right click and hover over `New`, here select `Folder`. Title it something like data101 and then press `Select Folder`. 
+{{ .windows }}On Windows you will most likely be placed in your user folder. To create a new folder, right click and hover over `New`, here select `Folder`. Name it something like `data101` and then press `Select Folder`.
 
 
 ## Files 

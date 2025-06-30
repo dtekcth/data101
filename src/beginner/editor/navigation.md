@@ -6,7 +6,7 @@ Before writing code it is necessary to understand how to navigate the editor. Re
 
 The caret is the blinking line from where text appears, you probably know all about it but the name may be new to you. To move the caret, use the arrow keys. If your keyboard has them, you can also move to the start or end of the line by pressing !kbd[Home] or !kbd[End] respectively. To move the caret word by word, hold !kbd[Ctrl] (or !kbd[Alt] on MacOS) while pressing !kbd[Left] or !kbd[Right].
 
-{{ .macos }}On MacOS there are also certain standard navigation options for moving the carat that work in every programme. You can use !kbd[Ctrl+A] to move to the start of a line and !kbd[Ctrl+E] to move to the end of a line. 
+{{ .macos }}On MacOS there are also certain standard navigation options for moving the caret that work in every program. You can use !kbd[Ctrl+A] to move to the start of a line and !kbd[Ctrl+E] to move to the end of a line.
 
 > Holding !kbd[Shift] while doing any movement also selects the text!
 
