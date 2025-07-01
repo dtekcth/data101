@@ -17,6 +17,7 @@
   - [Flags](beginner/cli/flags.md)
   - [Common commands](beginner/cli/commands.md)
   - [Environment variables](beginner/cli/environment_variables.md)
+  - [Pacakge managers](beginner/cli/packagemanagers.md)
   - [Autocompletion](beginner/cli/autocompletion.md)
 - [Git and cooperation.](beginner/git/index.md)
   - [Setup](beginner/git/setup.md)
