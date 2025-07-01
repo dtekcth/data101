@@ -48,8 +48,8 @@ h1 code, h2 code, h3 code, h4 code, h5 code, h6 code {
 .hide-boring .boring { display: none; }
 .hidden { display: none !important; }
 
-h2, h3 { margin-block-start: 2.5em; }
-h4, h5 { margin-block-start: 2em; }
+h2, h3 { margin-block-start: 2.5rem; }
+h4, h5 { margin-block-start: 2rem; }
 
 .header + .header h3,
 .header + .header h4,
