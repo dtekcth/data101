@@ -37,6 +37,8 @@ Up until now we have only run commands from our home directory, but it would be 
 <!-- previous directory isn't entirely correct, but I don't know any better words -->
 You can also move to the previous directory using `cd ..`. The argument we are giving to `cd` is more generally known as a _path_, which we will cover in more depth in the next subchapter.
 
+> You can autocomplete commands and arguments by pressing !kbd[Tab]. If there are multiple alternatives, you will get a list of them. You might need to double-tap !kbd[Tab] to see all available alternatives.
+
 <!-- Maybe we should mention escaping spaces as that is the default used when tab completing names -->
 If you have a directory with a space in its name, you might wonder how you can refer to it in the terminal as we use spaces for separating arguments. In these cases, we can surround the path in quotation marks like this `cd "My directory"`. This applies to any arguments that contain spaces, not just directory names.
 
