@@ -1,5 +1,4 @@
 # Setting up a remote
-## Setting up an SSH key
 
 Now that you have a GitHub account you're going to want to set up an SSH-key. 
 This is a sort of encryption key that is commonly used for connecting to other

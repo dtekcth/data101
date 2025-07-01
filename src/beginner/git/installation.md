@@ -7,14 +7,13 @@ there's not a lot we have to do, so don't be dismayed!
 ## Install Git
 
 {{begin .macos}}
-
 For macOS users, there are two ways to install Git which we recommend.
 
 <!-- 1. You can install Git using Homebrew. Homebrew is a package manager for macOS, basically a command-line tool for helping you install various software. It is very useful for developers in various situations and can be installed by following the instructions [here](https://brew.sh/). After you've installed homebrew you should be able to type the following into a terminal: -->
 
 1. The preferred way to install command line tools like git on macOS is with
    Homebrew, if you missed what that is we recommend going back and reading
-   about ![../cli/packagemanagers.md](package managers) in the previous
+   about [package managers](../cli/packagemanagers.md) in the previous
    chapter. If you do not want to use Homebrew, try the other method instead! 
 
    ```shell

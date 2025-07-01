@@ -19,6 +19,7 @@
   - [Environment variables](beginner/cli/environment_variables.md)
   - [Pacakge managers](beginner/cli/packagemanagers.md)
 - [Git and cooperation.](beginner/git/index.md)
+  - [Installation](beginner/git/installation.md)
   - [Setup](beginner/git/setup.md)
   - [Repositories, changes and commits](beginner/git/basics.md)
   - [Remote repositories and merge conflicts](beginner/git/remote.md)
