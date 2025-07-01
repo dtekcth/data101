@@ -1,118 +1,39 @@
-# Git setup
+# Setting up a remote
+## Setting up an SSH key
 
-## Install Git
+Now that you have a GitHub account you're going to want to set up an SSH-key. 
+This is a sort of encryption key that is commonly used for connecting to other
+computers, but is also used for verification on GitHub and GitLab. This wasn't
+necessary until quite recently but nowadays you need to use SSH for
+verification to access private repositories on GitHub so this is a must.
 
-{{begin .macos}}
+<!-- If you want to use SSH for connecting to computers remotely feel free to read the chapter about it in under further reading HERERH EJFHDSFJK DS -->
 
-For macOS users, there are two ways to install Git which we recommend.
+{{ begin .macos.linux }}
 
-1. Use the Git bundled with XCode. Chances are that if you're going to program
-   on a Mac, then you are going to have to install XCode's command-line tools at
-   some point. Git comes bundled with XCode's command-line tools. Check if you
-   have it installed by opening a terminal and typing:
+On macOS and Linux the process is identical.
 
-   ```bash
-   git --version
-   ```
+First of all open up your terminal. 
+From here use
+`ssh-keygen`
+When you've done this you'll be asked to write in the path to where you want to
+save it. Do ***not*** write anything here. The default location is where
+programs will look for the SSH key, so just press Enter. 
 
-   If you see something like the following you've already got git installed and
-   can move on to the next step.
+Now you'll be asked to write in a passphrase. Again, do ***not*** write
+anything here (unless you really know what you're doing). Certain programs like
+VSCode do not play nice with SSH-keys with a passphrase and can straight up
+crash with no warnings. Just press Enter, and when prompted to write the same
+passphrase again, just press Enter again. 
 
-   ```bash
-   git version 2.33.0
-   ```
+You'll now be presented with your fingerprint and randomart image. Neither of
+these are what we need however. Your SSH-key will now be found at `~/.ssh/`
+(inside your home directory). You'll be presented with two files, one named
+`id_ed25519` and one named `id_ed25519.pub`. The `.pub` file is your public key
+which you need to put into GitHub later. 
 
-   To install XCode's command-line tools (and its bundled Git) open a terminal
-   and run the command:
+> The other file is the private key, and is for verifying that you are who your
+> public key says you are. Basically do *not* share this with anyone else.
+> Ever. Only you should have access to your private key. 
 
-   ```bash
-   xcode-select --install
-   ```
-
-   Let this install, restart your terminal and type the following again. It
-   should now display a version. Move on to the next step.
-
-   ```bash
-   git --version
-   ```
-
-2. You can install Git using Homebrew. Homebrew is a package manager for
-   macOS, basically a command-line tool for helping you install various
-   software. It is very useful for developers in various situations and can be
-   installed by following the instructions [here](https://brew.sh/). After
-   you've installed homebrew you should be able to type the following into a
-   terminal:
-   ```shell
-   brew install git
-   ```
-   To confirm that Git has been installed correctly run the following. Then move
-   on to the next step.
-   ```shell
-   git --version
-   ```
-
-{{end}}
-
-{{ begin .linux }}
-
-The easiest way to install Git on your Linux machine is using your distro's
-package manager. On Ubuntu and Debian-based distros you will want to run the
-following in a terminal:
-
-```bash
-sudo apt-get install git
-```
-
-On Arch-based distros you want to run:
-
-```bash
-sudo pacman -S git
-```
-
-Then verify your install by running:
-
-```bash
-git --version
-```
-
-{{end}}
-
-{{ .windows }}
-On Windows, you want to install Git by downloading the installer
-from [here](https://gitforwindows.org/) and following the instructions.
-
-## Create an account on GitHub
-
-When using Git you will want a place to store your _repositories_ (projects),
-the most popular site for this is called [GitHub](https://github.com), but other
-alternatives include [GitLab](https://about.gitlab.com/) and
-[BitBucket](https://bitbucket.org/product/).
-
-Chalmers also supplies its own [GitLab](https://git.chalmers.se/) instance where
-you log in with your CID. Which we recommend for school projects as it is without,
-any extra setup, and has unlimited private repositories.
-
-We recommend setting up a GitHub account, as this account comes with some
-excellent student benefits.
-
-Sign up for an account [here](https://github.com), and while you're at it sign
-up for the GitHub Student Developer Pack using your Chalmers email
-(_cid_@student.chalmers.se) [here](https://education.github.com/pack). The
-GitHub Student Developer Pack gives some good benefits, among them unlimited
-Private Repositories, and a free subscription GitKraken Pro, which we recommend
-using.
-
-## Install GitKraken
-
-With a GitHub account in hand, and Git installed I am sure you're eager to get
-started. And if you're comfortable in the terminal you absolutely can, but we
-recommend also downloading a GUI for managing Git called GitKraken.
-
-GitKraken can be installed from their website here:
-[GitKraken](https://www.gitkraken.com/)
-
-When asked to sign in, use your newly created GitHub Student account to
-automatically receive the pro features for free.
-
-You will probably also want to enable the GitLab integration in GitKrakens
-preferences as well.
+{{ end }}

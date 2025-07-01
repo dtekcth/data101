@@ -28,6 +28,6 @@ In this tutorial, we will guide you through setting up the necessary software an
 To make git a bit easier to understand we will primarily be using the git integration built in to VSCode! We will also go through how to use git in the terminal for those of you who want to use that.
 
 ## Liveshare
-Liveshare is a plugin for VSCode which lets you connect to someone elses computer and to basically work inside their VSCode session. It has support for multiple people working in the same file and in different files at the same time and can be very useful for when you want to work in the same place in a group. 
+Liveshare is a plugin for VSCode which lets you connect to someone elses computer and to basically work inside their VSCode session. It has support for multiple people working in the same file and in different files at the same time and can be very useful for when you want to work in the same place in a group. This on the other hand will most likely be most useful to you during your studies and lose relevance a bit during your career. But it is graphical, easy to use and a bit more intuitive than git can be at times.
 
 We'll have one sub-chapter in this tutorial for how to set it up, how to use it and some easy pitfalls that can be an issue. 
