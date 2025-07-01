@@ -6,6 +6,14 @@ You may be used to using graphical interfaces when using your computer, but init
 
 There are two words commonly used when talking about how you interact with text-based interfaces: _terminal_, and _shell_. They refer to different parts of using text-based programs, but as it isn't important for this book, we will use terminal to talk about both.
 
+- Most programming tools are made for the command line, especially with flags allowing for extra flexibility.
+- Most unix terminals are very similar, so if you can do something in the terminal on your computer you can probably do it on your friends computer.
+- It gives you a better understanding of how your computer works, and how it all fits together.
+- If you ever need to use a server, or a remote connection you will be restricted to only using a terminal in most cases.
+- It's fun! It might seem scary at first but when you get used to it and learn it, it can actually be fun.
+
+Most systems you will interact with use what is called a Unix terminal. Windows has its own terminals `PowerShell` and `cmd.exe`. These are quite different from other terminals, and so we will not discuss them here.
+
 > A lot of people naturally get stressed and think that it is easy to write some command that will cause harm to the computer. Please be assured by that it is in fact incredibly difficult to destroy anything using the terminal.
 
 {{ begin .windows }}
