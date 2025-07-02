@@ -4,24 +4,16 @@ Now that you know the basics of how paths work and how to interact with a termin
 
 If you want to know more about a command you can either use `command --help` to print a quick reference, or use `man <command>` to get more thorough documentation. The latter option can be a bit unintuitive to use at first, but you can use the arrow keys to move up and down, and `q` to exit out of the viewer.
 
-`cat <files>` (con**cat**enate): Print the contents of the `<file>`. Specifying multiple files will print all of them.
-
-`cd <path>` (**c**hange **d**irectory): Changes your working directory to `<path>`.
-
-`cp <source> <destination>` (**c**o**p**y): Copies files from `<source`> to `<destination>`.
-
-`cp --recursive <source> <destination>` (**c**o**p**y): Copies directories and their contents from `<source`> to `<destination>`.
-
-`ls <path>` (**l**i**s**t): Lists the files in `<path>`.
-
-`ls` (**l**i**s**t): Lists the files in the working directory.
-
-`mkdir <directories>` (**m**a**k**e **dir**ectory): Create the `<directories`>.
-
-`mv <source> <destination>` (**m**o**v**e): Moves files or directories from `<source>` to `<destination>`.
-
-`rm -r <directories>` (**r**e**m**ove): Removes the `<directories>` and all of their contents.
-
-`rm <files>` (**r**e**m**ove): Removes the `<files>`.
-
-`touch <files>`: Creates the `<files>`.
+| Command                                 | Description                                                              |
+|-----------------------------------------|--------------------------------------------------------------------------|
+| `cat <files>`                           | Print the contents of the `<files>`                                      |
+| `cd <path>`                             | Changes your working directory to `<path>`                               |
+| `cp --recursive <source> <destination>` | Copies directories and their contents from `<source`> to `<destination>` |
+| `cp <source> <destination>`             | Copies files from `<source`> to `<destination>`                          |
+| `ls <path>`                             | Lists the files in `<path>`                                              |
+| `ls`                                    | Lists the files in the working directory                                 |
+| `mkdir <directories>`                   | Create the `<directories>`                                               |
+| `mv <source> <destination>`             | Moves files or directories from `<source>` to `<destination>`            |
+| `rm -r <directories>`                   | Removes the `<directories>` and all of their contents                    |
+| `rm <files>`                            | Removes the `<files>`                                                    |
+| `touch <files>`                         | Creates the `<files>`                                                    |
