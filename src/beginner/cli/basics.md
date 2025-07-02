@@ -25,7 +25,7 @@ To create files, you can use `touch <path>`. Here we replace `<path>` with the n
 To remove files, use `rm <path>`, where `<path>` is the name of the file we want to remove. Here we can also list multiple files we want to delete.
 
 <!-- Maybe we should hint at git here to help you not lose your progress -->
-> [Warning]
+> [Danger]
 > Be careful with using `rm` as the files will not be moved to the trashcan like they would if you deleted them from a user interface. If you use `rm`, the files are gone and you cannot recover them. You won't be able to remove system critical files without extra authentication, but you should still be careful.
 
 If you want to open up VSCode to start editing some of the files, you can run `code` to open up the working directory in the editor. You can also use `code <path>` to open a specific file or directory. If you are using a different editor, there is probably a command to start it from the terminal too.
