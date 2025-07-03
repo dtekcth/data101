@@ -14,6 +14,7 @@ If you want to know more about a command you can either use `command --help` to 
 | `ls`                                    | Lists the files in the working directory                                 |
 | `mkdir <directories>`                   | Create the `<directories>`                                               |
 | `mv <source> <destination>`             | Moves files or directories from `<source>` to `<destination>`            |
+| `printenv`                              | Print all of your environment variables                                  |
 | `rm -r <directories>`                   | Removes the `<directories>` and all of their contents                    |
 | `rm <files>`                            | Removes the `<files>`                                                    |
 | `touch <files>`                         | Creates the `<files>`                                                    |
