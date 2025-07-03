@@ -9,7 +9,7 @@ there's not a lot we have to do, so don't be dismayed!
 {{begin .macos}}
 For macOS users, there are two ways to install Git which we recommend.
 
-<!-- 1. You can install Git using Homebrew. Homebrew is a package manager for macOS, basically a command-line tool for helping you install various software. It is very useful for developers in various situations and can be installed by following the instructions [here](https://brew.sh/). After you've installed homebrew you should be able to type the following into a terminal: -->
+### macOS
 
 1. The preferred way to install command line tools like git on macOS is with
    Homebrew, if you missed what that is we recommend going back and reading
@@ -58,6 +58,7 @@ For macOS users, there are two ways to install Git which we recommend.
 
 {{ begin .linux }}
 
+### Linux
 The easiest way to install Git on your Linux machine is using your distro's
 package manager. On Ubuntu and Debian-based distros you will want to run the
 following in a terminal:
@@ -80,9 +81,13 @@ git --version
 
 {{end}}
 
-{{ .windows }}
+{{ begin .windows }}
+
+### Windows
 On Windows, you want to install Git by downloading the installer
 from [here](https://gitforwindows.org/) and following the instructions.
+
+{{ end }}
 
 ## Create an account on GitHub
 
@@ -90,10 +95,6 @@ When using Git you will want a place to store your _repositories_ (projects),
 the most popular site for this is called [GitHub](https://github.com), but other
 alternatives include [GitLab](https://about.gitlab.com/) and
 [BitBucket](https://bitbucket.org/product/).
-
-Chalmers also supplies its own [GitLab](https://git.chalmers.se/) instance where
-you log in with your CID. Which we recommend for school projects as it is without,
-any extra setup, and has unlimited private repositories.
 
 We recommend setting up a GitHub account, as this account comes with some
 excellent student benefits.
@@ -104,3 +105,14 @@ up for the GitHub Student Developer Pack using your Chalmers email
 GitHub Student Developer Pack gives some good benefits, among them unlimited
 Private Repositories, and a free subscription GitKraken Pro, which we recommend
 using.
+
+## Chalmers GitLab
+
+Chalmers also supplies its own [GitLab](https://git.chalmers.se/) instance where
+you log in with your CID. Which we highly recommend for school projects as it
+is without, any extra setup, and has unlimited private repositories. Important
+to note however is to not store personal projects here. All of your projects
+stored here will not be available to you after you graduate so keep that in
+mind.
+
+You will also need to use this for at least one course during your bachelors so it's at least worth remembering that it exists!
