@@ -17,8 +17,36 @@ There are a lot of different package managers, and which ones are available to y
 
 ## MacOS
 
-On MacOS we recommend using Homebrew. It can be installed by following the instructions [here](https://brew.sh/).
+On MacOS we recommend using Homebrew. There are a few other macOS package
+managers but none of them are as up to date and have as many packages as
+Homebrew. It can be installed by following the instructions
+[here](https://brew.sh/), this page also gives some further context surrounding
+Homebrew. The one confusing thing about homebrew is ususally surrounding casks
+and formulas. In Homebrew a `Cask` (generally) refers to a graphical program, and a
+`Formula` is a command line tool. 
 
+To use Homebrew these are the basic commands you will use:
+
+| Command                               | Description                                             |
+|---------------------------------------|---------------------------------------------------------|
+| `brew update`                         | Update homebrew                                         |
+| `brew upgrade`                        | Upgrade all installed packages                          |
+| `brew search <search term>`           | Search for packages                                     |
+| `brew desc <package>`                 | Get a short description for a package                   |
+| `brew cleanup`                        | Removes old files that are no longer used.              |
+| `brew install <packages>`             | Install packages                                        |
+| `brew uninstall <packages>`           | Uninstall packages                                      |
+
+### Updating
+The differentiation between `update` and `upgrade` here is important. `Update` means
+to update Homebrew itself, which also includes Updating the version of packages
+that *can* be installed. `Upgrade` is what actually updates the packages on your
+computer to the most recent version. After upgrading we suggest always running
+`brew cleanup` as well to get rid of old files. They can all be run together
+with:
+```bash
+brew update && brew upgrade && brew cleanup
+``` 
 {{ end }}
 
 {{ begin .linux }}
