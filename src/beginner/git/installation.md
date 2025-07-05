@@ -2,7 +2,7 @@
 
 Before you can use git in VSCode or on the terminal it needs to be installed on
 your system. For macOS and Linux this means we have to use the terminal, but
-there's not a lot we have to do, so don't be dismayed!
+there's not a lot we have to do, so don't be dismayed if you're not used to it yet!
 
 ## Install Git
 
@@ -14,7 +14,8 @@ For macOS users, there are two ways to install Git which we recommend.
 1. The preferred way to install command line tools like git on macOS is with
    Homebrew, if you missed what that is we recommend going back and reading
    about [package managers](../cli/packagemanagers.md) in the previous
-   chapter. If you do not want to use Homebrew, try the other method instead! 
+   chapter. If you do not want to use Homebrew, try the other method instead!
+   In your terminal write:
 
    ```shell
    brew install git
@@ -87,6 +88,19 @@ git --version
 On Windows, you want to install Git by downloading the installer
 from [here](https://gitforwindows.org/) and following the instructions.
 
+<!-- Does this actually work? I'm unsure if this installs it system wide or only for WSL so not sure how this interacts with VSCode.-->
+
+<!-- If you are using Ubuntu WSL like we recommend you can install git using Ubuntus package mangaer. In WSL run -->
+<!---->
+<!-- ```bash -->
+<!-- sudo apt-get install git -->
+<!-- ``` -->
+<!-- Then verify your install by running: -->
+<!---->
+<!-- ```bash -->
+<!-- git --version -->
+<!-- ``` -->
+
 {{ end }}
 
 ## Create an account on GitHub
@@ -109,8 +123,8 @@ using.
 ## Chalmers GitLab
 
 Chalmers also supplies its own [GitLab](https://git.chalmers.se/) instance where
-you log in with your CID. Which we highly recommend for school projects as it
-is without, any extra setup, and has unlimited private repositories. Important
+you log in with your CID. We highly recommend it for school projects as it
+is without any extra setup, and has unlimited private repositories. Important
 to note however is to not store personal projects here. All of your projects
 stored here will not be available to you after you graduate so keep that in
 mind.

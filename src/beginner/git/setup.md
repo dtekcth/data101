@@ -27,7 +27,7 @@ You can now move on.
 First of all open up your terminal. From here use `ssh-keygen` When you've done
 this you'll be asked to write in the path to where you want to save it. Do
 ***not*** write anything here. The default location is where programs will look
-for the SSH key, so just press Enter. 
+for the SSH key by default, so just press Enter. 
 
 Now you'll be asked to write in a passphrase. Again, do ***not*** write
 anything here (unless you really know what you're doing). Certain programs like
