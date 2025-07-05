@@ -37,18 +37,20 @@ you start something new. In a typical lab assignment, it could be a good idea to
 commit each time you've finished a task of that assignment.
 
 In the same folder as you created your repository in, create a new file and add some
-content! Our suggestion is to create a markdown file called `README.md`. When
-you put this on a remote in a minute you'll be able to see the contents of the
-README right below your files. Put some text in the file and then go back to
-the source control menu. 
+content! 
 
-Now you will have a list of changed files. If you have multiple changed files
-you can click on them in the list to see that file. To add the code to your
-next commit, stage the file. To do this press on the + sign that shows when
-hovering over one of the changed files. The file will now go from **U**ntracked
-to **A**dded. You can then continue writing code if you want, and stage those
-changes as well. If you do you'll see that changed lines will now get a small
-marking in your editor until they are staged.
+> You can also create a so called README now if you'd like. A README.md file is
+> a text file which can be displayed on a remote right under your files. This
+> makes it valuable for documentation or information about your project.
+
+### VSCode
+In your source control menu you will have a list of changed files. If you have
+multiple changed files you can click on them in the list to see that file. To
+add the code to your next commit you need to stage the file. To do this press
+on the + sign that shows when hovering over one of the changed files. The file
+will now go from **U**ntracked to **A**dded. You can then continue writing code
+if you want, and stage those changes as well. If you do, you'll see that changed
+lines will now get a small marking in your editor until they are staged.
 
 When you feel happy with your staged changes you can now add a
 commit message describing what you've done and commit. To do this, write a
@@ -57,6 +59,14 @@ You've now saved the change and created a snapshot which you can look back to
 at any time.
 
 ![Staging changes](/Assets/git/unstaged-changes.png)
+
+### Terminal
+To do the same thing using the terminal we have three commands we'll need. 
+First to see the status of your git repo use `git status` This will show you what files are staged, which are changed, and which arent tracked yet. To add something to your "Index" use `git add {yourfile.xx}`. You can add multiple files at once separated by a space. To commit your staged changes use `git commit {-m "your message here}`. If you do not use `-m` you will be put in your operating systems default editor to type in a commit message. This will often be nano or vi. 
+
+![Terminal commit](/Assets/git/teminal.png)
+
+### Where is your file right now?
 
 It is important to note, that only the changes you stage get added to the
 commit. The basic idea is that a file change can be in one of three places:
