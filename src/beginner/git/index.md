@@ -1,9 +1,10 @@
 # Cooperation
-This chapter will be all about working together! This is something you will be
-doing constantly during your time at Chalmers. Your programming courses will
-most likely contain labs or assignments to be done together with others, and
-sometimes even your math courses do. Therefore it is crucial to have a good
-environment set up to be able to work with a group. 
+This chapter will be all about working together and it is also one of our
+longest. This is something you will be doing constantly during your time at
+Chalmers. Your programming courses will most likely contain labs or assignments
+to be done together with others, and sometimes even your math courses do.
+Therefore it is crucial to have a good environment set up to be able to work
+with a group. 
 
 It's very common for new students to gather around a single computer, or
 writing code separately and just testing which is best. Others share files over
@@ -17,7 +18,7 @@ git—the stupid content tracker—and liveshare, a VSCode plugin.
 
 Git is a set of tools that help you track the changes you make to your text files. Git helps you collaborate with others by keeping track of who did what, as well as guiding you in merging your different versions of files. Git lets you be fearless when changing your code, safe in the knowledge that previous versions of your code are easy to access.
 
-But why do you have to learn git? Well there are several reasons.
+This chapter will probably feel very long compared to the others but it is also the most important and is why we needed all the other chapters to build up to it. Knowing git is a crucial skill that there are many good and important reasons for learning.
 
 - It's used in virtually every software-related job on the planet. Be it backend work, programming, systems development or a role as system administrator, you will most likely be using git.
 - It's incredibly useful in your courses, and even required in a few. Being able to write code simultaneously and to work on different parts of the code at once is a requirement for effective work.
