@@ -3,23 +3,26 @@
 Now that you're all set up we can get started! When using Git you store your
 code in _repositories_, directories with a special, hidden directory inside
 called `.git`. In `.git`, git stores the information needed to keep track of the
-changes you make in the rest of the directory.
+changes you make in the rest of the directory. We will have instructions for terminal and VSCode in parallel so use whichever you prefer.
 
 ## Creating your first repository
 
-Open up gitKraken and initialize a new repository somewhere! In gitKraken you
-can use !kbd[!ctrl+T] to switch to a new tab, and !kbd[!ctrl+I] to start
-initializing a repo. For now, you can ignore `.gitignore` and `LICENSE`, just
-give your repo a name and location. Now you should find a screen with a whole
-mess of things in it, in the middle, you'll find the tracked changes in your
-repo. For now, there should only be one called _Initial commit_.
+First we need to go into a folder where want to track our files. Create one or
+use one we've created earlier in the book. In VSCode, to graphically initialize
+a repo we will enter the source control menu in the activity bar. It's the
+third one from the top. Here you can press the "Initialize Repository" button
+and magically you will now have an empty git repository!
 
-![An image of the initial commit](../../Assets/InitialCommit.png)
+![The source control pane](/Assets/git/source-control.png)
 
-Use the shortcut !kbd[!ctrl+Shift+E] and you should be able to open the
-repository in an editor (You may have to set up which editor to use first, in
-which case GitKraken will guide you). In the editor, you should see one file
-`README.md` which is a file commonly used to describe the contents of the repo.
+To do the same in a terminal we first have to open one in VSCode.
+To open one in using the command palette, press !kbd[!ctrl+shift+P] and type in
+"Create new terminal". The terminal will by default open in the folder you have
+open in VSCode but you can move around as usual with `cd` and create
+directories with `mkdir`. To intialize your repository write in `git init` and
+press Enter. You'll get a little text blurb saying `Initialized empty Git
+repository in /Path/to/current/directory/.git/`. If you now type in `ls -a` you
+can see that you have a .git folder here which is what you want! 
 
 ## Your first commit
 
@@ -33,22 +36,27 @@ a meaningful change. A good rule of thumb is to commit your changes each time
 you start something new. In a typical lab assignment, it could be a good idea to
 commit each time you've finished a task of that assignment.
 
-With your repository open in your editor, create a new file and add some
-content! For example, you could add a file `Main.hs` and add:
+In the same folder as you created your repository in, create a new file and add some
+content! Our suggestion is to create a markdown file called `README.md`. When
+you put this on a remote in a minute you'll be able to see the contents of the
+README right below your files. Put some text in the file and then go back to
+the source control menu. 
 
-```haskell
-main = putStrLn "Hello, Git!"
-```
+Now you will have a list of changed files. If you have multiple changed files
+you can click on them in the list to see that file. To add the code to your
+next commit, stage the file. To do this press on the + sign that shows when
+hovering over one of the changed files. The file will now go from **U**ntracked
+to **A**dded. You can then continue writing code if you want, and stage those
+changes as well. If you do you'll see that changed lines will now get a small
+marking in your editor until they are staged.
 
-If you then open GitKraken it should have detected your change!
-![A message showing a detected change](../../Assets/ChangeInWorkingDirectory.png)
+When you feel happy with your staged changes you can now add a
+commit message describing what you've done and commit. To do this, write a
+message in the text field over the big `Commit` button and then press commit!
+You've now saved the change and created a snapshot which you can look back to
+at any time.
 
-View the change and you'll see a panel where you can build your next commit. To
-add the code to your next commit, stage that file. You can then continue writing
-code if you want, and stage these changes as well. When you feel happy with your
-staged changes you can add a commit message describing what you've done and
-commit. You've now saved the change and created a snapshot which you can jump
-back to at any time!
+![Staging changes](/Assets/git/unstaged-changes.png)
 
 It is important to note, that only the changes you stage get added to the
 commit. The basic idea is that a file change can be in one of three places:
@@ -61,14 +69,6 @@ commit. The basic idea is that a file change can be in one of three places:
    containing all the changes up to the latest commit is called _HEAD_.
 
 The life of a file is basically: _Working directory_ → _Index_ → _Head_.
-
-That's all there is to a commit! Test yourself! Can you add the following to
-`Main.hs` and commit the change as _Add type signature to main_?
-
-```haskell
-main :: IO ()
-main = putStrLn "Hello, Git!"
-```
 
 > **A note on commit messages**
 >
