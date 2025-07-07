@@ -76,7 +76,7 @@ to type in a commit message. This will often be nano or vi. If this is `vi` or
 most recent commit message. If this is `nano` write in your commit message and
 use `!kbd[ctrl+x]` to quit and then press `Y` to save the buffer.
 
-> If you want to use VSCode as your git editor you can change it with `git config --global core.editor "code --wait"`. For Windows you'll need to have selected `Add to path` when installing VSCode and for macOS you'll need to run `Shell Command: Install 'Code' command in path` in the command palette in VSCode. If you're doing this for `git commit`, you need to close the window before the commit will be added to your _Index_.
+> If you want to use VSCode as your git editor you can change it with `git config --global core.editor "code --wait"`. For Windows you'll need to have selected `Add to path` when installing VSCode and for macOS you'll need to run `Shell Command: Install 'Code' command in path` in the command palette in VSCode. If you're doing this for `git commit`, you need to properly close the commit window with !kbd[!ctrl+W] or by shutting it with your mouse.
 
 ### Where is your file right now?
 
