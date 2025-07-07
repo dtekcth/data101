@@ -58,7 +58,7 @@ to go straight to the SSH-keys page. Go to Step 4 below in that case. If you
 hate clicking links, here's a full guide for finding your way there as well.
 
 1. On the GitHub web page click on your profile icon in the top right corner.
-2. Click  !icon[gear] Settings (it is the sixth option from the bottom).
+2. Click !icon[gear] Settings (it is the sixth option from the bottom).
 3. Click on `SSH and GPG keys`, it is under the "Access" header.
 ---
 4. Click on the green `New SSH key` button.

@@ -299,21 +299,21 @@ const showAll = (elList) => {
       if (!n.parentElement || !n.parentElement.innerHTML) return;
 
       n.parentElement.innerHTML = n.parentElement.innerHTML
-        .replace(/(.)?!kbd\[(.*?)\]/g, (match, first, second) => {
+        .replace(/(.)?!kbd\[(.*?)\]/g, (match, prefix, bind) => {
           // Ignore if preceded by a backslash
-          if (first === "\\") return match.slice(1);
+          if (prefix === "\\") return match.slice(1);
 
-          const shortcut = second
+          const shortcut = bind
             .replace(/!ctrl/, "<span data-context-ctrl>ctrl</span>")
             .replace(/!cmd/, "⌘")
             .replace(/!win/, "<span class='fa fa-windows'></span>");
-          return `${first}<code class='kbd-shortcut'>${shortcut}</code>`;
+          return `${prefix}<code class='kbd-shortcut'>${shortcut}</code>`;
         })
         .replace(/(.)?!icon\[(.*)\]/g, (match, prefix, icon) => {
           // Ignore if preceded by a backslash
           if (prefix === "\\") return match.slice(1);
 
-          return `<span class='fa fa-${icon}'></span>`;
+          return `${prefix}<span class='fa fa-${icon}'></span>`;
         });
     });
 
