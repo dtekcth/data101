@@ -14,8 +14,7 @@ How to do this might depend on your version of Windows, but on Windows 10 and 11
 1. Open your settings application.
 2. Search for `Optional features` 
 3. In this menu you should see another search bar, search for `OpenSSH` 
-<!-- TODO: What does "they" refer to here -->
-4. If they are there that means you already have them and can move on to [Generating keys](./setup.md#generating-keys)
+4. If anything shows up that means you already have everything you need and can move on to [Generating keys](./setup.md#generating-keys)
 5. If there is nothing, press on `Add a feature` right at the top of the page. 
 6. Here search for `OpenSSH` again. 
 7. Click the checkbox for `OpenSSH client` and `OpenSSH server` and then press `Add (2)` at the bottom. 
@@ -23,8 +22,7 @@ You can now move on.
 
 {{ end }} 
 
-<!-- TODO: If you show all operating systems, using "identical" makes it seem like you should use the same process for macos and linux as you do on windows. Not sure how to reword to make it clearer -->
-{{ .macos.linux }} On macOS and Linux the process is identical and SSH comes pre-installed on your computer.
+{{ .macos.linux }} On macOS and Linux the SSH comes pre-installed on your computer so you don't need any additional steps.
 
 ## Generating keys
 First of all open up your terminal. From here, run `ssh-keygen`. When you've
@@ -43,7 +41,7 @@ You'll now be presented with your fingerprint and randomart image. Neither of
 these are what we need however. Your SSH-key will now be found at `~/.ssh/`
 (inside your home directory). You'll be presented with two files, one named
 `id_ed25519` and one named `id_ed25519.pub`. The `.pub` file is your public key
-which you need to put into GitHub later. 
+which you need to put into GitHub later. [^encryption]
 
 > The other file is the private key, and is for verifying that you are who your
 > public key says you are. Do ***not*** share this with anyone else. Ever. Only
@@ -85,3 +83,9 @@ here's a full guide for finding your way there as well.
 5. Put in your public key again, feel free to give it a name. `Authentication & Signing` is fine for usage type. Here you can also change the expiration date of the key. If you'd like you can change this to any date you'd like.
 6. Press `Add key`.
 
+[^encryption]: Take note that the specific encryption algorithm (Ed25519) might
+    change in the future so this file name might not be the same in the future
+    and should hopefully be updated if ssh changes it. For those curious, the
+    reason to change this would be that ed25519 is not quantum safe, so a
+    sophisticated enough quantum computer can easily break through it even
+    though a normal computer can not.
