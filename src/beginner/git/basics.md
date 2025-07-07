@@ -62,9 +62,18 @@ at any time.
 
 ### Terminal
 To do the same thing using the terminal we have three commands we'll need. 
-First to see the status of your git repo use `git status` This will show you what files are staged, which are changed, and which arent tracked yet. To add something to your "Index" use `git add {yourfile.xx}`. You can add multiple files at once separated by a space. To commit your staged changes use `git commit {-m "your message here}`. If you do not use `-m` you will be put in your operating systems default editor to type in a commit message. This will often be nano or vi. 
+First to see the status of your git repo use `git status` This will show you what files are staged, which are changed, and which arent tracked yet. To add something to your "Index" use `git add {yourfile.xx}`. You can add multiple files at once separated by a space. To commit your staged changes use `git commit {-m "your message here}`. 
+
+If you do not use `-m` you will be put in your operating systems default editor
+to type in a commit message. This will often be nano or vi. If this is `vi` or
+`vim`, press `i`, type in your commit message and then press `Enter` and write
+`:wq` on your keyboard, this saves and quits your file and commits with your
+most recent commit message. If this is `nano` write in your commit message and
+use `!kbd[ctrl+x]` to quit and then press `Y` to save the buffer.
 
 ![Terminal commit](/Assets/git/teminal.png)
+
+> If you want to use VSCode as your git editor 
 
 ### Where is your file right now?
 
