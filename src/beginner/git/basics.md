@@ -69,14 +69,11 @@ First to see the status of your Git repo use `git status`. This will show you wh
 
 ![Terminal commit](/Assets/git/teminal.png)
 
-If you do not use `-m` you will be put in your operating systems default editor
-to type in a commit message. This will often be nano or vi. If this is `vi` or
-`vim`, press `i`, type in your commit message and then press `Enter` and write
-`:wq` on your keyboard, this saves and quits your file and commits with your
-most recent commit message. If this is `nano` write in your commit message and
-use `!kbd[ctrl+x]` to quit and then press `Y` to save the buffer.
+If you do not use `-m` you will be put in your operating systems default editor to type in a commit message.
+If you want to use VSCode as your git editor you can change it with `git config --global core.editor "code --wait"`. For Windows you'll need to have selected `Add to path` when installing VSCode and for macOS you'll need to run `Shell Command: Install 'Code' command in path` in the command palette in VSCode. If you're doing this for `git commit`, you need to properly close the commit window with !kbd[!ctrl+W] or by shutting it with your mouse.
 
-> If you want to use VSCode as your git editor you can change it with `git config --global core.editor "code --wait"`. For Windows you'll need to have selected `Add to path` when installing VSCode and for macOS you'll need to run `Shell Command: Install 'Code' command in path` in the command palette in VSCode. If you're doing this for `git commit`, you need to properly close the commit window with !kbd[!ctrl+W] or by shutting it with your mouse.
+> [Warning] 
+> If you don't change this your default editor will likely be nano or vi. If this is `vi` or `vim`, press `i`, type in your commit message and then press `Escape` and write `:wq` on your keyboard, this saves and quits your file and commits with the commit message you put in. If this is `nano` write in your commit message and use `!kbd[ctrl+x]` to quit and then press `Y` to save the buffer.
 
 ### Where is your file right now?
 
@@ -102,4 +99,4 @@ The life of a file is basically: _Working directory_ → _Index_ → _Head_.
 > getContent to Main.hs"_
 >
 > If you can't sum up your commit in one sentence, you've probably created a too
-> large commit!
+> large commit
