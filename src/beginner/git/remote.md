@@ -61,7 +61,8 @@ either your repository or the changes dropdown. Otherwise further down you will
 see a separate menu titled `Graph`. Next to this you can find push and pull
 buttons as well. Them being so out of the way is another great example of why
 we highly recommend learning keyboard shortcuts. It can easily get tedious to
-move your mouse around a whole lot!
+move your mouse around a whole lot! 
+The sync button doesn't do one of these actions but both at once. It doesn't really have a parallel for the terminal except for `git pull && git push`.
 
 Try adding a commit to your example repository and push this commit to your
 remote. If you then go to your remote repo, you should see your new commit there!
