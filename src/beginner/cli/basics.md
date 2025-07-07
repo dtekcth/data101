@@ -16,6 +16,8 @@ With a terminal open, what are we looking at? At the start of that line you will
 
 We can print the exact location of our working directory by running the command `pwd` **p**rint **w**orking **d**irectory. This should print `/home/` followed by your username. You can also list the contents of your working directory with the command `ls` (**l**i**s**t).
 
+> Commands are case sensitive. This means that `pwd` and `PWD` aren't the same thing, and you will get error if you try and run the second one.
+
 ## Creating and deleting files and directories
 
 We can create directories with the command `mkdir <name>` (**m**a**k**e **dir**ectory). The text inside angle brackets is a placeholder which shows that a command needs some extra data to run properly. This extra data is called an argument and you are supposed to replace them (including the `<>`) with what you want before running the command. For commands that require multiple arguments, you separate them with spaces. In the case of `mkdir`, we replace it with the name of the directory we want to create. Try running `mkdir test_directory` and look at the changes with `ls`.

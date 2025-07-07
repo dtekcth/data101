@@ -2,6 +2,8 @@
 
 We've previously seen how we can use `rm` to remove files. Now let's try and remove `test_directory`. `cd` back to your home directory and try to remove it by running `rm test_directory`. It will refuse to do so as it is a directory. To remove directories you need to append a _flag_. Flags are switches that change the behavior of the program or allow you to provide optional extra data to it. They are added just after the command like this: `command --flag`. You can add as many flags as you want to but some combinations may not make sense.
 
+> Here you will notice a philosophy of command line utilities: they are quiet if things work, and scream if something goes wrong. If they don't print anything beside what you expected, they did what you wanted them to do (or at least what you told them).
+
 In our case we need to append the `--recursive` flag to remove files _recursively_. This means that if our path is a directory, the command goes through the directory and deletes all files within it as well. Try running `rm --recursive test_directory`.
 
 > [Danger]
