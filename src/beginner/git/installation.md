@@ -118,8 +118,7 @@ excellent student benefits.
 Sign up for an account [here](https://github.com), and while you're at it sign
 up for the GitHub Student Developer Pack using your Chalmers email
 (_cid_@student.chalmers.se) [here](https://education.github.com/pack). The
-GitHub Student Developer Pack gives some good benefits, among them a free
-subscription GitKraken Pro, which we recommend using.
+GitHub Student Developer Pack gives some good benefits for GitHub.
 
 ## Chalmers GitLab
 
