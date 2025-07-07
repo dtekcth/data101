@@ -2,7 +2,7 @@
 
 Now that you're all set up we can get started! When using Git you store your
 code in _repositories_, directories with a special, hidden directory inside
-called `.git`. In `.git`, git stores the information needed to keep track of the
+called `.git`. In `.git`, Git stores the information needed to keep track of the
 changes you make in the rest of the directory. We will have instructions for terminal and VSCode in parallel so use whichever you prefer.
 
 ## Creating your first repository
@@ -11,23 +11,23 @@ First we need to go into a folder where want to track our files. Create one or
 use one we've created earlier in the book. In VSCode, to graphically initialize
 a repo we will enter the source control menu in the activity bar. It's the
 third one from the top. Here you can press the "Initialize Repository" button
-and magically you will now have an empty git repository!
+and magically you will now have an empty Git repository!
 
 ![The source control pane](/Assets/git/source-control.png)
 
-To do the same in a terminal we first have to open one in VSCode.
-To open one in using the command palette, press !kbd[!ctrl+shift+P] and type in
-"Create new terminal". The terminal will by default open in the folder you have
-open in VSCode but you can move around as usual with `cd` and create
-directories with `mkdir`. To intialize your repository write in `git init` and
-press Enter. You'll get a little text blurb saying `Initialized empty Git
-repository in /Path/to/current/directory/.git/`. If you now type in `ls -a` you
-can see that you have a .git folder here which is what you want! 
+To do the same in a terminal we first have to open one in VSCode.  To open one
+using the command palette, press !kbd[!ctrl+shift+P] and type in "Create new
+terminal". The terminal will by default open in the folder you have open in
+VSCode but you can move around as usual with `cd` and create directories with
+`mkdir`. To intialize your repository, write `git init` and press Enter.
+You'll get a little text blurb saying `Initialized empty Git repository in
+/Path/to/current/directory/.git/`. If you now type in `ls -a` you can see that
+you have a `.git` folder here which is what you want! 
 
 ## Your first commit
 
 Onto your first change! In Git your changes are grouped into a _commit_. While
-you're working on your files the basic idea is that you commit each time you
+you're working on your files, the basic idea is that you commit each time you
 want to save a state you might want to come back to in the future. In the
 beginning, while you're still learning, this might be each time you and your lab
 partner feel done for the day. Over time, as you get more used to version
@@ -39,6 +39,7 @@ commit each time you've finished a task of that assignment.
 In the same folder as you created your repository in, create a new file and add some
 content! 
 
+<!-- TODO: Good to introduce readmes, but linking them to remotes when we haven't covered them yet might be confusing -->
 > You can also create a so called README now if you'd like. A README.md file is
 > a text file which can be displayed on a remote right under your files. This
 > makes it valuable for documentation or information about your project.
@@ -47,10 +48,11 @@ content!
 In your source control menu you will have a list of changed files. If you have
 multiple changed files you can click on them in the list to see that file. To
 add the code to your next commit you need to stage the file. To do this press
-on the + sign that shows when hovering over one of the changed files. The file
+the `+` sign that shows when hovering over one of the changed files. The file
 will now go from **U**ntracked to **A**dded. You can then continue writing code
-if you want, and stage those changes as well. If you do, you'll see that changed
-lines will now get a small marking in your editor until they are staged.
+if you want, and stage those changes as well. If you do, you'll see that
+changed lines will now get a small marking in your editor until they are
+staged.
 
 When you feel happy with your staged changes you can now add a
 commit message describing what you've done and commit. To do this, write a
@@ -61,8 +63,9 @@ at any time.
 ![Staging changes](/Assets/git/unstaged-changes.png)
 
 ### Terminal
+<!-- TODO: To avoid having to mention nano or vi, we can introduce `git config --global core.editor code` -->
 To do the same thing using the terminal we have three commands we'll need. 
-First to see the status of your git repo use `git status` This will show you what files are staged, which are changed, and which arent tracked yet. To add something to your _Index_ use `git add {yourfile.xx}`. You can add multiple files at once separated by a space. To commit your staged changes use `git commit {-m "your message here}`. 
+First to see the status of your Git repo use `git status`. This will show you which files are staged, which are changed, and which aren't tracked yet. To add something to your _Index_, use `git add <yourfile.xx>`. You can add multiple files at once separated by a space. To commit your staged changes use `git commit {-m "your message here}`. 
 
 ![Terminal commit](/Assets/git/teminal.png)
 

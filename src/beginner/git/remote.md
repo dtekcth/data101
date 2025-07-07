@@ -7,11 +7,12 @@ repository just in case? This is where _remotes_ come in, online locations
 where you can store your repository. 
 
 > **An important note on public vs private repositories**
-> Make sure that repos you use for Lab assignments and projects are private.
+>
+> Make sure that repos you use for lab assignments and projects are private.
 > Having solutions for these publicly available is considered cheating.
 
 ### VSCode
-If you followed our last chapter in setting up a git repository we are now
+If you followed our last chapter in setting up a Git repository we are now
 presented with a new button in the source control menu once all changes have
 been commited. It will say `Publish Branch`. If you press on this you'll most
 likely be prompted to sign into GitHub. If you haven't done so already this is
@@ -19,20 +20,21 @@ the point you'll be forced to set up two factor authentication as well. If you
 want to use GitLab we suggest creating the repository on GitLab first and
 cloning it instead if you do not want to use the termnial, we will go through how to do that under [cloning](./remote.md#cloning)
 
-Once this is all done, upon pressing Publish Branch again the command palette
-will get a small dropdown asking if you want to publish to GitHub private
+Once this is all done, upon pressing Publish Branch again, the command palette
+will get a small dropdown asking if you want to publish to a GitHub private
 repository or a GitHub public repository. For all of your school projects you
 must use private, and for something like this we suggest doing so as well. 
 If you now sign into GitHub you'll be able to see your repo there! 
 
 ### Terminal 
-To push your repository to a remote via the terminal, you'll first need to create a repository on your chosen remote service. Unlike VSCode, which integrates with GitHub directly, using the terminal is platform-agnostic — it works the same way for GitHub, GitLab, Bitbucket, and others.
+To push your repository to a remote via the terminal, you'll first need to create a repository on your chosen remote service. Unlike VSCode, which integrates with GitHub directly, using the terminal is platform-agnostic—it works the same way for GitHub, GitLab, Bitbucket, and others.
 For this example, we'll use GitHub. Head to GitHub and create a new repository. Give it a name, set it to private, and click Create repository. Once you're on the repository page, GitHub will show you how to either create a new repository locally or push an existing one. We'll choose the latter.
 Now, run the following commands in your terminal:
 So that means we now write in these commands: 
 ```bash
 git remote add origin git@github.com:{YourUser}/{YourRepo}.git
 ``` 
+<!-- TODO: I think main is the default name on git installations now, but this might be a good safety measure -->
 Here, "origin" is the default name for your remote. Unless you have a specific reason to use another name, stick with origin.
 ```bash
 git branch -M main
@@ -50,24 +52,26 @@ between the two? Git uses a system where you _push_ and _pull_ changes between
 your local and remote repositories. Whenever you want to add changes from your
 local to the remote, you _push_ these changes. Similarly, whenever you have some
 changes in the remote that you wish to have on your local, you _pull_ these
-changes. In VSCode there are several ways to do this. The easiest is using the
-command palette. In command mode (!kbd[!ctrl+shift+P]) you can write `git pull`
-and `git push` respectively. Funnily enough this is exactly how you do it in
-the terminal as well. You use `git pull` and `git push`. 
+changes in. In VSCode there are several ways to do this. The easiest is using
+the command palette. In command mode (!kbd[!ctrl+shift+P]) you can write `git
+pull` and `git push` respectively. Funnily enough this is exactly how you do it
+in the terminal as well. You use `git pull` and `git push`. 
 
-If you really really wanna use your mouse they're a little more hidden away. In
+If you really really want to use your mouse it is a little more hidden away. In
 the left source control bar you can press on the three small dots next to
 either your repository or the changes dropdown. Otherwise further down you will
 see a separate menu titled `Graph`. Next to this you can find push and pull
 buttons as well. Them being so out of the way is another great example of why
 we highly recommend learning keyboard shortcuts. It can easily get tedious to
 move your mouse around a whole lot! 
-The sync button doesn't do one of these actions but both at once. It doesn't really have a parallel for the terminal except for `git pull && git push`.
+The sync button does't do one of these actions, but rather both at once. There isn't really a parallel for the terminal except for `git pull && git push`.
 
 Try adding a commit to your example repository and push this commit to your
-remote. If you then go to your remote repo, you should see your new commit there!
+remote. If you then go to your remote repository, you should see your new
+commit there!
 
-### Cloning
+## Cloning
+<!-- TODO: Maybe introduce the term repo as a shorthand for repository -->
 Now a big reason for having a remote repository is to be able to share your code
 with a collaborator, or lab partner. Our recommended way is for all
 collaborators to _clone_ the remote repo. When you clone a repo, it is
@@ -75,7 +79,7 @@ automatically set up to have the proper remote.
 
 ### VSCode
 If you want to clone a repository from GitHub in VSCode you can either search
-for `Git clone` in the command palette, or if you are in no folder at all and
+for `git clone` in the command palette, or if you aren't in a folder at all and
 go to the source control menu you will be presented with the option to clone a
 repository. Here you can either search for a public repository or paste in a
 SSH "link" for a private repository. To find this "link" go to the repository
@@ -87,4 +91,4 @@ In the same way as above, go to your remote and find the SSH link. Then in your 
 ```bash
 git clone git@github.com:{YourUser}/{YourRepo}.git
 ```
-This will create a folder where you currently are, wherein the git repository exists.
+This will create a folder where you currently are, wherein the Git repository exists.

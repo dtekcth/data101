@@ -1,17 +1,18 @@
 # Git installation 
 
-Before you can use git in VSCode or on the terminal it needs to be installed on
+Before you can use Git in VSCode or in the terminal it needs to be installed on
 your system. For macOS and Linux this means we have to use the terminal, but
 there's not a lot we have to do, so don't be dismayed if you're not used to it yet!
 
 ## Install Git
 
 {{begin .macos}}
-For macOS users, there are two ways to install Git which we recommend.
 
 ### macOS
 
-1. The preferred way to install command line tools like git on macOS is with
+For macOS users, there are two ways to install Git which we recommend.
+
+1. The preferred way to install command line tools like Git on macOS is with
    Homebrew, if you missed what that is we recommend going back and reading
    about [package managers](../cli/packagemanagers.md) in the previous
    chapter. If you do not want to use Homebrew, try the other method instead!
@@ -35,15 +36,15 @@ For macOS users, there are two ways to install Git which we recommend.
    git --version
    ```
 
-   If you see something like the following you've already got git installed and
-   can move on to the next step.
+   If you see something like the following, you've already got Git installed
+   and can move on to the next step.
 
    ```bash
    git version 2.33.0
    ```
 
-   To install XCode's command-line tools (and its bundled Git) open a terminal
-   and run the command:
+   If not, you need to install XCode's command-line tools (and its bundled
+   Git). You can do so by running the following command:
 
    ```bash
    xcode-select --install
@@ -65,7 +66,7 @@ package manager. On Ubuntu and Debian-based distros you will want to run the
 following in a terminal:
 
 ```bash
-sudo apt-get install git
+sudo apt install git
 ```
 
 On Arch-based distros you want to run:
@@ -113,20 +114,19 @@ alternatives include [GitLab](https://about.gitlab.com/) and
 We recommend setting up a GitHub account, as this account comes with some
 excellent student benefits.
 
+<!-- We need to rewrite this and check which of this is still true. Do we also still recommend GitKraken? -->
 Sign up for an account [here](https://github.com), and while you're at it sign
 up for the GitHub Student Developer Pack using your Chalmers email
 (_cid_@student.chalmers.se) [here](https://education.github.com/pack). The
-GitHub Student Developer Pack gives some good benefits, among them unlimited
-Private Repositories, and a free subscription GitKraken Pro, which we recommend
-using.
+GitHub Student Developer Pack gives some good benefits, among them a free
+subscription GitKraken Pro, which we recommend using.
 
 ## Chalmers GitLab
 
-Chalmers also supplies its own [GitLab](https://git.chalmers.se/) instance where
-you log in with your CID. We highly recommend it for school projects as it
-is without any extra setup, and has unlimited private repositories. Important
-to note however is to not store personal projects here. All of your projects
-stored here will not be available to you after you graduate so keep that in
-mind.
+Chalmers also supplies its own [GitLab](https://git.chalmers.se/) instance
+where you log in with your CID. We highly recommend it for school projects as
+it is without any extra setup, and has unlimited private repositories.
+Important to note however is to not store personal projects there as you won't
+be able to access Chalmers' GitLab after you graduate, so keep this in mind.
 
-You will also need to use this for at least one course during your bachelors so it's at least worth remembering that it exists!
+You will also need to use this for at least one course during your bachelors, so it's at least worth remembering that it exists!
