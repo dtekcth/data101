@@ -1,16 +1,18 @@
 ## Getting started
 
 {{ .windows }}
-Start WSL by searching for `Ubuntu` in the Windows Start Menu. You should see something like this:
+On Windows you start WSL by searching for `Ubuntu` in the Windows Start Menu. You should see something like this:
 
 {{ .macos }}
-To open a terminal, press !kbd[!cmd+Space] and then enter `terminal`. You should see something like this:
+On macOS, press !kbd[!cmd+Space] and then enter `terminal` to open a terminal. You should see something like this:
 
 {{ .linux }}
-Start a terminal, how you open one depends on your distro. Usually one of !kbd[Ctrl+Alt+T], !kbd[!win+T] or !kbd[!win+Enter] opens one. Otherwise, search for `how to open terminal <insert your distro here>`. You should see something like this:
+On Linux, how you open a terminal depends on your distro. Usually one of !kbd[Ctrl+Alt+T], !kbd[!win+T] or !kbd[!win+Enter] opens one. Otherwise, search for `how to open terminal <insert your distro here>`. You should see something like this:
 
 <!-- Replace with a picture of a terminal running bash -->
 ![Terminal](/Assets/cli/windows_terminal.png)
+
+You can also open a terminal in VSCode if you prefer working there. Open the command palette (!kbd[!ctrl+Shift+P]) and type "terminal: create new terminal" and press !kbd[Enter]. This should open a new terminal at the bottom of your screen. You can also open one by clicking on "Terminal" in the menu bar at the top of your screen, and then pressing "New Terminal".
 
 With a terminal open, what are we looking at? At the start of that line you will see your username followed by `@`, and then the name of your computer. After that you will see the current directory. Your terminal keeps track of something called its _working directory_, which is where on your filesystem it is located at the moment. Right now it is `~`, which is symbol used to represent your _home directory_. Every user has a home directory where all of their files are stored. At the end of the line you will see a solid block, which is your cursor. Here we can write commands and run them by pressing enter.
 
