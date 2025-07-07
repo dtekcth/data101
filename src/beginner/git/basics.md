@@ -62,7 +62,9 @@ at any time.
 
 ### Terminal
 To do the same thing using the terminal we have three commands we'll need. 
-First to see the status of your git repo use `git status` This will show you what files are staged, which are changed, and which arent tracked yet. To add something to your "Index" use `git add {yourfile.xx}`. You can add multiple files at once separated by a space. To commit your staged changes use `git commit {-m "your message here}`. 
+First to see the status of your git repo use `git status` This will show you what files are staged, which are changed, and which arent tracked yet. To add something to your _Index_ use `git add {yourfile.xx}`. You can add multiple files at once separated by a space. To commit your staged changes use `git commit {-m "your message here}`. 
+
+![Terminal commit](/Assets/git/teminal.png)
 
 If you do not use `-m` you will be put in your operating systems default editor
 to type in a commit message. This will often be nano or vi. If this is `vi` or
@@ -71,9 +73,7 @@ to type in a commit message. This will often be nano or vi. If this is `vi` or
 most recent commit message. If this is `nano` write in your commit message and
 use `!kbd[ctrl+x]` to quit and then press `Y` to save the buffer.
 
-![Terminal commit](/Assets/git/teminal.png)
-
-> If you want to use VSCode as your git editor 
+> If you want to use VSCode as your git editor you can change it with `git config --global core.editor "code --wait"`. For Windows you'll need to have selected `Add to path` when installing VSCode and for macOS you'll need to run `Shell Command: Install 'Code' command in path` in the command palette in VSCode. If you're doing this for `git commit`, you need to close the window before the commit will be added to your _Index_.
 
 ### Where is your file right now?
 
