@@ -29,6 +29,12 @@ Most systems you will interact with use what is called a Unix terminal. Windows 
 <!-- WSL could be difficult to install on Windows 11 due to execution policies -->
 To get a Unix terminal on Windows, we need to install WSL (**W**indows **S**ubsystem for **L**inux). Open Microsoft Store and search for Ubuntu. Install the first option. You can now search for `Ubuntu` in the start menu and start it that way. This should open a terminal. WSL is a way to run Linux on your Windows PC. You can read more about Linux [here](../linux.md).
 
+Important to note is that your WSL install is basically a separate computer
+running inside of windows. It's a so called _Virtual Machine_.  We will go
+through what this means in depth a bit later but the reason it matters is
+because programs installed in Windows will not be available in WSL and programs
+installed in WSL will not be available in Windows. 
+
 This is not required, but we also recommend you to install Windows Terminal. It gives a more modern look and feel than the default that comes pre-installed with Windows.
 
 {{ end }}

@@ -9,7 +9,57 @@ There are a lot of different package managers, and which ones are available to y
 
 ## Windows
 
-<!-- winget or chocolatey? winget comes pre-installed with windows 10 and 11, chocolatey is more popular -->
+On Windows when you're using WSL you can use apt to install programs inside of
+WSL. This is useful for programming tools like git or installing compilers like
+GHC which you might want to use in WSL. However it might still be nice to be
+able to install programs in a Windows Terminal. This can help you keep programs up to date easier, or to install programs in an easier way.
+
+The two most popular package managers for Windows are _winget_ and _chocolatey_. 
+Windows comes preinstalled with winget but it has fewer packages while chocolatey requires you to install it but has more packages. The main reason for this is that chocolatey has a community repository, which allows users to publish packages themselves and upload them. This might sound scary, but is quite normal, just be sure that you're installing the right package! If you want to see what packages are available in both you can see [winget package search](https://winget.run/) and [chocolatey community package search](https://community.chocolatey.org/search). 
+
+To install chocolatey use this command in CMD: 
+```CMD
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "[System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+``` 
+or this command in powershell:
+```powershell
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+```
+To verify your install use `choco -v`
+
+### Apt (inside of Ubuntu WSL)
+
+| Command                               | Description                                             |
+|---------------------------------------|---------------------------------------------------------|
+| `sudo apt update && sudo apt upgrade` | Update all installed packages                           |
+| `sudo apt search <search term>`       | Search for packages                                     |
+| `sudo apt show <package>`             | Get information about a package                         |
+| `sudo apt install <packages>`         | Install packages                                        |
+| `sudo apt remove <packages>`          | Uninstall packages                                      |
+| `sudo apt purge <packages>`           | Uninstall packages and remove their configuration files |
+| `sudo apt autoremove`                 | Uninstall unused dependencies                           |
+
+### Winget (inside of CMD or powershell)
+
+| Command                               | Description                                             |
+|---------------------------------------|---------------------------------------------------------|
+| `winget upgrade`                      | Update all installed packages                           |
+| `winget search <search term>`         | Search for packages                                     |
+| `winget show <package>`               | Get information about a package                         |
+| `winget install <package>`            | Install packages                                        |
+| `winget uninstall <package>`          | Uninstall packages                                      |
+| `winget --help`                       | Get a list of commands and their uses                   | 
+
+### Chocolatey (inside of CMD or powershell) 
+
+| Command                               | Description                                               |
+|---------------------------------------|-----------------------------------------------------------|
+| `choco upgrade all -y`                | Update all installed packages                             |
+| `choco search <search term>`          | Search for packages                                       |
+| `choco info <package>`                | Get information about a package                           |
+| `choco install <packages>`            | Install packages                                          |
+| `choco uninstall <packages>`          | Uninstall packages                                        |
+| `choco <command> --help`              | Get help with specific commands or a list of all commands |
 
 {{ end }}
 
