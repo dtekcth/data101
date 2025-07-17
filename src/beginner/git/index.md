@@ -4,7 +4,7 @@ This chapter will be all about working together and it is also one of our longes
 
 It's very common for new students to gather around a single computer, or writing code separately and just testing which is best. Others share files over Discord or Snapchat and this can lead to major issues when you're working at the same time or if you've missed a message. 
 
-To facilitate group work we will be recommending two tools. The first is Git—the stupid content tracker—and liveshare, a VSCode plugin.
+To facilitate group work we will be recommending two tools. The first is Git—the stupid content tracker—and liveshare, a VSCode plugin which we will go through in 4.7.
 
 ## What is Git
 
@@ -19,9 +19,3 @@ This chapter will probably feel very long compared to the others but it is also 
 In this tutorial, we will guide you through setting up the necessary software and accounts for a modern Git experience. We will also introduce you to the basic concepts of version control. 
 
 To make Git a bit easier to understand we will primarily be using the Git integration built in to VSCode! We will also go through how to use Git in the terminal for those of you who prefer the CLI.
-
-## Liveshare
-
-Liveshare is a plugin for VSCode which lets you connect to someone else's computer and basically work inside their VSCode session. It has support for multiple people working in the same file and in different files at the same time and can be very useful for when you want to work in the same place in a group. This on the other hand will most likely be most useful to you during your studies and lose relevance a bit during your career. But it is graphical, easy to use and a bit more intuitive than Git can be at times.
-
-We'll have one sub-chapter in this tutorial for how to set it up, how to use it and some easy pitfalls that can be an issue. 

@@ -41,3 +41,5 @@ Great question! Here are a few basic rules, and a short justification:
    in Haskell? Ignore `.stack-work`. Using npm? Ignore `node_modules`. These
    often contain large amounts of libraries, the histories of which are kept in
    their own repos.
+
+<!-- > Files like `.DS_STORE` might be nice to always ignore. To do this you can create a `.gitignore` file in your home direcotry and run this command in a unix terminal `git config --global core.excludesFile '~/.gitignore'` or this command in a Windows cmd terminal `git config --global core.excludesFile "%USERPROFILE%\.gitignore"`. This tells git on your system that files and folders inside this .gitignore file should be ignored in every single git repository.  -->
