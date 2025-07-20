@@ -26,6 +26,7 @@
     - [Merge conflicts](beginner/git/mergeconflicts.md)
   - [Using .gitignore](beginner/git/gitignore.md)
   - [A Git workflow for regular lab assignments](beginner/git/workflow.md)
+  - [Liveshare](beginner/git/liveshare.md)
 - [Linux](beginner/linux.md)
 - [Virtualization](beginner/virtualization/index.md)
   - [Guest OS](beginner/virtualization/guest.md)
