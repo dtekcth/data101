@@ -20,11 +20,12 @@ As a student, you have certain rights and obligations which you should be aware 
 
 - You do not need to bring your student ID, _but you do need to bring a normal photo ID_
 - If you are suspected of cheating you may still complete your exam! The guards are not allowed to stop you and any such attempts should be reported.
+- The exam guards are however allowed to stop you from writing the exam in case you are interrupting others a significant amount. So remain calm, do not shout at the exam guards that they are wrong!
 - Should something go wrong, then you will be given extra time to compensate.
 
 ## After the exam
 
-The examiner **must** post solutions to the exam by the next working day and the results should be posted on Ladok within 15 working days.
+The examiner **must** post solutions to the exam by the next working day and the results should be posted on Ladok within 15 working days. If the results are not posted by this time, contact the examiner, and if you can not get an answer from them as to why, contact your student board!
 
 If you feel that some of your rights have been violated or that something else has gone wrong, please contact your student board. They will know how to fix any problem related to your exams.
 

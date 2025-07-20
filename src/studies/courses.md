@@ -10,7 +10,7 @@ These are the courses you have no say over and are deemed essential for your deg
 
 Sometimes you have elective slots in your program plan, which means that you can select any course marked as _elective_ within your program plan.[^elective_caveat] For master students it may be interesting to know that you can read one or two courses (around 15hp) outside of your program plan and still get your masters degree. This can vary between programs so ask your **student counsellor** before deciding.
 
-You can find your on [Studieportalen](https://www.student.chalmers.se/sp/program_list) by searching for your programme.
+You can find your program plan on [Studieportalen](https://www.student.chalmers.se/sp/program_list) by searching for your programme.
 
 ### Compulsory elective
 
@@ -31,6 +31,9 @@ Laborations tend to have an associated number of the credits of the entire cours
 This means that the exam rarely represents the entire 7.5 credits of a course, as it is split between labs and exam.
 Most labs have to be handed in and sometimes even presented in class in order to pass.
 **It is usually hard to redo these labs during the year if you fail, so it is recommend to prioritize them and complete them when the course is given.**
+However, if you fail your laborations, you can still complete the exam and do
+the labs the next time the course is held. This is often a hassle, so try to
+stay on top of them!
 
 ## Schedule
 
@@ -40,10 +43,10 @@ Once you have searched and gotten the schedule for what you were looking for, yo
 
 Before every course starts you should go to the course canvas page to check the syllabus which may contain important information such as:
 
-- books and programs required for the course.
-- how to sign up for labs.
-- additional scheduling not visible in TimeEdit.
-- all compulsory activities of the course.
+- Books and programs required for the course.
+- How to sign up for labs.
+- Additional scheduling not visible in TimeEdit.
+- All compulsory activities of the course.
 
 It is also important to read your student email as teachers or lab partners may contact you there. You should preferably do this daily daily or set up notifications so you know when an email arrives. **It is common for students to miss important updates because they do not feel the need to look at their email!**
 
