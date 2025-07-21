@@ -196,6 +196,12 @@ blockquote {
 
 /* BEGIN DAT101 */
 
+main img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .font-bold {
     font-weight: bold;
 }
