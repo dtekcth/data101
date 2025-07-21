@@ -42,6 +42,7 @@
 # Studies
 
 - [Canvas](studies/canvas.md)
+- [Chalmers Apps](studies/chalmers_apps.md)
 - [Your education](studies/index.md)
   - [Exams](studies/exams.md)
   - [Courses](studies/courses.md)
