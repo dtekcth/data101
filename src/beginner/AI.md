@@ -1,6 +1,7 @@
 # Artificial intelligence and chat services
 We’ve dedicated this section specifically to AI because it’s an important and
 rapidly evolving topic. More importantly, we want to look out for you—your
+
 learning, your integrity, and your success. This will start negatively, but we
 will have a part of this section dedicated to _good_ uses for AI in your
 studies! The debate around AI is complex and intricate. It's not a
@@ -46,13 +47,14 @@ dishonesty. The consequences can be severe.
 ## The limits of AI
 In a similar vein, it’s important to understand that AI doesn’t actually
 understand what it’s doing or saying. That might sound surprising—but what AI
-really does is piece together patterns based on the data it was trained on. This
+really does is piece together patterns based on the data it was trained on and
+makes a guess based on statistical probability of what is "most" correct. This
 makes it prone to mistakes, especially in areas like mathematics or even basic
 tasks like counting. 
 
 > As an example, some versions of ChatGPT (like o4 and o4-mini) may give
 > different answers for how many letters are in a word like strawberry—because
-> they’re generating responses based on patterns, not actual reasoning.
+> they’re generating responses based on patterns, not actual reasoning. 
 
 This limitation also applies to programming. AI can often generate
 plausible-looking code, but that doesn’t mean it’s correct—especially when it
@@ -97,9 +99,10 @@ AI-generated code—and it’s usually obvious when a student can’t explain or
 replicate what they've submitted. 
 
 > As an example, in the text above you can see lots of em-dashes being used.
-> These are often used in fiction which AI is often trained on. It isn't usually
-> used in informative text like this, or in journalism, but AI written or
-> rerwritten text will still contain it very often.
+> These are often used in fiction which AI is often trained on. In informative
+> texts like this, the above use is excessive and out of context. Stylistic
+> choices like this aren't always an indicator of AI, some people do write like
+> that, but it can definitely suggest the use of AI.
 
 Although usually helpful, sometimes AI can get things very wrong. Your
 calculator won't correct you if you wrote the wrong number and will isntead
