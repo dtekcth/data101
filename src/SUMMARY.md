@@ -6,6 +6,7 @@
 
 # Beginner
 
+- [Files](beginner/files.md)
 - [The Editor](beginner/editor/index.md)
   - [Basics](beginner/editor/basics.md)
   - [Navigation](beginner/editor/navigation.md)
