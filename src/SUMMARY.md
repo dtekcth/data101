@@ -34,7 +34,7 @@
 # Courses
 
 - [Effective study tips and tricks](courses/index.md)
-  - [General tips](beginner/protips.md)
+  - [General tips](beginner/general_tips.md)
   - [AI and chat services](beginner/AI.md)
   - [TDA555](courses/TDA555.md)
 
