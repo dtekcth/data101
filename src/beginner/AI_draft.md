@@ -60,7 +60,7 @@ something it has read or been trained on before.
 That said, learning to program with AI rather than relying on it can make you a
 much stronger and a much more desirable developer. AI can help you get quick
 feedback, help you understand why a function isn't doing what you expect. It can
-hlep you troubleshoot errors that you don't understand yet. It can give you an
+help you troubleshoot errors that you don't understand yet. It can give you an
 example function, similar to what you want to write. Seeing what a working
 function looks like in this language using the same concepts can help you write
 your own code. In the same vein it can give you a starting point, what we
