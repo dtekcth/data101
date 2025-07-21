@@ -1,8 +1,8 @@
 # Summary
 
-[Introduction](introduction.md)
+[Introduction](introduction/introduction.md)
 
-- [Getting started](getting_started.md)
+- [Getting started](introduction/getting_started.md)
 
 # Beginner
 
@@ -35,13 +35,13 @@
 # Courses
 
 - [Effective study tips and tricks](courses/index.md)
-  - [General tips](beginner/general_tips.md)
-  - [AI and chat services](beginner/AI.md)
+  - [General tips](courses/general_tips.md)
+  - [AI and chat services](courses/AI.md)
   - [TDA555](courses/TDA555.md)
 
 # Studies
 
-- [Canvas](beginner/canvas.md)
+- [Canvas](studies/canvas.md)
 - [Your education](studies/index.md)
   - [Exams](studies/exams.md)
   - [Courses](studies/courses.md)
