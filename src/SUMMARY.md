@@ -41,6 +41,7 @@
 
 # Studies
 
+- [Canvas](beginner/canvas.md)
 - [Your education](studies/index.md)
   - [Exams](studies/exams.md)
   - [Courses](studies/courses.md)
