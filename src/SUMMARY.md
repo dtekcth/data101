@@ -30,13 +30,13 @@
 - [Linux](beginner/linux.md)
 - [Virtualization](beginner/virtualization/index.md)
   - [Guest OS](beginner/virtualization/guest.md)
-- [Pro-tips](beginner/protips.md)
 
-# Further reading
+# Courses
 
-- [Editor](advanced/editor.md)
-
----
+- [Effective study tips and tricks](courses/index.md)
+  - [General tips](beginner/protips.md)
+  - [AI and chat services](beginner/AI.md)
+  - [TDA555](courses/TDA555.md)
 
 # Studies
 
@@ -45,10 +45,9 @@
   - [Courses](studies/courses.md)
 - [FAQ](studies/FAQ.md)
 
-# Courses
+# Further reading
 
-- [Effective study tips and tricks](courses/index.md)
-  - [TDA555](courses/TDA555.md)
+- [Editor](advanced/editor.md)
 
 ---
 
