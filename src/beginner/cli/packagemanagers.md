@@ -20,8 +20,8 @@ Windows comes preinstalled with winget but it has fewer packages while chocolate
 To install chocolatey use this command in CMD: 
 ```CMD
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "[System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
-``` 
-or this command in powershell:
+```
+or this command in PowerShell:
 ```powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
@@ -39,7 +39,7 @@ To verify your install use `choco -v`
 | `sudo apt purge <packages>`           | Uninstall packages and remove their configuration files |
 | `sudo apt autoremove`                 | Uninstall unused dependencies                           |
 
-### Winget (inside of CMD or powershell)
+### Winget (inside of CMD or PowerShell)
 
 | Command                               | Description                                             |
 |---------------------------------------|---------------------------------------------------------|
@@ -48,9 +48,9 @@ To verify your install use `choco -v`
 | `winget show <package>`               | Get information about a package                         |
 | `winget install <package>`            | Install packages                                        |
 | `winget uninstall <package>`          | Uninstall packages                                      |
-| `winget --help`                       | Get a list of commands and their uses                   | 
+| `winget --help`                       | Get a list of commands and their uses                   |
 
-### Chocolatey (inside of CMD or powershell) 
+### Chocolatey (inside of CMD or PowerShell)
 
 | Command                               | Description                                               |
 |---------------------------------------|-----------------------------------------------------------|
