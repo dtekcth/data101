@@ -28,7 +28,6 @@ const showAll = (elList) => {
 };
 
 /* DAT101 specific code */
-//
 
 (function ReadingTime() {
   const wordCount = (el) => {
@@ -307,13 +306,13 @@ const showAll = (elList) => {
             .replace(/!ctrl/, "<span data-context-ctrl>ctrl</span>")
             .replace(/!cmd/, "⌘")
             .replace(/!win/, "<span class='fa fa-windows'></span>");
-          return `${prefix}<code class='kbd-shortcut'>${shortcut}</code>`;
+          return `${prefix ? prefix : ""}<code class='kbd-shortcut'>${shortcut}</code>`;
         })
         .replace(/(.)?!icon\[(.*)\]/g, (match, prefix, icon) => {
           // Ignore if preceded by a backslash
           if (prefix === "\\") return match.slice(1);
 
-          return `${prefix}<span class='fa fa-${icon}'></span>`;
+          return `${prefix ? prefix : ""}<span class='fa fa-${icon}'></span>`;
         });
     });
 
