@@ -46,6 +46,7 @@
 - [Your education](studies/index.md)
   - [Exams](studies/exams.md)
   - [Courses](studies/courses.md)
+  - [Master](studies/master.md)
 - [FAQ](studies/FAQ.md)
 
 # Further reading
