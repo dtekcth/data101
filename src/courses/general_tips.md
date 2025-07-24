@@ -32,9 +32,7 @@ programmers you still have to be skeptical and understand that most programming
 answers are _good enough_ rather than strictly correct and you will most likely
 have to adapt the solution to your specific problem. This might sound like a
 joke, but for certain applications, especially when troubleshooting or
-configuring programs, reddit is a very good source of information. But don't use
-the built in search engine! Searching with a normal search engine and appending
-reddit will give a better result. 
+configuring programs, reddit is a very good source of information. 
 
 ### Finding good search results
 
