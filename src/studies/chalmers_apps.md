@@ -15,16 +15,17 @@ Chalmers instructions, they are available
 
 ## AppsAnywhere
 
-On Windows you can login to [Chalmers Apps](https://apps.chalmers.se) using
-CID@chalmers.se as your username and the password you set for your CID. The
-first time you do this you will be asked if you have installed _AppsAnywhere_.
-Click on `Install Now` and it should start downloading. Follow the on screen
-instructions. You should now see a pop-up saying "This site is trying to open
-AppsAnywhere Launcher". Make sure the checkbox is ticked and click on `Open`.
-You might get another pop-up saying that validation failed. In that case, click
-on `Retry Validation`. If it succeeds, click on `Close Troubleshooter`. You
-should now be finished with the installation. If you see the pop-up asking you
-if AppsAnywhere is installed again, just click `I Already Have It`.
+On Windows you can install _AppsAnywhere_ directly on your computer. Login to
+[Chalmers Apps](https://apps.chalmers.se) using CID@chalmers.se as your
+username and the password you set for your CID. The first time you do this you
+will be asked if you have installed AppsAnywhere. Click on `Install Now` and it
+should start downloading. Follow the on screen instructions. You should now see
+a pop-up saying "This site is trying to open AppsAnywhere Launcher". Make sure
+the checkbox is ticked and click on `Open`. You might get another pop-up saying
+that validation failed. In that case, click on `Retry Validation`. If it
+succeeds, click on `Close Troubleshooter`. You should now be finished with the
+installation. If you see the pop-up asking you if AppsAnywhere is installed
+again, just click `I Already Have It`.
 
 {{ end }}
 
@@ -32,13 +33,13 @@ if AppsAnywhere is installed again, just click `I Already Have It`.
 
 ## Windows App
 
-On Windows and MacOS you can use a program called "Windows App" to get access to
-a remote desktop environment to access the programs. Download it from either the
-Microsoft Store or the App Store and login using your CID@chalmer.se and your
-CID password. You will now get a welcome screen, click `Skip` in the bottom
-right corner. Now you will be presented with a list of virtual desktops that you
-can connect to. You should already have one titled "Chalmers Apps". This is the
-screen you will see when you start the program the next time.
+On Windows and MacOS you can use a program called _Windows App_ to get access to
+a remote desktop environment to access the programs. Download it from either
+the Microsoft Store or the App Store and login using CID@chalmer.se and your
+CID password. On the welcome screen, click `Skip` in the bottom right corner.
+Now you will be presented with a list of virtual desktops that you can connect
+to. You should already have one titled "Chalmers Apps". This is the screen you
+will see when you start the program the next time.
 
 ![](/Assets/apps_anywhere/windows_app.png)
 
@@ -57,10 +58,10 @@ environment, press the "X" in the toolbar at the top of the screen.
 
 If you're on Linux, you can only run a remote desktop environment through the
 web. Go to [Chalmers Apps](https://apps.chalmers.se) and log in using
-CID@chalmers.se and your CID password. From here, click on any program, and then
-Launch, and then `Launch the virtual desktop client`. You will be taken to a
-list of virtual environments, with one named Chalmers Apps.
-Click on it and you should enter into the virtual environment.
+CID@chalmers.se and your CID password. From here, click on any program, and
+then `Launch`, and then `Launch the virtual desktop client`. You will be taken
+to a list of virtual environments, with one named "Chalmers Apps". Click on it
+and you should enter into the virtual environment.
 
 ![](/Assets/apps_anywhere/web.png)
 
@@ -78,7 +79,7 @@ launch it once it is ready.
 
 With AppsAnywhere running, you can use it to quickly access Chalmers Apps.
 Do this by pressing the up arrow in the task bar and then right clicking on the
-AppsAnywhere icon, then pressing "Launch Portal". This should take you to the
+AppsAnywhere icon, then pressing `Launch Portal`. This should take you to the
 website where you can now search for programs and run them.
 
 ![](/Assets/apps_anywhere/apps_anywhere.png)
