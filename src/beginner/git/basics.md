@@ -12,6 +12,8 @@ use one we've created earlier in the book. In VSCode, to graphically initialize
 a repo we will enter the source control menu in the activity bar. It's the
 third one from the top. Here you can press the "Initialize Repository" button
 and magically you will now have an empty Git repository!
+Alternatively use the command palette, search for "Initialize Repository", or
+simply `git init` should choose it as the first option.
 
 ![The source control pane](/Assets/git/source-control.png)
 
@@ -40,9 +42,10 @@ In the same folder as you created your repository in, create a new file and add 
 content! 
 
 <!-- TODO: Good to introduce readmes, but linking them to remotes when we haven't covered them yet might be confusing -->
-> You can also create a so called README now if you'd like. A README.md file is
-> a text file which can be displayed on a remote right under your files. This
-> makes it valuable for documentation or information about your project.
+> You can also create a so called README in your git repo if you'd like. A
+> README.md file is a text file which can be displayed on a remote right under
+> your files. This makes it valuable for documentation or information about your
+> project.
 
 ### VSCode
 In your source control menu you will have a list of changed files. If you have
@@ -52,13 +55,27 @@ the `+` sign that shows when hovering over one of the changed files. The file
 will now go from **U**ntracked to **A**dded. You can then continue writing code
 if you want, and stage those changes as well. If you do, you'll see that
 changed lines will now get a small marking in your editor until they are
-staged.
+staged. You'll also be able to see which files are added, modified or untracked
+in the normal explorer without being in the source control menu.
+
+If you want to use the command palette like we recommend, in the command mode,
+search for "git stage". Here you get a few options. 
+
+- `Git: Stage changes` stages the changes in the current file. **This should be
+  your default choice!**
+- `Git: Stage All Changes` stages _every_ change made in the directory.
+- `Git: Stage All Tracked Changes` stages every change made to files which are
+  already "tracked", which means they've been staged before at any point.
+- `Git: Stage all Untracked Changes` stages every change made to files which are
+  not yet "tracked", which means they haven't been staged before at any point.
 
 When you feel happy with your staged changes you can now add a
 commit message describing what you've done and commit. To do this, write a
 message in the text field over the big `Commit` button and then press commit!
 You've now saved the change and created a snapshot which you can look back to
 at any time.
+Alternatively, with the command palette, search for "Git: Commit". Most of these
+options don't matter for now, just choose the one that says `Git: Commit`.
 
 ![Staging changes](/Assets/git/unstaged-changes.png)
 
@@ -69,11 +86,17 @@ First to see the status of your Git repo use `git status`. This will show you wh
 
 ![Terminal commit](/Assets/git/teminal.png)
 
-If you do not use `-m` you will be put in your operating systems default editor to type in a commit message.
-If you want to use VSCode as your git editor you can change it with `git config --global core.editor "code --wait"`. For Windows you'll need to have selected `Add to path` when installing VSCode and for macOS you'll need to run `Shell Command: Install 'Code' command in path` in the command palette in VSCode. If you're doing this for `git commit`, you need to properly close the commit window with !kbd[!ctrl+W] or by shutting it with your mouse.
+If you do not use `-m` you will be put in your operating systems default editor
+to type in a commit message. If you want to use VSCode as your git editor you
+can change it with `git config --global core.editor "code --wait"`. For Windows
+you'll need to have selected `Add to path` when installing VSCode and for macOS
+you'll need to run `Shell Command: Install 'Code' command in path` in the
+command palette in VSCode. If you're doing this for `git commit`, you need to
+properly close the commit window with !kbd[!ctrl+W] or by closing it with your
+mouse after you've saved the file.
 
 > [Warning] 
-> If you don't change this your default editor will likely be nano or vi. If this is `vi` or `vim`, press `i`, type in your commit message and then press `Escape` and write `:wq` on your keyboard, this saves and quits your file and commits with the commit message you put in. If this is `nano` write in your commit message and use `!kbd[ctrl+x]` to quit and then press `Y` to save the buffer.
+> If you don't change this your default editor will likely be nano or vi. If this is `vi` or `vim`, press `i`, type in your commit message and then press `Escape` and write `:wq` on your keyboard, this saves and quits your file and commits it. If this is `nano` write in your commit message and use `!kbd[ctrl+x]` to quit and then press `Y` to save the buffer.
 
 ### Where is your file right now?
 

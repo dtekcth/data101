@@ -3,7 +3,7 @@
 Now that you have a GitHub account you're going to want to set up an SSH-key. 
 This is a sort of encryption key that is commonly used for connecting to other
 computers, but is also used for verification on GitHub and GitLab. This wasn't
-necessary until quite recently but nowadays you need to use SSH for
+_necessary_ until quite recently but nowadays you need to use SSH for
 verification to access private repositories on GitHub so this is a must.
 <!-- If you want to use SSH for connecting to computers remotely feel free to read the chapter about it in under further reading HERERH EJFHDSFJK DS -->
 
@@ -22,7 +22,7 @@ You can now move on.
 
 {{ end }} 
 
-{{ .macos.linux }} On macOS and Linux the SSH comes pre-installed on your computer so you don't need any additional steps.
+{{ .macos.linux }} On macOS and Linux SSH comes pre-installed on your computer so you don't need any additional steps.
 
 ## Generating keys
 First of all open up your terminal. From here, run `ssh-keygen`. When you've
@@ -80,7 +80,10 @@ here's a full guide for finding your way there as well.
 3. Click on `SSH Keys`, it's right around the middle. 
 ---
 4. Click on `Add new key`.
-5. Put in your public key again, feel free to give it a name. `Authentication & Signing` is fine for usage type. Here you can also change the expiration date of the key. If you'd like you can change this to any date you'd like.
+5. Put in your public key again, feel free to give it a name. `Authentication &
+   Signing` is fine for usage type. Here you can also change the expiration date
+   of the key. If you'd like you can change this to any date you'd like, such as
+   when you will graduate.
 6. Press `Add key`.
 
 [^encryption]: Take note that the specific encryption algorithm (Ed25519) might

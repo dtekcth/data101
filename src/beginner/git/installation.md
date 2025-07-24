@@ -15,7 +15,7 @@ For macOS users, there are two ways to install Git which we recommend.
 1. The preferred way to install command line tools like Git on macOS is with
    Homebrew, if you missed what that is we recommend going back and reading
    about [package managers](../cli/packagemanagers.md) in the previous
-   chapter. If you do not want to use Homebrew, try the other method instead!
+   chapter. If you do not want to use Homebrew, try the other method instead.
    In your terminal write:
 
    ```shell
@@ -91,16 +91,20 @@ from [here](https://gitforwindows.org/) and following the instructions.
 
 <!-- Does this actually work? I'm unsure if this installs it system wide or only for WSL so not sure how this interacts with VSCode.-->
 
-<!-- If you are using Ubuntu WSL like we recommend you can install git using Ubuntus package mangaer. In WSL run -->
-<!---->
-<!-- ```bash -->
-<!-- sudo apt-get install git -->
-<!-- ``` -->
-<!-- Then verify your install by running: -->
-<!---->
-<!-- ```bash -->
-<!-- git --version -->
-<!-- ``` -->
+If you are using Ubuntu WSL like we recommend you can install git using Ubuntus
+package mangaer. In WSL run
+
+```bash
+sudo apt-get install git
+```
+Then verify your install by running:
+
+```bash
+git --version
+```
+
+Note that this only installs Git for WSL and that the windows installer we
+linked to only installs git for Windows.
 
 {{ end }}
 
@@ -128,4 +132,5 @@ it is without any extra setup, and has unlimited private repositories.
 Important to note however is to not store personal projects there as you won't
 be able to access Chalmers' GitLab after you graduate, so keep this in mind.
 
-You will also need to use this for at least one course during your bachelors, so it's at least worth remembering that it exists!
+You will also need to use this for at least one course during your bachelors, so
+it's at least worth remembering that it exists!
