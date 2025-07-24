@@ -12,11 +12,11 @@ On Windows you might have to enable the OpenSSH client to be able to use SSH.
 How to do this might depend on your version of Windows, but on Windows 10 and 11 you should be able to follow this short guide.
 
 1. Open your settings application.
-2. Search for `Optional features` 
-3. In this menu you should see another search bar, search for `OpenSSH` 
+2. Search for "Optional features" 
+3. In this menu you should see another search bar, search for "OpenSSH" 
 4. If anything shows up that means you already have everything you need and can move on to [Generating keys](./setup.md#generating-keys)
 5. If there is nothing, press on `Add a feature` right at the top of the page. 
-6. Here search for `OpenSSH` again. 
+6. Here search for "OpenSSH" again. 
 7. Click the checkbox for `OpenSSH client` and `OpenSSH server` and then press `Add (2)` at the bottom. 
 You can now move on. 
 
