@@ -1,8 +1,11 @@
 # Cooperation
 
-This chapter will be all about working together and it is also one of our longest. This is something you will be doing constantly during your time at Chalmers. Your programming courses will most likely contain labs or assignments to be done together with others, and sometimes even your math courses do.  Therefore it is crucial to have a good environment set up to be able to work with a group. 
+This chapter will be all about working together and it is also one of our longest. This is something you will be doing constantly during your time at Chalmers. Your programming courses will most likely contain labs or assignments to be done together with others, and sometimes your math courses do as well.  Therefore it is crucial to have a good environment set up to be able to work with a group. 
 
-It's very common for new students to gather around a single computer, or writing code separately and just testing which is best. Others share files over Discord or Snapchat and this can lead to major issues when you're working at the same time or if you've missed a message. 
+It's very common for new students to gather around a single computer, or to
+write code separately and test which is best before turning it in.
+Others share files over Discord or Snapchat and this can lead to major issues
+when you're working at the same time or if you've missed a message. 
 
 To facilitate group work we will be recommending two tools. The first is Git—the stupid content tracker—and liveshare, a VSCode plugin which we will go through in 4.7.
 
