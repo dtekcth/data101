@@ -148,11 +148,21 @@ const showAll = (elList) => {
         // Ignore if preceded by a backslash
         if (first === "\\") return second;
 
+        // Search for the list item for footnotes. This makes them behave
+        // somewhat reasonably.
+        let parentElement = node.parentElement;
+        for (let p = node.parentElement; p && p.tagName !== "MAIN"; p = p.parentElement) {
+            if (p.tagName === "LI" && p.id.startsWith("footnote-")) {
+                parentElement = p;
+                break;
+            }
+        }
+
         third
           .split(".")
           .filter((s) => s !== "")
           .map((s) => s.trim())
-          .forEach((c) => node.parentElement.classList.add(c));
+          .forEach((c) => parentElement.classList.add(c));
 
         return first ? first : "";
       });

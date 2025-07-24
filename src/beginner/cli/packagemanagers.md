@@ -153,10 +153,6 @@ Pacman is the base package manager that comes with Arch Linux and any distros th
 
 {{ end }}
 
-{{ begin .macos}} 
-
-[^Nix]: There is a package manager called nix which can be used on macOS (and
-    linux) which is just as up to date and has more packages than Homebrew but
-    it is seriously complex and should not be used by beginners.
-
-{{ end }}
+[^Nix]: {{ .macos }} There is a package manager called nix which can be used on
+    macOS (and Linux) which is just as up to date and has more packages than
+    Homebrew, but it is more complex and should not be used by beginners.
