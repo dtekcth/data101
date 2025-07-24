@@ -118,6 +118,4 @@ same way but works on language instead of math.
 > mistakes and fixed any formatting that was obviously wrong.
 
 [^original]: If you're curious what the original version looked like, see the
-[contributing page](../contributing.md) for a link to the GitHub page for
-this book. The text for the draft can be found under
-`src/beginner/AI_draft.md`
+[GitHub page for data101](https://github.com/dtekcth/data101). The text for the draft can be found under `src/beginner/AI_draft.md`.
