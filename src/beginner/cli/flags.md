@@ -1,4 +1,4 @@
-## Flags
+# Flags
 
 We've previously seen how we can use `rm` to remove files. Now let's try and remove `test_directory`. `cd` back to your home directory and try to remove it by running `rm test_directory`. It will refuse to do so as it is a directory. To remove directories you need to append a _flag_. Flags are switches that change the behavior of the program or allow you to provide optional extra data to it. They are added just after the command like this: `command --flag`. You can add as many flags as you want to but some combinations may not make sense.
 
@@ -12,9 +12,14 @@ In our case we need to append the `--recursive` flag to remove files _recursivel
 
 Almost all command-line programs include a special flag that will print help information. This is almost always `--help`. This will usually give a short description of what the command does and list flags that it accepts.
 
-### Short-hand flags
+## Short-hand flags
 
-Some commands have single-letter flags which are easier to type. Most programs for example allow you to use `-h` instead of `--help`. However, the programs we have used so far do not allow this, it never hurts to try.
+Some commands have single-letter flags which are easier to type. Most programs for example allow you to use `-h` instead of `--help`. However, the programs we have used so far do not allow this, it never hurts to try. 
+
+> These short-hand flags can also often be combined without needing another
+> hyphen. An example of this is `ls -acl`. This will apply the flags `--all
+> --color --list`. Color applies colors to directories and list gives you more
+> information about files and directories.
 
 [Task]
 _Using the help flag, what is the short-hand flag for `--recursive` in `rm`?_

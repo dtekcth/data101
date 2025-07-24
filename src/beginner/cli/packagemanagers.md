@@ -1,5 +1,5 @@
 <!-- I don't like how we have to separate for the various operating systems here, but removing the subheadings will make it look very confusing if you have selected to show all OSs -->
-## Package managers
+# Package managers
 
 When you want to install programs on your computer, you might be used to either downloading the program from their website or using your operating systems app store. However, there are also ways to install programs from the command-line. In order to do this, we use something called a package manager. Package is just a different (and more general) name for referring to a program. Package managers provide a central and unified way of installing programs and tools, and are especially useful for installing developer tools. They also make it a lot easier to install a lot programs all at once.
 
@@ -15,7 +15,14 @@ GHC which you might want to use in WSL. However it might still be nice to be
 able to install programs in a Windows Terminal. This can help you keep programs up to date easier, or to install programs in an easier way.
 
 The two most popular package managers for Windows are _winget_ and _chocolatey_. 
-Windows comes preinstalled with winget but it has fewer packages while chocolatey requires you to install it but has more packages. The main reason for this is that chocolatey has a community repository, which allows users to publish packages themselves and upload them. This might sound scary, but is quite normal, just be sure that you're installing the right package! If you want to see what packages are available in both you can see [winget package search](https://winget.run/) and [chocolatey community package search](https://community.chocolatey.org/search). 
+Windows comes preinstalled with winget but it has fewer packages while
+chocolatey requires you to install it but has more packages. The main reason for
+this is that chocolatey has a community repository, which allows users to
+publish packages themselves and upload them. This might sound scary, but is
+quite normal, just be sure that you're installing the right package! If you want
+to see what packages are available in both you can see [winget package
+search](https://winget.run/) and [chocolatey community package
+search](https://community.chocolatey.org/search). 
 
 To install chocolatey use this command in CMD: 
 ```CMD
@@ -68,7 +75,7 @@ To verify your install use `choco -v`
 ## MacOS
 
 On MacOS we recommend using Homebrew. There are a few other macOS package
-managers but none of them are as up to date and have as many packages as
+managers but none of them[^Nix] are as up to date and have as many packages as
 Homebrew. It can be installed by following the instructions
 [here](https://brew.sh/), this page also gives some further context surrounding
 Homebrew. The one confusing thing about homebrew is ususally surrounding casks
@@ -88,9 +95,9 @@ To use Homebrew these are the basic commands you will use:
 | `brew uninstall <packages>`           | Uninstall packages                                      |
 
 ### Updating
-The differentiation between `update` and `upgrade` here is important. `Update` means
+The differentiation between _update_ and _upgrade_ here is important. Update means
 to update Homebrew itself, which also includes Updating the version of packages
-that *can* be installed. `Upgrade` is what actually updates the packages on your
+that *can* be installed. Upgrade is what actually updates the packages on your
 computer to the most recent version. After upgrading we suggest always running
 `brew cleanup` as well to get rid of old files. They can all be run together
 with:
@@ -143,5 +150,13 @@ Pacman is the base package manager that comes with Arch Linux and any distros th
 | `pacman -S <packages>`     | Install packages                                |
 | `pacman -R <packages>`     | Uninstall a package                             |
 | `pacman -Rns <packages>`   | Uninstall a package and all of its dependencies |
+
+{{ end }}
+
+{{ begin .macos}} 
+
+[^Nix]: There is a package manager called nix which can be used on macOS (and
+    linux) which is just as up to date and has more packages than Homebrew but
+    it is seriously complex and should not be used by beginners.
 
 {{ end }}

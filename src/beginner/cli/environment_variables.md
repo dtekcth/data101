@@ -4,7 +4,7 @@ Whenever we start a shell, some variables are assigned to the session. These are
 
 All variables can be used inside your shell. Accessing a variable is done by prefixing the variable with `$`. For example, your home directory is stored in a variable called `HOME`. To change the _working directory_ to your home you could then write `cd $HOME`.
 
-### $PATH
+## $PATH
 
 This variable contains all the directories where your shell will search for binary files (files that can be executed as commands). Normally the command has to specify the path of the file to be executed. Without the `PATH` variable, we would have to write `/usr/bin/ls`, but since `/usr/bin` is in our `PATH` variable, the shell will look in that directory for the command.
 

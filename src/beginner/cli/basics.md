@@ -1,22 +1,28 @@
-## Getting started
+# Getting started
 
 {{ .windows }}
-On Windows you start WSL by searching for `Ubuntu` in the Windows Start Menu. You should see something like this:
+On Windows you start WSL by searching for "Ubuntu" in the Windows Start Menu. You should see something like this:
 
 {{ .macos }}
-On macOS, press !kbd[!cmd+Space] and then enter `terminal` to open a terminal. You should see something like this:
+On macOS, press !kbd[!cmd+Space] and then enter "terminal" to open a terminal. You should see something like this:
 
 {{ .linux }}
-On Linux, how you open a terminal depends on your distro. Usually one of !kbd[Ctrl+Alt+T], !kbd[!win+T] or !kbd[!win+Enter] opens one. Otherwise, search for `how to open terminal <insert your distro here>`. You should see something like this:
+On Linux, how you open a terminal depends on your distribution. Usually one of
+!kbd[Ctrl+Alt+T], !kbd[!win+T] or !kbd[!win+Enter] opens one. Otherwise, search
+for "how to open terminal `<insert your distro here>`". You should see something
+like this:
 
 <!-- Replace with a picture of a terminal running bash -->
 ![Terminal](/Assets/cli/windows_terminal.png)
 
-You can also open a terminal in VSCode if you prefer working there. Open the command palette (!kbd[!ctrl+Shift+P]) and type "terminal: create new terminal" and press !kbd[Enter]. This should open a new terminal at the bottom of your screen. You can also open one by clicking on "Terminal" in the menu bar at the top of your screen, and then pressing "New Terminal".
+You can also open a terminal in VSCode if you prefer working there. Open the command palette (!kbd[!ctrl+Shift+P]) and type "terminal: create new terminal" and press !kbd[Enter]. This should open a new terminal at the bottom of your screen. You can also open one by clicking on `Terminal` in the menu bar at the top of your screen, and then pressing `New Terminal`.
 
-With a terminal open, what are we looking at? At the start of that line you will see your username followed by `@`, and then the name of your computer. After that you will see the current directory. Your terminal keeps track of something called its _working directory_, which is where on your filesystem it is located at the moment. Right now it is `~`, which is symbol used to represent your _home directory_. Every user has a home directory where all of their files are stored. At the end of the line you will see a solid block, which is your cursor. Here we can write commands and run them by pressing enter.
+With a terminal open, what are we looking at? At the start of that line you will see your username followed by `@`, and then the name of your computer. After that you will see the current directory. Your terminal keeps track of something called its _working directory_, which is where on your filesystem it is located at the moment. Right now it is `~`, which is a symbol used to represent your _home directory_. Every user has a home directory where all of their files are stored. At the end of the line you will see a solid block, which is your cursor. Here we can write commands and run them by pressing enter.
 
-We can print the exact location of our working directory by running the command `pwd` **p**rint **w**orking **d**irectory. This should print `/home/` followed by your username. You can also list the contents of your working directory with the command `ls` (**l**i**s**t).
+We can print the exact location of our working directory by running the command
+`pwd` (**p**rint **w**orking **d**irectory). This should print `/home/` followed
+by your username. You can also list the contents of your working directory with
+the command `ls` (**l**i**s**t).
 
 > Commands are case sensitive. This means that `pwd` and `PWD` aren't the same thing, and you will get error if you try and run the second one.
 
@@ -30,21 +36,28 @@ To remove files, use `rm <path>`, where `<path>` is the name of the file we want
 
 <!-- Maybe we should hint at git here to help you not lose your progress -->
 > [Danger]
-> Be careful with using `rm` as the files will not be moved to the trashcan like they would if you deleted them from a user interface. If you use `rm`, the files are gone and you cannot recover them. You won't be able to remove system critical files without extra authentication, but you should still be careful.
+> Be careful with using `rm` as the files will not be moved to the trashcan like
+> they would if you deleted them from a user interface. If you use `rm`, the
+> files are gone and you cannot recover them. You won't be able to remove system
+> critical files without extra authentication, but you should still be careful.
+> Next chapter goes through _Git_, which can protect you from costly mistakes like
+> this!
 
 If you want to open up VSCode to start editing some of the files, you can run `code` to open up the working directory in the editor. You can also use `code <path>` to open a specific file or directory. If you are using a different editor, there is probably a command to start it from the terminal too.
+
+{{ .window}}On windows the ability to do this requires you to install VSCode to
+your path. This is one of the options that should be pre-selected when you
+install it but this will not function if you unchecked that box.
 
 ## Navigation
 
 Up until now we have only run commands from our home directory, but it would be cumbersome to do everything from here. We can change our working directory with `cd <path>` (**c**hange **d**irectory). Here we replace `<path>` with the name of the directory we want to move into. Try running `cd test_directory`. You can verify that you have change the working directory by running `pwd` again.
 
-<!-- previous directory isn't entirely correct, but I don't know any better words -->
 You can also move to the previous directory using `cd ..`. The argument we are giving to `cd` is more generally known as a _path_, which we will cover in more depth in the next subchapter.
 
 > You can autocomplete commands and arguments by pressing !kbd[Tab]. If there are multiple alternatives, you will get a list of them. You might need to double-tap !kbd[Tab] to see all available alternatives.
 
-<!-- Maybe we should mention escaping spaces as that is the default used when tab completing names -->
-If you have a directory with a space in its name, you might wonder how you can refer to it in the terminal as we use spaces for separating arguments. In these cases, we can surround the path in quotation marks like this `cd "My directory"`. This applies to any arguments that contain spaces, not just directory names.
+If you have a directory with a space in its name, you might wonder how you can refer to it in the terminal as we use spaces for separating arguments. In these cases, we can surround the path in quotation marks like this `cd "My directory"`. This applies to any arguments that contain spaces, not just directory names. When using tab completion you might instead see it correct that to `cd My\ directory`. Here backslash acts as a way to "escape" the following space. 
 
 > You can access your command history using the up and down arrow keys.
 

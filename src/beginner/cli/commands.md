@@ -1,4 +1,4 @@
-## Common commands
+# Common commands
 
 Now that you know the basics of how paths work and how to interact with a terminal, we will present some common commands in more rapid succession. We will also list the commands we have already covered so you can use this as a quick reference.
 
@@ -19,7 +19,7 @@ If you want to know more about a command you can either use `command --help` to 
 | `rm <files>`                            | Removes the `<files>`                                                    |
 | `touch <files>`                         | Creates the `<files>`                                                    |
 
-### More on notation
+## More on notation
 
 Sometimes when looking through the help page for commands you might see something like this:
 
@@ -31,7 +31,7 @@ Here the square brackets (`[]`) indicate optional arguments. Sometimes they migh
 
 The ellipsis (`...`) also bear significance. They indicate that you can specify multiple of preceding item. So for this command we can provide multiple options, and multiple files.
 
-### System files
+## System files
 
 Sometimes when working in a terminal, you need to touch system files or run commands that affect core parts of the system. When you do this, you will get an error that says "Permission denied". In these cases, you need to give extra permissions to the command by typing `sudo` followed by the command you want to run. For example (don't run this):
 

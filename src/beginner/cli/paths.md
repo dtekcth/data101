@@ -1,4 +1,4 @@
-## Paths
+# Paths
 
 In the previous chapter, we referred to something called a path. We will now explain more thoroughly what they are. A path is a string that specifies a location on your filesystem. It consists of a series of directory names, separated with `/`. Paths can either refer to files or directories depending on the name of the last part of the path.
 
@@ -6,7 +6,12 @@ You have already seen some examples of paths when running `cd test_directory` or
 
 Paths can also be absolute. This means that instead of interpreting the path from your _working directory_ it is interpreted from the _root_ of the filesystem. All paths that start with a `/` are considered absolute. Example `/directory/sub_directory`.
 
-There are also some special path symbols. `.` refers to the current directory and `..` refers to the previous directory, often called the parent directory. There is also `~`, which is an absolute path to your home directory. All of these symbols can be used together to form paths. Though it is worth noting that most programming languages do not understand `~`.
+There are also some special path symbols. 
+- `.` refers to the current directory 
+- `..` refers to the previous directory, often called the parent directory. 
+- There is also `~`, which is an absolute path to your home directory. 
+
+All of these symbols can be used together to form paths. Though it is worth noting that most programming languages do not understand `~`.
 
 > It is common to use the word _parent_ and _child_ when working with computer terminology. A _parent_ is usually something on a layer above while a _child_ is something on the layer below.
 
