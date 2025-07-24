@@ -2,19 +2,13 @@
 
 To begin with, you need to install a couple of applications. These will be useful throughout your education. This section will only briefly describe how to install the software, while in the later chapters we will tell you more about why and how we use them. 
 
-<!-- Before you get further into the book we also suggest picking your preferred -->
-<!-- operating system in the top bar on the page. By doing this you will not see -->
-<!-- unnecessary information meant for other operating systems. Here you can also -->
-<!-- choose a theme and your programme if you want to skip information that is not -->
-<!-- relevant to you. -->
-
 ## Editor: VSCode
 
 VSCode is our recommended editor. This is the application you write code with. [Download it here.](https://code.visualstudio.com/)
 
 ## Online meetings: Zoom
 
-Sometimes you will have lectures online, where the university uses Zoom. It is also possible to set up your own room and talk to your group partners remotely. [Download it here.](https://zoom.us/download#client_4meeting)
+Sometimes you will have the ability to join lectures online, where the university uses Zoom. It is also possible to set up your own room and talk to your group partners remotely. [Download it here.](https://zoom.us/download#client_4meeting) 
 
 {{ begin .windows }}
 
@@ -26,7 +20,7 @@ Start by running `cmd` or `powershell`. This can be done by pressing !kbd[!win] 
 
 A new window will open where you can run commands. After typing your command you can run it by pressing `Enter`. Run `wsl --install` and then reboot your computer.
 
-You can now start WSL by searching for `ubuntu` from the Windows Start Menu. Follow the instructions on screen and you are good to go!
+You can now start WSL by searching for "ubuntu" from the Windows Start Menu. Follow the instructions on screen and you are good to go!
 
 {{ end }}
 
@@ -52,9 +46,9 @@ Chalmers and GU uses the global university network "Eduroam" for wi-fi connectiv
 
 Chalmers provides [OneDrive storage](https://chalmers.topdesk.net/tas/public/ssp/content/detail/knowledgeitem?unid=c8fe18c158004038beccd0a8d57ef1f5) to all students where you can store and share files online.
 
-### Graphical Remote Desktop
+### Chalmers Apps
 
-Sometimes you need special software or more computer power for a lab. It is almost always possible to use the computers at school but it is also possible to access them remotely from home using Remote desktop software. [Here](https://chalmers.topdesk.net/tas/public/ssp/content/detail/knowledgeitem?unid=304967f9ad004d3293b986a976e39833) you can find out how to connect, depending on your operating system.
+Sometimes you need special software or more computer power for a lab. It is almost always possible to use the computers at school but it is also possible to access them remotely from home using the Windows app or on Linux, through your browser. For more information see our chapter on [Chalmers Apps](../studies/chalmers_apps.md)
 
 ### Schedule: TimeEdit
 
@@ -62,7 +56,7 @@ You can find both program and course schedules on [TimeEdit](https://cloud.timee
 
 ### Canvas
 
-[Canvas](https://canla.portal.chalmers.se/canvaslogin/discovery.html?v=1) is the _learning management system_ at Chalmers. In simpler terms, it is where you will find course information, submit labs and so on.
+[Canvas](https://canla.portal.chalmers.se/canvaslogin/discovery.html?v=1) is the _learning management system_ at Chalmers. In simpler terms, it is where you will find course information, submit labs and so on. We have a [short chapter](../studies/canvas.md) going through it!
 
 ## Ladok
 
