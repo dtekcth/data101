@@ -56,7 +56,7 @@ it, and then the name of the file itself. In order to make it clear where the
 name of one directory ends and a new one starts, we separate them with forward
 slashes (`/`).
 
-> {{ .windows }} Windows usually uses backward slaashes (`\`) in paths
+> {{ .windows }} Windows usually uses backward slashes (`\`) in paths
 instead. We will go through the differences between so called "Unix" systems and
 Windows later!
 
