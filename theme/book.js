@@ -41,7 +41,7 @@ const showAll = (elList) => {
   };
 })();
 
-(function ClassPreproccessor() {
+(function ClassPreprocessor() {
   const getSolutionParent = (node) => {
     if (node.classList && node.classList.contains("solution")) return node;
     if (node.parentNode) return getSolutionParent(node.parentNode);
@@ -213,8 +213,7 @@ const showAll = (elList) => {
     }
   };
 
-  const textNodes = textNodesUnder(document.documentElement);
-  textNodes.forEach((node) => {
+  textNodesUnder(document.documentElement).forEach((node) => {
     matchLongBlockMacro(node);
     matchBlockMacro(node);
     matchExerciseMacro(node);
@@ -224,31 +223,26 @@ const showAll = (elList) => {
 })();
 
 (function OperatingSystem() {
-  let os = localStorage.getItem("mdbook-os");
-  if (os === null) {
-    os = "all";
-  }
   const icons = {
-    macos: "fa-apple",
-    linux: "fa-linux",
-    windows: "fa-windows",
-    all: "fa-linux fa-apple fa-windows",
+    macos:   ["fa-apple"],
+    linux:   ["fa-linux"],
+    windows: ["fa-windows"],
+    all:     ["fa-linux", "fa-apple", "fa-windows"],
   };
+  const colors = {
+    Data: "orange",
+    IT:   "#008CBA",
+    DV:   "#188BDE",
+  };
+
+  let os        = localStorage.getItem("mdbook-os")        ?? "all";
+  let programme = localStorage.getItem("mdbook-programme") ?? "all";
 
   const setOS = (newOS) => {
     os = newOS;
     localStorage.setItem("mdbook-os", os);
     promptForValues();
   };
-
-  let programme = localStorage.getItem("mdbook-programme");
-  if (programme === null) programme = "all";
-  const colors = {
-    Data: "orange",
-    IT: "#008CBA",
-    DV: "#188BDE",
-  };
-
   const setProgramme = (newProgramme) => {
     programme = newProgramme;
     localStorage.setItem("mdbook-programme", programme);
@@ -257,10 +251,7 @@ const showAll = (elList) => {
 
   const promptForValues = () => {
     // document.getElementById("meta-prompt").classList.add("hidden");
-    if (
-      !localStorage.getItem("mdbook-programme") || localStorage.getItem("mdbook-programme") === "all" ||
-      !localStorage.getItem("mdbook-os") || localStorage.getItem("mdbook-os") === "all"
-    ) {
+    if (os === "all" || programme === "all") {
       document.getElementById("alert-selection").classList.remove("hidden");
 
       // const promptEl = document.getElementById("meta-prompt");
@@ -338,7 +329,6 @@ const showAll = (elList) => {
 
       // Set icons
       osToggleButton.innerHTML = icons[os]
-        .split(" ")
         .map((icon) => `<i class="fa ${icon}"></i>`)
         .join("");
 
@@ -395,17 +385,14 @@ const showAll = (elList) => {
       }
 
       if (programme === "all") {
-        document.documentElement.style.setProperty("--display-D", "block");
+        document.documentElement.style.setProperty("--display-D",  "block");
         document.documentElement.style.setProperty("--display-IT", "block");
         document.documentElement.style.setProperty("--display-DV", "block");
       } else {
-        document.documentElement.style.setProperty("--display-D", "none");
+        document.documentElement.style.setProperty("--display-D",  "none");
         document.documentElement.style.setProperty("--display-IT", "none");
         document.documentElement.style.setProperty("--display-DV", "none");
-        document.documentElement.style.setProperty(
-          `--display-${programme}`,
-          "block"
-        );
+        document.documentElement.style.setProperty( `--display-${programme}`, "block");
       }
 
       const programmeText = programme === "all" ? "All programmes" : programme;
