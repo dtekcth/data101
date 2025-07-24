@@ -183,31 +183,33 @@ const showAll = (elList) => {
   };
 
   const BeginLongBlockRegex = /^{{\s*begin\s+((\.[A-Za-z\-0-9]+\s*)+)}}/;
-  const EndLongBlockRegex = /^{{\s*end\s*}}/;
+  const EndLongBlockRegex   = /^{{\s*end\s*}}/;
 
-  const applyClasses = (el, classes) => {
-    if (el.innerText) {
-      const matches = el.innerText.match(EndLongBlockRegex);
-      if (matches !== null) {
-        el.remove();
-        return;
-      } else {
-        classes.forEach((c) => el.classList.add(c.trim()));
-      }
-    }
-    if (el.nextSibling) applyClasses(el.nextSibling, classes);
-  };
   const matchLongBlockMacro = (node) => {
     if (node.parentElement === null) return;
+
     const matches = node.nodeValue.match(BeginLongBlockRegex);
     if (matches && matches[1]) {
+      // Grab class list
       const classes = matches[1]
         .split(".")
-        .filter((s) => s !== "")
-        .map((s) => s.trim());
+        .map((s) => s.trim())
+        .filter((s) => s !== "");
 
       node.nodeValue = node.nodeValue.replace(matches[0], "");
-      applyClasses(node.parentElement, classes);
+
+      // Apply classes.
+      for (let element = node.parentElement; element; element = element.nextSibling) {
+        const matches = (element.innerText ?? "").match(EndLongBlockRegex);
+        if (matches !== null) {
+          element.remove();
+          break;
+        }
+
+        if (element.classList) {
+          classes.forEach((c) => element.classList.add(c));
+        }
+      }
     }
   };
 
