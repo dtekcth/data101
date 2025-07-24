@@ -21,7 +21,7 @@ To get started, begin by downloading VSCode from the [webpage](https://code.visu
 > **Did you know that you can open links in a new tab by either**
 >
 > - Holding !kbd[!ctrl] while clicking on the link
-> - Middle click on the link
+> - Middle clicking on the link
 
 After installing VSCode, start it like you would any other program. We will now go through the most basic functionality you will need to start programming! After this we will go through some useful shortcuts, extensions and ways to navigate your editor. Of course it's absolutely okay if you can't remember all of it, it's going to be a lot of new information so come back here any time you want a refresher!
 

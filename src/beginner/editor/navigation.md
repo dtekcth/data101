@@ -1,12 +1,19 @@
 # Navigation
 
-Before writing code it is necessary to understand how to navigate the editor. Remember that this is all about muscle memory. You will have to train and it will feel uncomfortable, especially if you aren't used to using your keyboard extensively, but doing it now will make you fast as lightning by the time you graduate. You will probably neither feel motivated nor have the time when you are out working.
+Before writing code it is necessary to understand how to navigate the editor. Remember that this is all about muscle memory. You will have to train and it will feel uncomfortable, especially if you aren't used to using your keyboard extensively. But learning it now will make you fast as lightning by the time you graduate. You will probably neither feel motivated nor have the time when you are out working.
 
 ## The caret
 
-The caret is the blinking line from where text appears, you probably know all about it but the name may be new to you. To move the caret, use the arrow keys. If your keyboard has them, you can also move to the start or end of the line by pressing !kbd[Home] or !kbd[End] respectively. To move the caret word by word, hold !kbd[Ctrl] (or !kbd[Alt] on MacOS) while pressing !kbd[Left] or !kbd[Right].
+The _caret_ is the blinking line from where text appears, you probably know all
+about it but the name may be new to you. To move the caret, use the arrow keys.
+If your keyboard has them, you can also move to the start or end of the line by
+pressing !kbd[Home] or !kbd[End] respectively. To move the caret word by word,
+hold !kbd[Ctrl] (or !kbd[Alt] on MacOS) while pressing !kbd[Left] or
+!kbd[Right].
 
-{{ .macos }}On MacOS there are also certain standard navigation options for moving the caret that work in every program. You can use !kbd[Ctrl+A] to move to the start of a line and !kbd[Ctrl+E] to move to the end of a line.
+{{ .macos }}On MacOS there are also certain standard navigation options for
+moving the caret that work in every program. You can use !kbd[Ctrl+A] to move to
+the start of a line and !kbd[Ctrl+E] to move to the end of a line.
 
 > Holding !kbd[Shift] while doing any movement also selects the text!
 
@@ -18,9 +25,14 @@ VSCode also includes a powerful tool called the `Command palette`. This may be t
 
 There are four main modes of operation. The first and simplest one is to search for files in your project. Try creating a new file in your project, open the command palette and then type the beginning of the name and press !kbd[Enter]. This is a fast method of moving between files in your project.
 
-The palette also has another function which is to run various tasks, such as opening preferences, building your project or opening a new terminal. This mode is accessed by prefixing the search with `>` or entered directly by pressing !kbd[!ctrl+Shift+P]. Anything that you can do by using your mouse can be done here. Try opening a file using the command palette!
-
-We will learn more about the two remaining modes in the next sections.
+The palette also has another function which is to run various tasks, such as
+opening preferences, building your project or opening a new terminal. This mode
+is accessed by prefixing the search with `>` or entered directly by pressing
+!kbd[!ctrl+Shift+P]. This is **incredibly** powerful and anything that you can
+do by using your mouse can be done here. Try opening a file using the command
+palette! This mode can be used for almost anything you can think of. When you're
+in this _Command_ mode try searching for something you want to do. Be it "Create
+new file" or "Add line Comment", the command palette can probably do it!
 
 ## Lines
 
@@ -33,11 +45,11 @@ You can also navigate to a line by opening the command palette (!kbd[!ctrl+P]) a
 
 ## Find & Replace
 
-Sometimes you want to find a certain string in a file. For example say that you have a function named `startProgram` that you want to find. By pressing !kbd[!ctrl+F] you will open the find menu where you can search for any text in the file. If you instead want to search your whole project then that would be !kbd[!ctrl+Shift+F].
+Sometimes you want to find a certain string in a file. For example say that you have a function named "startProgram" that you want to find. By pressing !kbd[!ctrl+F] you will open the find menu where you can search for any text in the file. If you instead want to search your whole project then that would be !kbd[!ctrl+Shift+F].
 
 > This command also works in your browser and can be used to find text on websites.
 
-This type of functionality can also be used to replace text. Maybe that function name you invented at the start just isn't cutting it any longer so you decide to replace it. Rewriting this by hand is tedious and error-prone (what if you miss one place?). Luckily VSCode got us covered. You can use !kbd[!ctrl+H] (!kbd[!ctrl+Alt+F] on macOS) and !kbd[!ctrl+Shift+H] to replace occurences in the file and project, respectively.
+This type of functionality can also be used to replace text. Maybe that function name you invented at the start just isn't cutting it any longer so you decide to replace it. Rewriting this by hand is tedious and error-prone (what if you miss one place?). Luckily VSCode has us covered. You can use !kbd[!ctrl+H] (!kbd[!ctrl+Alt+F] on macOS) and !kbd[!ctrl+Shift+H] to replace occurences in the file and project, respectively.
 
 > It is also possible to perform more complex searches and replacements see [the reference](https://docs.microsoft.com/en-us/visualstudio/ide/finding-and-replacing-text?view=vs-2022) for more information.
 
@@ -51,8 +63,8 @@ Some people use `PageUp` and `PageDown` to move the window up or down one page a
 
 Here are a couple of cherry-picked examples demonstrating the effectiveness compared to simply scrolling.
 
-If you get an error that says `Error, undefined variable on line 32 in file 'main.py'`, then you may be tempted to scroll through `main.py` until you find the line. It would be much faster to use !kbd[!ctrl+G] and enter `32` to navigate to the correct line immediately.
+If you get an error that says "Error, undefined variable on line 32 in file 'main.py'", then you may be tempted to scroll through `main.py` until you find the line. It would be much faster to use !kbd[!ctrl+G] and enter `32` to navigate to the correct line immediately.
 
-You may have a large file (files with more than a thousand lines are not uncommon) and your friend tells you to look at the function `toLowercase`. You can, just like the previous example, scroll and search by eye. However you can also use the powerful symbol mode of the command palette (prefix with `@`). Searching for `@tolowercase` will get you there without the need to manually scroll and search.
+You may have a large file (files with more than a thousand lines are not uncommon) and your friend tells you to look at the function _toLowercase_. You can, just like the previous example, scroll and search by eye. However you can also use the powerful symbol mode of the command palette (prefix with `@`). Searching for `@tolowercase` will get you there without the need to manually scroll and search.
 
 The most generic of the methods described above is the _Find word_ functionality (!kbd[!ctrl+F]). If your _Teaching Assistant_ asks you to bring up anything on the screen, then this command will always get you something reasonable.

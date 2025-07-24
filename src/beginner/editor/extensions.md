@@ -27,21 +27,21 @@ a *dependency*, other extensions depend on it. It also offers certain nice
 features like *syntax highlighting*. A syntax highlighter mainly change the
 color of different elements in code to make it more readable. 
 
-Installing this plugin also installs the next most popular one, `Pylance`. This
-is a so called *language server*. Language servers offer assistance when
+Installing this plugin also installs the next most popular one, "Pylance". This
+is a so called _language server_. Language servers offer assistance when
 programming. They help you write functions of different types, help you
 navigate your code, and can help you understand what certain things in code
 mean. 
 
 > **However be very careful when using language servers**.
 > 
-> To learn to code you *need* to understand what that code does.
-> Sometimes a language server will recommend you to do something that you do not
-> understand. Sometimes it will tell you there are errors where there are none.
-> Sometimes they will make code harder to understand in an attempt to make it
-> better. For these reasons we suggest **avoiding** language server extensions for a
-> start until you're a bit more comfortable with a language, a sentiment you
-> might hear echoed by professors and other students.
+> To learn to code you *need* to understand what that code does. Sometimes a
+> language server will recommend you to do something that you do not understand.
+> Sometimes it will tell you there are errors where there are none. Sometimes
+> they will make code harder to understand in an attempt to make it better. For
+> these reasons we suggest **avoiding** language server extensions for a start
+> until you're a bit more comfortable with a language, a sentiment you might
+> hear echoed by professors and other students.
 
 These syntax highlighting and language server extensions exist for nearly every
 programming language you can think of and can be very useful. If you want to
@@ -59,6 +59,8 @@ your courses in LP3 if you are studying at computer engineering.
 There are also extensions that allow you to change how your editor looks if
 you'd like! This can include things like changing icons and the way windows and
 panes look. Another popular customization option is themes. These change the
-colors of your editor. Some popular ones are `Gruvbox` and `Monokai`. [This
+colors of your editor. Some popular ones are "Gruvbox" and "Monokai". [This
 website](https://vscodethemes.com/) allows you to see and compare different
 ones easily.
+
+<!-- it pains me not to mention catppuccin 😔-->

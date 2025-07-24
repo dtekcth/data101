@@ -1,12 +1,10 @@
 # Using shortcuts
 
-<!-- > Before starting you might want to download a project from the introductory course. -->
-
 While the mouse is very useful most of the time when using a computer,
-programming is not necessarily one of those times. Programming is made far easier
-by using the keyboard for actions you'd normally do with the mouse. Every single
-action that can be done using your mouse can also be done without lifting your
-fingers from the keyboard.
+programming is not necessarily one of those times. Programming is made far
+easier by using the keyboard for actions you'd normally do with the mouse. Every
+single action that can be done using your mouse can also be done without lifting
+your fingers from the keyboard.
 
 You may be tempted to click on the screen to move the caret, save your file or
 create a new file, and while this works, it isn't very fast, and requires moving
