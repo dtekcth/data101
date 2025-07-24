@@ -46,7 +46,7 @@ We’re not telling you this to scare you. But we do want to stress how seriousl
 this university—and all universities in Sweden—treat plagiarism and academic
 dishonesty. The consequences can be severe.
 
-## The limits of AI
+### The limits of AI
 In a similar vein, it’s important to understand that AI doesn’t actually
 understand what it’s doing or saying. That might sound surprising—but what AI
 really does is piece together patterns based on the data it was trained on and
@@ -71,16 +71,16 @@ context, focus on the wrong thing, or misinterpret your intentions. That’s why
 AI works best for small, self-contained tasks—where the problem is likely
 similar to something it has already seen during training.
 
-## Using AI as an effective tool
+### Using AI as an effective tool
 That said, learning to program with AI rather than relying on it can make you a
 much stronger and a much more desirable developer. AI can help you get quick
 feedback, help you understand why a function isn't doing what you expect. It
 can help you troubleshoot errors that you don't understand yet. It can give you
 an example function, similar to what you want to write. Seeing what a working
-function looks like in this language using the same concepts can help you write
-your own code. In the same vein it can give you a starting point, what we
-usually call a skeleton. It won't contain all the code you need but it can help
-you with filler code or to create a structure to follow.
+function looks like using the same concepts can help you write your own code. In
+the same vein it can give you a starting point, what we usually call a skeleton.
+It won't contain all the code you need but it can help you with filler code or
+to create a structure to follow.
 
 Sometimes documentation can be unclear, or have very few words.  Copy the
 documentation and ask AI to explain it in plain language. Instead of asking it
