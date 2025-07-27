@@ -40,6 +40,8 @@ Using Chalmers IT-services is never easy but there is some help to be had at the
 
 ### Wi-fi: Eduroam
 
+<!-- TODO: Should we link to https://wiki.dtek.se/wiki/Eduroam ? -->
+
 Chalmers and GU uses the global university network "Eduroam" for wi-fi connectivity (there is wi-fi everywhere on campus). [Search for "Eduroam" on the IT-portal](https://chalmers.topdesk.net/tas/public/ssp/content/search?q=eduroam) (requires a CID) to find out how to connect your devices.
 
 ### Online storage
@@ -48,7 +50,7 @@ Chalmers provides [OneDrive storage](https://chalmers.topdesk.net/tas/public/ssp
 
 ### Chalmers Apps
 
-Sometimes you need special software or more computer power for a lab. It is almost always possible to use the computers at school but it is also possible to access them remotely from home using the Windows app or on Linux, through your browser. For more information see our chapter on [Chalmers Apps](../studies/chalmers_apps.md)
+Sometimes you need special software or more computer power for a lab. It is almost always possible to use the computers at school but it is also possible to access them remotely from home using _Windows App_ or on Linux, through your browser. For more information see our chapter on [Chalmers Apps](../studies/chalmers_apps.md)
 
 ### Schedule: TimeEdit
 
