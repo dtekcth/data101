@@ -32,7 +32,7 @@ If your only experience comes from a course or two during _Gymnasiet_ then you
 should still find useful information here but may find the steps to be a bit too
 granular. Hopefully, you can look past this! If you're even more experienced
 than that, we still urge you to at least have a look through, there could still
-be useful information here! 
+be useful information here!
 
 > If you think that there is a topic that needs improvement or have ideas for
 > new topics, please look at the [contributing

@@ -17,18 +17,18 @@ During the 5 year programme called "Civilingenjör" you will be receiving two
 degrees, a bachelors degree (Kandidatexamen in swedish) and your masters degree.
 Oftentimes you will hear people say "during your bachelors", which refers to the
 first 3 years. Some time in early april during your third year you will get to
-choose your masters program. 
+choose your masters program.
 
 This can be an overwhelming choice, but one you will have a lot of time to
 prepare for luckily! To give you an idea of which masters might seem interesting
-we will have some information regarding the most popular masters here. 
+we will have some information regarding the most popular masters here.
 
 ## Applying to a masters-programme
 There are a few important things to think about when choosing your masters.
 Chalmers has mastersprogrammes that are "associated" with certain
 bachelors-programmes. What this means is if you've studied at a
 bachelors-programme, you have the opportunity to receive priority for certain
-master degrees. There are however a few prerequisites for this. 
+master degrees. There are however a few prerequisites for this.
 
 1. You need to have achieved the qualifications for the masters-programme.
 2. You submit your declaration in time, i.e during the ordinariy masters-programme choice period.
@@ -59,8 +59,8 @@ from other masters as well!
 You might also be interested in checking the IT version of this page as those
 masters are often very popular for TKDAT students as well.
 
-### MPALG - Algorithms, languages and logic. 
-MPALG is the most computer-science oriented master offered at Chalmers. It gives a large basis for software development but even more so for academic research in the computer-science field where chalmers is, and has been world leading in fields like functional programming and type-theory. 
+### MPALG - Algorithms, languages and logic.
+MPALG is the most computer-science oriented master offered at Chalmers. It gives a large basis for software development but even more so for academic research in the computer-science field where chalmers is, and has been world leading in fields like functional programming and type-theory.
 
 The core of the programme covers:
 - Algorithms, including AI, machine learning, and optimization techniques.
@@ -80,7 +80,7 @@ The core of the programme covers:
 - A combination of theoretical knowledge and practical engineering.
 - A comprehensive understanding of target hardware and software, as well as the middleware that tie these systems together.
 - Designing systems to be able to fight cyber threats, secure ways to handle data and implementing protective measures.
-- Preparing you to consider ethics and how to comply with industry standards. 
+- Preparing you to consider ethics and how to comply with industry standards.
 
 To read more see [the chalmers page about MPCSC](https://www.chalmers.se/en/education/find-masters-programme/computer-systems-and-cybersecurity-msc/).
 
@@ -132,7 +132,7 @@ interface for these applications.
 This programme is intended for those with a deep interest for interaction
 between humans and technology. In this programme you will meet people from many
 different academic bakgrounds. You will learn to work with well-established, but
-also innovative technologies, like robots, virtual reality and virtual agents. 
+also innovative technologies, like robots, virtual reality and virtual agents.
 The programme is primarily focused on software design, but there are also courses for developing phyiscal interfaces.
 
 To read more see [the chalmers page about Interaction design and technologies](https://www.chalmers.se/en/education/find-masters-programme/interaction-design-and-technologies-msc/).
@@ -141,12 +141,12 @@ To read more see [the chalmers page about Interaction design and technologies](h
 Software engineering and technology is a master which aims to teach engineers to
 develop dynamic software and hardware solutions, that can grow and change as
 they develop. As the complexity of software increases so must the skill of the
-engineers that develop it. 
+engineers that develop it.
 
 The core of the programme is:
 - Working with the industry and learning to become a team player that's supposed to work in big teams.
 - Giving a strong foundation for advanced technical knowledge and skills.
-- Advanced knowledge of methods, processes and industrial activities and practices. 
+- Advanced knowledge of methods, processes and industrial activities and practices.
 - The combination of technical prowess and industrial knowhow is highly valuable in the software industry.
 
 To read more see [the chalmers page about Software engineering and

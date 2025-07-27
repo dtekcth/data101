@@ -1,6 +1,6 @@
 # Getting started
 
-To begin with, you need to install a couple of applications. These will be useful throughout your education. This section will only briefly describe how to install the software, while in the later chapters we will tell you more about why and how we use them. 
+To begin with, you need to install a couple of applications. These will be useful throughout your education. This section will only briefly describe how to install the software, while in the later chapters we will tell you more about why and how we use them.
 
 ## Editor: VSCode
 
@@ -8,7 +8,7 @@ VSCode is our recommended editor. This is the application you write code with. [
 
 ## Online meetings: Zoom
 
-Sometimes you will have the ability to join lectures online, where the university uses Zoom. It is also possible to set up your own room and talk to your group partners remotely. [Download it here.](https://zoom.us/download#client_4meeting) 
+Sometimes you will have the ability to join lectures online, where the university uses Zoom. It is also possible to set up your own room and talk to your group partners remotely. [Download it here.](https://zoom.us/download#client_4meeting)
 
 {{ begin .windows }}
 

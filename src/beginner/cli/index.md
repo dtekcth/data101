@@ -37,7 +37,7 @@ Important to note is that your WSL install is basically a separate computer
 running inside of windows. It's a so called _Virtual Machine_.  Feel free to ask
 dHack or DNS what this means and we'll gladly talk about it but the reason it
 matters is because programs installed in Windows will not be available in WSL
-and programs installed in WSL will not be available in Windows. 
+and programs installed in WSL will not be available in Windows.
 
 > This is not required, but we also recommend you to install Windows Terminal.
 > It gives a more modern look and feel than the default that comes pre-installed

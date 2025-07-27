@@ -14,7 +14,7 @@ Almost all command-line programs include a special flag that will print help inf
 
 ## Short-hand flags
 
-Some commands have single-letter flags which are easier to type. Most programs for example allow you to use `-h` instead of `--help`. However, the programs we have used so far do not allow this, it never hurts to try. 
+Some commands have single-letter flags which are easier to type. Most programs for example allow you to use `-h` instead of `--help`. However, the programs we have used so far do not allow this, it never hurts to try.
 
 > These short-hand flags can also often be combined without needing another
 > hyphen. An example of this is `ls -acl`. This will apply the flags `--all

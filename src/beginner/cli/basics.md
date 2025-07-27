@@ -57,7 +57,7 @@ You can also move to the previous directory using `cd ..`. The argument we are g
 
 > You can autocomplete commands and arguments by pressing !kbd[Tab]. If there are multiple alternatives, you will get a list of them. You might need to double-tap !kbd[Tab] to see all available alternatives.
 
-If you have a directory with a space in its name, you might wonder how you can refer to it in the terminal as we use spaces for separating arguments. In these cases, we can surround the path in quotation marks like this `cd "My directory"`. This applies to any arguments that contain spaces, not just directory names. When using tab completion you might instead see it correct that to `cd My\ directory`. Here backslash acts as a way to "escape" the following space. 
+If you have a directory with a space in its name, you might wonder how you can refer to it in the terminal as we use spaces for separating arguments. In these cases, we can surround the path in quotation marks like this `cd "My directory"`. This applies to any arguments that contain spaces, not just directory names. When using tab completion you might instead see it correct that to `cd My\ directory`. Here backslash acts as a way to "escape" the following space.
 
 > You can access your command history using the up and down arrow keys.
 

@@ -32,7 +32,7 @@ Here's a recipe for causing your first merge conflict!
 
 Now that you have a merge conflict, let's solve it! You'll find that VSCode
 gives you a little popup in the bottom right corner and also has a list of
-"Merge Changes" in the source control menu. 
+"Merge Changes" in the source control menu.
 <!-- ![VSCode is sad](/Assets/git/popup.png) -->
 ![VSCode is mad!!](/Assets/git/mergeconflict.png)
 Clicking the file will present you with something like this:
@@ -67,7 +67,7 @@ using your editor. Open the file as you normally would, and you'll have the
 scary tags there. Write what you want the merged result to look like and remove
 all the tags. VSCode calls this a _manual resolution_. When the file contains
 what you want it to contain go back to source control and mark that file as
-resolved. You can do this either in the merge editor by clicking the `Complete Merge` button or by staging the file and commiting normally. 
+resolved. You can do this either in the merge editor by clicking the `Complete Merge` button or by staging the file and commiting normally.
 
 The resolved file for the above could look something like this:
 
@@ -88,7 +88,7 @@ main = do
 When all the files are resolved, all you have to do is commit. Congratulations!
 You've just solved your first merge conflict.
 
-### Terminal 
+### Terminal
 
 This guide mainly focused on VSCode but we still recommend reading through it
 for terminal users. The information is important for solving a merge conflict
@@ -111,16 +111,16 @@ this can make a huge difference. If you want to disable it once you can use
 default.
 
 If you choose to use _git rebase_ then solving your merge conflict will look like this:
-- Go into the files in your editor and rewrite them as you want them to look, get rid of the `HEAD` and `main` tags. 
+- Go into the files in your editor and rewrite them as you want them to look, get rid of the `HEAD` and `main` tags.
 - Stage them with `git add` (or `git rm` if you want to remove a file completely)
 - Then run git rebase --continue
 - You might be put in an editor to write a commit message. It will use your system default editor. Read the information about this [under terminal in 4.3](./basics.md#terminal).
 - Push your changes with `git push`
 
 If you choose to use _git merge_ then solving you merge conflict will look like this:
-- Go into the files in your editor and rewrite them as you want them to look, get rid of the `HEAD` and `main` tags. 
+- Go into the files in your editor and rewrite them as you want them to look, get rid of the `HEAD` and `main` tags.
 - Stage them with `git add` (or `git rm` if you want to remove a file completely)
-- Commit as normal 
+- Commit as normal
 - Push your changes with `git push`
 
 > **A note on force pushes**

@@ -41,7 +41,7 @@ To create a new folder, right click and hover over `New`, here select `Folder`.
 Name it something like "data101" and then press `Select Folder`.
 
 
-## Files 
+## Files
 
 Now on the left side of your screen you will see the _Explorer_. Here you can
 see the name of the folder you just entered as well as all the files in the
@@ -57,14 +57,14 @@ you can press !kbd[!ctrl+N] which immediately creates an untitled text file.
 You will then get to name it once you save it.
 
 > Left of the Explorer you can see the so called _Activity Bar_, by right
-> clicking this you can change its contents or position on the screen.  
+> clicking this you can change its contents or position on the screen.
 
 ## The menu bar
 The problem you may have noticed is that now the Welcome page is gone. To do
 something like open a folder, create a file or to save now we have to instead
-use the command palette or the menu bar. 
+use the command palette or the menu bar.
 
-{{ .macos }} On MacOS the menu bar will look like this 
+{{ .macos }} On MacOS the menu bar will look like this
 ![MacOS menu bar](/Assets/editor/menubar-macos.png)
 
 {{ .windows .linux }} On Windows and Linux the menu bar will look something

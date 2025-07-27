@@ -24,7 +24,7 @@ VSCode but you can move around as usual with `cd` and create directories with
 `mkdir`. To intialize your repository, write `git init` and press Enter.
 You'll get a little text blurb saying `Initialized empty Git repository in
 /Path/to/current/directory/.git/`. If you now type in `ls -a` you can see that
-you have a `.git` folder here which is what you want! 
+you have a `.git` folder here which is what you want!
 
 ## Your first commit
 
@@ -39,7 +39,7 @@ you start something new. In a typical lab assignment, it could be a good idea to
 commit each time you've finished a task of that assignment.
 
 In the same folder as you created your repository in, create a new file and add some
-content! 
+content!
 
 <!-- TODO: Good to introduce readmes, but linking them to remotes when we haven't covered them yet might be confusing -->
 > You can also create a so called README in your git repo if you'd like. A
@@ -59,7 +59,7 @@ staged. You'll also be able to see which files are added, modified or untracked
 in the normal explorer without being in the source control menu.
 
 If you want to use the command palette like we recommend, in the command mode,
-search for "git stage". Here you get a few options. 
+search for "git stage". Here you get a few options.
 
 - `Git: Stage changes` stages the changes in the current file. **This should be
   your default choice!**
@@ -81,8 +81,8 @@ options don't matter for now, just choose the one that says `Git: Commit`.
 
 ### Terminal
 <!-- TODO: To avoid having to mention nano or vi, we can introduce `git config --global core.editor code` -->
-To do the same thing using the terminal we have three commands we'll need. 
-First to see the status of your Git repo use `git status`. This will show you which files are staged, which are changed, and which aren't tracked yet. To add something to your _Index_, use `git add <yourfile.xx>`. You can add multiple files at once separated by a space. To commit your staged changes use `git commit {-m "your message here}`. 
+To do the same thing using the terminal we have three commands we'll need.
+First to see the status of your Git repo use `git status`. This will show you which files are staged, which are changed, and which aren't tracked yet. To add something to your _Index_, use `git add <yourfile.xx>`. You can add multiple files at once separated by a space. To commit your staged changes use `git commit {-m "your message here}`.
 
 ![Terminal commit](/Assets/git/teminal.png)
 
@@ -95,7 +95,7 @@ command palette in VSCode. If you're doing this for `git commit`, you need to
 properly close the commit window with !kbd[!ctrl+W] or by closing it with your
 mouse after you've saved the file.
 
-> [Warning] 
+> [Warning]
 > If you don't change this your default editor will likely be nano or vi. If this is `vi` or `vim`, press `i`, type in your commit message and then press `Escape` and write `:wq` on your keyboard, this saves and quits your file and commits it. If this is `nano` write in your commit message and use `!kbd[ctrl+x]` to quit and then press `Y` to save the buffer.
 
 ### Where is your file right now?

@@ -21,7 +21,7 @@ significant risks.
 Most university courses expect you to demonstrate your programming and
 problem-solving skills without relying on AI. These tools are generally not
 allowed during exams and are only sometimes permitted in labs. If you're ever
-unsure whether you’re allowed to use them, always ask your teacher. 
+unsure whether you’re allowed to use them, always ask your teacher.
 
 > Using unapproved tools could lead to serious consequences—including
 > suspension from your studies. It is better to talk to your teacher and try to
@@ -52,11 +52,11 @@ understand what it’s doing or saying. That might sound surprising—but what A
 really does is piece together patterns based on the data it was trained on and
 makes a guess based on statistical probability of what is "most" correct. This
 makes it prone to mistakes, especially in areas like mathematics or even basic
-tasks like counting. 
+tasks like counting.
 
 > As an example, some versions of ChatGPT (like o4 and o4-mini) may give
 > different answers for how many letters are in a word like strawberry—because
-> they’re generating responses based on patterns, not actual reasoning. 
+> they’re generating responses based on patterns, not actual reasoning.
 
 This limitation also applies to programming. AI can often generate
 plausible-looking code, but that doesn’t mean it’s correct—especially when it
@@ -98,7 +98,7 @@ write and explain it. _You_ are the programmer—not the AI.
 It’s easy to produce code that looks polished, especially if you’re new to
 programming. But experienced teachers and examiners can often recognize
 AI-generated code—and it’s usually obvious when a student can’t explain or
-replicate what they've submitted. 
+replicate what they've submitted.
 
 > As an example, in the text above you can see lots of em-dashes (—) being
 > used. These are often used in fiction which AI is often trained on. In
@@ -109,7 +109,7 @@ replicate what they've submitted.
 Although usually helpful, sometimes AI can get things very wrong. Your
 calculator won't correct you if you wrote the wrong number and will instead
 happily output the answer, not knowing that the inputs were bad. AI works the
-same way but works on language instead of math. 
+same way but works on language instead of math.
 
 > As an example for how AI can be used, the above text was originally written
 > by us, but was restructured to be clearer with the help of ChatGPT. It was

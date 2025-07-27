@@ -17,13 +17,13 @@ specified by the user. This is very abstract at the moment, so we will give some
 concrete examples.
 
 > **Example 1: Storing and organizing photos**
-> 
+>
 > If you have a large number of photos, you probably want to organize them in
 > some way. This could be both a physical photo album or a digital one (like
 > [DFoto](https://dfoto.se)). Every photo is a file, which contains the
 > information to actually display the photo. You might also name photos with
 > the date they were taken.
-> 
+>
 > If you were at some event, and took a lot of photos there, you could collect
 > all of those photos into an album and give it a label with the name of the
 > event. This is similar to a folder/directory. If you then go to multiple
@@ -32,7 +32,7 @@ concrete examples.
 > contain files.
 
 > **Example 2: Storing books in a library**
-> 
+>
 > Libraries have a lot of books and need some way to store them where you can
 > still find them efficiently. Books are grouped together into shelves based on
 > the topics they cover and the shelves are given names. Your book on

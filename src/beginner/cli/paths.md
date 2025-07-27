@@ -6,10 +6,10 @@ You have already seen some examples of paths when running `cd test_directory` or
 
 Paths can also be absolute. This means that instead of interpreting the path from your _working directory_ it is interpreted from the _root_ of the filesystem. All paths that start with a `/` are considered absolute. Example `/directory/sub_directory`.
 
-There are also some special path symbols. 
-- `.` refers to the current directory 
-- `..` refers to the previous directory, often called the parent directory. 
-- There is also `~`, which is an absolute path to your home directory. 
+There are also some special path symbols.
+- `.` refers to the current directory.
+- `..` refers to the previous directory, often called the parent directory.
+- There is also `~`, which is an absolute path to your home directory.
 
 All of these symbols can be used together to form paths. Though it is worth noting that most programming languages do not understand `~`.
 

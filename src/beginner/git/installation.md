@@ -1,4 +1,4 @@
-# Git installation 
+# Git installation
 
 Before you can use Git in VSCode or in the terminal it needs to be installed on
 your system. For macOS and Linux this means we have to use the terminal, but

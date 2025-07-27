@@ -12,7 +12,7 @@ your cursor a whole lot. Instead use keyboard shortcuts! In the beginning, you
 may not notice how much faster this is but as you go through the semester it
 will become second nature to you.
 
-{{ begin .macos }} 
+{{ begin .macos }}
 
 > #### !kbd[Ctrl] or !kbd[⌘]?
 >

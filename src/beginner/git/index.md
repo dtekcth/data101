@@ -5,12 +5,12 @@ longest. This is something you will be doing constantly during your time at
 Chalmers. Your programming courses will most likely contain labs or assignments
 to be done together with others, and sometimes your math courses do as well.
 Therefore it is crucial to have a good environment set up to be able to work
-with a group. 
+with a group.
 
 It's very common for new students to gather around a single computer, or to
 write code separately and test which is best before turning it in.
 Others share files over Discord or Snapchat and this can lead to major issues
-when you're working at the same time or if you've missed a message. 
+when you're working at the same time or if you've missed a message.
 
 To facilitate group work we will be recommending two tools. The first is Git—the
 stupid content tracker—and liveshare, a VSCode plugin which we will go through
@@ -38,11 +38,10 @@ for learning.
 - Version control can be a life saver, for both personal and collaborative
   projects. It serves as a backup system in case your hardware breaks, but also
   lets you go back to older versions or test different feature implementations.
-  
 
 In this tutorial, we will guide you through setting up the necessary software
 and accounts for a modern Git experience. We will also introduce you to the
-basic concepts of version control. 
+basic concepts of version control.
 
 To make Git a bit easier to understand we will primarily be using the Git
 integration built in to VSCode. We will also go through how to use Git in the

@@ -42,7 +42,7 @@ It is very common for students to discover their limitations during their studie
 For many, the first year is very overwhelming due to these factors, which might
 lead to failing your courses. Please, do not be dismayed by this, lots of people
 fail courses here and there, and there is absolutely no shame in it. Do not let
-anyone tell you otherwise. 
+anyone tell you otherwise.
 
 Chalmers has a wide safety net to assist you. During the reception, you can always talk to the reception committee, who can direct you to where you can find help. Alternatively, you can always speak with your student guidance counselor.
 

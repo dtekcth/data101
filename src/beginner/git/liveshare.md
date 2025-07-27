@@ -25,7 +25,7 @@ VSCode titled `Live Share`, click it to start a collaboration session. You can
 also start a session from the command palette by searching for "live share",
 but you'll get a few more options then. The most interesting one right now is
 `Start Collbaoration Session (Share)`. This one allows others to see and edit
-text in the same folder as you're currently in. 
+text in the same folder as you're currently in.
 
 > If you instead choose `Start Read-Only Collaboration Session` you can show
 > code off to other people but they can not edit it. This can be useful in

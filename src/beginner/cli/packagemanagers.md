@@ -14,7 +14,7 @@ WSL. This is useful for programming tools like git or installing compilers like
 GHC which you might want to use in WSL. However it might still be nice to be
 able to install programs in a Windows Terminal. This can help you keep programs up to date easier, or to install programs in an easier way.
 
-The two most popular package managers for Windows are _winget_ and _chocolatey_. 
+The two most popular package managers for Windows are _winget_ and _chocolatey_.
 Windows comes preinstalled with winget but it has fewer packages while
 chocolatey requires you to install it but has more packages. The main reason for
 this is that chocolatey has a community repository, which allows users to
@@ -22,9 +22,9 @@ publish packages themselves and upload them. This might sound scary, but is
 quite normal, just be sure that you're installing the right package! If you want
 to see what packages are available in both you can see [winget package
 search](https://winget.run/) and [chocolatey community package
-search](https://community.chocolatey.org/search). 
+search](https://community.chocolatey.org/search).
 
-To install chocolatey use this command in CMD: 
+To install chocolatey use this command in CMD:
 ```CMD
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "[System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 ```
@@ -80,7 +80,7 @@ Homebrew. It can be installed by following the instructions
 [here](https://brew.sh/), this page also gives some further context surrounding
 Homebrew. The one confusing thing about homebrew is ususally surrounding casks
 and formulas. In Homebrew a `Cask` (generally) refers to a graphical program, and a
-`Formula` is a command line tool. 
+`Formula` is a command line tool.
 
 To use Homebrew these are the basic commands you will use:
 
@@ -103,7 +103,7 @@ computer to the most recent version. After upgrading we suggest always running
 with:
 ```bash
 brew update && brew upgrade && brew cleanup
-``` 
+```
 {{ end }}
 
 {{ begin .linux }}

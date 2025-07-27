@@ -1,7 +1,7 @@
 # Artificial intelligence and chat services
 
 We felt the need to put this in a separate sub-chapter because this is a very
-important topic. This chapter is our way of looking out for you! 
+important topic. This chapter is our way of looking out for you!
 
 This will start negatively, but we will have a part of this section dedicated to
 _good_ uses for AI in your studies! The debate around AI is complex and
@@ -13,7 +13,7 @@ In recent years, the usage of AI assistants in the field of computer science has
 truly exploded. Several options are available, all of which can assist you in
 your programming. Asking a chatbot a question such as "Write a program that
 calculates X digits of pi in Python" can provide a useful scaffold for your own
-code. 
+code.
 
 However, AI tools also come with risks. Most courses expect you to be able to
 program, write, and demonstrate your engineering skills without AI tools. They
@@ -23,11 +23,11 @@ are not permitted by the examiner could result in suspension from your studies!
 
 You might have heard about how big companies want to use AI and how they expect
 programmers to be able to use these chat services. But what usually isn't
-included in the headlines is that they mean as a _tool_. 
+included in the headlines is that they mean as a _tool_.
 
 Just like google can be a tool to help you learn things, so can AI chat
 services. But just like google, if you search up code that you didn't write and
-turn it in, that's a form of plagiarism. 
+turn it in, that's a form of plagiarism.
 
 You might question calling it plagiarism, but the way AI, or large language
 models work is they are trained on large sets of data. For programming this
@@ -39,7 +39,7 @@ else originally wrote that code.
 
 Our goal here isn't to scare you, but we do want you to take this seriously.
 This university, like all universities in Sweden takes plagiarism and cheating
-very very seriously, and there can be very dire consequences. 
+very very seriously, and there can be very dire consequences.
 
 In the same vein, AI doesn't actually understand what it's doing or saying. That
 might sound like a surprise, but what AI does is string together things it has
@@ -81,12 +81,12 @@ But _you_ need to understand what it does. _You_ need to be able to write the
 code yourself. _You_ are the programmer, not the AI. It is easy to write code
 that looks good, especially for inexperienced programmers. However, upon further
 inspection by an experienced examiner, it could be obvious that it was written
-by AI. 
+by AI.
 
 It’s easy to produce code that looks good, especially if you’re new to
 programming. But teachers and examiners can often recognize AI generated code
 and it’s usually obvious when a student can’t explain or replicate what they've
-submitted. 
+submitted.
 
 AI is however a very powerful tool. For example, the text above was drafted by
 the authors and then rewritten for coherence and structure by ChatGPT!
