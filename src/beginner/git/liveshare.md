@@ -48,7 +48,7 @@ Once your session is started, the "Live Share" button in the bottom left will
 change to "Shared". Clicking on it will allow you to manage parts of the
 session. This is for example where you can end the session. There is a user
 interface where you have more control for managing Live Share sessions in the
-Live Share tab on the left.
+Live Share tab in the activity bar the left.
 
 One more useful function you'll see here (and in the command palette) is
 sharing a terminal. This will allow all participants of your session to use a
