@@ -12,11 +12,12 @@ To do it you will select **New issue** on [this page](https://github.com/dtekcth
 
 ## Installation
 
-To set up the development environment, you first of all need [mdBook](https://rust-lang.github.io/mdBook/guide/installation.html) installed.
+To set up the development environment, you first of all need
+[mdBook](https://rust-lang.github.io/mdBook/guide/installation.html) installed.
 
-Now `cd` into `preprocessor` and run `cargo build --release` which will build our custom preprocessor.
-
-You should then be able to open the book by running `mdbook serve --open` in the project root, which will open the web page and dynamically update as you edit it.
+You should then be able to open the book by running `mdbook serve --open` in
+the project root, which will open the web page and dynamically update as you
+edit it.
 
 ## Contributing
 
