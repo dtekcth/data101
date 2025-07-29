@@ -1,6 +1,6 @@
 # Courses
 
-All university programs have a program plan that describes a set of courses which are possible to include within a university degree. These courses come in three flavours.
+All university programs have a programme overview that describes a set of courses which are possible to include within a university degree. These courses come in three flavours.
 
 ### Compulsory
 
@@ -8,13 +8,13 @@ These are the courses you have no say over and are deemed essential for your deg
 
 ### Elective
 
-Sometimes you have elective slots in your program plan, which means that you can select any course marked as _elective_ within your program plan.[^elective_caveat] For master students it may be interesting to know that you can read one or two courses (around 15hp) outside of your program plan and still get your masters degree. This can vary between programs so ask your **student counsellor** before deciding.
+Sometimes you have elective slots in your programme, which means that you can select any course marked as _elective_ within your programme.[^elective_caveat] For master students it may be interesting to know that you can read one or two courses (around 15hp) outside of your programme and still get your masters degree. This can vary between programs so ask your **student counsellor** before deciding.
 
-You can find your program plan on [Studieportalen](https://www.student.chalmers.se/sp/program_list) by searching for your programme.
+You can find your programme overview on [Studieportalen](https://www.student.chalmers.se/sp/program_list) by searching for your programme.
 
 ### Compulsory elective
 
-Your program plan sometimes contains a slot where you need at least X number of those courses. These courses are called compulsory electives. Usually, each slot marked as _compulsory elective_ have two to three courses of which you need at least one.
+Your programme sometimes contains a slot where you need at least X number of those courses. These courses are called compulsory electives. Usually, each slot marked as _compulsory elective_ have two to three courses of which you need at least one.
 
 ## Människa, teknik och samhälle (MTS)
 

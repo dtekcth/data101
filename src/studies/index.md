@@ -3,7 +3,7 @@
 This chapter serves the purpose to give you information which might be important
 during your time at Chalmers. This includes your rights as a student and what
 you can do to affect your studies. We will also include general information
-regarding studying at a swedish university.
+regarding studying at a Swedish university.
 
 While you are enrolled in a specific program with certain mandatory courses and so on, there remains much room for shaping your own education. The actual details vary depending on program but this chapter will describe common scenarios and when it is time to make decisions. We try to remain neutral as to which choices you should make. You will however find testimonials and comparisons from both satisfied and unsatisfied students.
 

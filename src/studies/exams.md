@@ -25,9 +25,9 @@ As a student, you have certain rights and obligations which you should be aware 
 
 ## After the exam
 
-The examiner **must** post solutions to the exam by the next working day and the results should be posted on Ladok within 15 working days. If the results are not posted by this time, contact the examiner, and if you can not get an answer from them as to why, contact your student board!
+The examiner **must** post solutions to the exam by the next working day and the results should be posted on Ladok within 15 working days. If the results are not posted by this time, contact the examiner, and if you can not get an answer from them as to why, contact your Student Educational Committee!
 
-If you feel that some of your rights have been violated or that something else has gone wrong, please contact your student board. They will know how to fix any problem related to your exams.
+If you feel that some of your rights have been violated or that something else has gone wrong, please contact your Student Educational Committee. They will know how to fix any problem related to your exams.
 
 - TKDAT: [dns@dtek.se](mailto:dns@dtek.se)
 - TKITE: [snit@chalmers.it](mailto:snit@chalmers.it)

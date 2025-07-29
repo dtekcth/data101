@@ -4,13 +4,13 @@
 The examiner has 15 working days to report the exam to Ladok, but sometimes there can be a delay between the examiner, the student office and Ladok.
 If the exam still isn't showing up after 15 working days, please contact the examiner and politely ask about it. If you have an important deadline such as CSN or exchange studies you can always contact your examiner and ask if you can get prioritized grading. **It is important for your own sake that you contact your examiner well in advance of any upcoming deadline.**
 
-You may also want to contact your Studienämnd in the case that you problem is not resolved.
+You may also want to contact your Student Educational Committee in the case that you problem is not resolved.
 
 **Where can I find important dates?**
 Chalmers provides this [site](https://www.chalmers.se/en/education/your-studies/plan-and-conduct-your-studies/the-academic-year/) which has the current years academic plan.
 
 **I forgot to apply for a course/exam**
-If you forgot to apply for a course, you might be able to fix it if you contact your Studienämnd, but there is no guarantee. You can also contact your Director of Studes (Utbildningssekreterare) or Student Guidance Councelor (Studievägledare) directly.
+If you forgot to apply for a course, you might be able to fix it if you contact your Student Educational Committee, but there is no guarantee. You can also contact your Director of Studies (Utbildningssekreterare) or Student Guidance Councelor (Studievägledare) directly.
 
 If you forgot to apply for an exam, you will have to apply for the next re-exam and take that one. It is **not** possible to apply after the deadline by contacting the staff.
 
@@ -37,9 +37,8 @@ Contact your Student Guidance Councelor as soon as possible. They are experts wh
 
 ## If you have further questions
 
-If something still feels off or you need someone to mediate for you, then you can contact your Studienämnd
+If something still feels off or you need someone to mediate for you, then you can contact your Student Educational Committee.
 
-They can be reached at
-`{{ .Data }} dns@dtek.se` `{{ .IT }} snit@chalmers.it` `{{ .DV }} studienamnd@dvet.se`
-
----
+- TKDAT: [dns@dtek.se](mailto:dns@dtek.se)
+- TKITE: [snit@chalmers.it](mailto:snit@chalmers.it)
+- N1COS: [studienamnd@dvet.se](mailto:studienamnd@dvet.se)
