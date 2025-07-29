@@ -7,7 +7,7 @@ There are a lot of different package managers, and which ones are available to y
 
 {{ begin .windows }}
 
-## Windows
+## {{ .linux .macos}} Windows
 
 On Windows when you're using WSL you can use apt to install programs inside of
 WSL. This is useful for programming tools like git or installing compilers like
@@ -72,7 +72,7 @@ To verify your install use `choco -v`
 
 {{ begin .macos }}
 
-## MacOS
+## {{ .windows .linux }} MacOS
 
 On MacOS we recommend using Homebrew. There are a few other macOS package
 managers but none of them[^Nix] are as up to date and have as many packages as
@@ -108,7 +108,7 @@ brew update && brew upgrade && brew cleanup
 
 {{ begin .linux }}
 
-## Linux
+## {{ .windows .macos }} Linux
 
 If you are on Linux, you already have a package manager installed! There are however a lot them to choose from which all work in slightly different ways, and which one you have depends on the distro you use. For this reason we will only cover how to use some of the most common ones from the larger distros. If yours is not listed, try searching for `<distro> package manager` and you should get some documentation for it.
 
