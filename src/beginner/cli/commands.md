@@ -29,7 +29,7 @@ touch [OPTION]... FILE...
 
 Here the square brackets (`[]`) indicate optional arguments. Sometimes they might list exactly which flags or arguments you can provide, but in this case it just says options. You might also see required arguments in all caps without any angle brackets (`<>`), such as in this case.
 
-The ellipsis (`...`) also bear significance. They indicate that you can specify multiple of preceding item. So for this command we can provide multiple options, and multiple files.
+The ellipsis (`...`) also bear significance. They indicate that you can specify multiple of the preceding item. So for this command we can provide multiple options and multiple files.
 
 ## System files
 
@@ -39,6 +39,6 @@ Sometimes when working in a terminal, you need to touch system files or run comm
 sudo cp /etc/fstab /etc/fstab.copy
 ```
 
-After pressing !kbd[Enter], depending on how your system is configured, you will be prompted for your users password. While typing it in, you will notice no characters are appearing on screen. Don't worry, your typing is being registered, this is just another security measure to make sure no one is peaking over your should and sees the password. Once you have typed in your password, press !kbd[Enter] and if your password is correct, the command will be run with elevated privileges.
+After pressing !kbd[Enter], depending on how your system is configured, you will be prompted for your users password. While typing it in, you will notice no characters are appearing on screen. Don't worry, your typing is being registered, this is just another security measure to make sure no one is peaking over your shoulder and sees the password. Once you have typed in your password, press !kbd[Enter] and if your password is correct, the command will be run with elevated privileges.
 
 You can configure which users can use `sudo` and which commands they are allowed to run with it in order to limit the access they get to your system. Commonly it is setup so you can run any command with `sudo`, provided you can authenticate yourself with your password.

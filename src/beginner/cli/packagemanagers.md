@@ -12,7 +12,8 @@ There are a lot of different package managers, and which ones are available to y
 On Windows when you're using WSL you can use apt to install programs inside of
 WSL. This is useful for programming tools like git or installing compilers like
 GHC which you might want to use in WSL. However it might still be nice to be
-able to install programs in a Windows Terminal. This can help you keep programs up to date easier, or to install programs in an easier way.
+able to install programs outside of WSL. This can help you keep programs up to
+date easier, or allow you to install programs in an easier way.
 
 The two most popular package managers for Windows are _winget_ and _chocolatey_.
 Windows comes preinstalled with winget but it has fewer packages while
@@ -74,13 +75,13 @@ To verify your install use `choco -v`
 
 ## {{ .windows .linux }} MacOS
 
-On MacOS we recommend using Homebrew. There are a few other macOS package
+On MacOS we recommend using Homebrew. There are a few other MacOS package
 managers but none of them[^Nix] are as up to date and have as many packages as
 Homebrew. It can be installed by following the instructions
-[here](https://brew.sh/), this page also gives some further context surrounding
-Homebrew. The one confusing thing about homebrew is ususally surrounding casks
-and formulas. In Homebrew a `Cask` (generally) refers to a graphical program, and a
-`Formula` is a command line tool.
+[here](https://brew.sh/). There you can also find more information about it.
+Homebrew uses the terms _cask_ and _formula_, which can be a bit confusing. In
+Homebrew, a _cask_ (generally) refers to a graphical program, and a _formula_
+is a command line tool.
 
 To use Homebrew these are the basic commands you will use:
 
@@ -96,7 +97,7 @@ To use Homebrew these are the basic commands you will use:
 
 ### Updating
 The differentiation between _update_ and _upgrade_ here is important. Update means
-to update Homebrew itself, which also includes Updating the version of packages
+to update Homebrew itself, which also includes updating the version of packages
 that *can* be installed. Upgrade is what actually updates the packages on your
 computer to the most recent version. After upgrading we suggest always running
 `brew cleanup` as well to get rid of old files. They can all be run together
@@ -110,7 +111,12 @@ brew update && brew upgrade && brew cleanup
 
 ## {{ .windows .macos }} Linux
 
-If you are on Linux, you already have a package manager installed! There are however a lot them to choose from which all work in slightly different ways, and which one you have depends on the distro you use. For this reason we will only cover how to use some of the most common ones from the larger distros. If yours is not listed, try searching for `<distro> package manager` and you should get some documentation for it.
+If you are on Linux, you already have a package manager installed! There are
+however a lot them to choose from which all work in slightly different ways,
+and which one you have depends on the distro you use. For this reason we will
+only cover how to use some of the more common ones from the larger distros. If
+yours is not listed, try searching for `<distro> package manager` and you
+should find some documentation for it.
 
 ### Apt (Ubuntu, Mint, Debian)
 
@@ -154,5 +160,5 @@ Pacman is the base package manager that comes with Arch Linux and any distros th
 {{ end }}
 
 [^Nix]: {{ .macos }} There is a package manager called nix which can be used on
-    macOS (and Linux) which is just as up to date and has more packages than
-    Homebrew, but it is more complex and should not be used by beginners.
+    MacOS (and Linux) which is just as up to date and has more packages than
+    Homebrew. It is however more complex and should not be used by beginners.
