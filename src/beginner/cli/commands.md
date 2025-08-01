@@ -2,7 +2,7 @@
 
 Now that you know the basics of how paths work and how to interact with a terminal, we will present some common commands in more rapid succession. We will also list the commands we have already covered so you can use this as a quick reference.
 
-If you want to know more about a command you can either use `command --help` to print a quick reference, or use `man <command>` to get more thorough documentation. The latter option can be a bit unintuitive to use at first, but you can use the arrow keys to move up and down, and !kbd[Q] to exit out of the viewer.
+If you want to know more about a command you can either use `command --help` to print a quick reference, or use `man <command>` to get more thorough documentation. The latter option can be a bit unintuitive to use at first, but you can use the arrow keys to move up and down, and !kbd[q] to exit out of the viewer.
 
 | Command                                 | Description                                                              |
 |-----------------------------------------|--------------------------------------------------------------------------|

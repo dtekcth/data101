@@ -18,9 +18,9 @@ shortcuts as you'd like!
 ### Compose keys
 
 Some shortcuts require multiple keypresses. You can enter compose mode by
-pressing !kbd[!ctrl+K] and then your desired shortcut. For example, opening the
-menu to edit shortcuts can be opened by first pressing !kbd[!ctrl+K] followed
-by !kbd[!ctrl+S].
+pressing !kbd[!ctrl+k] and then your desired shortcut. For example, opening the
+menu to edit shortcuts can be opened by first pressing !kbd[!ctrl+k] followed
+by !kbd[!ctrl+s].
 
 ### Next error
 
@@ -33,7 +33,7 @@ It is easy to write messy code in the beginning. This makes it difficult for
 TAs and your friends to help you. It is recommended to enable the `Editor:
 format on save` option in the preferences so that your code will automatically
 be formatted when you save. It is also possible to manually format using
-!kbd[!ctrl+Shift+I].
+!kbd[!ctrl+Shift+i].
 
 > Formatting does not work when you have syntax errors so if the command
 > doesn't do anything you might have to fix your code first!

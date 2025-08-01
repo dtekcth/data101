@@ -33,7 +33,7 @@ don't worry if you don't understand what all the shortcuts do yet.
 previous sub-chapter? -->
 
 [Task]
-Try writing some text on a new line. What happens if you press !kbd[!ctrl+X]
+Try writing some text on a new line. What happens if you press !kbd[!ctrl+x]
 without selecting any text?
 
 [Solution]

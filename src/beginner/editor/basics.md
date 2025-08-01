@@ -59,7 +59,7 @@ called the command palette and we will return to it in a minute). As it says,
 you can now write in a file name. As an example write in "testing.txt" and
 press !kbd[Enter]! You will get a little pop up from your operating system asking if
 you want to create a file in this directory. Press `Create File`. Alternatively
-you can press !kbd[!ctrl+N] which immediately creates an untitled text file.
+you can press !kbd[!ctrl+n] which immediately creates an untitled text file.
 You will then get to name it once you save it.
 
 > Left of the Explorer you can see the so called _Activity Bar_, by right
@@ -78,7 +78,7 @@ like this
 ![Windows menu bar](/Assets/editor/menubar-lindows.png)
 
 Here press `File` and you'll get a bunch of options. To save, click on `Save`
-or alternatively as suggested in the dropdown, !kbd[!ctrl+S]. Using this menu
+or alternatively as suggested in the dropdown, !kbd[!ctrl+s]. Using this menu
 bar you can do most of the things you will need in VSCode. This includes
 everything we've already gone over how to do using the welcome screen. From
 here you can open and create new folders, open files and much more that we'll

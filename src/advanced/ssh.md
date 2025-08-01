@@ -63,7 +63,7 @@ you. Otherwise, you will be prompted for your users password.
 Once connected, your terminal and all commands you run will execute on the
 remote computer. Instead of your own home folder, you will see the home folder
 on the remote computer. To disconnect, you can either run `exit` or press
-!kbd[Ctrl+D].
+!kbd[Ctrl+d].
 
 > If you want to try using SSH, Chalmers provides two SSH servers at
 > `remote11.chalmers.se` and `remote12.chalmers.se`. Here you use your CID as

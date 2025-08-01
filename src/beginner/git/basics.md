@@ -18,7 +18,7 @@ simply `git init` should choose it as the first option.
 ![The source control pane](/Assets/git/source-control.png)
 
 To do the same in a terminal we first have to open one in VSCode.  To open one
-using the command palette, press !kbd[!ctrl+shift+P] and type in "Create new
+using the command palette, press !kbd[!ctrl+shift+p] and type in "Create new
 terminal". The terminal will by default open in the folder you have open in
 VSCode but you can move around as usual with `cd` and create directories with
 `mkdir`. To intialize your repository, write `git init` and press Enter.
@@ -92,7 +92,7 @@ can change it with `git config --global core.editor "code --wait"`. For Windows
 you'll need to have selected `Add to path` when installing VSCode and for macOS
 you'll need to run `Shell Command: Install 'Code' command in path` in the
 command palette in VSCode. If you're doing this for `git commit`, you need to
-properly close the commit window with !kbd[!ctrl+W] or by closing it with your
+properly close the commit window with !kbd[!ctrl+w] or by closing it with your
 mouse after you've saved the file.
 
 > [Warning]

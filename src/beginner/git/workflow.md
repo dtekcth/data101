@@ -6,7 +6,7 @@ Now that we've gotten this far you know enough to start working on regular lab
 assignments! Here's a basic workflow that works well as long as you're just
 2-3 people.
 
-1. One of you, create a remote repository, either through Github.com or in GitKraken using !kbd[!ctrl+I].
+1. One of you, create a remote repository, either through Github.com or in GitKraken using !kbd[!ctrl+i].
 2. Add the starter files from the assignment, as well as a `.gitignore`. Github
    has wonderful templates for pretty much every language out there. Use one of
    them or start with an empty repository!

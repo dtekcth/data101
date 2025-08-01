@@ -10,7 +10,7 @@ You should see something like this:
 
 {{ .linux }}
 On Linux, how you open a terminal depends on your distribution. Usually one of
-!kbd[Ctrl+Alt+T], !kbd[!win+T] or !kbd[!win+Enter] opens one. Otherwise, search
+!kbd[Ctrl+Alt+t], !kbd[!win+t] or !kbd[!win+Enter] opens one. Otherwise, search
 for "how to open terminal `<insert your distro here>`". You should see something
 like this:
 
@@ -18,7 +18,7 @@ like this:
 ![Terminal](/Assets/cli/windows_terminal.png)
 
 You can also open a terminal in VSCode if you prefer working there. Open the
-command palette (!kbd[!ctrl+Shift+P]) and type "terminal: create new terminal"
+command palette (!kbd[!ctrl+Shift+p]) and type "terminal: create new terminal"
 and press !kbd[Enter]. This should open a new terminal at the bottom of your
 screen. You can also open one by clicking on `Terminal` in the menu bar at the
 top of your screen, and then pressing `New Terminal`.
@@ -107,15 +107,15 @@ backslash acts as a way to "escape" the following space.
 It is common to alternate between `cd` and `ls` when navigating in the
 terminal, but this can quickly clutter up the screen. You can clear it by
 either running the command `cls` (**cl**ear **s**creen), or by pressing
-!kbd[Ctrl+L].
+!kbd[Ctrl+l].
 
 ## Special shortcuts
 
 There are a couple of shortcuts that might be helpful.
 
-- !kbd[Ctrl+C] terminates the current program (does not force a program to exit
+- !kbd[Ctrl+c] terminates the current program (does not force a program to exit
   if it is busy).
-- !kbd[Ctrl+Z] sends the program to the background, can be sent back to the
+- !kbd[Ctrl+z] sends the program to the background, can be sent back to the
   foreground by running `fg`.
-- !kbd[Ctrl+D] sends an _End of Line_ (_EOL_) to the terminal. This usually
+- !kbd[Ctrl+d] sends an _End of Line_ (_EOL_) to the terminal. This usually
   exits the current program if it is interactive.

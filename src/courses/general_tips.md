@@ -39,7 +39,7 @@ configuring programs, reddit is a very good source of information.
 There are countless sites offering programming advice. Avoid sites that look
 like news articles or have short sentences. These are usually either
 computer-generated or written to rate high up on search results. If possible try
-and find the official documentation. Remember that you can use !kbd[!ctrl+F] to
+and find the official documentation. Remember that you can use !kbd[!ctrl+f] to
 find content on the page. This is more a problem than ever with AI generated
 slop articles showing up as a first result very often. These aren't always
 worthless but can often contain incorrect or misleading information.

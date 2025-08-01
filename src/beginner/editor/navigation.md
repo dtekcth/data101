@@ -17,8 +17,8 @@ hold !kbd[Ctrl] (or !kbd[Alt] on MacOS) while pressing !kbd[Left] or
 !kbd[Right].
 
 {{ .macos }} On MacOS there are also certain standard navigation options for
-moving the caret that work in every program. You can use !kbd[Ctrl+A] to move
-to the start of a line and !kbd[Ctrl+E] to move to the end of a line.
+moving the caret that work in every program. You can use !kbd[Ctrl+a] to move
+to the start of a line and !kbd[Ctrl+e] to move to the end of a line.
 
 > Holding !kbd[Shift] while doing any movement also selects the text!
 
@@ -27,7 +27,7 @@ to the start of a line and !kbd[Ctrl+E] to move to the end of a line.
 VSCode also includes a powerful tool called the _Command palette_. This may be
 the most important method of navigation. It can be used to efficiently navigate
 your project by first opening the palette and then writing a command. You can
-open it with !kbd[!ctrl+P].
+open it with !kbd[!ctrl+p].
 
 ![The command palette](/Assets/editor/palette.png)
 
@@ -39,7 +39,7 @@ This is a fast method of moving between files in your project.
 The palette also has another function which is to run various tasks, such as
 opening preferences, building your project or opening a new terminal. This mode
 is accessed by prefixing the search with `>` or entered directly by pressing
-!kbd[!ctrl+Shift+P]. This is **incredibly** powerful and anything that you can
+!kbd[!ctrl+Shift+p]. This is **incredibly** powerful and anything that you can
 do by using your mouse can be done here. Try opening a file using the command
 palette! This mode can be used for almost anything you can think of. When you're
 in this _Command_ mode try searching for something you want to do. Be it "Create
@@ -52,20 +52,20 @@ have _semantic_ meaning. They change which computer instructions the code
 represents. Naturally because of this we have ways of working with lines.
 
 - You can move lines up and down by using !kbd[Alt+Up] and !kbd[Alt+Down].
-- You can cut entire lines by using !kbd[!ctrl+X].
+- You can cut entire lines by using !kbd[!ctrl+x].
 
-You can also navigate to a line by opening the command palette (!kbd[!ctrl+P])
+You can also navigate to a line by opening the command palette (!kbd[!ctrl+p])
 and prefixing the line number with a `:`. For example `:52` will move you to
-line 52. An even faster way of doing this is to press !kbd[!ctrl+G] which
+line 52. An even faster way of doing this is to press !kbd[!ctrl+g] which
 automatically prefixes your search with a `:`.
 
 ## Find & Replace
 
 Sometimes you want to find a certain string in a file. For example, say that
 you have a function named "startProgram" that you want to find. By pressing
-!kbd[!ctrl+F] you will open the find menu where you can search for any text in
+!kbd[!ctrl+f] you will open the find menu where you can search for any text in
 the file. If you instead want to search your whole project then that would be
-!kbd[!ctrl+Shift+F].
+!kbd[!ctrl+Shift+f].
 
 > This command also works in your browser and can be used to find text on websites.
 
@@ -73,7 +73,7 @@ This type of functionality can also be used to replace text. Maybe that
 function name you invented at the start just isn't cutting it any longer so you
 decide to replace it. Rewriting this by hand is tedious and error-prone (what
 if you miss one place?). Luckily VSCode has us covered. You can use
-!kbd[!ctrl+H] (!kbd[!ctrl+Alt+F] on macOS) and !kbd[!ctrl+Shift+H] to replace
+!kbd[!ctrl+h] (!kbd[!ctrl+Alt+f] on macOS) and !kbd[!ctrl+Shift+h] to replace
 occurences in the file and project, respectively.
 
 > It is also possible to perform more complex searches and replacements. See
@@ -108,7 +108,7 @@ compared to simply scrolling.
 
 If you get an error that says "Error, undefined variable on line 32 in file
 'main.py'", then you may be tempted to scroll through `main.py` until you find
-the line. It would be much faster to use !kbd[!ctrl+G] and enter `32` to
+the line. It would be much faster to use !kbd[!ctrl+g] and enter `32` to
 navigate to the correct line immediately.
 
 You may have a large file (files with more than a thousand lines are not
@@ -119,6 +119,6 @@ Searching for `@tolowercase` will get you there without the need to manually
 scroll and search.
 
 The most generic of the methods described above is the _Find word_
-functionality (!kbd[!ctrl+F]). If your _Teaching Assistant_ asks you to bring
+functionality (!kbd[!ctrl+f]). If your _Teaching Assistant_ asks you to bring
 up anything on the screen, then this command will always get you something
 reasonable.
