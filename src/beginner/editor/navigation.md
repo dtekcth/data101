@@ -3,9 +3,9 @@
 Before writing code it is necessary to understand how to navigate the editor.
 Remember that this is all about muscle memory. You will have to train and it
 will feel uncomfortable, especially if you aren't used to using your keyboard
-extensively. But learning it now will make you fast as lightning by the time
-you graduate. You will probably neither feel motivated nor have the time to
-learn this when you are out working.
+extensively. But learning it now will make you fast as lightning by the time you
+graduate. You will probably neither feel motivated nor have the time to learn
+this when you are out working.
 
 ## The caret
 
@@ -17,8 +17,8 @@ hold !kbd[Ctrl] (or !kbd[Alt] on MacOS) while pressing !kbd[Left] or
 !kbd[Right].
 
 {{ .macos }} On MacOS there are also certain standard navigation options for
-moving the caret that work in every program. You can use !kbd[Ctrl+a] to move
-to the start of a line and !kbd[Ctrl+e] to move to the end of a line.
+moving the caret that work in every program. You can use !kbd[Ctrl+a] to move to
+the start of a line and !kbd[Ctrl+e] to move to the end of a line.
 
 > Holding !kbd[Shift] while doing any movement also selects the text!
 
@@ -40,15 +40,14 @@ The palette also has another function which is to run various tasks, such as
 opening preferences, building your project or opening a new terminal. This mode
 is accessed by prefixing the search with `>` or entered directly by pressing
 !kbd[!ctrl+Shift+p]. This is **incredibly** powerful and anything that you can
-do by using your mouse can be done here. Try opening a file using the command
-palette! This mode can be used for almost anything you can think of. When you're
-in this _Command_ mode try searching for something you want to do. Be it "Create
-new file" or "Add line Comment", the command palette can probably do it!
+do by using your mouse can be done here. When you're in this _Command_ mode try
+searching for something you want to do. Be it "Create new file" or "Add line
+Comment", the command palette can probably do it!
 
 ## Lines
 
 When writing text you seldom worry about adding line breaks, but in code lines
-have _semantic_ meaning. They change which computer instructions the code
+have meaning. They change which computer instructions the code
 represents. Naturally because of this we have ways of working with lines.
 
 - You can move lines up and down by using !kbd[Alt+Up] and !kbd[Alt+Down].
@@ -61,23 +60,25 @@ automatically prefixes your search with a `:`.
 
 ## Find & Replace
 
-Sometimes you want to find a certain string in a file. For example, say that
-you have a function named "startProgram" that you want to find. By pressing
+Sometimes you want to find a certain string in a file. For example, say that you
+have a function named "startProgram" that you want to find. By pressing
 !kbd[!ctrl+f] you will open the find menu where you can search for any text in
 the file. If you instead want to search your whole project then that would be
 !kbd[!ctrl+Shift+f].
 
-> This command also works in your browser and can be used to find text on websites.
+> This command also works in your browser and can be used to find text on
+> websites.
 
-This type of functionality can also be used to replace text. Maybe that
-function name you invented at the start just isn't cutting it any longer so you
-decide to replace it. Rewriting this by hand is tedious and error-prone (what
-if you miss one place?). Luckily VSCode has us covered. You can use
-!kbd[!ctrl+h] (!kbd[!ctrl+Alt+f] on macOS) and !kbd[!ctrl+Shift+h] to replace
-occurences in the file and project, respectively.
+This type of functionality can also be used to replace text. Maybe that function
+name you invented at the start just isn't cutting it any longer so you decide to
+replace it. Rewriting this by hand is tedious and error-prone (what if you miss
+one place?). Luckily VSCode has us covered. You can use !kbd[!ctrl+h]
+(!kbd[!ctrl+Alt+f] on macOS) and !kbd[!ctrl+Shift+h] to replace occurences in
+the file and project, respectively.
 
 > It is also possible to perform more complex searches and replacements. See
-> [the reference](https://docs.microsoft.com/en-us/visualstudio/ide/finding-and-replacing-text?view=vs-2022)
+> [the
+> reference](https://docs.microsoft.com/en-us/visualstudio/ide/finding-and-replacing-text?view=vs-2022)
 > for more information.
 
 There is actually one final tool which is even more powerful than a normal
@@ -90,8 +91,8 @@ this feature, prefix your command with `@`.
 ## Final notes
 
 Searching text visually has several drawbacks. It is time-consuming, an
-inexperienced searcher may have to go through the whole file to find the text
-in question. It also breaks your flow. You can only keep a certain amount of
+inexperienced searcher may have to go through the whole file to find the text in
+question. It also breaks your flow. You can only keep a certain amount of
 information in your head at once. For a beginner this may just amount to a few
 lines of code, while for someone experienced it may be several files at once.
 But in the end it is a finite amount and there is no need to let go of it when
@@ -118,7 +119,6 @@ also use the powerful symbol mode of the command palette (prefix with `@`).
 Searching for `@tolowercase` will get you there without the need to manually
 scroll and search.
 
-The most generic of the methods described above is the _Find word_
-functionality (!kbd[!ctrl+f]). If your _Teaching Assistant_ asks you to bring
-up anything on the screen, then this command will always get you something
-reasonable.
+The most generic of the methods described above is the _Find word_ functionality
+(!kbd[!ctrl+f]). If your _Teaching Assistant_ asks you to bring up anything on
+the screen, then this command will always get you something reasonable.
