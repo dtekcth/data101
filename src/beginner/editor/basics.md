@@ -4,11 +4,13 @@ The first time you start up VSCode you will be presented with a short
 introduction, which can help you set up Copilot, choose a default theme, and
 that can give you resources like video tutorials for getting started.
 
+![Setup VSCode](/Assets/editor/intro.png)
+
 However to not get stuck with customizing and watching videos we will give a
 quick overview of the very basic functionality of your new editor. In the top
-left corner you will see an arrow titled "Welcome", this will take you back to
-the _Welcome_ page which greets you every time you start VSCode from here on
-out.
+left corner you will see an small arrow with a "Welcome" next to it, this will
+take you back to the _Welcome_ page which greets you every time you start VSCode
+from here on out.
 
 ## Welcome
 
@@ -16,22 +18,26 @@ Now you'll be presented with a screen that gives you a few options
 
 ![The welcome page](/Assets/editor/welcome.png)
 
-The one we're going to start with is `Open...` or `Open Folder...`.
-Alternatively using your keyboard press !kbd[!ctrl+O](note that it is the
-letter O, not zero). This will bring up your operating systems graphical file
-explorer, here you can choose to open an existing folder, or to create a new
-folder.
-
+> [Warning]
 > This warning goes out especially to Windows users, but does apply to
 > **everyone**. Do not use spaces in your file or folder names. At best it will
-> be an annoyance and at worst it will break things!
+> be an annoyance and at worst it will break things! 
+> On top of this avoid using non-ASCII characters in paths if
+> you're on Windows. This might not be obvious what it means now but what this
+> mainly means is do not use non-latin characters, notably `å`, `ä`, `ö` (or
+> emojis!!).
+
+The one we're going to start with is `Open...` or `Open Folder...`.
+Alternatively using your keyboard press !kbd[!ctrl+o]. This will bring up your
+operating systems graphical file explorer, here you can choose to open an
+existing folder, or to create a new folder.
 
 {{ .macos }} On MacOS you will most likely be placed in your users home folder.
-My suggestion is to create a new folder here, named something like "data101"
+Our suggestion is to create a new folder here, named something like "data101"
 and then pressing `Add`.
 
 {{ .linux }} On Linux you will most likely be placed in your users home folder.
-My suggestion is to create a new folder here. How you do this depends on your
+Our suggestion is to create a new folder here. How you do this depends on your
 distribution and primarily what file manager you have. The standard one in
 _Gnome_ has the create folder button under the blue `Select` button. Name it
 something like "data101" and then press said `Select` button.
