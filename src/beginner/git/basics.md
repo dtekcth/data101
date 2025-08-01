@@ -41,12 +41,6 @@ commit each time you've finished a task of that assignment.
 In the same folder as you created your repository in, create a new file and add some
 content!
 
-<!-- TODO: Good to introduce readmes, but linking them to remotes when we haven't covered them yet might be confusing -->
-> You can also create a so called README in your git repo if you'd like. A
-> README.md file is a text file which can be displayed on a remote right under
-> your files. This makes it valuable for documentation or information about your
-> project.
-
 ### VSCode
 In your source control menu you will have a list of changed files. If you have
 multiple changed files you can click on them in the list to see that file. To
@@ -96,7 +90,7 @@ properly close the commit window with !kbd[!ctrl+w] or by closing it with your
 mouse after you've saved the file.
 
 > [Warning]
-> If you don't change this your default editor will likely be nano or vi. If this is `vi` or `vim`, press `i`, type in your commit message and then press `Escape` and write `:wq` on your keyboard, this saves and quits your file and commits it. If this is `nano` write in your commit message and use `!kbd[ctrl+x]` to quit and then press `Y` to save the buffer.
+> If you don't change this your default editor will likely be `nano` or `vi`. If this is `vi` or `vim`, press `i`, type in your commit message and then press `Escape` and write `:wq` on your keyboard, this saves and quits your file and commits it. If this is `nano` write in your commit message and use `!kbd[ctrl+x]` to quit and then press `Y` to save the buffer.
 
 ### Where is your file right now?
 

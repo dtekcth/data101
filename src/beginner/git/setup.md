@@ -28,13 +28,13 @@ You can now move on.
 First of all open up your terminal. From here, run `ssh-keygen`. When you've
 done this you'll be asked to write in the path to where you want to save your
 new key. Do ***not*** write anything here. The default location is where
-programs will look for the SSH key by default, so just press Enter.
+programs will look for the SSH key by default, so just press !kbd[Enter].
 
 Now you'll be asked to write in a passphrase. Again, do ***not*** write
 anything here (unless you really know what you're doing). Certain programs like
 VSCode do not play nice with SSH-keys with a passphrase and can straight up
-crash with no warnings. Just press Enter, and when prompted to write the same
-passphrase again, just press Enter again.
+crash with no warnings. Just press !kbd[Enter], and when prompted to write the same
+passphrase again, just press !kbd[Enter] again.
 
 <!-- TODO: Maybe skip the exact name of the key as the default might change in the future? This does make it slightly more difficult to point readers in the right direction though. -->
 You'll now be presented with your fingerprint and randomart image. Neither of

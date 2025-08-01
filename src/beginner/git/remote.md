@@ -77,8 +77,13 @@ Try adding a commit to your example repository and push this commit to your
 remote. If you then go to your remote repository, you should see your new
 commit there!
 
+> You can also create a so called README in your git repo if you'd like. A
+> README.md file is a text file which can be displayed on a remote right under
+> your files. This makes it valuable for documentation or information about your
+> project.
+
 ## Cloning
-<!-- TODO: Maybe introduce the term repo as a shorthand for repository -->
+
 Now a big reason for having a remote repository is to be able to share your code
 with a collaborator, or lab partner. Our recommended way is for all
 collaborators to _clone_ the remote repo (common shorthand for repository). When
@@ -99,3 +104,4 @@ In the same way as above, go to your remote and find the SSH link. Then in your 
 git clone git@github.com:<YourUser>/<YourRepo>.git
 ```
 This will create a folder where you currently are, wherein the Git repository exists.
+
