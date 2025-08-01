@@ -12,7 +12,7 @@ Long answer: When writing this guide we compared different editors to determine 
 - An intuitive and user friendly interface.
 - Not specific to a certain programming language or environment (e.g. PyCharm which only works for Python)
 - Extensive plugin support for different languages and for use in certain courses at Chalmers.
-- Very configurable to your needs with a simple to understand GUI. (**G**raphical **U**ser **I**nterface)
+- Very configurable to your needs with a simple to understand **GUI**. (**G**raphical **U**ser **I**nterface)
 
 ## Setup
 
