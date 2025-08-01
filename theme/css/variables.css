@@ -13,7 +13,7 @@
 .tentaportalen {
     --primary: hsl(160deg, 22%, 46%);
     --accent: hsl(357, 46%, 52%);
-    --warning: #f77f00;
+    --warning: hsl(33deg, 98%, 65%);
     --danger: hsl(357 46% 52%);
 
     --font: "Nunito";
@@ -70,7 +70,7 @@
 
 .light {
     --font: "Open Sans";
-    --warning: hsl(32deg, 98%, 61%);
+    --warning: hsl(33deg, 98%, 65%);
     --danger: hsl(357 46% 52%);
 
     --bg: hsl(0, 0%, 100%);
@@ -115,6 +115,7 @@
 .navy {
     --font: "Open Sans";
     --warning: hsl(32deg, 98%, 61%);
+    --warning: hsl(33deg, 85%, 40%);
     --danger: hsl(357 46% 52%);
 
     --bg: hsl(226, 23%, 11%);

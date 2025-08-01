@@ -261,7 +261,6 @@ blockquote.task {
 
 .warning {
     background-color: var(--warning);
-    color: white;
 }
 
 .center {
