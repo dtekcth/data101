@@ -151,7 +151,7 @@ the comment regarding the quotes it also rewrites quotes, which could lead to
 incorrect citations. 
 
 <details>
-<summary> The above text, reformated by ChatGPT. </summary>
+<summary> The above text, reformated by ChatGPT. Read if you're interested :) </summary>
 
 # Artificial Intelligence and Chat Services
 
