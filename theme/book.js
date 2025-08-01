@@ -334,7 +334,7 @@ const showAll = (elList) => {
 
       // Update OS specific shortcut keys.
       const ctrlNodes = document.querySelectorAll("[data-context-ctrl]");
-      const ctrlKey = os === "macos" ? "⌘" : "Ctrl";
+      const ctrlKey = os === "macos" ? "⌘" : "ctrl";
       ctrlNodes.forEach((t) => {
         t.innerText = ctrlKey;
       });
