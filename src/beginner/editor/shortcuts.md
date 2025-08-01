@@ -16,7 +16,7 @@ will become second nature to you.
 
 > #### !kbd[Ctrl] or !kbd[⌘]?
 >
-> On Macs the !kbd[!win] key is replaced by !kbd[⌘] and is usually used instead
+> On Macs the !kbd[!win] key is replaced by !kbd[!cmd] and is usually used instead
 > of the !kbd[Ctrl] key. This guide tries to match the shortcuts to the OS you
 > have selected in the top bar but may not always be 100% accurate.
 

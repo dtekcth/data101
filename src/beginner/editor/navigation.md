@@ -50,7 +50,7 @@ When writing text you seldom worry about adding line breaks, but in code lines
 have meaning. They change which computer instructions the code
 represents. Naturally because of this we have ways of working with lines.
 
-- You can move lines up and down by using !kbd[Alt+Up] and !kbd[Alt+Down].
+- You can move lines up and down by using !kbd[!alt+Up] and !kbd[!alt+Down].
 - You can cut entire lines by using !kbd[!ctrl+x].
 
 You can also navigate to a line by opening the command palette (!kbd[!ctrl+p])
