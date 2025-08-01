@@ -62,8 +62,11 @@ you want to create a file in this directory. Press `Create File`. Alternatively
 you can press !kbd[!ctrl+n] which immediately creates an untitled text file.
 You will then get to name it once you save it.
 
-> Left of the Explorer you can see the so called _Activity Bar_, by right
-> clicking this you can change its contents or position on the screen.
+> Left of the Explorer you can see the so called _Activity Bar_ marked in red
+> below. By right clicking this you can change its contents or position on the
+> screen. 
+
+![Activity bar](/Assets/editor/activity-bar.png)
 
 ## The menu bar
 The problem you may have noticed is that now the Welcome page is gone. To do
