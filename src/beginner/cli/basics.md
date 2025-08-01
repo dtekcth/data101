@@ -91,9 +91,9 @@ You can also move to the previous directory using `cd ..`. The argument we are
 giving to `cd` is more generally known as a _path_, which we will cover in more
 depth in the next subchapter.
 
-> You can autocomplete commands and arguments by pressing !kbd[Tab]. If there
-> are multiple alternatives, you will get a list of them. You might need to
-> double-tap !kbd[Tab] to see all available alternatives.
+> In many terminals you can autocomplete commands and arguments by pressing
+> !kbd[Tab]. If there are multiple alternatives, you will get a list of them.
+> You might need to double-tap !kbd[Tab] to see all available alternatives.
 
 You might wonder how you can refer to a directory with a space in its name, as
 we use spaces for separating arguments. In these cases, we can surround the
@@ -106,7 +106,7 @@ backslash acts as a way to "escape" the following space.
 
 It is common to alternate between `cd` and `ls` when navigating in the
 terminal, but this can quickly clutter up the screen. You can clear it by
-either running the command `cls` (**cl**ear **s**creen), or by pressing
+either running the command `clear`, or by pressing
 !kbd[Ctrl+l].
 
 ## Special shortcuts

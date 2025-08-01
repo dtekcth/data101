@@ -39,6 +39,23 @@ Sometimes when working in a terminal, you need to touch system files or run comm
 sudo cp /etc/fstab /etc/fstab.copy
 ```
 
-After pressing !kbd[Enter], depending on how your system is configured, you will be prompted for your users password. While typing it in, you will notice no characters are appearing on screen. Don't worry, your typing is being registered, this is just another security measure to make sure no one is peaking over your shoulder and sees the password. Once you have typed in your password, press !kbd[Enter] and if your password is correct, the command will be run with elevated privileges.
+After pressing !kbd[Enter], depending on how your system is configured, you will
+be prompted for your users password. While typing it in, you will notice no
+characters are appearing on screen. Don't worry, your typing is being
+registered, this is just another security measure to make sure no one is peaking
+over your shoulder and sees the password. Once you have typed in your password,
+press !kbd[Enter] and if your password is correct, the command will be run with
+elevated privileges.
 
-You can configure which users can use `sudo` and which commands they are allowed to run with it in order to limit the access they get to your system. Commonly it is setup so you can run any command with `sudo`, provided you can authenticate yourself with your password.
+> Mind you, you should actually be careful with `sudo`. We've said earlier that
+> it is difficult to do proper damage to your computer but `sudo` is the one
+> command that actively lets you do things to your computer that might be
+> dangerous. It is used for many everyday things, so you might get used to using
+> it. But if you get a warning telling you that you need sudo, don't just do it
+> right away without thinking about its effects. If you're not sure what a
+> command does you can always look it up online!
+
+You can configure which users can use `sudo` and which commands they are allowed
+to run with it in order to limit the access they get to your system. Commonly it
+is setup so you can run any command with `sudo`, provided you can authenticate
+yourself with your password.
