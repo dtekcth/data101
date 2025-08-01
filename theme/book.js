@@ -306,7 +306,8 @@ const showAll = (elList) => {
           if (prefix === "\\") return match.slice(1);
 
           const shortcut = bind
-            .replace(/!ctrl/, "<span data-context-ctrl>ctrl</span>")
+            .replace(/!ctrl/, "<span data-context-ctrl>Ctrl</span>")
+            .replace(/!alt/, "<span data-context-alt>Alt</span>")
             .replace(/!cmd/, "⌘")
             .replace(/!win/, "<span class='fa fa-windows'></span>");
           return `${prefix ? prefix : ""}<code class='kbd-shortcut'>${shortcut}</code>`;
@@ -337,6 +338,11 @@ const showAll = (elList) => {
       const ctrlKey = os === "macos" ? "⌘" : "ctrl";
       ctrlNodes.forEach((t) => {
         t.innerText = ctrlKey;
+      });
+      const altNodes = document.querySelectorAll("[data-context-alt]");
+      const altKey = os === "macos" ? "Option" : "Alt";
+      altNodes.forEach((t) => {
+        t.innerText = altKey;
       });
     };
     applyOsOptions();
