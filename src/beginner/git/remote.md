@@ -54,7 +54,7 @@ changes in the remote that you wish to have on your local, you _pull_ these
 changes in.
 
 In VSCode there are several ways to do this. The easiest is using
-the command palette. In command mode (!kbd[!ctrl+shift+P]) you can write `git
+the command palette. In command mode (!kbd[!ctrl+Shift+P]) you can write `git
 pull` and `git push` respectively. Funnily enough this is exactly how you do it
 in the terminal as well!
 

@@ -10,7 +10,7 @@ career. But it is easy to use and can be nice for labwork and collaboration.
 ## Installation
 
 To install Live Share you need VSCode set up first. If you skipped to here and
-haven't installed VSCode, go back to [chapter 2](../editor/index.md) and
+haven't installed VSCode, go back to [chapter 3](../editor/index.md) and
 install it now. Live Share can be installed as an extension in the extension
 marketplace, you can find it
 [here](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare).
