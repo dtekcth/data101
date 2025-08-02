@@ -40,17 +40,17 @@ Clicking the file will present you with something like this:
 <!-- ![Diff view for merge conflict](../../Assets/diffViewMergeConflict.png) -->
 ```haskell
 main :: IO ()
-<<<<<< HEAD
+<<<<<<< HEAD
 main = putStrLn "I dislike merge conflicts"
-======
+=======
 main = putStrLn "Merge conflict incoming!"
->>>>>> main
+>>>>>>> main
 ```
 This scary mess marks where the conflict in your file has occurred. There may be
-several of these in one file. They begin with `<<<<<< current version`, which
+several of these in one file. They begin with `<<<<<<< current version`, which
 outlines what is currently the latest committed version of that row, after that
-version, there's `=========` which outlines the other version of that row.
-Finally, the end of the conflict is marked with `>>>>>> incoming version`.
+version, there's `=======` which outlines the other version of that row.
+Finally, the end of the conflict is marked with `>>>>>>> incoming version`.
 
 But in your text editor window you might also see a button called `Resolve in
 Merge Editor` in the bottom right. Pressing this will present you with a screen
