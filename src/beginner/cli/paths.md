@@ -20,7 +20,7 @@ would be `/directory/sub_directory`.
 
 There are also some special path symbols:
 - `.` refers to the current directory.
-- `..` refers to the previous directory, often called the parent directory.
+- `..` refers to the directory above this one, often called the parent directory.
 - `~` is an absolute path to your home directory.
 
 All of these symbols can be used together to form paths. Though it is worth
