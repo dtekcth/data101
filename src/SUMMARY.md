@@ -45,6 +45,7 @@
   - [Exams](studies/exams.md)
   - [Courses](studies/courses.md)
   - [Master's](studies/master.md)
+- [Eduroam](studies/eduroam.md)
 - [Canvas](studies/canvas.md)
 - [Chalmers Apps](studies/chalmers_apps.md)
 - [FAQ](studies/FAQ.md)
