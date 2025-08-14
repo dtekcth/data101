@@ -38,7 +38,6 @@ shells where they operate on multiple.
 | `Get-ChildItem`                             | `ls`                                 | Lists the files in the working directory                                 |
 | `New-Item -ItemType directory <directory>`  | `mkdir <directory>`                  | Create the `<directory>`                                                 |
 | `Move-Item <source> <destination>`          | `mv <source> <destination>`          | Moves files or directories from `<source>` to `<destination>`            |
-| `Get-Content Env:`                          | `ls Env:`                            | Print all of your environment variables                                  |
 | `Remove-Item <path>`                        | `rm <path>`                          | Removes the content at `<path>` and any potential child items            |
 | `New-Item <file>`                           |                                      | Creates the `<file>`                                                     |
 | `Get-Help <command>`                        |                                      | Prints the help page for `<command>`                                     |
@@ -55,7 +54,3 @@ Sometimes you might get a prompt asking if you are sure about performing and
 operation. Here you can either press the key in square brackets that
 corresponds to the option you want, or leave it empty for the default option,
 followed by !kbd[Enter] to continue.
-
-To access environment variables, use `$Env:<variable>`, where you replace
-`<variable>` with then name of the variable you're interested in. Both commands
-and environment variables are case-insensitive on Windows.

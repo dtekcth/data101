@@ -16,7 +16,6 @@
   - [Basics](beginner/cli/basics.md)
   - [Paths](beginner/cli/paths.md)
   - [Flags](beginner/cli/flags.md)
-  - [Environment variables](beginner/cli/environment_variables.md)
   - [Common commands](beginner/cli/commands.md)
   - [Package managers](beginner/cli/packagemanagers.md)
   - [PowerShell](beginner/cli/powershell.md)
