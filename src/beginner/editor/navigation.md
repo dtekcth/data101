@@ -31,10 +31,10 @@ open it with !kbd[!ctrl+p].
 
 ![The command palette](/Assets/editor/palette.png)
 
-There are four main modes of operation. The first and simplest one is to search
-for files in your project. Try creating a new file in your project, open the
-command palette and then type the beginning of the name and press !kbd[Enter].
-This is a fast method of moving between files in your project.
+There are a few different modes of operation. The first and simplest one is to
+search for files in your project. Try creating a new file in your project, open
+the command palette and then type the beginning of the name and press
+!kbd[Enter]. This is a fast method of moving between files in your project.
 
 The palette also has another function which is to run various tasks, such as
 opening preferences, building your project or opening a new terminal. This mode
