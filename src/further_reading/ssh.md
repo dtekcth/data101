@@ -1,7 +1,5 @@
 # Connecting to a remote computer
 
-<!-- TODO: mention SSH keys -->
-
 In the first part of this book we learned about some basic commands which,
 while useful, barely highlight any of the actual features of using a terminal.
 One very powerful feature is SSH, which stands for **S**ecure **Sh**ell. It
@@ -78,15 +76,11 @@ files it? Then `scp` (**s**ecure **c**o**p**y) is your friend. `scp` works
 quite similar to the regular copy, except one of the paths supplied will be
 preceded by a hostname. To copy a file from your computer to a host write:
 
-```bash
-scp <filepath> <user>@<domain>:<filepath on host>
-```
+```bash scp <filepath> <user>@<domain>:<filepath on host> ```
 
 Similarly, to copy a file from a host to your computer, write:
 
-```bash
-scp <user>@<domain>:<filepath> <filepath to copy to>
-```
+```bash scp <user>@<domain>:<filepath> <filepath to copy to> ```
 
 For example, if I wanted to copy `Main.hs` to my home directory on one of the
 Chalmers remotes, I'd write `scp Main.hs davhedg@remote11.chalmers.se:~/`. Note

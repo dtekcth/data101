@@ -1,5 +1,3 @@
-<!-- > This chapter introduces a lot of terminology, you can find most terms in [the glossary](../glossary.md#command-line-terms). -->
-
 # Command-line interface (CLI)
 
 You may be used to using graphical interfaces when using your computer, but

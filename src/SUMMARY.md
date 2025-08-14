@@ -52,8 +52,8 @@
 
 # Further reading
 
-- [Editor](advanced/editor.md)
-- [SSH](advanced/ssh.md)
+- [Editor](further_reading/editor.md)
+- [SSH](further_reading/ssh.md)
 
 ---
 

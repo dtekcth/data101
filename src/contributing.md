@@ -65,7 +65,6 @@ You can include icons as well, use `\!icon[icon]` to display a windows icon. Any
 ## Things to keep in mind
 
 - To remain consistent, use British English.
-<!-- - If you are adding new pages or writing about new technologies, remember to also add an entry in the glossary and hyperlink to it. Examples of this can be seen on the introduction page. You should only hyperlink the first instance of the word. -->
 
 ## Deploying
 
