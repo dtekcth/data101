@@ -19,6 +19,7 @@
   - [Environment variables](beginner/cli/environment_variables.md)
   - [Common commands](beginner/cli/commands.md)
   - [Package managers](beginner/cli/packagemanagers.md)
+  - [PowerShell](beginner/cli/powershell.md)
 - [Git and cooperation.](beginner/git/index.md)
   - [Installation](beginner/git/installation.md)
   - [Setup](beginner/git/setup.md)

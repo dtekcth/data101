@@ -34,13 +34,14 @@ use terminal to talk about both.
 
 {{ begin .windows }}
 
-Most systems you will interact with use what is called a _Unix terminal_. Windows
-has its own terminals called `cmd.exe` and `PowerShell`. These are quite
-different from Unix terminals, and so we will not discuss them here. `cmd.exe`
-is really old and is not used much these days. `PowerShell` is Microsofts newer
-replacement, and although it can be used on other platforms than Windows, the
-most commonly used terminals are still Unix based, and most command line
-utilities are written for Unix terminals.
+Most systems you will interact with use what is called a _Unix terminal_.
+Windows has its own terminals called `cmd.exe` and `PowerShell` which  are
+quite different from Unix terminals. `cmd.exe` is really old and is not used
+much these days. `PowerShell` is Microsofts newer replacement, and although it
+can be used on other platforms than Windows, the most commonly used terminals
+are still Unix based, and most command line utilities are written for Unix
+terminals. For those interested, we have a short overview of
+[PowerShell](./powershell.md).
 
 {{ end }}
 
