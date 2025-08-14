@@ -29,7 +29,7 @@ the most important method of navigation. It can be used to efficiently navigate
 your project by first opening the palette and then writing a command. You can
 open it with !kbd[!ctrl+p].
 
-![The command palette](/Assets/editor/palette.png)
+![The command palette](/assets/editor/palette.png)
 
 There are a few different modes of operation. The first and simplest one is to
 search for files in your project. Try creating a new file in your project, open

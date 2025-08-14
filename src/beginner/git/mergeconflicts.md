@@ -37,12 +37,12 @@ Now that you have a merge conflict, let's solve it! You'll find that VSCode
 gives you a little popup in the bottom right corner and also has a list of
 "Merge Changes" in the source control menu.
 
-<!-- ![VSCode is sad](/Assets/git/popup.png) -->
+<!-- ![VSCode is sad](/assets/git/popup.png) -->
 
-![VSCode is mad!!](/Assets/git/mergeconflict.png)
+![VSCode is mad!!](/assets/git/mergeconflict.png)
 Clicking the file will present you with something like this:
 
-<!-- ![Diff view for merge conflict](../../Assets/diffViewMergeConflict.png) -->
+<!-- ![Diff view for merge conflict](../../assets/diffViewMergeConflict.png) -->
 
 ```haskell
 main :: IO ()
@@ -64,7 +64,7 @@ But in your text editor window you might also see a button called `Resolve in
 Merge Editor` in the bottom right. Pressing this will present you with a screen
 that looks like this:
 
-![Merge editor](/Assets/git/mergeeditor.png)
+![Merge editor](/assets/git/mergeeditor.png)
 
 On the left side you can see your "Current", what you have locally, and on the
 right you have "Incoming", what exists on the remote. On the bottom you can see
@@ -108,12 +108,12 @@ in your terminal as well.
 In the terminal if you ever push up against a remote which has newer commits
 you will get a message that looks like this:
 
-![Terminal wompwomp](/Assets/git/terminalpush.png)
+![Terminal wompwomp](/assets/git/terminalpush.png)
 
 What this means is you need to pull down changes. However when you do this and
 there are changes on the remote you'll get a merge conflict! Oh no!
 
-![Terminal merge conflict](/Assets/git/terminalconflict.png)
+![Terminal merge conflict](/assets/git/terminalconflict.png)
 
 We can go into more depth about merging vs rebasing if you ask us about it but
 we'll go through it quickly here. Our preference is setting `git config

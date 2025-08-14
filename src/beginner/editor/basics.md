@@ -4,7 +4,7 @@ The first time you start up VSCode you will be presented with a short
 introduction, which can help you set up Copilot, choose a default theme, and
 that can give you resources like video tutorials for getting started.
 
-![Setup VSCode](/Assets/editor/intro.png)
+![Setup VSCode](/assets/editor/intro.png)
 
 However to not get stuck with customizing and watching videos we will give a
 quick overview of the very basic functionality of your new editor. In the top
@@ -16,7 +16,7 @@ from here on out.
 
 Now you'll be presented with a screen that gives you a few options
 
-![The welcome page](/Assets/editor/welcome.png)
+![The welcome page](/assets/editor/welcome.png)
 
 > [Warning]
 > This warning goes out especially to Windows users, but does apply to
@@ -66,7 +66,7 @@ You will then get to name it once you save it.
 > below. By right clicking this you can change its contents or position on the
 > screen. 
 
-![Activity bar](/Assets/editor/activity-bar.png)
+![Activity bar](/assets/editor/activity-bar.png)
 
 ## The menu bar
 The problem you may have noticed is that now the Welcome page is gone. To do
@@ -74,11 +74,11 @@ something like open a folder, create a file or to save now we have to instead
 use the command palette or the menu bar.
 
 {{ .macos }} On MacOS the menu bar will look like this
-![MacOS menu bar](/Assets/editor/menubar-macos.png)
+![MacOS menu bar](/assets/editor/menubar-macos.png)
 
 {{ .windows .linux }} On Windows and Linux the menu bar will look something
 like this
-![Windows menu bar](/Assets/editor/menubar-lindows.png)
+![Windows menu bar](/assets/editor/menubar-lindows.png)
 
 Here press `File` and you'll get a bunch of options. To save, click on `Save`
 or alternatively as suggested in the dropdown, !kbd[!ctrl+s]. Using this menu

@@ -41,14 +41,14 @@ Now you will be presented with a list of virtual desktops that you can connect
 to. You should already have one titled "Chalmers Apps". This is the screen you
 will see when you start the program the next time.
 
-![](/Assets/apps_anywhere/windows_app.png)
+![](/assets/apps_anywhere/windows_app.png)
 
 Underneath the card that says "Chalmers Apps", there is a button that says
 `Connect`, press it. This will start up you virtual environment with
 AppsAnywhere pre-installed and running. When you want to exit the virtual
 environment, press the "X" in the toolbar at the top of the screen.
 
-![](/Assets/apps_anywhere/desktop.png)
+![](/assets/apps_anywhere/desktop.png)
 
 {{ end }}
 
@@ -63,7 +63,7 @@ then `Launch`, and then `Launch the virtual desktop client`. You will be taken
 to a list of virtual environments, with one named "Chalmers Apps". Click on it
 and you should enter into the virtual environment.
 
-![](/Assets/apps_anywhere/web.png)
+![](/assets/apps_anywhere/web.png)
 
 {{ end }}
 
@@ -75,11 +75,11 @@ virtual desktop) and login as before. Search for the program you want to start
 and click on `Launch`. AppsAnywhere should now download the program for you and
 launch it once it is ready.
 
-![](/Assets/apps_anywhere/launch.png)
+![](/assets/apps_anywhere/launch.png)
 
 With AppsAnywhere running, you can use it to quickly access Chalmers Apps.
 Do this by pressing the up arrow in the task bar and then right clicking on the
 AppsAnywhere icon, then pressing `Launch Portal`. This should take you to the
 website where you can now search for programs and run them.
 
-![](/Assets/apps_anywhere/apps_anywhere.png)
+![](/assets/apps_anywhere/apps_anywhere.png)

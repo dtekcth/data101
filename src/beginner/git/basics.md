@@ -16,7 +16,7 @@ and magically you will now have an empty Git repository! Alternatively use the
 command palette, search for "Initialize Repository", or simply `git init`
 should choose it as the first option.
 
-![The source control pane](/Assets/git/source-control.png)
+![The source control pane](/assets/git/source-control.png)
 
 To do the same in a terminal we first have to open one in VSCode.  To open one
 using the command palette, press !kbd[!ctrl+shift+p] and type in "Create new
@@ -75,7 +75,7 @@ at any time. Alternatively, with the command palette, search for "Git: Commit".
 Most of these options don't matter for now, just choose the one that says `Git:
 Commit`.
 
-![Staging changes](/Assets/git/unstaged-changes.png)
+![Staging changes](/assets/git/unstaged-changes.png)
 
 ### Terminal
 
@@ -86,7 +86,7 @@ something to your _Index_, use `git add <files>`. You can add multiple files at
 once by separating them with spaces. To commit your staged changes use `git
 commit [-m "your message here]`.
 
-![Terminal commit](/Assets/git/teminal.png)
+![Terminal commit](/assets/git/teminal.png)
 
 If you do not use `-m` you will be put in your operating systems default editor
 to type in a commit message. If you want to use VSCode as your git editor you

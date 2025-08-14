@@ -25,7 +25,7 @@ Pressing this you'll get a big menu where you can now install extensions. By
 default they're displayed in order of popularity but you can also search for
 specific extensions using the search bar at the top of this menu.
 
-![Marketplace](/Assets/editor/marketplace.png)
+![Marketplace](/assets/editor/marketplace.png)
 
 To install an extension simply press the `Install` button! The arrow next to it
 typically allows you to install a "Pre-release" version. This is usually not

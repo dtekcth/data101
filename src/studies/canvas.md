@@ -6,7 +6,7 @@ store. For every course you take, you will be able to find the syllabus and any
 material published alongside the course here. Upon your first log in, you
 should see your dashboard which will looking something like this:
 
-![Dashboard](/Assets/canvas/dashboard.png)
+![Dashboard](/assets/canvas/dashboard.png)
 
 You will have one card per course, and also one for your programme. Clicking on
 them will take you to their page. Once you register for more courses, they will

@@ -15,7 +15,7 @@ for "how to open terminal `<insert your distro here>`". You should see something
 like this:
 
 <!-- Replace with a picture of a terminal running bash -->
-![Terminal](/Assets/cli/windows_terminal.png)
+![Terminal](/assets/cli/windows_terminal.png)
 
 You can also open a terminal in VSCode if you prefer working there. Open the
 command palette (!kbd[!ctrl+Shift+p]) and type "terminal: create new terminal"
