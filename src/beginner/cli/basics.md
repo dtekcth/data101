@@ -23,15 +23,16 @@ and press !kbd[Enter]. This should open a new terminal at the bottom of your
 screen. You can also open one by clicking on `Terminal` in the menu bar at the
 top of your screen, and then pressing `New Terminal`.
 
-With a terminal open, what are we looking at? At the start of the line of text
-you will see your username followed by `@`, and then the name of your computer.
-After that you will see the current directory. Your terminal keeps track of
-something called its _working directory_, which is where on your file system it
-is located at the moment. Right now it is `~`, which is a symbol used to
-represent your _home directory_. Every user has a home directory where all of
-their files are stored. At the end of the line you will see a solid block,
-which is your cursor. Here we can write commands and run them by pressing
-!kbd[Enter].
+With a terminal open, what are we looking at? Exactly what you see will depend
+on which terminal you are using, if yours looks different that is okay. At the
+start of the line of text you will see your username followed by `@`, and then
+the name of your computer. After that you will see the current directory. Your
+terminal keeps track of something called its _working directory_, which is
+where on your file system it is located at the moment. Right now it is `~`,
+which is a symbol used to represent your _home directory_. Every user has a
+home directory where all of their files are stored. At the end of the line you
+will see a solid block, which is your cursor. Here we can write commands and
+run them by pressing !kbd[Enter].
 
 We can print the exact location of our working directory by running the command
 `pwd` (**p**rint **w**orking **d**irectory). This should print `/home/`
