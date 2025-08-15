@@ -112,9 +112,10 @@ git --version
 
 ## Create an account on GitHub
 
-When using Git you will want a place to store your _repositories_ (projects),
-the most popular site for this is called [GitHub](https://github.com), but
-other alternatives include [GitLab](https://about.gitlab.com/) and
+When using Git you will want a place to store your _repositories_ (projects,
+commonly called repos for short), the most popular site for this is called
+[GitHub](https://github.com), but other alternatives include
+[GitLab](https://about.gitlab.com/) and
 [BitBucket](https://bitbucket.org/product/).
 
 <!-- We need to rewrite this and check which of this is still true. Do we also still recommend GitKraken? -->
