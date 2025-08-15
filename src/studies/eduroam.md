@@ -24,36 +24,37 @@ On Windows it is easy to connect to Eduroam. Follow these steps:
 
 ## {{ .windows .linux }} MacOS
 
-On MacOS there are two methods, the first one is simpler but we believe it's a newer method so if it doesn't work try the other one.
+On MacOS there are two methods, the first one is simpler but we believe it's a
+newer method so if it doesn't work try the other one.
 
 ### Approach 1
 
-1. In the wi-fi dropdown from the menu bar click on `eduroam`. 
+1. In the wi-fi dropdown from the menu bar click on `eduroam`.
 2. Sign in using `<cid>@chalmers.se` as the username and then your CID password
-   as the password. Click on `OK`. 
+   as the password. Click on `OK`.
 3. You will be asked to verify a certificate, click on continue. If prompted to
-   put in your password or confirm with your fingerprint do that. 
+   put in your password or confirm with your fingerprint do that.
 
-### Approach 2 
+### Approach 2
 
 1. Go to [Eduroams homepage](https://cat.eduroam.org).
 2. Click on `Click here to download your eduroam® installer`.
 3. In the menu that opens, click on `Chalmers University of Technology`. If you
    don't see it you can use the search bar at the bottom.
 4. Click on `eduroam®`.
-5. Mind the note saying "use CID@chalmers.se as username. Click on `Continue`. 
+5. Mind the note saying "use CID@chalmers.se as username. Click on `Continue`.
 6. A profile will have been downloaded. Double click on it in finder, or click
-   on it in your browsers downloads manager / the macOS downloads folder on the
+   on it in your browsers downloads manager / the MacOS downloads folder on the
    dock.
 7. You will get a pop-up saying the profile has been downloaded, click `OK`.
 8. Open System Settings, at the top under your account name you will see a
    button titled `Profile Downloaded`, click here or navigate to it through
    `General/Device Management`
-9. Double click on the profile titled "eduroam®". Click on `Install`. 
-10. Put in your CID in the form "CID@chalmers.se" and your password for your
+9. Double click on the profile titled `eduroam®`. Click on `Install`.
+10. Put in your CID in the form `<cid>@chalmers.se` and your password for your
     CID. You will get another pop up requiring you to put in your computers
     account password.
-11. Now you will be able to connect to eduroam. 
+11. Now you will be able to connect to Eduroam.
 
 {{ end }}
 
