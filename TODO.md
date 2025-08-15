@@ -14,8 +14,7 @@
 
 ### Courses
 
-- Java (DAT043)
-
+- Java (DAT043) (WILL DIE SOON)
 - When
 - Which courses are recommended
 - MTS
@@ -26,6 +25,4 @@
 
 ### Master's programme
 
-- Accreddited or not
-- Guaranteed seats
-- Differances between master programs
+- Currently being reworked, have more information in october
