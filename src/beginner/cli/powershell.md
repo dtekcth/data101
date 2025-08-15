@@ -28,20 +28,20 @@ The following is a listing of the PowerShell equivalents for the commands we
 covered earlier. Note that they only operate on single files, compared to Unix
 shells where they operate on multiple.
 
-| PowerShell Command                          | Unix like aliases                    | Description                                                              |
-|---------------------------------------------|--------------------------------------|--------------------------------------------------------------------------|
-| `Get-Content <file>`                        | `cat <file>`                         | Print the contents of the `<file>`                                       |
-| `Set-Location <path>`                       | `cd <path>`                          | Changes your working directory to `<path>`                               |
-| `Copy-Item <source> <destination>`          | `cp -Recurse <source> <destination>` | Copies directories and their contents from `<source`> to `<destination>` |
-| `Copy-Item -Recruse <source> <destination>` | `cp <source> <destination>`          | Copies files from `<source`> to `<destination>`                          |
-| `Get-ChildItem <path>`                      | `ls <path>`                          | Lists the files in `<path>`                                              |
-| `Get-ChildItem`                             | `ls`                                 | Lists the files in the working directory                                 |
-| `New-Item -ItemType directory <directory>`  | `mkdir <directory>`                  | Create the `<directory>`                                                 |
-| `Move-Item <source> <destination>`          | `mv <source> <destination>`          | Moves files or directories from `<source>` to `<destination>`            |
-| `Remove-Item <path>`                        | `rm <path>`                          | Removes the content at `<path>` and any potential child items            |
-| `New-Item <file>`                           |                                      | Creates the `<file>`                                                     |
-| `Get-Help <command>`                        |                                      | Prints the help page for `<command>`                                     |
-| `Get-Help <command> -Online`                |                                      | Opens the help page for `<command>` in a webbrowser                      |
+| PowerShell command                          | Unix command                            | Description                                                              |
+|---------------------------------------------|-----------------------------------------|--------------------------------------------------------------------------|
+| `Get-Content <file>`                        | `cat <file>`                            | Print the contents of the `<file>`                                       |
+| `Set-Location <path>`                       | `cd <path>`                             | Changes your working directory to `<path>`                               |
+| `Copy-Item <source> <destination>`          | `cp <source> <destination>`             | Copies files from `<source`> to `<destination>`                          |
+| `Copy-Item -Recurse <source> <destination>` | `cp --recursive <source> <destination>` | Copies directories and their contents from `<source`> to `<destination>` |
+| `Get-ChildItem`                             | `ls`                                    | Lists the files in the working directory                                 |
+| `Get-ChildItem <path>`                      | `ls <path>`                             | Lists the files in `<path>`                                              |
+| `Get-Help <command>`                        | `man <command>`                         | Prints the help page for `<command>`                                     |
+| `Get-Help <command> -Online`                |                                         | Opens the help page for `<command>` in a browser                         |
+| `New-Item -ItemType directory <directory>`  | `mkdir <directory>`                     | Create the `<directory>`                                                 |
+| `Move-Item <source> <destination>`          | `mv <source> <destination>`             | Moves files or directories from `<source>` to `<destination>`            |
+| `Remove-Item <path>`                        | `rm --recursive <path>`                 | Removes the content at `<path>` and any potential child items            |
+| `New-Item <file>`                           | `touch <file>`                          | Creates the `<file>`                                                     |
 
 The error messages you get if a command fails are more verbose and a bit
 cryptic at times, but we encourage you to read them. With times you will learn

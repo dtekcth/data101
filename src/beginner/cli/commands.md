@@ -8,14 +8,15 @@ If you want to know more about a command you can either use `command --help` to 
 |-----------------------------------------|--------------------------------------------------------------------------|
 | `cat <files>`                           | Print the contents of the `<files>`                                      |
 | `cd <path>`                             | Changes your working directory to `<path>`                               |
-| `cp --recursive <source> <destination>` | Copies directories and their contents from `<source`> to `<destination>` |
 | `cp <source> <destination>`             | Copies files from `<source>` to `<destination>`                          |
-| `ls <path>`                             | Lists the files in `<path>`                                              |
+| `cp --recursive <source> <destination>` | Copies directories and their contents from `<source`> to `<destination>` |
 | `ls`                                    | Lists the files in the working directory                                 |
+| `ls <path>`                             | Lists the files in `<path>`                                              |
+| `man <command>`                         | Prints the help page for `<command>`                                     |
 | `mkdir <directories>`                   | Create the `<directories>`                                               |
 | `mv <source> <destination>`             | Moves files or directories from `<source>` to `<destination>`            |
-| `rm -r <directories>`                   | Removes the `<directories>` and all of their contents                    |
 | `rm <files>`                            | Removes the `<files>`                                                    |
+| `rm --recursive <directories>`          | Removes the `<directories>` and all of their contents                    |
 | `touch <files>`                         | Creates the `<files>`                                                    |
 
 ## More on notation
