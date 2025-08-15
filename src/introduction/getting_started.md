@@ -38,11 +38,9 @@ Your CID is used to access all Chalmers services. You will get instructions on h
 
 Using Chalmers IT-services is never easy but there is some help to be had at the [IT-portal](https://chalmers.topdesk.net/tas/public/ssp/), though it does not cover everything.
 
-### Wi-fi: Eduroam
+### Wi-Fi: Eduroam
 
-<!-- TODO: Should we link to https://wiki.dtek.se/wiki/Eduroam ? -->
-
-Chalmers and GU uses the global university network "Eduroam" for wi-fi connectivity (there is wi-fi everywhere on campus). [Search for "Eduroam" on the IT-portal](https://chalmers.topdesk.net/tas/public/ssp/content/search?q=eduroam) (requires a CID) to find out how to connect your devices.
+Chalmers and GU uses the global university network "Eduroam" for Wi-Fi connectivity (there is Wi-Fi everywhere on campus). Look at our chapter on [Eduroam](../studies/eduroam.md) or [search for "Eduroam" on the IT-portal](https://chalmers.topdesk.net/tas/public/ssp/content/search?q=eduroam) (requires a CID) to find out how to connect your devices.
 
 ### Online storage
 
