@@ -20,19 +20,19 @@ This book mainly targets those who have just started a program relating to
 computer science and have no, or very little, previous knowledge. This means
 that we try to write as clearly as possible even if it means being redundant.
 
-As this book is written and maintained by DNS we will also have some information
-from us regarding courses and your student rights at Chalmers. We urge all TKDAT
-students to read through everything under the "Courses" and "Studies" categories
-because this is the main place we will be sharing useful information for your
-studies.
+As this book is written and maintained by DNS we will also have some
+information from us regarding courses and your student rights at Chalmers. We
+urge all TKDAT students to read through everything under the "Courses" and
+"Studies" categories because this is the main place we will be sharing useful
+information for your studies.
 
 > {{ .DV .IT }} Much of this information applies to TKITE and N1COS as well!
 
 If your only experience comes from a course or two during _Gymnasiet_ then you
-should still find useful information here but may find the steps to be a bit too
-granular. Hopefully, you can look past this! If you're even more experienced
-than that, we still urge you to at least have a look through, there could still
-be useful information here!
+should still find useful information here but may find the steps to be a bit
+too granular. Hopefully, you can look past this! If you're even more
+experienced than that, we still urge you to at least have a look through, there
+could still be useful information here!
 
 > If you think that there is a topic that needs improvement or have ideas for
 > new topics, please look at the [contributing
