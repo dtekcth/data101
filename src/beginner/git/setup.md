@@ -25,8 +25,45 @@ How you do this might depend on your version of Windows, but on Windows 10 and
 
 {{ end }}
 
-{{ .macos.linux }} On macOS and Linux SSH comes pre-installed on your computer
+{{ .macos.linux }} On MacOS and Linux SSH comes pre-installed on your computer
 so you don't need any additional setup.
+
+## Basic configuration
+
+Git requires two configuration settings to be set before you can use it. There
+is one additional one we will recommend you set up as well. These options are
+most easily set in the command line and that's how we suggest you do it. 
+
+When using Git, especially for larger projects we want people to be able to
+reach us, and for people to know who we are. This is to give proper credit for
+your code but also so people can contact you if that code breaks or if they're
+wondering something about it. So we connect an email account and a name to Git.
+You do not have to use your real name or your private email but lots of people
+do. If you don't want to use your name or your private email address, you can
+use a nickname and a more public email address. 
+
+To configure these settings we use the `git config` command in the terminal. To
+make changes stay permanently we use the `--global` flag. We run these
+commands: 
+
+```sh
+git config --global user.name "<name>"
+git config --global user.email "<email address>"
+```
+
+Beyond these two options we also suggest changing your "default branch name".
+What branches are is outside the scope of this course and you'll learn about it
+after you've used Git for a while. Then why do we suggest changing this
+setting? The "default branch" is functions as the "name" of your Git history.
+Historically this has been called "master", which refers to "master" and
+"slave". This terminology is grossly outdated and nowadays we prefer using
+"main" and something else, common words are child, replica, and secondary. This
+should be default on most Git installs nowadays but not on Windows, and it
+won't hurt to set it explicitly. To set this option run:
+
+```sh
+git config --global init.defaultBranch "main"
+```
 
 ## Generating keys
 
