@@ -42,7 +42,7 @@ newer method so if it doesn't work try the other one.
 3. In the menu that opens, click on `Chalmers University of Technology`. If you
    don't see it you can use the search bar at the bottom.
 4. Click on `eduroam®`.
-5. Mind the note saying "use CID@chalmers.se as username. Click on `Continue`.
+5. Click on `Continue`.
 6. A profile will have been downloaded. Double click on it in finder, or click
    on it in your browsers downloads manager / the MacOS downloads folder on the
    dock.
