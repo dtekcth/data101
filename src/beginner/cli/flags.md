@@ -34,14 +34,18 @@ description of what the command does and list flags that it accepts.
 
 ## Short-hand flags
 
-Some commands have single-letter flags which are easier to type. Most programs
-for example allow you to use `-h` instead of `--help`. However, the programs we
-    have used so far do not allow this. It never hurts to try though.
+Some commands have single-letter flags which are easier to type. These
+are often just variants of long-hand flags, such as `-h` instead of `--help`
+which can be used for many programs. There are however also short-hand flags
+that have no long-hand variant, like `-l`, which displays in a long-listing
+format. The same goes vice-verse, there are certain long-hand flags which have
+no short-hand variant, like `--color`.
 
 > These short-hand flags can also often be combined without needing another
-> hyphen. An example of this is `ls -acl`. This will apply the flags `--all
-> --color --list`. Color applies colors to directories and list gives you more
-> information about files and directories.
+> hyphen. An example of this is `ls -ahl`. This will apply the flags `--all
+> --human-readable -l`. This will give you the ls output in long listing format,
+> display hidden files and turn byte amounts into more readable forms, like KB
+> and MB.
 
 [Task]
 _Using the help flag, what is the short-hand flag for `--recursive` in `rm`?_
