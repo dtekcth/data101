@@ -1,4 +1,4 @@
-FROM peaceiris/mdbook:v0.4.40 as build
+FROM peaceiris/mdbook:v0.4.40 AS build
 
 COPY ./theme ./theme
 COPY ./book.toml ./
