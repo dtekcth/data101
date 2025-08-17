@@ -1,0 +1,6 @@
+services:
+  mdbook:
+    container_name: mdbook
+    build: .
+    ports:
+      - 8080:80
