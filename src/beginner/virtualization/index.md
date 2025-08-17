@@ -56,6 +56,6 @@ With virtualbox open, select **New** in the menu to the right. There are several
 - _Version_ should be **Ubuntu (64-bit)**.
 - _Memory size_ should be _at least_ **2048MB**.
 
-![Recommended machine settings](/Assets/virtualization/vm_settings.png)
+![Recommended machine settings](/assets/virtualization/vm_settings.png)
 
 You will be prompted to select Disk settings as well. The default options work fine, so just press **Create**.

@@ -1,21 +1,43 @@
 # Using shortcuts
 
-<!-- > Before starting you might want to download a project from the introductory course. -->
+While the mouse is very useful most of the time when using a computer,
+programming is not necessarily one of those times. Programming is made far
+easier by using the keyboard for actions you'd normally do with the mouse. Every
+single action that can be done using your mouse can also be done without lifting
+your fingers from the keyboard.
 
-To give you a taste of what's to come, with VSCode focused, press !kbd[!ctrl+O] (note that it is the letter O not zero) and select a folder containing a project on your computer. If you do not have one, either create an empty folder or download one from the introduction course.
+You may be tempted to click on the screen to move the caret, save your file or
+create a new file, and while this works, it isn't very fast, and requires moving
+your cursor a whole lot. Instead use keyboard shortcuts! In the beginning, you
+may not notice how much faster this is but as you go through the semester it
+will become second nature to you.
 
-Programing is all about using the keyboard. While the mouse is useful most of the time when using a computer, this is not one of them. Every action that can be done using your mouse can also be done without lifting your fingers from the keyboard.
-
-You may be tempted to click on the screen to move the caret (the vertical line where text appears), save your file or create a new file, and while this works, it is horribly inefficient compared to using shortcuts. In the beginning, you may not notice this but as you go through the semester it will become second nature to you.
+{{ begin .macos }}
 
 > #### !kbd[Ctrl] or !kbd[⌘]?
 >
-> On Macs the !kbd[!win] key is replaced by !kbd[⌘] and is usually used instead of the !kbd[Ctrl] key. This guide tries to match the shortcuts to the OS you have selected in the top bar but may not alway be 100% accurate.
+> On Macs the !kbd[!win] key is replaced by !kbd[!cmd] and is usually used instead
+> of the !kbd[Ctrl] key. This guide tries to match the shortcuts to the OS you
+> have selected in the top bar but may not always be 100% accurate.
 
-You can find most of the common shortcuts in our [cheatsheet](../../Assets/cli_editor_cheatsheet.pdf). Printing one for yourself and bringing it along in your backpack is a good way remind yourself of what you can do with the editor. You should also use this as a reference durign this tutorial, but don't worry if you don't understand what all shortcuts do yet.
+{{ end }}
+
+Below you can find some of the most commonly used shortcuts in our
+[cheatsheet](/assets/editor/editor_cheatsheet.pdf). If you have a hard time
+memorizing them feel free to print one for yourself and bring it along in your
+backpack as a way to remind yourself of what you can do with the editor. It can
+also be useful to use this as a reference during the rest of this tutorial, but
+don't worry if you don't understand what all the shortcuts do yet.
+
+<!-- TODO: Is this task needed anymore as we introduce this shortcut in the
+previous sub-chapter? -->
 
 [Task]
-Try writing some text on a new line. What happens if you press !kbd[!ctrl+X] without selecting any text?
+Try writing some text on a new line. What happens if you press !kbd[!ctrl+x]
+without selecting any text?
 
 [Solution]
-The entire line gets cut.
+The entire line gets cut, meaning it is put in the clipboard and can be pasted
+elsewhere.
+
+![cheatsheet](/assets/editor/editor_cheatsheet.png)

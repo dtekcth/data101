@@ -28,7 +28,6 @@ const showAll = (elList) => {
 };
 
 /* DAT101 specific code */
-//
 
 (function ReadingTime() {
   const wordCount = (el) => {
@@ -42,7 +41,7 @@ const showAll = (elList) => {
   };
 })();
 
-(function ClassPreproccessor() {
+(function ClassPreprocessor() {
   const getSolutionParent = (node) => {
     if (node.classList && node.classList.contains("solution")) return node;
     if (node.parentNode) return getSolutionParent(node.parentNode);
@@ -109,43 +108,69 @@ const showAll = (elList) => {
 
   const matchExerciseMacro = (node) => {
     if (node.parentElement === null) return;
-    const matches = node.nodeValue.match(/^\[\s?([A-Za-z0-9]+)\s*?\]/);
-    if (matches && matches[1]) {
-      node.nodeValue = node.nodeValue.replace(matches[0], "");
-      if (node.parentElement.nodeName === "P") node = node.parentElement;
 
-      const cmd = matches[1];
-      switch (cmd) {
-        case "Task":
-          return createTask(node);
-        case "Solution":
-          return createSolution(node);
-        case "Danger":
-          return node.parentElement.classList.add("danger");
-        case "Warning":
-          return node.parentElement.classList.add("warning");
-      }
+    const matches = node.nodeValue.match(/^(.)?(\[\s*([A-Za-z0-9]+)\s*\])/);
+
+    // Skip if there are no matches.
+    if (!matches || !matches[2]) {
+      return;
+    }
+
+    if (matches[1] === "\\") {
+        // Remove the escape.
+        node.nodeValue = node.nodeValue.replace(matches[1], "");
+    } else {
+        // Remove the command.
+        node.nodeValue = node.nodeValue.replace(matches[2], "");
+
+        if (node.parentElement.nodeName === "P") node = node.parentElement;
+
+        // Run command.
+        const cmd = matches[3];
+        switch (cmd) {
+          case "Task":
+            return createTask(node);
+          case "Solution":
+            return createSolution(node);
+          case "Danger":
+            return node.parentElement.classList.add("danger");
+          case "Warning":
+            return node.parentElement.classList.add("warning");
+        }
     }
   };
 
   const matchBlockMacro = (node) => {
     if (node.parentElement === null) return;
-    const matches = node.nodeValue.match(/^{{\s?((\.[A-Za-z\-0-9]+)+)\s*?}}/);
-    if (matches && matches[1]) {
-      // Add classes to parent
-      matches[1]
-        .split(".")
-        .filter((s) => s !== "")
-        .map((s) => s.trim())
-        .forEach((c) => node.parentElement.classList.add(c.trim()));
 
-      node.nodeValue = node.nodeValue.replace(matches[0], "");
-    }
+    node.nodeValue = node.nodeValue
+      .replace(/(.)?({{\s*((\.[A-Za-z\-0-9]+\s*)+)}})/, (matches, first, second, third) => {
+        // Ignore if preceded by a backslash
+        if (first === "\\") return second;
+
+        // Search for the list item for footnotes. This makes them behave
+        // somewhat reasonably.
+        let parentElement = node.parentElement;
+        for (let p = node.parentElement; p && p.tagName !== "MAIN"; p = p.parentElement) {
+            if (p.tagName === "LI" && p.id.startsWith("footnote-")) {
+                parentElement = p;
+                break;
+            }
+        }
+
+        third
+          .split(".")
+          .filter((s) => s !== "")
+          .map((s) => s.trim())
+          .forEach((c) => parentElement.classList.add(c));
+
+        return first ? first : "";
+      });
   };
 
   const matchCodeMacro = (node) => {
     if (node.nextSibling === null || node.parentElement === null) return;
-    const matches = node.nodeValue.match(/{{\s?((\.[A-Za-z\-0-9]+)+)\s*?}}$/);
+    const matches = node.nodeValue.match(/{{\s*((\.[A-Za-z\-0-9]+\s*)+)}}$/);
     if (matches && matches[1]) {
       // Add classes to parent
       matches[1]
@@ -157,38 +182,38 @@ const showAll = (elList) => {
     }
   };
 
-  const BeginLongBlockRegex = /^{{\s?begin\s+((\.[A-Za-z\-0-9]+)+)\s*?}}/;
-  const EndLongBlockRegex = /^{{\s?end\s*?}}/;
+  const BeginLongBlockRegex = /^{{\s*begin\s+((\.[A-Za-z\-0-9]+\s*)+)}}/;
+  const EndLongBlockRegex   = /^{{\s*end\s*}}/;
 
-  const applyClasses = (el, classes) => {
-    if (el.innerText) {
-      const matches = el.innerText.match(EndLongBlockRegex);
-      if (matches !== null) {
-        el.remove();
-        return;
-      } else {
-        classes.forEach((c) => el.classList.add(c.trim()));
-      }
-    }
-    if (el.nextSibling) applyClasses(el.nextSibling, classes);
-  };
   const matchLongBlockMacro = (node) => {
     if (node.parentElement === null) return;
+
     const matches = node.nodeValue.match(BeginLongBlockRegex);
     if (matches && matches[1]) {
+      // Grab class list
       const classes = matches[1]
         .split(".")
-        .filter((s) => s !== "")
-        .map((s) => s.trim());
+        .map((s) => s.trim())
+        .filter((s) => s !== "");
 
       node.nodeValue = node.nodeValue.replace(matches[0], "");
-      applyClasses(node.parentElement, classes);
-      document.getElementById("hello");
+
+      // Apply classes.
+      for (let element = node.parentElement; element; element = element.nextSibling) {
+        const matches = (element.innerText ?? "").match(EndLongBlockRegex);
+        if (matches !== null) {
+          element.remove();
+          break;
+        }
+
+        if (element.classList) {
+          classes.forEach((c) => element.classList.add(c));
+        }
+      }
     }
   };
 
-  const textNodes = textNodesUnder(document.documentElement);
-  textNodes.forEach((node) => {
+  textNodesUnder(document.documentElement).forEach((node) => {
     matchLongBlockMacro(node);
     matchBlockMacro(node);
     matchExerciseMacro(node);
@@ -198,31 +223,26 @@ const showAll = (elList) => {
 })();
 
 (function OperatingSystem() {
-  let os = localStorage.getItem("mdbook-os");
-  if (os === null) {
-    os = "all";
-  }
   const icons = {
-    macos: "fa-apple",
-    linux: "fa-linux",
-    windows: "fa-windows",
-    all: "fa-linux fa-apple fa-windows",
+    macos:   ["fa-apple"],
+    linux:   ["fa-linux"],
+    windows: ["fa-windows"],
+    all:     ["fa-linux", "fa-apple", "fa-windows"],
   };
+  const colors = {
+    Data: "orange",
+    IT:   "#008CBA",
+    DV:   "#188BDE",
+  };
+
+  let os        = localStorage.getItem("mdbook-os")        ?? "all";
+  let programme = localStorage.getItem("mdbook-programme") ?? "all";
 
   const setOS = (newOS) => {
     os = newOS;
     localStorage.setItem("mdbook-os", os);
     promptForValues();
   };
-
-  let programme = localStorage.getItem("mdbook-programme");
-  if (programme === null) programme = "all";
-  const colors = {
-    Data: "orange",
-    IT: "#008CBA",
-    DV: "#188BDE",
-  };
-
   const setProgramme = (newProgramme) => {
     programme = newProgramme;
     localStorage.setItem("mdbook-programme", programme);
@@ -231,10 +251,7 @@ const showAll = (elList) => {
 
   const promptForValues = () => {
     // document.getElementById("meta-prompt").classList.add("hidden");
-    if (
-      !localStorage.getItem("mdbook-programme") ||
-      !localStorage.getItem("mdbook-os")
-    ) {
+    if (os === "all" || programme === "all") {
       document.getElementById("alert-selection").classList.remove("hidden");
 
       // const promptEl = document.getElementById("meta-prompt");
@@ -277,6 +294,32 @@ const showAll = (elList) => {
     const osList = document.getElementById("os-list");
     const osOptions = Array.from(osList.getElementsByTagName("button", osList));
 
+    // Replace all !kbd and !icon commands with their HTML equivalents.
+    textNodesUnder(
+      document.getElementById("content")
+    ).forEach((n) => {
+      if (!n.parentElement || !n.parentElement.innerHTML) return;
+
+      n.parentElement.innerHTML = n.parentElement.innerHTML
+        .replace(/(.)?!kbd\[(.*?)\]/g, (match, prefix, bind) => {
+          // Ignore if preceded by a backslash
+          if (prefix === "\\") return match.slice(1);
+
+          const shortcut = bind
+            .replace(/!ctrl/, "<span data-context-ctrl>Ctrl</span>")
+            .replace(/!alt/, "<span data-context-alt>Alt</span>")
+            .replace(/!cmd/, "⌘")
+            .replace(/!win/, "<span class='fa fa-windows'></span>");
+          return `${prefix ? prefix : ""}<code class='kbd-shortcut'>${shortcut}</code>`;
+        })
+        .replace(/(.)?!icon\[(.*)\]/g, (match, prefix, icon) => {
+          // Ignore if preceded by a backslash
+          if (prefix === "\\") return match.slice(1);
+
+          return `${prefix ? prefix : ""}<span class='fa fa-${icon}'></span>`;
+        });
+    });
+
     const applyOsOptions = () => {
       if (os === "all") {
         showAll(allOS);
@@ -285,46 +328,22 @@ const showAll = (elList) => {
         showAll([os]);
       }
 
+      // Set icons
       osToggleButton.innerHTML = icons[os]
-        .split(" ")
         .map((icon) => `<i class="fa ${icon}"></i>`)
         .join("");
 
-      const textNodes = textNodesUnder(
-        document.getElementById("content")
-      ).reverse();
-      textNodes.forEach((n) => {
-        if (
-          n.parentElement &&
-          n.parentElement.innerHTML &&
-          n.parentElement.innerHTML.includes("!kbd[")
-        ) {
-          n.parentElement.innerHTML = n.parentElement.innerHTML
-            .replace(/(.)?!kbd\[(.*?)\]/g, (match, first, second) => {
-              if (first === "\\") return match.slice(1);
-              const shortcut = second
-                .replace(/\!ctrl/, "<span data-context-ctrl>ctrl</span>")
-                .replace(/\!cmd/, "⌘")
-                .replace(/\!win/, "<span class='fa fa-windows'></span>");
-              return `${first}<code class='kbd-shortcut'>${shortcut}</code>`;
-            })
-            .replace(/(.)?!icon\[(.*)\]/g, (match, prefix, icon) => {
-              if (prefix === "\\") return match.slice(1);
-              return `<span class='fa fa-${icon}'></span>`;
-            });
-        }
-      });
-
+      // Update OS specific shortcut keys.
       const ctrlNodes = document.querySelectorAll("[data-context-ctrl]");
-      if (os === "macos") {
-        ctrlNodes.forEach((t) => {
-          t.innerText = "⌘";
-        });
-      } else {
-        ctrlNodes.forEach((t) => {
-          t.innerText = "Ctrl";
-        });
-      }
+      const ctrlKey = os === "macos" ? "⌘" : "Ctrl";
+      ctrlNodes.forEach((t) => {
+        t.innerText = ctrlKey;
+      });
+      const altNodes = document.querySelectorAll("[data-context-alt]");
+      const altKey = os === "macos" ? "Option" : "Alt";
+      altNodes.forEach((t) => {
+        t.innerText = altKey;
+      });
     };
     applyOsOptions();
 
@@ -372,17 +391,14 @@ const showAll = (elList) => {
       }
 
       if (programme === "all") {
-        document.documentElement.style.setProperty("--display-D", "block");
+        document.documentElement.style.setProperty("--display-D",  "block");
         document.documentElement.style.setProperty("--display-IT", "block");
         document.documentElement.style.setProperty("--display-DV", "block");
       } else {
-        document.documentElement.style.setProperty("--display-D", "none");
+        document.documentElement.style.setProperty("--display-D",  "none");
         document.documentElement.style.setProperty("--display-IT", "none");
         document.documentElement.style.setProperty("--display-DV", "none");
-        document.documentElement.style.setProperty(
-          `--display-${programme}`,
-          "block"
-        );
+        document.documentElement.style.setProperty( `--display-${programme}`, "block");
       }
 
       const programmeText = programme === "all" ? "All programmes" : programme;

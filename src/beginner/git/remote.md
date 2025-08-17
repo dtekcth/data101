@@ -1,136 +1,134 @@
-### Putting your repo on GitHub/GitLab
+# Putting your repo on GitHub/GitLab
 
-You've now gotten to the point where you can work along quite well on your own.
-Writing changes, staging them and committing from time to time. But what good is
-working all on your own? And wouldn't it be nice having a backup of your
-repository just in case?
+You've now gotten to the point where you can work quite well on your own.
+Writing changes, staging them, and committing from time to time. But what good
+is working all on your own? And wouldn't it be nice having a backup of your
+repository just in case? This is where _remotes_ come in, online locations
+where you can store your repository.
 
-This is where _remotes_ come in, online locations where you can store your
-repository. In GitKraken you can add a remote from the left panel. If you've
-logged in through GitHub you should be able to create a remote repo there. If
-not, it is probably best to go to Settings → Integrations and log in with your
-GitHub account.
+### VSCode
 
-You can also create your remote repository on GitHub/Lab, and add this repo as
-remote in GitKraken.
+If you followed the last chapter in setting up a Git repository you are now
+presented with a new button in the source control menu once all changes have
+been commited. It will say `Publish Branch`. If you press this you'll most
+likely be prompted to sign into GitHub. If you haven't done so already, this is
+the point where you'll be forced to set up two factor authentication as well.
+If you want to use GitLab instead, we suggest creating the repository on GitLab
+first and then cloning it, unless you want to use the termnial which we will
+cover under [cloning](./remote.md#cloning)
 
-Now that you have a remote and local repository a problem arises. How do we sync
-between the two? Git uses a system where you _push_ and _pull_ changes between
-your local and remote repositories. Whenever you want to add changes from your
-local to the remote, you _push_ these changes. Similarly, whenever you have some
-changes in the remote that you wish to have on your local, you _pull_ these
-changes. In GitKraken there are buttons for pushing and pulling in the top
-panel.
-
-Try adding a commit to your example repository and push this commit to your
-remote. If you then go to your remote repo, you should see your new commit there!
-
-Now a big reason for having a remote repository is to be able to share your code
-with a collaborator, or lab partner. Our recommended way is for all
-collaborators to _clone_ the remote repo. To do this, simply copy the URL of the
-GitHub repo and use !kbd[!ctrl+N] in GitKraken. When you clone a repo, it is
-automatically set up to have the proper remote.
+Once this is all done, upon pressing `Publish Branch` again, the command
+palette will get a small dropdown asking if you want to publish to a GitHub
+private repository or a GitHub public repository. For all of your school
+projects you must use private, and for something like this we suggest doing so
+as well. If you now sign into GitHub you'll be able to see your repo there!
 
 > **An important note on public vs private repositories**
-> Make sure that repos you use for Lab assignments and projects are private.
+>
+> Make sure that repos you use for lab assignments and projects are private.
 > Having solutions for these publicly available is considered cheating.
 
-### Causing, and resolving merge conflicts
+### Terminal
 
-As always, when trying to sync things, problems might arise. What happens if you
-and a buddy have both made commits to the same file, and both try to push? The
-first push will go through just fine, but the second will be greeted with an
-error, there are newer commits on the remote, not present on the local! The
-second person will then have to _pull_ before pushing. If you haven't touched
-the same files Git will just add the commits together and you'll be ready to
-push right away. However! If you have made conflicting commits to the same file
-you will have to solve a _merge conflict_. Merge conflicts arise when the remote
-and local cannot sync (or when two branches are unable to merge, but we'll get
-to that later).
+To push your repository to a remote via the terminal, you'll first need to
+create a repository on your chosen remote service. Unlike VSCode, which
+integrates with GitHub directly, using the terminal is platform-agnostic, it
+works the same way for GitHub, GitLab, Bitbucket, and others. For this example,
+we'll use GitHub. Head to GitHub and create a new repository. Give it a name,
+set it to private, and click `Create repository`. Once you're on the repository
+page, GitHub will show you how to either create a new repository locally or
+push an existing one. We'll choose the latter. Now, run the following commands
+in your terminal:
 
-Here's a recipe for causing your first merge conflict!
-
-1. Grab a buddy and have them clone your example repo (Or if there is no buddy
-   readily available clone your example repository to a second location on your
-   computer).
-2. Both make commits changing the same file, e.g. one of you could change `Main.hs` to
-   ```haskell
-   main :: IO ()
-   main = putStrLn "Merge conflict incoming!"
-   ```
-   While the other changes it to,
-   ```haskell
-   main :: IO ()
-   main = putStrLn "I dislike merge conflicts"
-   ```
-3. Now both try to push! You'll find that one push succeeds and the other fails.
-4. Pull to the local repo that failed to push, congratulations you now have a
-   merge conflict to solve!
-
-Now that you have a merge conflict, let's solve it! You'll find that GitKraken
-has found a list of the conflicting files in the panel to the right, click one
-of them!
-![GitKraken has found conflicting files](../../Assets/mergeConflictDetected.png)
-Clicking the file will allow you to pick which version of each row to keep!
-![Diff view for merge conflict](../../Assets/diffViewMergeConflict.png)
-But before choosing which row(s) to keep, it is worth looking at what your file
-looks like now. Open your file and you'll find that it looks something like
-this:
-
-```haskell
-main :: IO ()
-<<<<<< HEAD
-main = putStrLn "I dislike merge conflicts"
-======
-main = putStrLn "Merge conflict incoming!"
->>>>>> main
+```bash
+git remote add origin git@github.com:{YourUser}/{YourRepo}.git
 ```
 
-This scary mess marks where the conflict in your file has occurred. There may be
-several of these in one file. They begin with `<<<<<< current version`, which
-outlines what is currently the latest committed version of that row, after that
-version, there's `=========` which outlines the other version of that row.
-Finally, the end of the conflict is marked with `>>>>>> incoming version`.
+Here, "origin" is the name you are assigning to your remote. Unless you have a
+specific reason to use another name, stick with origin as it is the default.
 
-There are two easy ways to solve the conflict.
+<!-- TODO: I think main is the default name on git installations now, but this
+might be a good safety measure -->
 
-1. In GitKraken, click the file with conflicts and choose the rows as you wish.
-   Keep in mind that you can pick and choose from both changes, and add
-   additional rows as well.
-2. Or you could open the file in your editor. Write what you want the merged
-   result to look like, making sure to remove all the tags. When the file
-   contains what you want it to contain go back to GitKraken and mark that file
-   as resolved.
-
-The resolved file for the above could look something like this:
-
-```haskell
-main :: IO ()
-main = putStrLn "I dislike merge conflicts"
+```bash
+git branch -M main
 ```
 
-Or, if you wanted to keep both prompts it could be:
+This renames your current branch to main. The -M flag forces the rename if a
+branch named main already exists.
 
-```haskell
-main :: IO ()
-main = do
-  putStrLn "I dislike merge conflicts"
-  putStrLn "Merge conflict incoming"
+```bash
+git push -u origin main
 ```
 
-When all the files are resolved, all you have to do is commit. Git should have
-pre-made an appropriate git message for you. Congrats! You've just solved your
-first merge conflict.
+This command pushes your local commits to the remote and sets the upstream
+branch, which tells Git where your remote main branch is located.
 
-> **A note on force pushes**
->
-> When trying to push to a remote repo which has newer commits missing on the
-> local, Git will give you two suggestions
->
-> 1. The sensible thing is to pull, solve eventual merge conflicts and then
->    push.
-> 2. Or, you can do a force-push. **_Never_**, I repeat, **_never_**, take this option.
->    Force push overwrites your buddies work with your own. It does not attempt
->    to merge your different commits, but rather just overwrites the remote with
->    your local version. This will inevitably cause headache for your buddy the
->    next time they pull, as well as possibly remove their work.
+<!-- I feel like this entire section was written poorly-->
+
+## Syncing
+
+Now that you have a remote and a local repository a problem arises. How do we
+sync between the two? Git uses a system where you _push_ and _pull_ changes
+between your local and remote repositories. Whenever you want to add changes
+from your local to the remote, you _push_ these changes. Similarly, whenever
+you have some changes in the remote that you wish to have in your local
+repository, you _pull_ these changes in.
+
+In VSCode there are several ways to do this. The easiest is using the command
+palette. In command mode (!kbd[!ctrl+Shift+p]) you can write `git pull` and
+`git push` respectively. Funnily enough this is exactly how you do it in the
+terminal as well! You might get a warning when you try to use `git push` that
+says the remote contains work you don't have locally. We'll go through what
+this all means in the next sub-chapter about _merge conflicts_.
+
+Back in VSCode, if you really want to synchronize using your mouse the controls
+are a little more hidden away. In the left source control bar you can press on
+the three small dots next to "Changes". There you will find buttons for push
+and pull. You can also find them next to the dropdown called "Graph" further
+down, where they have custom icons. Them being so out of the way is another
+reason for why we highly recommend learning keyboard shortcuts. It can easily
+get tedious to switch between using your mouse and your keyboard.
+
+The big sync button does't do just one of these actions, but rather both at
+once. There isn't really a parallel for this in the terminal except for `git
+pull && git push`.
+
+Try adding a commit to your example repository and push this commit to your
+remote. If you then go to your remote repository, you should see your new
+commit there!
+
+> You can also create a so called README in your git repo if you'd like. A
+> README.md file is a text file which can be displayed on a remote right under
+> your files. This makes it valuable for documentation or information about
+> your project.
+
+## Cloning
+
+Now a big reason for having a remote repository is to be able to share your
+code with a collaborator or lab partner. Our recommended way is for all
+collaborators to _clone_ the remote repo. When you clone a repo, it is
+automatically set up to have the proper remote.
+
+### VSCode
+
+If you want to clone a repository from GitHub in VSCode you can either search
+for `git clone` in the command palette, or if you don't have folder opened in
+VSCode and go to the source control menu you will be presented with the option
+to clone a repository. Here you can either search for a public repository or
+paste in a SSH "link" to a private repository. To find this "link" go to the
+repository in GitHub or GitLab and press the button labeled `Code`. It's
+colored in both so it's easy to spot. Here you get a small dropdown and can
+select SSH.
+
+### Terminal
+
+In the same way as above, go to your remote and find the SSH link. Then in your
+terminal write
+
+```bash
+git clone git@github.com:<YourUser>/<YourRepo>.git
+```
+
+This creates a new folder in your working directory for the repository, and
+puts all of the contents of it there.

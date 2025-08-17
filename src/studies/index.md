@@ -1,10 +1,15 @@
 # Your education
 
+This chapter serves the purpose to give you information which might be important
+during your time at Chalmers. This includes your rights as a student and what
+you can do to affect your studies. We will also include general information
+regarding studying at a Swedish university.
+
 While you are enrolled in a specific program with certain mandatory courses and so on, there remains much room for shaping your own education. The actual details vary depending on program but this chapter will describe common scenarios and when it is time to make decisions. We try to remain neutral as to which choices you should make. You will however find testimonials and comparisons from both satisfied and unsatisfied students.
 
 > **N.B**. As it currently stands, this chapter only includes information for new students but will be expanded upon as time permits.
 
-## Credits / Högskolepoäng (hp)
+## Credits / Högskolepoäng (HP)
 
 All courses you take will give you _hp_. At Chalmers and GU most courses are standardized to 7.5hp or multiples thereof. 60hp is equivalent to full-time studies during one year, meaning that each study period will give you 15hp. In Sweden, a bachelor's degree is standardized to 180hp or 3 years worth of full-time studies, while a master's degree is another 120 hp or another 2 years worth of full-time studies.
 
@@ -33,6 +38,11 @@ You most likely already know that CSN provides financial support to students. Ho
 ## Trouble during your studies
 
 It is very common for students to discover their limitations during their studies, as it can be very stressful. This is not only due to the intensity of the studies but also because, for many, it is the first time they are living on their own or in a foreign country.
+
+For many, the first year is very overwhelming due to these factors, which might
+lead to failing your courses. Please, do not be dismayed by this, lots of people
+fail courses here and there, and there is absolutely no shame in it. Do not let
+anyone tell you otherwise.
 
 Chalmers has a wide safety net to assist you. During the reception, you can always talk to the reception committee, who can direct you to where you can find help. Alternatively, you can always speak with your student guidance counselor.
 

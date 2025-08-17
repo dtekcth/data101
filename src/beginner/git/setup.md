@@ -1,118 +1,143 @@
-# Git setup
+# Setting up a remote
 
-## Install Git
+Now that you have a GitHub account you're going to want to set up an SSH-key.
+This is a sort of encryption key that is commonly used for connecting to other
+computers, but is also used for verification on GitHub and GitLab. It is
+required to be able to access private repositories on GitHub so this is a must.
 
-{{begin .macos}}
+<!-- If you want to use SSH for connecting to computers remotely feel free to read the chapter about it in under further reading HERERH EJFHDSFJK DS -->
 
-For macOS users, there are two ways to install Git which we recommend.
+{{ begin .windows }}
 
-1. Use the Git bundled with XCode. Chances are that if you're going to program
-   on a Mac, then you are going to have to install XCode's command-line tools at
-   some point. Git comes bundled with XCode's command-line tools. Check if you
-   have it installed by opening a terminal and typing:
+On Windows you might have to enable the OpenSSH client to be able to use SSH.
+How you do this might depend on your version of Windows, but on Windows 10 and
+11 you should be able to follow this short guide.
 
-   ```bash
-   git --version
-   ```
+1. Open your settings application.
+2. Search for "Optional features".
+3. In this menu you should see another search bar, search for "OpenSSH".
+4. If anything shows up that means you already have everything you need and can
+   move on to [Generating keys](./setup.md#generating-keys)
+5. If there is nothing, click on `Add a feature` right at the top of the page.
+6. Here search for "OpenSSH" again.
+7. Click the checkbox for `OpenSSH client` and `OpenSSH server` and then press
+   `Add (2)` at the bottom. You can now move on.
 
-   If you see something like the following you've already got git installed and
-   can move on to the next step.
+{{ end }}
 
-   ```bash
-   git version 2.33.0
-   ```
+{{ .macos.linux }} On MacOS and Linux SSH comes pre-installed on your computer
+so you don't need any additional setup.
 
-   To install XCode's command-line tools (and its bundled Git) open a terminal
-   and run the command:
+## Basic configuration
 
-   ```bash
-   xcode-select --install
-   ```
+Git requires two configuration settings to be set before you can use it. There
+is one additional one we will recommend you set up as well. These options are
+most easily set in the command line and that's how we suggest you do it. 
 
-   Let this install, restart your terminal and type the following again. It
-   should now display a version. Move on to the next step.
+When using Git, especially for larger projects we want people to be able to
+reach us, and for people to know who we are. This is to give proper credit for
+your code but also so people can contact you if that code breaks or if they're
+wondering something about it. So we connect an email account and a name to Git.
+You do not have to use your real name or your private email but lots of people
+do. If you don't want to use your name or your private email address, you can
+use a nickname and a more public email address. 
 
-   ```bash
-   git --version
-   ```
+To configure these settings we use the `git config` command in the terminal. To
+make changes stay permanently we use the `--global` flag. We run these
+commands: 
 
-2. You can install Git using Homebrew. Homebrew is a package manager for
-   macOS, basically a command-line tool for helping you install various
-   software. It is very useful for developers in various situations and can be
-   installed by following the instructions [here](https://brew.sh/). After
-   you've installed homebrew you should be able to type the following into a
-   terminal:
-   ```shell
-   brew install git
-   ```
-   To confirm that Git has been installed correctly run the following. Then move
-   on to the next step.
-   ```shell
-   git --version
-   ```
-
-{{end}}
-
-{{ begin .linux }}
-
-The easiest way to install Git on your Linux machine is using your distro's
-package manager. On Ubuntu and Debian-based distros you will want to run the
-following in a terminal:
-
-```bash
-sudo apt-get install git
+```sh
+git config --global user.name "<name>"
+git config --global user.email "<email address>"
 ```
 
-On Arch-based distros you want to run:
+Beyond these two options we also suggest changing your "default branch name".
+What branches are is outside the scope of this course and you'll learn about it
+after you've used Git for a while. Then why do we suggest changing this
+setting? The "default branch" is functions as the "name" of your Git history.
+Historically this has been called "master", which refers to "master" and
+"slave". This terminology is grossly outdated and nowadays we prefer using
+"main" and something else, common words are child, replica, and secondary. This
+should be default on most Git installs nowadays but not on Windows, and it
+won't hurt to set it explicitly. To set this option run:
 
-```bash
-sudo pacman -S git
+```sh
+git config --global init.defaultBranch "main"
 ```
 
-Then verify your install by running:
+## Generating keys
 
-```bash
-git --version
-```
+First of all open up your terminal. From here, run `ssh-keygen`. When you've
+done this you'll be asked to write in the path to where you want to save your
+new key. Do ***not*** write anything here. The default location is where
+programs will look for the SSH key by default, so just press !kbd[Enter].
 
-{{end}}
+Now you'll be asked to write in a passphrase. Again, do ***not*** write
+anything here (unless you really know what you're doing). Certain programs like
+VSCode do not play nice with SSH-keys with passphrases and can straight up
+crash with no warnings. Just press !kbd[Enter], and when prompted to write the
+same passphrase again, just press !kbd[Enter] again.
 
-{{ .windows }}
-On Windows, you want to install Git by downloading the installer
-from [here](https://gitforwindows.org/) and following the instructions.
+<!-- TODO: Maybe skip the exact name of the key as the default might change in the future? This does make it slightly more difficult to point readers in the right direction though. -->
 
-## Create an account on GitHub
+You'll now be presented with your fingerprint and randomart image. Neither of
+these are what we need however. Your SSH-key will now be found in `~/.ssh/`
+(inside your home directory). You'll be presented with two files, one named
+`id_ed25519` and one named `id_ed25519.pub`. The `.pub` file is your public key
+which you need to put into GitHub later. [^encryption]
 
-When using Git you will want a place to store your _repositories_ (projects),
-the most popular site for this is called [GitHub](https://github.com), but other
-alternatives include [GitLab](https://about.gitlab.com/) and
-[BitBucket](https://bitbucket.org/product/).
+> The other file is the private key, and is for verifying that you are who your
+> public key says you are. Do ***not*** share this with anyone else. Ever. Only
+> you should have access to your private key.
 
-Chalmers also supplies its own [GitLab](https://git.chalmers.se/) instance where
-you log in with your CID. Which we recommend for school projects as it is without,
-any extra setup, and has unlimited private repositories.
+## SSH-keys in GitHub.
 
-We recommend setting up a GitHub account, as this account comes with some
-excellent student benefits.
+Now the hard part is over! Hooray!
 
-Sign up for an account [here](https://github.com), and while you're at it sign
-up for the GitHub Student Developer Pack using your Chalmers email
-(_cid_@student.chalmers.se) [here](https://education.github.com/pack). The
-GitHub Student Developer Pack gives some good benefits, among them unlimited
-Private Repositories, and a free subscription GitKraken Pro, which we recommend
-using.
+<!-- TODO: A bit ambitious to call what we wrote a guide/steps -->
 
-## Install GitKraken
+Assuming you followed our steps [on creating a GitHub account](./installation.md#create-an-account-on-github),
+you can now put your public key in GitHub to enable SSH verification. If you
+are signed in you can use [this link](https://github.com/settings/keys) to go
+straight to the SSH-keys page. Go to Step 4 below in that case. If you hate
+clicking links, here's a full guide for finding your way there as well.
 
-With a GitHub account in hand, and Git installed I am sure you're eager to get
-started. And if you're comfortable in the terminal you absolutely can, but we
-recommend also downloading a GUI for managing Git called GitKraken.
+1. On the GitHub web page click on your profile icon in the top right corner.
+2. Click `!icon[gear] Settings` (it is the sixth option from the bottom).
+3. Click on `SSH and GPG keys`, it is under the "Access" header.
+---
+4. Click on the green `New SSH key` button.
+5. Give it a name if you'd like, such as what computer you're on. Keep the key
+   type as "Authentication Key" and paste in your **public** key which can be
+   found at `~/.ssh/id_ed25519.pub`. Do ***not*** use your private key here.
+6. Press `Add SSH key`.
 
-GitKraken can be installed from their website here:
-[GitKraken](https://www.gitkraken.com/)
+And that's it! Now you can use GitHub on this computer, or any other computer
+with the same SSH key pair. We recommend using different SSH keys for different
+computers for security reasons, but nothing is stopping you from using the same
+ones.
 
-When asked to sign in, use your newly created GitHub Student account to
-automatically receive the pro features for free.
+## SSH-keys in GitLab.
 
-You will probably also want to enable the GitLab integration in GitKrakens
-preferences as well.
+Here you can use your CID to sign in. If you are signed in you can use [this
+link](https://git.chalmers.se/-/user_settings/ssh_keys) to go right to the
+SSH-keys page. Go to Step 4 below in that case. If you hate clicking links,
+here's a full guide for finding your way there as well.
+
+1. Click on your user icon. It will be at the top of the left sidebar.
+2. Click `Preferences`.
+3. Click on `SSH Keys`, it's right around the middle.
+---
+4. Click on `Add new key`.
+5. Put in your **public** key and feel free to give it a name. Keep the key
+   type as "Authentication & Signing". Here you can also change the expiration
+   date of the key. If you'd like you can change this to any date you'd like,
+   such as when you will graduate.
+6. Press `Add key`.
+
+[^encryption]: Take note that the specific encryption algorithm (Ed25519) might
+    change in the future so this file name might not be the same in the future.
+    Hopefully we remember to update it if SSH changes it. For those curious, the
+    reason to change this would be that Ed25519 is not quantum safe, so a
+    sophisticated enough quantum computer could easily break through it even
+    though a normal computer cannot.

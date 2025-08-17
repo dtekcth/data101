@@ -1,52 +1,60 @@
 # Summary
 
-[Introduction](./introduction.md)
+[Introduction](introduction/introduction.md)
 
-- [Getting started](./getting_started.md)
+- [Getting started](introduction/getting_started.md)
 
 # Beginner
 
-- [The Editor](./beginner/editor/index.md)
-  - [Shortcuts](./beginner/editor/shortcuts.md)
-  - [Navigation](./beginner/editor/navigation.md)
-- [Git - Introduction](./beginner/git/intro.md)
-  - [Setup](./beginner/git/setup.md)
-  - [Repositories, changes and commits](./beginner/git/basics.md)
-  - [Remote repositories and merge conflicts](./beginner/git/remote.md)
-  - [Using .gitignore](./beginner/git/gitignore.md)
-  - [A Git workflow for regular lab assignments](./beginner/git/workflow.md)
-- [CLI](./beginner/cli/index.md)
-  - [Paths](./beginner/cli/paths.md)
-  - [Flags](./beginner/cli/flags.md)
-  - [Environment variables](./beginner/cli/environment_variables.md)
-  - [Autocompletion](./beginner/cli/autocompletion.md)
-  - [Globbing](./beginner/cli/globbing.md)
-  - [SSH](./beginner/ssh.md)
-  <!-- - [Useful tools](./beginner/cli_tools/index.md) -->
-- [Linux](./beginner/linux.md)
-- [Virtualization](./beginner/virtualization/index.md)
-  - [Guest OS](./beginner/virtualization/guest.md)
-- [Pro-tips](./beginner/protips.md)
-
-# Further reading
-
-- [Editor](./advanced/editor.md)
-
----
-
-# Studies
-
-- [Your education](./studies/index.md)
-  - [Exams](./studies/exams.md)
-  - [Courses](./studies/courses.md)
-- [FAQ](./studies/FAQ.md)
-  <!-- - [Courses](./studies/courses.md) -->
+- [Files](beginner/files.md)
+- [The Editor](beginner/editor/index.md)
+  - [Basics](beginner/editor/basics.md)
+  - [Navigation](beginner/editor/navigation.md)
+  - [Shortcuts](beginner/editor/shortcuts.md)
+  - [Extensions](beginner/editor/extensions.md)
+- [CLI](beginner/cli/index.md)
+  - [Basics](beginner/cli/basics.md)
+  - [Paths](beginner/cli/paths.md)
+  - [Flags](beginner/cli/flags.md)
+  - [Common commands](beginner/cli/commands.md)
+  - [Package managers](beginner/cli/packagemanagers.md)
+  - [PowerShell](beginner/cli/powershell.md)
+- [Git and cooperation.](beginner/git/index.md)
+  - [Installation](beginner/git/installation.md)
+  - [Setup](beginner/git/setup.md)
+  - [Repositories, changes and commits](beginner/git/basics.md)
+  - [Remote repositories](beginner/git/remote.md)
+    - [Merge conflicts](beginner/git/mergeconflicts.md)
+  - [Using .gitignore](beginner/git/gitignore.md)
+  - [A Git workflow for regular lab assignments](beginner/git/workflow.md)
+  - [Liveshare](beginner/git/liveshare.md)
+- [Linux](beginner/linux.md)
+<!-- - [Virtualization](beginner/virtualization/index.md) -->
+<!--   - [Guest OS](beginner/virtualization/guest.md) -->
 
 # Courses
 
-- [Effective study tips and tricks](./courses/index.md)
-  - [TDA555](./courses/TDA555.md)
+- [Effective study tips and tricks](courses/index.md)
+  - [General tips](courses/general_tips.md)
+  - [AI and chat services](courses/AI.md)
+  - [TDA555](courses/TDA555.md)
+
+# Studies
+
+- [Your education](studies/index.md)
+  - [Exams](studies/exams.md)
+  - [Courses](studies/courses.md)
+  - [Master's](studies/master.md)
+- [Eduroam](studies/eduroam.md)
+- [Canvas](studies/canvas.md)
+- [Chalmers Apps](studies/chalmers_apps.md)
+- [FAQ](studies/FAQ.md)
+
+# Further reading
+
+- [Editor](further_reading/editor.md)
+- [SSH](further_reading/ssh.md)
 
 ---
 
-[Contributing](./contributing.md)
+[Contributing](contributing.md)
