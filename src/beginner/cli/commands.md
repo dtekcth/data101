@@ -1,8 +1,15 @@
 # Common commands
 
-Now that you know the basics of how paths work and how to interact with a terminal, we will present some common commands in more rapid succession. We will also list the commands we have already covered so you can use this as a quick reference.
+Now that you know the basics of how paths work and how to interact with a
+terminal, we will present some common commands in more rapid succession. We will
+also list the commands we have already covered so you can use this as a quick
+reference.
 
-If you want to know more about a command you can either use `command --help` to print a quick reference, or use `man <command>` to get more thorough documentation. The latter option can be a bit unintuitive to use at first, but you can use the arrow keys to move up and down, and !kbd[q] to exit out of the viewer.
+If you want to know more about a command you can either use `command --help` to
+print a quick reference, or use `man <command>` to get more thorough
+documentation. The latter option can be a bit unintuitive to use at first, but
+you can use the arrow keys to move up and down, and !kbd[q] to exit out of the
+viewer.
 
 | Command                                 | Description                                                              |
 |-----------------------------------------|--------------------------------------------------------------------------|
@@ -27,13 +34,22 @@ Sometimes when looking through the help page for commands you might see somethin
 touch [OPTION]... FILE...
 ```
 
-Here the square brackets (`[]`) indicate optional arguments. Sometimes they might list exactly which flags or arguments you can provide, but in this case it just says options. You might also see required arguments in all caps without any angle brackets (`<>`), such as in this case.
+Here the square brackets (`[]`) indicate optional arguments. Sometimes they
+might list exactly which flags or arguments you can provide, but in this case it
+just says options. You might also see required arguments in all caps without any
+angle brackets (`<>`), such as in this case.
 
-The ellipsis (`...`) also bear significance. They indicate that you can specify multiple of the preceding item. So for this command we can provide multiple options and multiple files.
+The ellipsis (`...`) also bear significance. They indicate that you can specify
+multiple of the preceding item. So for this command we can provide multiple
+options and multiple files.
 
 ## System files
 
-Sometimes when working in a terminal, you need to touch system files or run commands that affect core parts of the system. When you do this, you will get an error that says "Permission denied". In these cases, you need to give extra permissions to the command by typing `sudo` followed by the command you want to run. For example (don't run this):
+Sometimes when working in a terminal, you need to touch system files or run
+commands that affect core parts of the system. When you do this, you will get an
+error that says "Permission denied". In these cases, you need to give extra
+permissions to the command by typing `sudo` followed by the command you want to
+run. For example (don't run this):
 
 ```sh
 sudo cp /etc/fstab /etc/fstab.copy
