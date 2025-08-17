@@ -9,21 +9,23 @@ If you want to know more about a command you can either use `command --help` to
 print a quick reference, or use `man <command>` to get more thorough
 documentation. The latter option can be a bit unintuitive to use at first, but
 you can use the arrow keys to move up and down, and !kbd[q] to exit out of the
-viewer.
+viewer. If you want to print out your own version of the below version you can
+download a PDF [here](/assets/cli/commands.pdf)!
 
 | Command                                 | Description                                                              |
 |-----------------------------------------|--------------------------------------------------------------------------|
 | `cat <files>`                           | Print the contents of the `<files>`                                      |
 | `cd <path>`                             | Changes your working directory to `<path>`                               |
 | `cp <source> <destination>`             | Copies files from `<source>` to `<destination>`                          |
-| `cp --recursive <source> <destination>` | Copies directories and their contents from `<source`> to `<destination>` |
+| `cp -r <source> <destination>`          | Copies directories and their contents from `<source`> to `<destination>` |
 | `ls`                                    | Lists the files in the working directory                                 |
 | `ls <path>`                             | Lists the files in `<path>`                                              |
+| `<command> --help`                      | Print help for `<command>`                                               |
 | `man <command>`                         | Prints the help page for `<command>`                                     |
 | `mkdir <directories>`                   | Create the `<directories>`                                               |
 | `mv <source> <destination>`             | Moves files or directories from `<source>` to `<destination>`            |
 | `rm <files>`                            | Removes the `<files>`                                                    |
-| `rm --recursive <directories>`          | Removes the `<directories>` and all of their contents                    |
+| `rm -r <directories>`                   | Removes the `<directories>` and all of their contents                    |
 | `touch <files>`                         | Creates the `<files>`                                                    |
 
 ## More on notation
