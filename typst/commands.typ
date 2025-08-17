@@ -1,6 +1,6 @@
 // Background color, use second version for PNGs.
-#set page(fill: color.hsl(30deg, 6%, 94%))
-//#set page(fill: none)
+// #set page(fill: color.hsl(30deg, 6%, 94%))
+#set page(fill: none)
 
 // Font, make sure that the nunito font is installed before compiling the document.
 #set text(font: "nunito")
@@ -12,7 +12,7 @@
   if (it.x == 1) {
     text_align = right
   }
-  set align(text_align)
+  set align(text_align + horizon)
 
   if it.y == 0 {
     // Header styling.
