@@ -77,8 +77,7 @@ your courses in study period three if you are studying at computer engineering.
 There are also extensions that allow you to change how your editor looks if
 you'd like! This can include things like changing icons and the way windows and
 panes look. Another popular customization option is themes. These change the
-colors of your editor. Some popular ones are "Gruvbox" and "Monokai". [This
-website](https://vscodethemes.com/) allows you to see and compare different
-ones easily.
+colors of your editor. Some popular ones are "Gruvbox", "Monokai" and different
+flavors of "Catppuccin". [This website](https://vscodethemes.com/) allows you to
+see and compare different ones easily.
 
-<!-- it pains me not to mention catppuccin 😔-->
