@@ -23,7 +23,7 @@ will become second nature to you.
 {{ end }}
 
 Below you can find some of the most commonly used shortcuts in our
-[cheatsheet](../../assets/cli_editor_cheatsheet.pdf). If you have a hard time
+[cheatsheet](/assets/editor/editor_cheatsheet.pdf). If you have a hard time
 memorizing them feel free to print one for yourself and bring it along in your
 backpack as a way to remind yourself of what you can do with the editor. It can
 also be useful to use this as a reference during the rest of this tutorial, but
@@ -40,4 +40,4 @@ without selecting any text?
 The entire line gets cut, meaning it is put in the clipboard and can be pasted
 elsewhere.
 
-![cheatsheet](/assets/editor/cli_editor_cheatsheet.png)
+![cheatsheet](/assets/editor/editor_cheatsheet.png)

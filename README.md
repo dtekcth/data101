@@ -13,3 +13,8 @@ and run `mdbook serve --open` in the project root. This will serve the book on
 
 Please see [the book](https://data101.dtek.se/contributing.html) for
 instructions on how to build and contribute to the project.
+
+## Compiling cheatsheets
+
+To compile the cheatsheets, use `./typst_compile.sh`. Make sure to commit the
+produced PDFs as this step is not included in the docker-file.

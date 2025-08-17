@@ -1,55 +1,24 @@
-// Background color, use second version for PNGs.
-// #set page(fill: color.hsl(30deg, 6%, 94%))
-#set page(fill: none)
-
-// Font, make sure that the nunito font is installed before compiling the document.
-#set text(font: "nunito")
-
-#set table(inset: (x: 0em, y: 1em), stroke: none)
-#show table.cell: it => {
-  // Align columns.
-  let text_align = left
-  if (it.x == 1) {
-    text_align = right
-  }
-  set align(text_align + horizon)
-
-  if it.y == 0 {
-    // Header styling.
-    set text(20pt, rgb("#4F5459"))
-    strong(it)
-  } else if it.x == 0 {
-    // Left column styling.
-    set text(14pt, rgb("#AA4466"))
-    strong(it)
-  } else {
-    // Right column styling.
-    set text(11pt, rgb("#6B7280"))
-    emph(it)
-  }
-}
-
-#let custom_table(left_header, right_header, ..rows) = table(
-  columns: (1fr, 1fr),
-  table.header(left_header, right_header),
-  ..rows.pos().intersperse(table.hline(stroke: rgb("#E5E7EB")))
-)
-
-
+#import "common.typ": custom_table, conf
+#show: conf.with()
 
 #custom_table(
-  [Command                        ], [Description                                                             ],
-  [`cat <files>`                  ], [Print the contents of the `<files>`                                     ],
-  [`cd <path>`                    ], [Changes your working directory to `<path>`                              ],
-  [`cp <source> <destination>`    ], [Copies files from `<source>` to `<destination>`                         ],
-  [`cp -r <source> <destination>` ], [Copies directories and their contents from `<source`> to `<destination>`],
-  [`ls`                           ], [Lists the files in the working directory                                ],
-  [`ls <path>`                    ], [Lists the files in `<path>`                                             ],
-  [`<command> --help`             ], [Print help for `<command>`                                              ],                 
-  [`man <command>`                ], [Prints the help page for `<command>`                                    ],
-  [`mkdir <directories>`          ], [Create the `<directories>`                                              ],
-  [`mv <source> <destination>`    ], [Moves files or directories from `<source>` to `<destination>`           ],
-  [`rm <files>`                   ], [Removes the `<files>`                                                   ],
-  [`rm -r <directories>`          ], [Removes the `<directories>` and all of their contents                   ],
-  [`touch <files>`                ], [Creates the `<files>`                                                   ]
+  [Core Commands               ], [                                          ],
+  text(14pt, `cd <path>`       ), [Changes your working directory to `<path>`],
+  text(14pt, `ls`              ), [Lists the files in the working directory  ],
+  text(14pt, `ls <path>`       ), [Lists the files in `<path>`               ],
+  text(14pt, `<command> --help`), [Print help for `<command>`                ],                 
+  text(14pt, `man <command>`   ), [Prints the help page for `<command>`      ],
+)
+
+#custom_table(
+  spacing: 1em,
+  [Files & Directories                     ], [                                                                        ],
+  text(14pt, `cat <files>`                 ), [Print the contents of the `<files>`                                     ],
+  text(14pt, `cp <source> <destination>`   ), [Copies files from `<source>` to `<destination>`                         ],
+  text(14pt, `cp -r <source> <destination>`), [Copies directories and their contents from `<source`> to `<destination>`],
+  text(14pt, `mkdir <directories>`         ), [Create the `<directories>`                                              ],
+  text(14pt, `mv <source> <destination>`   ), [Moves files or directories from `<source>` to `<destination>`           ],
+  text(14pt, `rm <files>`                  ), [Removes the `<files>`                                                   ],
+  text(14pt, `rm -r <directories>`         ), [Removes the `<directories>` and all of their contents                   ],
+  text(14pt, `touch <files>`               ), [Creates the `<files>`                                                   ]
 )
