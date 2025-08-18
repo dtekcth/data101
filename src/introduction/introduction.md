@@ -82,15 +82,4 @@ we also post news regarding the student division. We also share information
 from the program or from us regarding deadlines or things of importance for
 you! Make sure you sign up in order not to miss anything!
 
-## Lectures
-
-There will be two lectures where we go through some of the early chapters. The
-first lecture we will go through how to use the CLI, the editor and some
-general information. The authors will also be available during the _PISS-kväll_
-in the afternoon to help you. The second lecture will primarily cover Git. This
-lecture is if anything _more_ important than the first so please come to both!
-
-The authors will also be attending the _hackkväll_ at 18:00 in NC (Idéläran)
-and will be assisting you with any problem you might be having!
-
 {{ end }}
