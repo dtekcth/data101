@@ -10,7 +10,7 @@ print a quick reference, or use `man <command>` to get more thorough
 documentation. The latter option can be a bit unintuitive to use at first, but
 you can use the arrow keys to move up and down, and !kbd[q] to exit out of the
 viewer. If you want to print out your own version of the below version you can
-download a PDF [here](/assets/cli/cli_cheatsheet.pdf)!
+download a PDF [here](/assets/autogen/cli_cheatsheet.pdf)!
 
 | Command                                 | Description                                                              |
 |-----------------------------------------|--------------------------------------------------------------------------|

@@ -1,4 +1,4 @@
 book
 .direnv
-src/assets/cli/cli_cheatsheet.pdf
-src/assets/editor/editor_cheatsheet.pdf
+src/assets/autogen/*
+!src/assets/autogen/.gitkeep
