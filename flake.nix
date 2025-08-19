@@ -14,7 +14,7 @@
         with pkgs;
         {
           devShells.default = mkShell {
-            buildInputs = [ mdbook typst just ];
+            buildInputs = [ mdbook typst ];
           };
         }
       );
