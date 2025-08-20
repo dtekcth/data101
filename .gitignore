@@ -1,1 +1,4 @@
 book
+.direnv
+src/assets/autogen/*
+!src/assets/autogen/.gitkeep
