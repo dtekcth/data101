@@ -102,7 +102,7 @@ sudo pacman -Syu && sudo pacman -S python python-dbus python-cryptography
 
 With the dependencies installed, we can continue with setting up Eduroam.
 
-1. Run `~/Downloasds/eduroam-linux-CUoT-Eduroam.py --gui tty` to start the
+1. Run `~/Downloads/eduroam-linux-CUoT-Eduroam.py --gui tty` to start the
    setup.
 2. Press !kbd[Enter].
 3. Enter `<cid>@chalmers.se` as your userid, where you replace `<cid>` with you
