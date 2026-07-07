@@ -1,3 +1,9 @@
+> [Danger]
+> This book is currently under development in preparation for the next year
+> of studies. You may encounter some outdated information, especially about
+> the first year of TKDAT and Master programmes.
+
+
 # Introduction
 
 Congratulations! You are about to take your first steps towards becoming not
