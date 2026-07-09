@@ -55,6 +55,9 @@
 - [Editor](further_reading/editor.md)
 - [SSH](further_reading/ssh.md)
 
+# Manuals
+- [GNU Make](./manuals/make.md)
+
 ---
 
 [Contributing](contributing.md)
