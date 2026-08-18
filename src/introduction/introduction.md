@@ -3,6 +3,11 @@
 > of studies. You may encounter some outdated information, especially about
 > the first year of TKDAT and Master programmes.
 
+# Lectures
+| Lecture | Date |
+| - | - |
+| DATA101 Part 1 | 2026-08-27 16:16 |
+| DATA101 Part 2 | 2026-09-01 17:17 |
 
 # Introduction
 
@@ -89,3 +94,4 @@ from the program or from us regarding deadlines or things of importance for
 you! Make sure you sign up in order not to miss anything!
 
 {{ end }}
+
