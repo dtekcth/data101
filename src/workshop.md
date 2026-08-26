@@ -63,8 +63,10 @@ installed app "Git Bash" and then running `git --version` in the terminal.
 {{ begin .macos }}
 #### macOS
 
-For macOS, Git can be installed in a couple of ways. The preferred way to
-install it is with Homebrew, by running `brew install git` in your terminal.
+For macOS, Git can be installed in a couple of ways.
+
+The preferred way to install it is with Homebrew, by running `brew install git`
+in your terminal.
 
 If you do not know what Homebrew is, and aren't interested in installing it,
 you can run `xcode-select --install` in your terminal. Restart the terminal
@@ -282,7 +284,7 @@ print("It is also ...")
 Go to "Source control" and commit this file. Give the commit an
 appropriate message. You will now notice the button labeled "Sync Changes".
 Hovering over reveals that it will "Push 1 committs to origin/main". We usually
-call our Git remote for the *origin*, so this means that it will push our
+call our Git remote the *origin*, so this means that it will push our
 commit to GitHub. That is exactly what we want, so you can press it.
 
 This will give you a pop-up asking if it should pull and push commits from our
@@ -350,7 +352,7 @@ the "Source Control" panel, and then "Sync Changes". The other person
 may now also press "Pull" to make sure everything is correctly updated
 everywhere.
 
-### 3.8. Going further
+### 4. Going further
 Congratulations on completing this workshop! It might have felt hard,
 but we promise you that once you start using it more often it will
 start to make some sense. 
@@ -361,6 +363,9 @@ decide to go off and play some board games, or to study some introductory math
 in preparation for your mock exam. However, if you want to keep going with
 these tools, here is a list of some things you can try out:
 
+* **Making changes without merge conflicts**: Try making two commits at the
+  same time, but only make changes in separate files. Is there a merge
+  conflict?
 * **Exploring Python**: Make something more complicated! Try reading user input
   with `input()`, and maybe make a choose-your-own-adventure story using it and
   `if`-statements.
@@ -384,3 +389,6 @@ these tools, here is a list of some things you can try out:
   terminal. Try learning to navigate it using simple commands like `cd` and
   `ls`, and try using Git from the terminal!
 
+> [Info]
+> Sista chansen att bli studentrepresentant är nu! Anmäl dig genom att fylla i
+> [detta korta formulär](https://forms.gle/GSTZzfKtVGZ55QyW6)!
