@@ -57,4 +57,8 @@
 
 ---
 
+[Workshop](workshop.md)
+
+---
+
 [Contributing](contributing.md)
