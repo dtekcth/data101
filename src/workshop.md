@@ -110,6 +110,9 @@ On other distros you need to Google how to do it.
 
 ## 2. Configuration
 ### 2.1. Configuring VS Code
+When first opening VS Code it will ask you to sign in. You don't have to sign
+in to any the services, so just skip it.
+
 {{ begin .linux .macos}}
 
 On Linux and macOS there is no need to change any settings, the default options
@@ -127,7 +130,7 @@ for "user settings" and open "Preferences: Open User Settings".
 
 In the settings, search for "terminal default profile" and
 find the setting "Terminal > Integrated > Default Profile: Windows" and
-change to option from CMD to Git Bash.
+change to option from "null" to Git Bash.
 
 {{ end }}
 
@@ -137,7 +140,8 @@ Code by writing !kbd[!ctrl+Shift+p] and search for "new terminal" and select
 "Terminal: Create New Terminal".
 
 In the terminal window, run the following commands one after another. Make sure
-to replace the email address and your name with the correct ones.
+to replace the email address and your name with the correct ones. When you have
+copied the text it can be pasted using !kbd[!ctrl+shift+v].
 
 ```bash
 git config --global core.editor "code --wait"
@@ -220,6 +224,9 @@ Search for and open "git clone". You might be tempted to press the "Clone from
 GitHub" button, but it is more hassle than it is worth. Instead, paste in the
 text that is the location of the repository (by pressing !kbd[!ctrl+v]) and
 press !kbd[Enter]. 
+
+VS Code will now ask if you trust the fingerprint of `github.com`. This refers
+to the SSH fingerprint that GitHub uses. You should allow it to continue.
 
 Now VS Code asks you for a place to store the repository on your computer.
 On Windows we suggest using the "Documents" folder, and on macOS and
@@ -304,8 +311,10 @@ find the sidebar button labeled "Collaborators". Here you will press "Add
 people" and search for the username of the other person, and then
 add them to the repository.
 
-The other person can now clone the repository in VS Code by using the same
-location text as before, something like
+The other person will receive an email from GitHub, and a notification on the
+GitHub website, informing them that they have been invited to the repository.
+Look at the invitation and accept it. The other person can now clone the
+repository in VS Code by using the same location text as before, something like
 `git@github.com:username/data101-workshop.git`, but with the username matching
 the owner of the repository.
 
@@ -337,6 +346,11 @@ the other person will get a pop-up in the lower right corner
 of the screen mentioning that there are "merge conflicts". You will also
 notice that the text editor window looks a little weird, with some
 arrows and equal signs all over.
+
+> [Info]
+> If an error is displayed in the center of your screen asking you to try
+> running "Pull" to integrate your changes, you can cancel it and then retry
+> using either the sync changes button or the pull button.
 
 Let's press the button saying "Resolve in Merge Editor". You will see
 both of your changes at the top and then the result at the bottom.
