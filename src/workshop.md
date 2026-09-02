@@ -16,25 +16,32 @@ both of your computers.
 
 
 ## 0. Fixing networking (Eduroam)
-Read our [article on Eduroam](/studies/eduroam.html).
+Read our [article on Eduroam](studies/eduroam.html).
 
 ##  1. Installations
 ### 1.1. Installing Python
+> [Note] 
+> Starting 2026, all engineering bachelor students will take at least one
+> course in programming with Python, and thus we will use it as an example for
+> this workshop. If you are not a bachelor student, substitute Python with
+> whatever programming language you feel comfortable with.
+
 {{ begin .windows }}
 
-For Windows 10 and 11, Python can be installed from the
-[Microsoft Store](https://apps.microsoft.com/detail/9pnrbtzxmb4z).
-If it for some reason doesn't work the it can be installed from the
-[Python website](https://www.python.org/downloads/windows/).
-We recommend the latest stable release (currently 3.13.15).
+For Windows 10 and 11, Python can be installed from the [Microsoft
+Store](https://apps.microsoft.com/detail/9pnrbtzxmb4z). If it for some reason
+doesn't work then it can be installed from the [Python
+website](https://www.python.org/downloads/windows/). If you are using the
+installer, you can accept all the default options when it asks you. We
+recommend the latest stable release (currently 3.13.15).
 
 {{ end }}
 
 {{ begin .macos }}
 
-For macOS, Python can be installed be downloading it from the
-[Python website](https://www.python.org/downloads/macos/). 
-We recommend the latest stable release (currently 3.13.15).
+For macOS, Python can be installed be downloading it from the [Python
+website](https://www.python.org/downloads/macos/). We recommend the latest
+stable release (currently 3.13.15). You can allow the default options.
 
 {{ end }}
 
@@ -47,6 +54,11 @@ then you should Google how to install it for your specific distro.
 
 
 ### 1.2. Installing Git
+> [Note]
+> If you do not know what Git is and why you should use it, or just need a
+> refresher, our full guide on Git is available
+> [here](beginner/git/index.html).
+
 {{ begin .windows }}
 #### Windows
 
@@ -66,9 +78,10 @@ installed app "Git Bash" and then running `git --version` in the terminal.
 For macOS, Git can be installed in a couple of ways.
 
 The preferred way to install it is with Homebrew, by running `brew install git`
-in your terminal.
+in your terminal. The terminal can be opened with !kbd[!cmd+Space] and
+searching for it.
 
-If you do not know what Homebrew is, and aren't interested in installing it,
+If you do not know what Homebrew is, or aren't interested in installing it,
 you can run `xcode-select --install` in your terminal. Restart the terminal
 when you are done. You can read more about this in [this chapter of the
 book](beginner/git/installation.html#-windows-linux--macos).
@@ -92,6 +105,11 @@ and then running `git --version`.
 
 
 ### 1.3. Installing VS Code
+> [Note]
+> There are many tools for writing code out there, and you may prefer something
+> other than VS Code. Our motivations for recommending VS Code, and a more
+> in-depth guide can be found [here](beginner/editor/index.html).
+
 {{ begin .windows .macos }}
 
 On Windows and macOS you can download the correct installer from the [VS Code website](https://code.visualstudio.com/Download),
@@ -141,14 +159,23 @@ Code by writing !kbd[!ctrl+Shift+p] and search for "new terminal" and select
 
 In the terminal window, run the following commands one after another. Make sure
 to replace the email address and your name with the correct ones. When you have
-copied the text it can be pasted using !kbd[!ctrl+shift+v].
+copied the one line it can be pasted using !kbd[!ctrl+shift+v]. Do that for
+each of the lines.
 
 ```bash
 git config --global core.editor "code --wait"
+```
+```bash
 git config --global init.defaultBranch "main"
+```
+```bash
 git config --global pull.rebase true
+```
+```bash
 git config --global user.name "Your Name"
-git config --global user.email "CID@student.chalmers.se"
+```
+```bash
+git config --global user.email "your.personal@email.address"
 ```
 
 > [Note]
@@ -164,20 +191,28 @@ git config --global user.email "CID@student.chalmers.se"
 >    default.
 > 4. Git writes down who makes each commit, and thus needs a name for you. You
 >    can of course lie about it, Git won't know any better.
-> 5. In the same spirit as your name, Git needs an email for you.
+> 5. In the same spirit as your name, Git needs an email for you. You can
+>    choose any email, but since you are likely to use Git even after you
+>    graduate, we would recommend using your personal email.
 
 ### 2.3. Creating a GitHub account
 The most popular Git remote is GitHub, and you should learn to be comfortable
-using it. Start by opening
-[https://github.com/signup](https://github.com/signup) to create your account
-if you don't already have one. You may choose to use whatever email address you
-want, but since you will likely need a GitHub account even after your
-studies, you should consider using your personal email.
+using it. Start by opening [https://github.com/signup](https://github.com/signup)
+to create your account if you don't already have one. You should use your own
+personal email to be able to access your account later, and try to use the
+same email as you have configured with Git since it will be just a little
+nicer on GitHub.
 
 
 ### 2.4. Setting up SSH
+> [Note]
+> You do not need to know how SSH works, save for the fact that 
+> private keys must be kept private, but should you want to learn
+> more you can read that [here](further_reading/ssh.html).
+
 Open your terminal in VS Code and run `ssh-keygen`. You can accept all the
-default values by pressing !kbd[Enter] when it asks for your input.
+default values by pressing !kbd[Enter] when it asks for your input. Leave
+the password empty, also by pressing !kbd[Enter].
 
 The program has now generated two files, `~/.ssh/id_ed25519` and
 `~/.ssh/id_ed25519.pub`. Remember, `~/.ssh/id_ed25519` is your private key and
@@ -200,24 +235,35 @@ opened find the button labeled "New SSH key" and press it. Give it a name, any
 name will do, and paste the contents of your public ssh key by typing
 !kbd[!ctrl+v]. Finish by pressing "Add SSH key".
 
-You should now be able to access GitHub through SSH. You can test this
-by running `ssh git@github.com` in the VS Code terminal.
+You should now be able to access GitHub through SSH. You can test this by
+running `ssh git@github.com` in the VS Code terminal. It is likely that you
+will be asked to trust the fingerprint of `github.com`. This is a security
+measure of SSH, and if the fingerprint of `github.com` changes in the future,
+that would be a sign of a malicious actor. SSH will tell you if that happens,
+so for now you should trust the fingerprint and continue by typing `yes`.
 
 
 ## 3. Working with git and GitHub
 ### 3.1. Creating a new Git respository
 Creating a new Git repository is easiest to do on your remote, in this case
-GitHub. On `github.com` find the plus-button and select "New repository". Give
-it a reasonable name, for this workshop you might choose something like
-"data101-workshop". When doing this you should also set the visibility of the
-repository to "Private". Sometimes you will want a public repo, but this time a
-private repository is more suitable. There is no need to change any other
-settings.
+GitHub. On `github.com` in your browser, find the plus-button and select "New
+repository". Give it a reasonable name, for this workshop you might choose
+something like "data101-workshop". When doing this you should also set the
+visibility of the repository to "Private". Writing solutions to exercises
+and labs publicly may count as cheating, so be careful when using
+public repositories. There is no need to change any of the other settings,
+so press "Create repository".
 
-Now we want to open this repository in VS Code. You should look for the text
-that looks something like `git@github.com:username/data101-workshop.git`. Like
-URLs for websites, this shows SSH how to find the files that is your git
-repository on your chosen remote. Make sure to copy this text.
+Now we want to open this repository in VS Code. Find the button labeled "SSH"
+and press it. You should now see a text that looks something like
+`git@github.com:your-username/data101-workshop.git`. Like URLs for websites,
+this shows SSH how to find the files that is your git repository on your chosen
+remote, it is the repositories location. Make sure to copy this text.
+
+> [Note]
+> When your repository stops being empty it will start looking differently
+> on the GitHub website. You can find the repository location by pressing
+> the green "Code" button in that case.
 
 Open VS Code and use !kbd[!ctrl+Shift+p] to bring up the command palette.
 Search for and open "git clone". You might be tempted to press the "Clone from
@@ -225,18 +271,18 @@ GitHub" button, but it is more hassle than it is worth. Instead, paste in the
 text that is the location of the repository (by pressing !kbd[!ctrl+v]) and
 press !kbd[Enter]. 
 
-VS Code will now ask if you trust the fingerprint of `github.com`. This refers
-to the SSH fingerprint that GitHub uses. You should allow it to continue.
+If you did not try running `ssh git@github.com` before, you are likely to
+be asked if you trust the fingerprint of `github.com`. You should allow this.
 
 Now VS Code asks you for a place to store the repository on your computer.
 On Windows we suggest using the "Documents" folder, and on macOS and
 Linux you can use the home folder or the "Projects" folder, should
 it exist. As long as you remember where it is, you can choose anywhere.
 
-Last step now. By default VS Code doesn't trust the repository. You
-can see this by the banner at the top of the program and the little
-button in the far down left corner saying "Restricted mode". Press the
-button and make sure to tell it to trust the repository.
+Last step now. By default VS Code doesn't trust the repository. You can see
+this by the banner at the top of the program and the little blue button in the
+far down left corner saying "Restricted mode". Press the button and make sure
+to tell it to trust the repository.
 
 
 ### 3.2. Editing files in VS Code
@@ -403,6 +449,3 @@ these tools, here is a list of some things you can try out:
   terminal. Try learning to navigate it using simple commands like `cd` and
   `ls`, and try using Git from the terminal!
 
-> [Info]
-> Sista chansen att bli studentrepresentant är nu! Anmäl dig genom att fylla i
-> [detta korta formulär](https://forms.gle/GSTZzfKtVGZ55QyW6)!
