@@ -16,6 +16,7 @@
 .hljs-variable,
 .hljs-template-variable,
 .hljs-attribute,
+.hljs-attr,
 .hljs-tag,
 .hljs-name,
 .hljs-regexp,
@@ -59,9 +60,8 @@
 .hljs {
   display: block;
   overflow-x: auto;
-  background: var(--code-bg, #f6f7f6);
-  color: var(--code-text, #000);
-  padding: 0.5em;
+  background: #f6f7f6;
+  color: #000;
 }
 
 .hljs-emphasis {

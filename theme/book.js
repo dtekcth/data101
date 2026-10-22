@@ -117,45 +117,50 @@ const showAll = (elList) => {
     }
 
     if (matches[1] === "\\") {
-        // Remove the escape.
-        node.nodeValue = node.nodeValue.replace(matches[1], "");
+      // Remove the escape.
+      node.nodeValue = node.nodeValue.replace(matches[1], "");
     } else {
-        // Remove the command.
-        node.nodeValue = node.nodeValue.replace(matches[2], "");
+      // Remove the command.
+      node.nodeValue = node.nodeValue.replace(matches[2], "");
 
-        if (node.parentElement.nodeName === "P") node = node.parentElement;
+      if (node.parentElement.nodeName === "P") node = node.parentElement;
 
-        // Run command.
-        const cmd = matches[3];
-        switch (cmd) {
-          case "Task":
-            return createTask(node);
-          case "Solution":
-            return createSolution(node);
-          case "Danger":
-            return node.parentElement.classList.add("danger");
-          case "Warning":
-            return node.parentElement.classList.add("warning");
-        }
+      // Run command.
+      const cmd = matches[3];
+      switch (cmd) {
+        case "Task":
+          return createTask(node);
+        case "Solution":
+          return createSolution(node);
+        case "Danger":
+          return node.parentElement.classList.add("danger");
+        case "Warning":
+          return node.parentElement.classList.add("warning");
+      }
     }
   };
 
   const matchBlockMacro = (node) => {
     if (node.parentElement === null) return;
 
-    node.nodeValue = node.nodeValue
-      .replace(/(.)?({{\s*((\.[A-Za-z\-0-9]+\s*)+)}})/, (matches, first, second, third) => {
+    node.nodeValue = node.nodeValue.replace(
+      /(.)?({{\s*((\.[A-Za-z\-0-9]+\s*)+)}})/,
+      (matches, first, second, third) => {
         // Ignore if preceded by a backslash
         if (first === "\\") return second;
 
         // Search for the list item for footnotes. This makes them behave
         // somewhat reasonably.
         let parentElement = node.parentElement;
-        for (let p = node.parentElement; p && p.tagName !== "MAIN"; p = p.parentElement) {
-            if (p.tagName === "LI" && p.id.startsWith("footnote-")) {
-                parentElement = p;
-                break;
-            }
+        for (
+          let p = node.parentElement;
+          p && p.tagName !== "MAIN";
+          p = p.parentElement
+        ) {
+          if (p.tagName === "LI" && p.id.startsWith("footnote-")) {
+            parentElement = p;
+            break;
+          }
         }
 
         third
@@ -165,7 +170,8 @@ const showAll = (elList) => {
           .forEach((c) => parentElement.classList.add(c));
 
         return first ? first : "";
-      });
+      },
+    );
   };
 
   const matchCodeMacro = (node) => {
@@ -183,7 +189,7 @@ const showAll = (elList) => {
   };
 
   const BeginLongBlockRegex = /^{{\s*begin\s+((\.[A-Za-z\-0-9]+\s*)+)}}/;
-  const EndLongBlockRegex   = /^{{\s*end\s*}}/;
+  const EndLongBlockRegex = /^{{\s*end\s*}}/;
 
   const matchLongBlockMacro = (node) => {
     if (node.parentElement === null) return;
@@ -199,7 +205,11 @@ const showAll = (elList) => {
       node.nodeValue = node.nodeValue.replace(matches[0], "");
 
       // Apply classes.
-      for (let element = node.parentElement; element; element = element.nextSibling) {
+      for (
+        let element = node.parentElement;
+        element;
+        element = element.nextSibling
+      ) {
         const matches = (element.innerText ?? "").match(EndLongBlockRegex);
         if (matches !== null) {
           element.remove();
@@ -223,19 +233,18 @@ const showAll = (elList) => {
 })();
 
 (function OperatingSystem() {
-  const icons = {
-    macos:   ["fa-apple"],
-    linux:   ["fa-linux"],
-    windows: ["fa-windows"],
-    all:     ["fa-linux", "fa-apple", "fa-windows"],
+  const iconClasses = {
+    macos: "os-macos",
+    linux: "os-linux",
+    windows: "os-windows",
   };
   const colors = {
     Data: "orange",
-    IT:   "#008CBA",
-    DV:   "#188BDE",
+    IT: "#008CBA",
+    DV: "#188BDE",
   };
 
-  let os        = localStorage.getItem("mdbook-os")        ?? "all";
+  let os = localStorage.getItem("mdbook-os") ?? "all";
   let programme = localStorage.getItem("mdbook-programme") ?? "all";
 
   const setOS = (newOS) => {
@@ -290,14 +299,12 @@ const showAll = (elList) => {
 
   window.addEventListener("load", () => {
     const allOS = ["macos", "linux", "windows"];
-    const osToggleButton = document.getElementById("os-toggle");
-    const osList = document.getElementById("os-list");
+    const osToggleButton = document.getElementById("mdbook-os-toggle");
+    const osList = document.getElementById("mdbook-os-list");
     const osOptions = Array.from(osList.getElementsByTagName("button", osList));
 
     // Replace all !kbd and !icon commands with their HTML equivalents.
-    textNodesUnder(
-      document.getElementById("content")
-    ).forEach((n) => {
+    textNodesUnder(document.getElementById("mdbook-content")).forEach((n) => {
       if (!n.parentElement || !n.parentElement.innerHTML) return;
 
       n.parentElement.innerHTML = n.parentElement.innerHTML
@@ -328,10 +335,14 @@ const showAll = (elList) => {
         showAll([os]);
       }
 
-      // Set icons
-      osToggleButton.innerHTML = icons[os]
-        .map((icon) => `<i class="fa ${icon}"></i>`)
-        .join("");
+      // Set the selected OS icons without relying on the removed Font Awesome font.
+      osToggleButton.querySelectorAll(".os-icon").forEach((icon) => {
+        icon.style.display =
+          os === "all" || icon.classList.contains(iconClasses[os])
+            ? "inline-block"
+            : "none";
+      });
+      osToggleButton.style.width = os === "all" ? "98px" : "45px";
 
       // Update OS specific shortcut keys.
       const ctrlNodes = document.querySelectorAll("[data-context-ctrl]");
@@ -349,8 +360,8 @@ const showAll = (elList) => {
 
     const hideHandler = (event) => {
       // If user clicks inside the element, do nothing
-      if (event.target.closest("#os-list")) return;
-      if (event.target.closest("#os-toggle")) return;
+      if (event.target.closest("#mdbook-os-list")) return;
+      if (event.target.closest("#mdbook-os-toggle")) return;
       // If user clicks outside the element, hide it!
       osList.style.display = "none";
       document.removeEventListener("click", hideHandler);
@@ -376,10 +387,12 @@ const showAll = (elList) => {
 
   window.addEventListener("load", () => {
     const allProgrammes = ["Data", "DV", "IT"];
-    const programmeToggleButton = document.getElementById("programme-toggle");
-    const programmeList = document.getElementById("programme-list");
+    const programmeToggleButton = document.getElementById(
+      "mdbook-programme-toggle",
+    );
+    const programmeList = document.getElementById("mdbook-programme-list");
     const programmeOptions = Array.from(
-      programmeList.getElementsByTagName("button", programmeList)
+      programmeList.getElementsByTagName("button", programmeList),
     );
 
     const applyProgrammeOptions = () => {
@@ -391,14 +404,17 @@ const showAll = (elList) => {
       }
 
       if (programme === "all") {
-        document.documentElement.style.setProperty("--display-D",  "block");
+        document.documentElement.style.setProperty("--display-D", "block");
         document.documentElement.style.setProperty("--display-IT", "block");
         document.documentElement.style.setProperty("--display-DV", "block");
       } else {
-        document.documentElement.style.setProperty("--display-D",  "none");
+        document.documentElement.style.setProperty("--display-D", "none");
         document.documentElement.style.setProperty("--display-IT", "none");
         document.documentElement.style.setProperty("--display-DV", "none");
-        document.documentElement.style.setProperty( `--display-${programme}`, "block");
+        document.documentElement.style.setProperty(
+          `--display-${programme}`,
+          "block",
+        );
       }
 
       const programmeText = programme === "all" ? "All programmes" : programme;
@@ -408,8 +424,8 @@ const showAll = (elList) => {
 
     const hideHandler = (event) => {
       // If user clicks inside the element, do nothing
-      if (event.target.closest("#programme-list")) return;
-      if (event.target.closest("#programme-toggle")) return;
+      if (event.target.closest("#mdbook-programme-list")) return;
+      if (event.target.closest("#mdbook-programme-toggle")) return;
       // If user clicks outside the element, hide it!
       programmeList.style.display = "none";
       document.removeEventListener("click", hideHandler);
@@ -455,7 +471,7 @@ function playground_text(playground) {
     return Promise.race([
       fetch(url, options),
       new Promise((_, reject) =>
-        setTimeout(() => reject(new Error("timeout")), timeout)
+        setTimeout(() => reject(new Error("timeout")), timeout),
       ),
     ]);
   }
@@ -474,7 +490,7 @@ function playground_text(playground) {
         // get list of crates available in the rust playground
         let playground_crates = response.crates.map((item) => item["id"]);
         playgrounds.forEach((block) =>
-          handle_crate_list_update(block, playground_crates)
+          handle_crate_list_update(block, playground_crates),
         );
       });
   }
@@ -587,7 +603,7 @@ function playground_text(playground) {
       .catch(
         (error) =>
           (result_block.innerText =
-            "Playground Communication: " + error.message)
+            "Playground Communication: " + error.message),
       );
   }
 
@@ -634,43 +650,45 @@ function playground_text(playground) {
     block.classList.add("hljs");
   });
 
-  Array.from(document.querySelectorAll("code.language-rust")).forEach(function (
-    block
-  ) {
-    var lines = Array.from(block.querySelectorAll(".boring"));
-    // If no lines were hidden, return
-    if (!lines.length) {
-      return;
-    }
-    block.classList.add("hide-boring");
-
-    var buttons = document.createElement("div");
-    buttons.className = "buttons";
-    buttons.innerHTML =
-      '<button class="fa fa-eye" title="Show hidden lines" aria-label="Show hidden lines"></button>';
-
-    // add expand button
-    var pre_block = block.parentNode;
-    pre_block.insertBefore(buttons, pre_block.firstChild);
-
-    pre_block.querySelector(".buttons").addEventListener("click", function (e) {
-      if (e.target.classList.contains("fa-eye")) {
-        e.target.classList.remove("fa-eye");
-        e.target.classList.add("fa-eye-slash");
-        e.target.title = "Hide lines";
-        e.target.setAttribute("aria-label", e.target.title);
-
-        block.classList.remove("hide-boring");
-      } else if (e.target.classList.contains("fa-eye-slash")) {
-        e.target.classList.remove("fa-eye-slash");
-        e.target.classList.add("fa-eye");
-        e.target.title = "Show hidden lines";
-        e.target.setAttribute("aria-label", e.target.title);
-
-        block.classList.add("hide-boring");
+  Array.from(document.querySelectorAll("code.language-rust")).forEach(
+    function (block) {
+      var lines = Array.from(block.querySelectorAll(".boring"));
+      // If no lines were hidden, return
+      if (!lines.length) {
+        return;
       }
-    });
-  });
+      block.classList.add("hide-boring");
+
+      var buttons = document.createElement("div");
+      buttons.className = "buttons";
+      buttons.innerHTML =
+        '<button class="fa fa-eye" title="Show hidden lines" aria-label="Show hidden lines"></button>';
+
+      // add expand button
+      var pre_block = block.parentNode;
+      pre_block.insertBefore(buttons, pre_block.firstChild);
+
+      pre_block
+        .querySelector(".buttons")
+        .addEventListener("click", function (e) {
+          if (e.target.classList.contains("fa-eye")) {
+            e.target.classList.remove("fa-eye");
+            e.target.classList.add("fa-eye-slash");
+            e.target.title = "Hide lines";
+            e.target.setAttribute("aria-label", e.target.title);
+
+            block.classList.remove("hide-boring");
+          } else if (e.target.classList.contains("fa-eye-slash")) {
+            e.target.classList.remove("fa-eye-slash");
+            e.target.classList.add("fa-eye");
+            e.target.title = "Show hidden lines";
+            e.target.setAttribute("aria-label", e.target.title);
+
+            block.classList.add("hide-boring");
+          }
+        });
+    },
+  );
 
   if (window.playground_copyable) {
     Array.from(document.querySelectorAll("pre code")).forEach(function (block) {
@@ -695,68 +713,68 @@ function playground_text(playground) {
   }
 
   // Process playground code blocks
-  Array.from(document.querySelectorAll(".playground")).forEach(function (
-    pre_block
-  ) {
-    // Add play button
-    var buttons = pre_block.querySelector(".buttons");
-    if (!buttons) {
-      buttons = document.createElement("div");
-      buttons.className = "buttons";
-      pre_block.insertBefore(buttons, pre_block.firstChild);
-    }
+  Array.from(document.querySelectorAll(".playground")).forEach(
+    function (pre_block) {
+      // Add play button
+      var buttons = pre_block.querySelector(".buttons");
+      if (!buttons) {
+        buttons = document.createElement("div");
+        buttons.className = "buttons";
+        pre_block.insertBefore(buttons, pre_block.firstChild);
+      }
 
-    var runCodeButton = document.createElement("button");
-    runCodeButton.className = "fa fa-play play-button";
-    runCodeButton.hidden = true;
-    runCodeButton.title = "Run this code";
-    runCodeButton.setAttribute("aria-label", runCodeButton.title);
+      var runCodeButton = document.createElement("button");
+      runCodeButton.className = "fa fa-play play-button";
+      runCodeButton.hidden = true;
+      runCodeButton.title = "Run this code";
+      runCodeButton.setAttribute("aria-label", runCodeButton.title);
 
-    buttons.insertBefore(runCodeButton, buttons.firstChild);
-    runCodeButton.addEventListener("click", function (e) {
-      run_rust_code(pre_block);
-    });
-
-    if (window.playground_copyable) {
-      var copyCodeClipboardButton = document.createElement("button");
-      copyCodeClipboardButton.className = "fa fa-copy clip-button";
-      copyCodeClipboardButton.innerHTML = '<i class="tooltiptext"></i>';
-      copyCodeClipboardButton.title = "Copy to clipboard";
-      copyCodeClipboardButton.setAttribute(
-        "aria-label",
-        copyCodeClipboardButton.title
-      );
-
-      buttons.insertBefore(copyCodeClipboardButton, buttons.firstChild);
-    }
-
-    let code_block = pre_block.querySelector("code");
-    if (window.ace && code_block.classList.contains("editable")) {
-      var undoChangesButton = document.createElement("button");
-      undoChangesButton.className = "fa fa-history reset-button";
-      undoChangesButton.title = "Undo changes";
-      undoChangesButton.setAttribute("aria-label", undoChangesButton.title);
-
-      buttons.insertBefore(undoChangesButton, buttons.firstChild);
-
-      undoChangesButton.addEventListener("click", function () {
-        let editor = window.ace.edit(code_block);
-        editor.setValue(editor.originalCode);
-        editor.clearSelection();
+      buttons.insertBefore(runCodeButton, buttons.firstChild);
+      runCodeButton.addEventListener("click", function (e) {
+        run_rust_code(pre_block);
       });
-    }
-  });
+
+      if (window.playground_copyable) {
+        var copyCodeClipboardButton = document.createElement("button");
+        copyCodeClipboardButton.className = "fa fa-copy clip-button";
+        copyCodeClipboardButton.innerHTML = '<i class="tooltiptext"></i>';
+        copyCodeClipboardButton.title = "Copy to clipboard";
+        copyCodeClipboardButton.setAttribute(
+          "aria-label",
+          copyCodeClipboardButton.title,
+        );
+
+        buttons.insertBefore(copyCodeClipboardButton, buttons.firstChild);
+      }
+
+      let code_block = pre_block.querySelector("code");
+      if (window.ace && code_block.classList.contains("editable")) {
+        var undoChangesButton = document.createElement("button");
+        undoChangesButton.className = "fa fa-history reset-button";
+        undoChangesButton.title = "Undo changes";
+        undoChangesButton.setAttribute("aria-label", undoChangesButton.title);
+
+        buttons.insertBefore(undoChangesButton, buttons.firstChild);
+
+        undoChangesButton.addEventListener("click", function () {
+          let editor = window.ace.edit(code_block);
+          editor.setValue(editor.originalCode);
+          editor.clearSelection();
+        });
+      }
+    },
+  );
 })();
 
 (function themes() {
   var html = document.querySelector("html");
-  var themeToggleButton = document.getElementById("theme-toggle");
-  var themePopup = document.getElementById("theme-list");
+  var themeToggleButton = document.getElementById("mdbook-theme-toggle");
+  var themePopup = document.getElementById("mdbook-theme-list");
   var themeColorMetaTag = document.querySelector('meta[name="theme-color"]');
   var stylesheets = {
-    ayuHighlight: document.querySelector("[href$='ayu-highlight.css']"),
-    tomorrowNight: document.querySelector("[href$='tomorrow-night.css']"),
-    highlight: document.querySelector("[href$='highlight.css']"),
+    ayuHighlight: document.querySelector("[href*='ayu-highlight-']"),
+    tomorrowNight: document.querySelector("[href*='tomorrow-night-']"),
+    highlight: document.querySelector("[href*='highlight-']"),
   };
 
   function showThemes() {
@@ -806,7 +824,7 @@ function playground_text(playground) {
 
     setTimeout(function () {
       themeColorMetaTag.content = getComputedStyle(
-        document.body
+        document.body,
       ).backgroundColor;
     }, 1);
 
@@ -916,10 +934,12 @@ function playground_text(playground) {
 
 (function sidebar() {
   var html = document.querySelector("html");
-  var sidebar = document.getElementById("sidebar");
-  var sidebarLinks = document.querySelectorAll("#sidebar a");
-  var sidebarToggleButton = document.getElementById("sidebar-toggle");
-  var sidebarResizeHandle = document.getElementById("sidebar-resize-handle");
+  var sidebar = document.getElementById("mdbook-sidebar");
+  var sidebarLinks = document.querySelectorAll("#mdbook-sidebar a");
+  var sidebarToggleButton = document.getElementById("mdbook-sidebar-toggle");
+  var sidebarResizeHandle = document.getElementById(
+    "mdbook-sidebar-resize-handle",
+  );
   var firstContact = null;
 
   function showSidebar() {
@@ -935,7 +955,9 @@ function playground_text(playground) {
     } catch (e) {}
   }
 
-  var sidebarAnchorToggles = document.querySelectorAll("#sidebar a.toggle");
+  var sidebarAnchorToggles = document.querySelectorAll(
+    "#mdbook-sidebar a.toggle",
+  );
 
   function toggleSection(ev) {
     ev.currentTarget.parentElement.classList.toggle("expanded");
@@ -963,7 +985,7 @@ function playground_text(playground) {
     if (html.classList.contains("sidebar-hidden")) {
       var current_width = parseInt(
         document.documentElement.style.getPropertyValue("--sidebar-width"),
-        10
+        10,
       );
       if (current_width < 150) {
         document.documentElement.style.setProperty("--sidebar-width", "150px");
@@ -1014,7 +1036,7 @@ function playground_text(playground) {
         time: Date.now(),
       };
     },
-    { passive: true }
+    { passive: true },
   );
 
   document.addEventListener(
@@ -1037,12 +1059,12 @@ function playground_text(playground) {
         firstContact = null;
       }
     },
-    { passive: true }
+    { passive: true },
   );
 
   // Scroll sidebar to current active section
   var activeSection = document
-    .getElementById("sidebar")
+    .getElementById("mdbook-sidebar")
     .querySelector(".active");
   if (activeSection) {
     // https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView
@@ -1124,7 +1146,7 @@ function playground_text(playground) {
 })();
 
 (function controllMenu() {
-  var menu = document.getElementById("menu-bar");
+  var menu = document.getElementById("mdbook-menu-bar");
 
   (function controllPosition() {
     var scrollTop = document.scrollingElement.scrollTop;
@@ -1170,7 +1192,7 @@ function playground_text(playground) {
         }
         prevScrollTop = scrollTop;
       },
-      { passive: true }
+      { passive: true },
     );
   })();
   (function controllBorder() {
@@ -1184,7 +1206,7 @@ function playground_text(playground) {
           menu.classList.add("bordered");
         }
       },
-      { passive: true }
+      { passive: true },
     );
   })();
 })();

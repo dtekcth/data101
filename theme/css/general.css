@@ -81,7 +81,7 @@ h6:target::before {
 .page {
     outline: 0;
     padding: 0 var(--page-padding);
-    margin-block-start: calc(0px - var(--menu-bar-height)); /* Compensate for the #menu-bar-hover-placeholder */
+    margin-block-start: calc(0px - var(--menu-bar-height)); /* Compensate for the #mdbook-menu-bar-hover-placeholder */
 }
 .page-wrapper {
     box-sizing: border-box;
@@ -368,7 +368,7 @@ blockquote.task {
 /* Fade in the content to give us some extra time since most of our extensions
 /* are done on the client side there would be ugly transformations otherwise
 */
-#content {
+#mdbook-content {
     opacity: 0;
     animation: appear 100ms ease-out;
     animation-delay: 100ms;
