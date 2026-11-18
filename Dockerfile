@@ -1,4 +1,4 @@
-FROM pandoc/typst:3.11.0@sha256:ae9dfa3c58cae72d363484442993b761ff4bc30202ec12823bc1e59fa952c892 AS build_pdf
+FROM pandoc/typst:3.14.0@sha256:a4638042e306ab37439a44428383b687c9bc9f4f21fc68f8006e0d9bf9dc624a AS build_pdf
 COPY ./src ./src
 COPY ./typst ./typst
 COPY ./typst_compile.sh ./typst_compile.sh
@@ -14,5 +14,5 @@ COPY ./book.toml ./
 
 RUN mdbook build --dest-dir ./dest
 
-FROM nginx:1.31-alpine@sha256:713fc2ebfd92e8217db451477182ee91944b123d2b1ee9fd5a8c6e91ca6c3a11
+FROM nginx:1.31-alpine@sha256:1bb9390209f866c8c0bf76ba89d3f33a3f6cd6a0e6c1b457af7ee763b9579f41
 COPY --from=build /book/dest /usr/share/nginx/html
