@@ -14,5 +14,5 @@ COPY ./book.toml ./
 
 RUN mdbook build --dest-dir ./dest
 
-FROM nginx:1.31-alpine@sha256:1bb9390209f866c8c0bf76ba89d3f33a3f6cd6a0e6c1b457af7ee763b9579f41
+FROM nginx:1.31-alpine@sha256:fb4658584bd9a916ffb6f6e365f97c25cfdb2923801f551ea08356e695f14ff7
 COPY --from=build /book/dest /usr/share/nginx/html
